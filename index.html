@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FicusJS components</title>
+</head>
+<body>
+<fjs-button></fjs-button>
+
+<script type="module">
+  import { use } from 'https://unpkg.com/ficusjs?module'
+  import { render as renderer, html } from 'https://unpkg.com/lit-html?module'
+  import { loadComponents } from './src/components/index.js'
+
+  // use loader to load many components
+  loadComponents(['button'])
+    .then(modules => {
+      modules.forEach(m => use(m.module, renderer, html))
+    })
+</script>
+</body>
+</html>
