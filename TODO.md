@@ -1,4 +1,4 @@
-# To do
+# Todo
 
 ## Class prefix
 
@@ -8,7 +8,7 @@
 - fs - States
 - fjs - JavaScript hooks
 
-# HTML components
+## HTML components
 
 - button
 - button group
@@ -27,7 +27,7 @@
 - chat
 - tree view
 
-# Web components
+## Web components
 
 - sheet (overlay)
 - modal (overlay)
@@ -39,7 +39,7 @@
 - popover
 - collapse
 
-# Theme
+## Theme
 
 - globals
 - themes
