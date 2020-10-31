@@ -1,5 +1,6 @@
 export const components = {
-  button: () => import('./button/index.js')
+  button: () => import('../custom-elements/button/index.js'),
+  tabs: () => import('../custom-elements/tabs/index.js')
 }
 
 export function loadComponents (baseComponents = []) {

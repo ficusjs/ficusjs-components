@@ -1,0 +1,8 @@
+.fc-tabs input[type=radio],
+.fc-tabs__pane {
+  display: none;
+}
+
+.fc-tabs__tabs {
+  list-style: none;
+}

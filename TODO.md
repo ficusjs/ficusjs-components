@@ -2,8 +2,8 @@
 
 ## Class prefix
 
-- fc- Component
-- fl- Layout module
+- fc - Component
+- fl - Layout module
 - fh - Helpers
 - fs - States
 - fjs - JavaScript hooks
