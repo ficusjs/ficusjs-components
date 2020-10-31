@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+<body>
+{{{ content }}}
+
+<script type="module">
+  import { use } from 'https://unpkg.com/ficusjs?module'
+  import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+  import { loadComponents } from '/components/loader/index.js'
+
+  // use loader to load many components
+  loadComponents(['button', 'tabs'])
+          .then(modules => {
+            modules.forEach(m => use(m.module, { renderer, html }))
+          })
+
+  // events
+  const btn = document.querySelector('fc-button')
+  if (btn) btn.addEventListener('click', e => console.log(e))
+
+  const tabs = document.querySelector('fc-tabs')
+  if (tabs) tabs.addEventListener('change', e => console.log(e))
+</script>
+</body>
+</html>

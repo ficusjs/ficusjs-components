@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FicusJS components - Button</title>
+</head>
+<body>
+<h1>Button</h1>
+<p>Button component.</p>
+<h2>Example</h2>
+<p><fc-button>Button</fc-button></p>
+<h2>Importing</h2>
+<pre><code class="language-js">import { use } from 'https://unpkg.com/ficusjs?module'
+import { module as buttonModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/button/index.js'
+
+// use the module
+use(buttonModule)
+</code></pre>
+<h2>Usage</h2>
+<pre><code class="language-html">&lt;fc-button&gt;Button&lt;/fc-button&gt;
+</code></pre>
+<h2>API</h2>
+<h3>Events</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>click</td>
+<td>When the button is clicked</td>
+</tr>
+</tbody>
+</table>
+
+
+<script type="module">
+  import { use } from 'https://unpkg.com/ficusjs?module'
+  import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+  import { loadComponents } from '/components/loader/index.js'
+
+  // use loader to load many components
+  loadComponents(['button', 'tabs'])
+          .then(modules => {
+            modules.forEach(m => use(m.module, { renderer, html }))
+          })
+
+  // events
+  const btn = document.querySelector('fc-button')
+  if (btn) btn.addEventListener('click', e => console.log(e))
+
+  const tabs = document.querySelector('fc-tabs')
+  if (tabs) tabs.addEventListener('change', e => console.log(e))
+</script>
+</body>
+</html>

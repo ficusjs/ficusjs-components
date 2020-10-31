@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FicusJS components - Tabs</title>
+</head>
+<body>
+<h1>Tabs</h1>
+<p>Tabs component.</p>
+<h2>Example</h2>
+<fc-tabs>
+  <fc-tab-pane label="Tab 1">
+    <p>Tab pane 1</p>
+  </fc-tab-pane>
+  <fc-tab-pane label="Tab 2" disabled="true">
+    <p>Tab pane 2</p>
+  </fc-tab-pane>
+  <fc-tab-pane label="Tab 3">
+    <p>Tab pane 3</p>
+  </fc-tab-pane>
+</fc-tabs>
+<h2>Importing</h2>
+<pre><code class="language-js">import { use } from 'https://unpkg.com/ficusjs?module'
+import { module as tabsModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/tabs/index.js'
+
+// use the tabs module
+use(tabsModule)
+</code></pre>
+<h2>Usage</h2>
+<pre><code class="language-html">&lt;fc-tabs&gt;
+  &lt;fc-tab-pane label=&quot;Tab 1&quot;&gt;
+    &lt;p&gt;Tab pane 1&lt;/p&gt;
+  &lt;/fc-tab-pane&gt;
+  &lt;fc-tab-pane label=&quot;Tab 2&quot; disabled=&quot;true&quot;&gt;
+    &lt;p&gt;Tab pane 2&lt;/p&gt;
+  &lt;/fc-tab-pane&gt;
+  &lt;fc-tab-pane label=&quot;Tab 3&quot;&gt;
+    &lt;p&gt;Tab pane 3&lt;/p&gt;
+  &lt;/fc-tab-pane&gt;
+&lt;/fc-tabs&gt;
+</code></pre>
+<h2>API</h2>
+<h3>Props</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>String</td>
+<td>The tab label</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Boolean</td>
+<td>Disable the tab</td>
+</tr>
+</tbody>
+</table>
+<h3>Events</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>change</td>
+<td>When the tab changes</td>
+<td><code>{ instance, value }</code></td>
+</tr>
+</tbody>
+</table>
+
+
+<script type="module">
+  import { use } from 'https://unpkg.com/ficusjs?module'
+  import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+  import { loadComponents } from '/components/loader/index.js'
+
+  // use loader to load many components
+  loadComponents(['button', 'tabs'])
+          .then(modules => {
+            modules.forEach(m => use(m.module, { renderer, html }))
+          })
+
+  // events
+  const btn = document.querySelector('fc-button')
+  if (btn) btn.addEventListener('click', e => console.log(e))
+
+  const tabs = document.querySelector('fc-tabs')
+  if (tabs) tabs.addEventListener('change', e => console.log(e))
+</script>
+</body>
+</html>

@@ -1,6 +1,24 @@
+---
+layout: doc.hbs
+title: FicusJS components - Tabs
+---
 # Tabs
 
 Tabs component.
+
+## Example
+
+<fc-tabs>
+  <fc-tab-pane label="Tab 1">
+    <p>Tab pane 1</p>
+  </fc-tab-pane>
+  <fc-tab-pane label="Tab 2" disabled="true">
+    <p>Tab pane 2</p>
+  </fc-tab-pane>
+  <fc-tab-pane label="Tab 3">
+    <p>Tab pane 3</p>
+  </fc-tab-pane>
+</fc-tabs>
 
 ## Importing
 

@@ -1,0 +1,1 @@
+const o={button:()=>import("./index-b6995fa3.js"),tabs:()=>import("./index-3d3ed272.js")};function loadComponents(e=[]){if(!e.length)return Promise.reject(new Error("No base components specified"));const n=e.map((e=>o[e]()));return Promise.all(n)}export{o as components,loadComponents};

@@ -7,17 +7,21 @@
   "scripts": {
     "build": "run-p build:*",
     "build:components": "node scripts/build-components.js",
+    "build:docs": "cross-env NODE_ENV=production eleventy --input=src --output=dist-site",
     "build:sass": "node-sass --output-style compressed --output ./dist/css src/css",
     "dev": "run-p watch:*",
     "watch:components": "live-server --watch=src",
+    "watch:docs": "cross-env NODE_ENV=development eleventy --input=src --output=dist-site --serve",
     "watch:sass": "node-sass-chokidar src/css --watch --recursive --output-style compressed --output ./dist/css"
   },
   "author": "Matt Levy",
   "license": "ISC",
   "devDependencies": {
+    "@11ty/eleventy": "0.11.1",
     "@rollup/plugin-commonjs": "16.0.0",
     "@rollup/plugin-node-resolve": "10.0.0",
     "@rollup/plugin-replace": "2.3.4",
+    "cross-env": "7.0.2",
     "glob-all": "3.2.1",
     "live-server": "1.2.1",
     "log-symbols": "4.0.0",
