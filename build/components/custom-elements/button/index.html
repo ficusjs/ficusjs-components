@@ -2,10 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{title}}</title>
+  <title>FicusJS components - Custom elements - Button</title>
 </head>
 <body>
-{{{ content }}}
+<h1>Button</h1>
+<p>Button component.</p>
+<h2>Example</h2>
+<p><fc-button>Button</fc-button></p>
+<h2>Importing</h2>
+<pre><code class="language-js">import { use } from 'https://unpkg.com/ficusjs?module'
+import { module as buttonModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/button/index.js'
+
+// use the module
+use(buttonModule)
+</code></pre>
+<h2>Usage</h2>
+<pre><code class="language-html">&lt;fc-button&gt;Button&lt;/fc-button&gt;
+</code></pre>
+<h2>API</h2>
+<h3>Events</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>click</td>
+<td>When the button is clicked</td>
+</tr>
+</tbody>
+</table>
+
 
 <script type="module">
   import { use } from 'https://unpkg.com/ficusjs?module'

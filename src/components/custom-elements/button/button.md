@@ -1,6 +1,9 @@
 ---
 layout: doc.hbs
-title: FicusJS components - Button
+title: FicusJS components - Custom elements - Button
+label: Button
+tags:
+  - custom-elements
 ---
 # Button
 

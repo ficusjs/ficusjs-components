@@ -1,6 +1,9 @@
 ---
 layout: doc.hbs
-title: FicusJS components - Tabs
+title: FicusJS components - Custom elements - Tabs
+label: Tabs
+tags:
+  - custom-elements
 ---
 # Tabs
 

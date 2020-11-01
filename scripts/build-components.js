@@ -4,7 +4,7 @@ const build = require('./lib/build')
 
 const components = glob.sync(['src/components/custom-elements/*/index.js', 'src/components/loader'])
 const buildPromises = components.map(c => {
-  return build(c, c.replace('src', 'dist'))
+  return build(c, c.replace('src', 'build'))
 })
 
 Promise.all(buildPromises)
