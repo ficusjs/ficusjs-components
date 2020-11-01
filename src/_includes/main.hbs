@@ -94,13 +94,13 @@
       <h2>Custom elements</h2>
       <ul>
         {{#each (lookup collections 'custom-elements')}}
-          <li><a href="./{{this.url}}" target="comp-frame">{{data.label}}</a></li>
+          <li><a href="./{{this.url}}" target="comp-frame">{{this.data.label}}</a></li>
         {{/each}}
       </ul>
       <h2>HTML</h2>
       <ul>
         {{#each (lookup collections 'html')}}
-          <li><a href="./{{this.url}}" target="comp-frame">{{data.label}}</a></li>
+          <li><a href="./{{this.url}}" target="comp-frame">{{this.data.label}}</a></li>
         {{/each}}
       </ul>
     </div>

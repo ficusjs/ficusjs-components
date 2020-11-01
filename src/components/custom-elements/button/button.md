@@ -2,6 +2,8 @@
 layout: doc.hbs
 title: FicusJS components - Custom elements - Button
 label: Button
+cssFile: /css/button.css
+modulePath: /components/custom-elements/button/index.js
 tags:
   - custom-elements
 ---

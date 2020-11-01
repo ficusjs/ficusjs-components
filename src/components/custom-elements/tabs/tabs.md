@@ -2,6 +2,8 @@
 layout: doc.hbs
 title: FicusJS components - Custom elements - Tabs
 label: Tabs
+cssFile: /css/tabs.css
+modulePath: /components/custom-elements/tabs/index.js
 tags:
   - custom-elements
 ---
@@ -29,7 +31,7 @@ Tabs component.
 import { use } from 'https://unpkg.com/ficusjs?module'
 import { module as tabsModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/tabs/index.js'
 
-// use the tabs module
+// use the module
 use(tabsModule)
 ```
 
