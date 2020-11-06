@@ -26,18 +26,18 @@
 - alerts
 - chat
 - tree view
+- details (collapse)
 
 ## Web components
 
-- sheet (overlay)
-- modal (overlay)
-- tabs
+- sheet (overlay) - built
+- modal (overlay) - built
+- tabs - built
 - accordions
 - dropdown
 - tooltips
 - pagination
 - popover
-- collapse
 
 ## Theme
 
