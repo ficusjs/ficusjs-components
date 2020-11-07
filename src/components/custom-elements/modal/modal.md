@@ -1,12 +1,12 @@
 ---
-layout: doc.hbs
+layout: doc.njk
 title: FicusJS components - Custom elements - Modal
 label: Modal
 cssFile: /css/modal.css
 demoScript: /js/modal.js
 modulePath: /components/custom-elements/modal/index.js
 tags:
-  - custom-elements
+  - customElements
 ---
 # Modal
 

@@ -1,11 +1,11 @@
 ---
-layout: doc.hbs
+layout: doc.njk
 title: FicusJS components - Custom elements - Sheet
 label: Sheet
 cssFile: /css/sheet.css
 modulePath: /components/custom-elements/sheet/index.js
 tags:
-  - custom-elements
+  - customElements
 ---
 # Sheet
 

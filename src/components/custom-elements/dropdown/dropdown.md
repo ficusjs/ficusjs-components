@@ -1,11 +1,11 @@
 ---
-layout: doc.hbs
+layout: doc.njk
 title: FicusJS components - Custom elements - Dropdown
 label: Dropdown
 cssFile: /css/dropdown.css
 modulePath: /components/custom-elements/dropdown/index.js
 tags:
-  - custom-elements
+  - customElements
 ---
 # Dropdown
 

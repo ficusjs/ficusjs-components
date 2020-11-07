@@ -103,15 +103,15 @@
     <div class="innertube">
       <h2>Custom elements</h2>
       <ul>
-        {{#each (lookup collections 'custom-elements')}}
-          <li><a href=".{{this.url}}" target="comp-frame">{{this.data.label}}</a></li>
-        {{/each}}
+        {%- for post in collections.customElements -%}
+          <li><a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a></li>
+        {%- endfor -%}
       </ul>
       <h2>HTML</h2>
       <ul>
-        {{#each (lookup collections 'html')}}
-          <li><a href=".{{this.url}}" target="comp-frame">{{this.data.label}}</a></li>
-        {{/each}}
+        {%- for post in collections.html -%}
+          <li><a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a></li>
+        {%- endfor -%}
       </ul>
     </div>
   </nav>

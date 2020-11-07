@@ -1,5 +1,5 @@
 ---
-layout: doc.hbs
+layout: doc.njk
 title: FicusJS components - HTML - Details
 label: Details
 cssFile: /css/details.css

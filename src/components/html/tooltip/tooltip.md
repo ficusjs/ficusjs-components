@@ -1,5 +1,5 @@
 ---
-layout: doc.hbs
+layout: doc.njk
 title: FicusJS components - HTML - Tooltip
 label: Tooltip
 cssFile: /css/tooltip.css

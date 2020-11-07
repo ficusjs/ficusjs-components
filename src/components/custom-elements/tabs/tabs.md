@@ -1,11 +1,11 @@
 ---
-layout: doc.hbs
+layout: doc.njk
 title: FicusJS components - Custom elements - Tabs
 label: Tabs
 cssFile: /css/tabs.css
 modulePath: /components/custom-elements/tabs/index.js
 tags:
-  - custom-elements
+  - customElements
 ---
 # Tabs
 

@@ -1,5 +1,5 @@
 ---
-layout: doc.hbs
+layout: doc.njk
 title: FicusJS components - HTML - Card
 label: Card
 cssFile: /css/card.css

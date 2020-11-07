@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>{{title}}</title>
-  {{{cssPath cssFile}}}
+  {% cssPath cssFile | safe %}
   <link rel="stylesheet"
         href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/darcula.min.css">
 </head>
 <body>
-{{{ content }}}
-{{{bootstrap modulePath}}}
-{{{scriptPath demoScript}}}
+{{ content | safe }}
+{% bootstrap modulePath | safe %}
+{% scriptPath demoScript | safe %}
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad()</script>
 </body>

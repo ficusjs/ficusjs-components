@@ -1,5 +1,5 @@
 ---
-layout: main.hbs
+layout: main.njk
 title: FicusJS components
 ---
 # Home
