@@ -27,15 +27,16 @@
 - chat
 - tree view
 - details (collapse)
+- accordion
+- tooltip - built
 
 ## Web components
 
 - sheet (overlay) - built
 - modal (overlay) - built
 - tabs - built
-- accordions
-- dropdown
-- tooltips
+- accordions - built
+- dropdown - built
 - pagination
 - popover
 

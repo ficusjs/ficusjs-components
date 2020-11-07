@@ -2,6 +2,7 @@
 layout: doc.hbs
 title: FicusJS components - HTML - Details
 label: Details
+cssFile: /css/details.css
 tags:
   - html
 ---

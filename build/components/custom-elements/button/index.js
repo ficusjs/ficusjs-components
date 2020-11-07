@@ -1,1 +1,0 @@
-const t={create(t){!function({createComponent:t,renderer:e,html:n}){t("fc-button",{renderer:e,render(){return n`<button class="fc__button">${this.slots.default}</button>`}})}(t)}};export{t as module};

@@ -9,6 +9,12 @@ module.exports = function (eleventyConfig) {
     }
   })
 
+  eleventyConfig.addShortcode("scriptPath", function (path) {
+    if (path) {
+      return `<script type="module" src="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}"></script>`
+    }
+  })
+
   eleventyConfig.addShortcode("bootstrap", function (path) {
     if (path) {
       return `<script type="module">

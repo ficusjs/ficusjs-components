@@ -3,6 +3,7 @@ layout: doc.hbs
 title: FicusJS components - Custom elements - Modal
 label: Modal
 cssFile: /css/modal.css
+demoScript: /js/modal.js
 modulePath: /components/custom-elements/modal/index.js
 tags:
   - custom-elements
@@ -15,7 +16,7 @@ Modal component.
 
 <fc-modal>Modal</fc-modal>
 
-<button type="button">Show modal</button>
+<button type="button" class="fc-button" id="show-modal-btn">Show modal</button>
 
 ## Importing
 

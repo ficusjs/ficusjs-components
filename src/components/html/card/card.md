@@ -2,6 +2,7 @@
 layout: doc.hbs
 title: FicusJS components - HTML - Card
 label: Card
+cssFile: /css/card.css
 tags:
   - html
 ---

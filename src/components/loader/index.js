@@ -1,5 +1,8 @@
 export const components = {
-  button: () => import('../custom-elements/button/index.js'),
+  accordion: () => import('../custom-elements/accordion/index.js'),
+  dropdown: () => import('../custom-elements/dropdown/index.js'),
+  modal: () => import('../custom-elements/modal/index.js'),
+  sheet: () => import('../custom-elements/sheet/index.js'),
   tabs: () => import('../custom-elements/tabs/index.js')
 }
 
