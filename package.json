@@ -8,11 +8,9 @@
     "build": "run-p build:*",
     "build:components": "node scripts/build-components.js",
     "build:docs": "cross-env NODE_ENV=production eleventy --input=src --output=build",
-    "build:sass": "node-sass --output-style compressed --output ./dist/css src/css",
     "dev": "run-p watch:*",
     "watch:components": "live-server --watch=src --port=8888 --no-browser --cors src",
-    "watch:docs": "cross-env NODE_ENV=development eleventy --input=src --output=tmp --serve",
-    "watch:sass": "node-sass-chokidar src/css --watch --recursive --output-style compressed --output ./tmp/css"
+    "watch:docs": "cross-env NODE_ENV=development eleventy --input=src --output=tmp --serve"
   },
   "author": "Matt Levy",
   "license": "ISC",

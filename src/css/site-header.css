@@ -1,0 +1,22 @@
+.fc-site-header {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fc-site-header__section {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+}
+
+.fc-site-header__section:not(:first-child):last-child {
+  justify-content: flex-end;
+}
+
+.fc-site-header__center {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+}
