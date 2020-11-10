@@ -1,8 +1,13 @@
+:root {
+  --header-height: 60px;
+}
+
 .fc-site-header {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: var(--header-height);
 }
 
 .fc-site-header__section {

@@ -22,3 +22,16 @@
 .fc-button:hover {
   background: var(--primary-dark-color);
 }
+
+/* link button */
+.fc-button.fc-button--link {
+  background: transparent;
+  border-color: transparent;
+  color: var(--gray-10-color);
+}
+.fc-button.fc-button--link:focus,
+.fc-button.fc-button--link:hover
+.fc-button.fc-button--link:active
+.fc-button.fc-button--link.active {
+  color: var(--black-color);
+}
