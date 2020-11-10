@@ -1,116 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FicusJS components</title>
-  <link rel="stylesheet" href="http://192.168.0.22:8081/global.css">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/android-chrome-384x384.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#54e4e5">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FicusJS components</title>
+    <link rel="stylesheet" href="http://192.168.0.22:8081/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#54e4e5">
 
-  <!-- component css START -->
-  {% set css %}
+    <!-- component css START -->
+    {% set css %}
     {% include "../css/global.css" %}
+    {% include "../css/main-grid-layout.css" %}
     {% include "../css/site-header.css" %}
     {% include "../css/button.css" %}
-  {% endset %}
-  <style>
-    {{ css | safe }}
-  </style>
-  <!-- component css END -->
+    {% endset %}
+    <style>
+      {{css | safe}}
+    </style>
+    <!-- component css END -->
 
-  <style>
+    <style>
 
-    #nav {
-      position: absolute;
-      top: 100px;
-      left: 0;
-      bottom: 0;
-      width: 230px;
-      overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
-      background: #DAE9BC;
-    }
+      p {
+        color: #555;
+      }
 
-    #logo {
-      padding:10px;
-    }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
 
-    main {
-      position: fixed;
-      top: 100px; /* Set this to the height of the header */
-      left: 230px;
-      right: 0;
-      bottom: 0;
-      overflow: auto;
-      background: #fff;
-    }
+      nav ul a {
+        color: darkgreen;
+        text-decoration: none;
+      }
 
-    .innertube {
-      padding: 15px;
-    }
+      * html main {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
 
-    iframe {
-      width: 100%;
-      height: 100%;
-    }
+    <div class="fc-grid-wrapper">
+      <header class="[ fc-site-header ] [ fu-pad-left-lg fu-pad-right-lg ]" style="background: blue;">
+        <section class="fc-site-header__section">
+          <img src="../img/logo.png" width="150" alt="FicusJS Components">
+        </section>
+        <section class="fc-site-header__section">
+          <a href="..." class="fc-button fc-button--link">Docs</a>
+          <a href="..." class="fc-button fc-button--link">GitHub</a>
+        </section>
+      </header>
 
-    p {
-      color: #555;
-    }
+      <main class="fc-content" style="background: pink;">
+        <iframe src="components/html/button" frameborder="0" name="comp-frame"></iframe>
+      </main>
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul a {
-      color: darkgreen;
-      text-decoration: none;
-    }
-
-    * html main {
-      height: 100%;
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
-  <header class="[ fc-site-header ] [ fu-pad-left-lg fu-pad-right-lg ]">
-    <section class="fc-site-header__section">
-      <img src="../img/logo.png" width="150" alt="FicusJS Components">
-    </section>
-    <section class="fc-site-header__section">
-      <a href="..." class="fc-button fc-button--link">Docs</a>
-      <a href="..." class="fc-button fc-button--link">GitHub</a>
-    </section>
-  </header>
-
-  <main>
-    <iframe src="components/html/button" frameborder="0" name="comp-frame"></iframe>
-  </main>
-
-  <nav id="nav">
-    <div class="innertube">
-      <h2>Custom elements</h2>
-      <ul>
-        {%- for post in collections.customElements -%}
-          <li><a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a></li>
-        {%- endfor -%}
-      </ul>
-      <h2>HTML</h2>
-      <ul>
-        {%- for post in collections.html -%}
-          <li><a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a></li>
-        {%- endfor -%}
-      </ul>
+      <div class="fc-sidebar" style="background: orange;">
+        <nav id="nav">
+          <div class="innertube">
+            <h2>Custom elements</h2>
+            <ul>
+              {%- for post in collections.customElements -%}
+                <li>
+                  <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+            <h2>HTML</h2>
+            <ul>
+              {%- for post in collections.html -%}
+                <li>
+                  <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-  </nav>
-</body>
+
+  </body>
 </html>
