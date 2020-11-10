@@ -1,0 +1,209 @@
+// 
+// FicusJS settings
+// 
+
+// Color system
+// ------------
+
+$white: #fff !default;
+$gray-1: #f6f6f6 !default;
+$gray-2: #dbdbdb !default;
+$gray-3: #c1c1c1 !default;
+$gray-4: #a7a7a7 !default;
+$gray-5: #8e8e8e !default;
+$gray-6: #767676 !default;
+$gray-7: #5f5f5f !default;
+$gray-8: #484848 !default;
+$gray-9: #333333 !default;
+$gray-10: #1f1f1f !default;
+$black: #000 !default;
+$grays: (
+  'white': $white,
+  'gray-1': $gray-1,
+  'gray-2': $gray-2,
+  'gray-3': $gray-3,
+  'gray-4': $gray-4,
+  'gray-5': $gray-5,
+  'gray-6': $gray-6,
+  'gray-7': $gray-7,
+  'gray-8': $gray-8,
+  'gray-9': $gray-9,
+  'gray-10': $gray-10,
+  'black': $black
+);
+
+$primary: #54e4e5;
+$secondary: #63e48b;
+$colors: (
+  'primary': $primary,
+  'primary-light': tint($primary, 15%),
+  'primary-dark': shade($primary, 15%),
+  'secondary': $secondary,
+  'secondary-light': tint($secondary, 15%),
+  'secondary-dark': shade($secondary, 15%),
+);
+
+$global-colors: map-merge($colors, $grays);
+
+// Typography
+// ----------
+
+$font-primary: sans-serif;
+$font-secondary: serif;
+
+// base values
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+
+// type scale
+$type-scale: (
+  'text-xs': calc(1em / (#{$text-scale-ratio} * #{$text-scale-ratio})),
+  'text-sm': calc(1em / #{$text-scale-ratio}),
+  'text-md': calc(1em * #{$text-scale-ratio}),
+  'text-lg': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio}),
+  'text-xl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}),
+  'text-xxl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}),
+  'text-xxxl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio})
+);
+
+// Spacing
+// -------
+
+$spacer-unit: 1rem;
+$spacer-none: 0;
+$spacer-2xs: 0.25 * $spacer-unit;
+$spacer-xs: 0.375 * $spacer-unit;
+$spacer-sm: 0.5 * $spacer-unit;
+$spacer-md: 0.75 * $spacer-unit;
+$spacer-lg: 2 * $spacer-unit;
+$spacer-xl: 3.25 * $spacer-unit;
+$spacer-2xl: 5.25 * $spacer-unit;
+$spacers: (
+  none: $spacer-none,
+  2xs: $spacer-2xs,
+  xs: $spacer-xs,
+  sm: $spacer-sm,
+  md: $spacer-md,
+  lg: $spacer-lg,
+  xl: $spacer-xl,
+  2xl: $spacer-2xl
+);
+
+// Grid breakpoints
+// ----------------
+
+$grid-breakpoints: (
+  'sm': '(min-width: 36em)',
+  'md': '(min-width: 48em)',
+  'lg': '(min-width: 62em)'
+);
+
+// Utility generator
+// -----------------
+$ficus-utilities: (
+  'bg': (
+    'items': $global-colors,
+    'output': 'standard',
+    'property': 'background'
+  ),
+  'color': (
+    'items': $global-colors,
+    'output': 'standard',
+    'property': 'color'
+  ),
+  'box': (
+    'items': (
+      'block': 'block',
+      'flex': 'flex',
+      'hide': 'none',
+      'show': 'inherit'
+    ),
+    'output': 'responsive',
+    'property': 'display'
+  ),
+  'font': (
+    'items': (
+      'base': 'Helvetica, Arial, sans-serif'
+    ),
+    'output': 'standard',
+    'property': 'font-family'
+  ),
+  'gap-top': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'gap-right': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-right'
+  ),
+  'gap-bottom': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-bottom'
+  ),
+  'gap-left': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-left'
+  ),
+  'pad-top': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-top'
+  ),
+  'pad-right': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-right'
+  ),
+  'pad-bottom': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-bottom'
+  ),
+  'pad-left': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-left'
+  ),
+  'stack': (
+    'items': (
+      '300': 0,
+      '400': 10,
+      '500': 20,
+      '600': 30,
+      '700': 40
+    ),
+    'output': 'standard',
+    'property': 'z-index'
+  ),
+  'text': (
+    'items': $type-scale,
+    'output': 'responsive',
+    'property': 'font-size'
+  ),
+  'weight': (
+    'items': (
+      'light': '300',
+      'regular': '400',
+      'bold': '700'
+    ),
+    'output': 'standard',
+    'property': 'font-weight'
+  ),
+  'width': (
+    'items': (
+      'full': '100%',
+      'half': percentage(1/2),
+      'quarter': percentage(1/4),
+      'third': percentage(1/3)
+    ),
+    'output': 'responsive',
+    'property': 'width'
+  ),
+  'breakpoints': (
+    $grid-breakpoints
+  )
+);

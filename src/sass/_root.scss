@@ -1,0 +1,14 @@
+:root {
+  // main colors
+  @each $color, $value in $global-colors {
+    --#{$color}-color: #{$value};
+  }
+  // spacers
+  @each $spacer, $value in $spacers {
+    --spacer-#{$spacer}: #{$value};
+  }
+  // typography
+  @each $type, $value in $type-scale {
+    --#{$type}: #{$value};
+  }
+}
