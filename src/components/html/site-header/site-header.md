@@ -2,7 +2,9 @@
 layout: doc.njk
 title: FicusJS components - HTML - Site header
 label: Site header
-cssFile: /css/site-header.css
+cssFile:
+  - /css/button.css
+  - /css/site-header.css
 tags:
   - html
 ---

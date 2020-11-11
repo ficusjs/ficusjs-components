@@ -3,9 +3,17 @@ module.exports = function (eleventyConfig) {
     return process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`
   })
 
+  function getStylesheetTag (path) {
+    return `<link rel="stylesheet" href="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}">`
+  }
+
   eleventyConfig.addShortcode("cssPath", function (path) {
-    if (path) {
-      return `<link rel="stylesheet" href="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}">`
+    if (path && /,/.test(path)) {
+      return path.split(',').map(p => getStylesheetTag(p)).join('')
+    } else if (path && Array.isArray(path)) {
+      return path.map(p => getStylesheetTag(p)).join('')
+    } else if (path) {
+      return getStylesheetTag(path)
     }
   })
 
