@@ -18,13 +18,15 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addShortcode("scriptPath", function (path) {
-    if (path) {
+    if (path && path != '') {
       return `<script type="module" src="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}"></script>`
+    } else {
+      return ''
     }
   })
 
   eleventyConfig.addShortcode("bootstrap", function (path) {
-    if (path) {
+    if (path && path != '') {
       return `<script type="module">
         import { use } from 'https://unpkg.com/ficusjs?module'
         import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
@@ -32,6 +34,8 @@ module.exports = function (eleventyConfig) {
 
         use(module, { renderer, html })
       </script>`
+    } else {
+      return ''
     }
   })
 
