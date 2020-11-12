@@ -71,22 +71,20 @@ $type-scale: (
 
 $spacer-unit: 1rem;
 $spacer-none: 0;
-$spacer-xxs: 0.25 * $spacer-unit;
-$spacer-xs: 0.375 * $spacer-unit;
 $spacer-sm: 0.5 * $spacer-unit;
-$spacer-md: 0.75 * $spacer-unit;
-$spacer-lg: 2 * $spacer-unit;
-$spacer-xl: 3.25 * $spacer-unit;
-$spacer-xxl: 5.25 * $spacer-unit;
+$spacer-md: $spacer-unit;
+$spacer-lg: 1.5 * $spacer-unit;
+$spacer-xl: 2 * $spacer-unit;
+$spacer-xxl: 3 * $spacer-unit;
+$spacer-xxl: 5 * $spacer-unit;
 $spacers: (
   none: $spacer-none,
-  xxs: $spacer-xxs,
-  xs: $spacer-xs,
   sm: $spacer-sm,
   md: $spacer-md,
   lg: $spacer-lg,
   xl: $spacer-xl,
-  xxl: $spacer-xxl
+  xxl: $spacer-xxl,
+  xxxl: $spacer-xxl
 );
 
 // Grid breakpoints
@@ -147,6 +145,11 @@ $ficus-utilities: (
     'items': $spacers,
     'output': 'standard',
     'property': 'margin-left'
+  ),
+  'pad': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding'
   ),
   'pad-top': (
     'items': $spacers,

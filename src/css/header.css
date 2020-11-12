@@ -1,5 +1,6 @@
 :root {
-  --header-height: 60px;
+  --header-height: 100px;
+  --header-padding: var(--spacer-xl)
 }
 
 .fc-header {
@@ -8,6 +9,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   height: var(--header-height);
+  padding: 0 var(--header-padding);
+  border-bottom: 1px solid rgb(210, 210, 210)
 }
 
 .fc-header__section {
