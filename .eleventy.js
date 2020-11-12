@@ -1,3 +1,5 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("componentPath", function (path) {
     return process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`
@@ -43,4 +45,6 @@ module.exports = function (eleventyConfig) {
     "src/img",
     "css"
   ])
+
+  eleventyConfig.addPlugin(syntaxHighlight)
 }

@@ -5,7 +5,7 @@
   <title>{{title}}</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   {% cssPath cssFile | safe %}
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/darcula.min.css">
+  <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 </head>
 <body>
   <div class="fu-pad-xl">
@@ -13,7 +13,5 @@
     {% bootstrap modulePath | safe %}
     {% scriptPath demoScript | safe %}
   </div>
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad()</script>
 </body>
 </html>
