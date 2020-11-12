@@ -2,7 +2,9 @@
 layout: doc.njk
 title: FicusJS components - Custom elements - Tabs
 label: Tabs
-cssFile: /css/tabs.css
+cssFile:  
+  - /css/global.css
+  - /css/tabs.css
 modulePath: /components/custom-elements/tabs/index.js
 tags:
   - customElements

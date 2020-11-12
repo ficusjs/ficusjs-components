@@ -2,7 +2,9 @@
 layout: doc.njk
 title: FicusJS components - Custom elements - Sheet
 label: Sheet
-cssFile: /css/sheet.css
+cssFile: 
+  - /css/global.css
+  - /css/sheet.css
 modulePath: /components/custom-elements/sheet/index.js
 tags:
   - customElements

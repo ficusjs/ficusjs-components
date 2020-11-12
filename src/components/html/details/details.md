@@ -2,7 +2,9 @@
 layout: doc.njk
 title: FicusJS components - HTML - Details
 label: Details
-cssFile: /css/details.css
+cssFile: 
+  - /css/global.css
+  - /css/details.css
 tags:
   - html
 ---

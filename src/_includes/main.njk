@@ -16,8 +16,8 @@
     <!-- component css START -->
     {% set css %}
     {% include "../css/global.css" %}
-    {% include "../css/main-grid-layout.css" %}
-    {% include "../css/site-header.css" %}
+    {% include "../css/main-layout.css" %}
+    {% include "../css/header.css" %}
     {% include "../css/button.css" %}
     {% endset %}
     <style>
@@ -50,22 +50,22 @@
   </head>
   <body>
 
-    <div class="fc-grid-wrapper">
-      <header class="[ fc-site-header ] [ fu-pad-left-lg fu-pad-right-lg ]" style="background: blue;">
-        <section class="fc-site-header__section">
+    <div class="fl-grid-wrapper">
+      <header class="fc-header">
+        <section class="fc-header__section">
           <img src="../img/logo.png" width="150" alt="FicusJS Components">
         </section>
-        <section class="fc-site-header__section">
+        <section class="fc-header__section">
           <a href="..." class="fc-button fc-button--link">Docs</a>
           <a href="..." class="fc-button fc-button--link">GitHub</a>
         </section>
       </header>
 
-      <main class="fc-content" style="background: pink;">
+      <main class="fc-content">
         <iframe src="components/html/button" frameborder="0" name="comp-frame"></iframe>
       </main>
 
-      <div class="fc-sidebar" style="background: orange;">
+      <div class="fc-sidebar">
         <nav id="nav">
           <div class="innertube">
             <h2>Custom elements</h2>

@@ -2,7 +2,9 @@
 layout: doc.njk
 title: FicusJS components - HTML - Accordion
 label: Accordion
-cssFile: /css/accordion.css
+cssFile: 
+  - /css/global.css
+  - /css/accordion.css
 tags:
   - html
 ---

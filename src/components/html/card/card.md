@@ -2,7 +2,9 @@
 layout: doc.njk
 title: FicusJS components - HTML - Card
 label: Card
-cssFile: /css/card.css
+cssFile: 
+  - /css/global.css
+  - /css/card.css
 tags:
   - html
 ---

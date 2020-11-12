@@ -2,7 +2,7 @@
   --header-height: 60px;
 }
 
-.fc-site-header {
+.fc-header {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
@@ -10,17 +10,17 @@
   height: var(--header-height);
 }
 
-.fc-site-header__section {
+.fc-header__section {
   align-items: center;
   display: flex;
   flex: 1 0 0;
 }
 
-.fc-site-header__section:not(:first-child):last-child {
+.fc-header__section:not(:first-child):last-child {
   justify-content: flex-end;
 }
 
-.fc-site-header__center {
+.fc-header__center {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
