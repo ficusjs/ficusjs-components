@@ -37,7 +37,7 @@
 - tabs - built
 - accordions - built
 - dropdown - built
-- pagination
+- pagination - built
 - popover
 
 ## Theme

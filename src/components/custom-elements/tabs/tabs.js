@@ -18,12 +18,12 @@ export function createTabs ({ createComponent, renderer, html }) {
       }
     },
     mounted () {
-      this.setupEvents()
+      this._setupEvents()
     },
     updated () {
-      this.setupEvents()
+      this._setupEvents()
     },
-    setupEvents () {
+    _setupEvents () {
       Array.from(this.querySelectorAll('input[type=radio]'))
         .forEach(r => {
           if (!r.hasAttribute('fc-event-listener')) {
