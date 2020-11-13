@@ -2,7 +2,9 @@
 layout: doc.njk
 title: FicusJS components - Custom elements - Pagination
 label: Pagination
-cssFile: /css/pagination.css
+cssFile:
+  - /css/global.css
+  - /css/pagination.css
 modulePath: /components/custom-elements/pagination/index.js
 tags:
   - customElements
