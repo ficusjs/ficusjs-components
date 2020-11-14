@@ -11,4 +11,8 @@
   @each $type, $value in $type-scale {
     --#{$type}: #{$value};
   }
+  // line heights
+  @each $line-height, $value in $line-heights {
+    --#{$line-height}: #{$value};
+  }
 }

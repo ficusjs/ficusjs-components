@@ -1,27 +1,40 @@
-h1 {
+h1,
+.text-xxl {
   font-size: var(--text-xxl);
+  line-height: var(--heading-line-height);
 }
 
-h2 {
+h2,
+.text-xl {
   font-size: var(--text-xl);
+  line-height: var(--heading-line-height);
 }
 
-h3 {
+h3,
+.text-lg {
   font-size: var(--text-lg);
+  line-height: var(--heading-line-height);
 }
 
-h4 {
+h4,
+.text-md {
   font-size: var(--text-md);
+  line-height: var(--heading-line-height);
 }
 
-h5 {
+h5,
+.text-sm {
   font-size: var(--text-sm);
+  line-height: var(--heading-line-height);
 }
 
-h6 {
+h6,
+.text-xs {
   font-size: var(--text-xs);
+  line-height: var(--heading-line-height);
 }
 
-p {
+p,
+.text-base {
   line-height: var(--body-line-height);
 }

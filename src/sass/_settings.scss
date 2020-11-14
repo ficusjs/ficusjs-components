@@ -66,6 +66,11 @@ $type-scale: (
   'text-xxxl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio})
 );
 
+$line-heights: (
+  'heading-line-height': 1.2,
+  'body-line-height': 1.5
+);
+
 // Spacing
 // -------
 
@@ -98,6 +103,7 @@ $grid-breakpoints: (
 
 // Utility generator
 // -----------------
+
 $ficus-utilities: (
   'bg': (
     'items': $global-colors,

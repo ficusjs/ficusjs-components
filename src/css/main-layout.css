@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .fc-header {
   grid-area: header;
 }
@@ -11,11 +15,12 @@
 
 .fc-content iframe {
   border: 0;
-  height: 100%;
+  height: calc(100vh - var(--header-height));
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  scrollbar-width: none;
 }
 
 .fc-sidebar {
