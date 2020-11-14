@@ -48,8 +48,11 @@ $global-colors: map-merge($colors, $grays);
 // Typography
 // ----------
 
-$font-primary: sans-serif;
-$font-secondary: serif;
+// font families
+$font-families: (
+  'primary': sans-serif,
+  'secondary': serif
+);
 
 // base values
 $text-base-size: 1em;
@@ -66,9 +69,19 @@ $type-scale: (
   'text-xxxl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio})
 );
 
+// line heights
 $line-heights: (
   'heading-line-height': 1.2,
   'body-line-height': 1.5
+);
+
+// font weights 
+$font-weights: (
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700
 );
 
 // Spacing
@@ -95,124 +108,10 @@ $spacers: (
 // Grid breakpoints
 // ----------------
 
-$grid-breakpoints: (
+$breakpoints: (
   'sm': '(min-width: 36em)',
   'md': '(min-width: 48em)',
   'lg': '(min-width: 62em)'
 );
 
-// Utility generator
-// -----------------
 
-$ficus-utilities: (
-  'bg': (
-    'items': $global-colors,
-    'output': 'standard',
-    'property': 'background'
-  ),
-  'color': (
-    'items': $global-colors,
-    'output': 'standard',
-    'property': 'color'
-  ),
-  'box': (
-    'items': (
-      'block': 'block',
-      'flex': 'flex',
-      'hide': 'none',
-      'show': 'inherit'
-    ),
-    'output': 'responsive',
-    'property': 'display'
-  ),
-  'font': (
-    'items': (
-      'base': 'Helvetica, Arial, sans-serif'
-    ),
-    'output': 'standard',
-    'property': 'font-family'
-  ),
-  'gap-top': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'margin-top'
-  ),
-  'gap-right': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'margin-right'
-  ),
-  'gap-bottom': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'margin-bottom'
-  ),
-  'gap-left': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'margin-left'
-  ),
-  'pad': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'padding'
-  ),
-  'pad-top': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'padding-top'
-  ),
-  'pad-right': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'padding-right'
-  ),
-  'pad-bottom': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'padding-bottom'
-  ),
-  'pad-left': (
-    'items': $spacers,
-    'output': 'standard',
-    'property': 'padding-left'
-  ),
-  'stack': (
-    'items': (
-      '300': 0,
-      '400': 10,
-      '500': 20,
-      '600': 30,
-      '700': 40
-    ),
-    'output': 'standard',
-    'property': 'z-index'
-  ),
-  'text': (
-    'items': $type-scale,
-    'output': 'responsive',
-    'property': 'font-size'
-  ),
-  'weight': (
-    'items': (
-      'light': '300',
-      'regular': '400',
-      'bold': '700'
-    ),
-    'output': 'standard',
-    'property': 'font-weight'
-  ),
-  'width': (
-    'items': (
-      'full': '100%',
-      'half': percentage(1/2),
-      'quarter': percentage(1/4),
-      'third': percentage(1/3)
-    ),
-    'output': 'responsive',
-    'property': 'width'
-  ),
-  'breakpoints': (
-    $grid-breakpoints
-  )
-);

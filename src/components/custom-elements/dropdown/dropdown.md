@@ -3,7 +3,8 @@ layout: doc.njk
 title: FicusJS components - Custom elements - Dropdown
 label: Dropdown
 cssFile: 
-  - /css/global.css
+  - /css/ficus-globals.css
+  - /css/ficus-utilities.css
   - /css/dropdown.css
 modulePath: /components/custom-elements/dropdown/index.js
 tags:

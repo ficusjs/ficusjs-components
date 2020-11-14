@@ -1,17 +1,119 @@
-@import 'utilities/cycle';
 
-/// Only run if there should be an output
-@if ($outputTokenCSS == true) {
-  /// Run the standard cycle first
-  @include cycle('', false);
 
-  /// For each breakpoint, generate a prefix and run the cycle
-  @each $key, $value in map-get($ficus-utilities, 'breakpoints') {
-    $prefix: #{$key + '\\:'};
-    $is-breakpoint: true;
+// Utility generator
+// -----------------
 
-    @media screen and #{$value} {
-      @include cycle($prefix, $is-breakpoint);
-    }
-  }
-}
+$utilities: (
+  // colors
+  'bg': (
+    'items': $global-colors,
+    'output': 'standard',
+    'property': 'background'
+  ),
+  'color': (
+    'items': $global-colors,
+    'output': 'standard',
+    'property': 'color'
+  ),
+  // typography
+  'font-family': (
+    'items': $font-families,
+    'output': 'standard',
+    'property': 'font-family'
+  ),
+  'font-weight': (
+    'items': $font-weights,
+    'output': 'standard',
+    'property': 'font-weight'
+  ),
+  // text
+  'text-align': (
+    'items': (
+      'center': 'center',
+      'left': 'left',
+      'right': 'right',
+      'justify': 'justify'
+    ),
+    'output': 'standard',
+    'property': 'text-align'
+  ),
+  'text-transform': (
+    'items': (
+      'uppercase': 'uppercase',
+      'capitalize': 'capitalize'
+    ),
+    'output': 'standard',
+    'property': 'text-transform'
+  ),
+  // spacers
+  'gap-top': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'gap-right': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-right'
+  ),
+  'gap-bottom': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-bottom'
+  ),
+  'gap-left': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-left'
+  ),
+  'pad': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding'
+  ),
+  'pad-top': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-top'
+  ),
+  'pad-right': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-right'
+  ),
+  'pad-bottom': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-bottom'
+  ),
+  'pad-left': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'padding-left'
+  ),
+  'stack': (
+    'items': (
+      '300': 0,
+      '400': 10,
+      '500': 20,
+      '600': 30,
+      '700': 40
+    ),
+    'output': 'standard',
+    'property': 'z-index'
+  ),
+  'width': (
+    'items': (
+      'full': '100%',
+      'half': percentage(1/2),
+      'quarter': percentage(1/4),
+      'third': percentage(1/3)
+    ),
+    'output': 'responsive',
+    'property': 'width'
+  ),
+  'breakpoints': (
+    $breakpoints
+  )
+);
+

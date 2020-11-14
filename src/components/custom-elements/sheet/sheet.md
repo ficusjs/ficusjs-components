@@ -3,7 +3,8 @@ layout: doc.njk
 title: FicusJS components - Custom elements - Sheet
 label: Sheet
 cssFile: 
-  - /css/global.css
+  - /css/ficus-globals.css
+  - /css/ficus-utilities.css
   - /css/sheet.css
 modulePath: /components/custom-elements/sheet/index.js
 tags:

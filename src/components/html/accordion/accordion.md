@@ -3,7 +3,8 @@ layout: doc.njk
 title: FicusJS components - HTML - Accordion
 label: Accordion
 cssFile: 
-  - /css/global.css
+  - /css/ficus-globals.css
+  - /css/ficus-utilities.css
   - /css/accordion.css
 tags:
   - html

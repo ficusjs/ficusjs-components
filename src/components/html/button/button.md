@@ -3,7 +3,8 @@ layout: doc.njk
 title: FicusJS components - HTML - Button
 label: Button
 cssFile: 
-  - /css/global.css
+  - /css/ficus-globals.css
+  - /css/ficus-utilities.css
   - /css/button.css
 tags:
   - html

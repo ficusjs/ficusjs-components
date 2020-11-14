@@ -8,7 +8,7 @@
 @import 'process-collection';
 
 @mixin cycle($prefix, $is-breakpoint) {
-  @each $selector, $props in $ficus-utilities {
+  @each $selector, $props in $utilities {
     @include process-collection($props, $prefix, $selector, $is-breakpoint);
   }
 }

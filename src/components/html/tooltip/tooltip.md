@@ -3,7 +3,8 @@ layout: doc.njk
 title: FicusJS components - HTML - Tooltip
 label: Tooltip
 cssFile: 
-  - /css/global.css  
+  - /css/ficus-globals.css
+  - /css/ficus-utilities.css
   - /css/tooltip.css
 tags:
   - html
