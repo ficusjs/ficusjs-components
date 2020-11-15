@@ -40,7 +40,10 @@ export function createTabs ({ createComponent, renderer, html }) {
       return html`
         <style>
           ${`
-            ${this.tabs.map((t, i) => `.fc-tabs input[type=radio]:nth-of-type(${i + 1}):checked ~ fc-tab-pane:nth-of-type(${i + 1}) .fc-tabs__pane { display: block; }`).join('')}
+            ${this.tabs.map((t, i) => `
+              .fc-tabs input[type=radio]:nth-of-type(${i + 1}):checked ~ fc-tab-pane:nth-of-type(${i + 1}) .fc-tabs__pane { display: block; }
+              .fc-tabs input[type=radio]:nth-of-type(${i + 1}):checked ~ .fc-tabs__tabs li:nth-of-type(${i + 1}) label { color: #495057; background-color: #fff; border-color: #dee2e6 #dee2e6 #fff; }
+            `).join('')}
           `}
         </style>
         <div class="fc-tabs">
