@@ -53,7 +53,7 @@ export function createPagination ({ createComponent, renderer, html }) {
         })
     },
     render () {
-      return html`<div class="fc__pagination">
+      return html`<div class="fc-pagination">
         <button type="button" data-page="first" class="fc-pagination__first">First</button>
         <button type="button" data-page="previous" class="fc-pagination__previous">Previous</button>
         ${this.state.pager.pages.map(page => html`
