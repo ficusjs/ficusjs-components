@@ -7,6 +7,10 @@
   @each $spacer, $value in $spacers {
     --spacer-#{$spacer}: #{$value};
   }
+  // fonts
+  @each $font, $value in $font-families {
+    --font-#{$font}: #{$value};
+  }
   // typography
   @each $type, $value in $type-scale {
     --#{$type}: #{$value};

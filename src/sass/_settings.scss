@@ -49,24 +49,26 @@ $global-colors: map-merge($colors, $grays);
 // ----------
 
 // font families
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Ubuntu', sans-serif;
 $font-families: (
-  'primary': sans-serif,
-  'secondary': serif
+  'primary': $primary-font,
+  'secondary': $secondary-font,
 );
 
 // base values
-$text-base-size: 1em;
-$text-scale-ratio: 1.2;
+$text-base-size: 1rem;
 
 // type scale
 $type-scale: (
-  'text-xs': calc(1em / (#{$text-scale-ratio} * #{$text-scale-ratio})),
-  'text-sm': calc(1em / #{$text-scale-ratio}),
-  'text-md': calc(1em * #{$text-scale-ratio}),
-  'text-lg': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio}),
-  'text-xl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}),
-  'text-xxl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio}),
-  'text-xxxl': calc(1em * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio} * #{$text-scale-ratio})
+  'text-xs': calc(#{$text-base-size} * 0.5),
+  'text-sm': calc(#{$text-base-size} * 0.75),
+  'text-md': $text-base-size,
+  'text-lg': calc(#{$text-base-size} * 1.25),
+  'text-xl': calc(#{$text-base-size} * 1.5),
+  'text-xxl': calc(#{$text-base-size} * 1.75),
+  'text-xxxl': calc(#{$text-base-size} * 2)
 );
 
 // line heights

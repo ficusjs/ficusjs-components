@@ -37,6 +37,10 @@ html {
 /* Set core body defaults */
 body {
   min-height: 100vh;
+  background: var(--white-color);
+  color: var(--gray-10-color);
+  font-size: var(--text-md);
+  font-family: var(--font-primary);
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }

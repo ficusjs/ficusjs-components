@@ -8,7 +8,7 @@
 ///
 @mixin generate-css($selector, $property, $items) {
   @each $key, $value in $items {
-    #{'.u-' + $selector + '-' + $key} {
+    #{'.fu-' + $selector + '-' + $key} {
       #{ $property }: #{$value};
     }
   }
