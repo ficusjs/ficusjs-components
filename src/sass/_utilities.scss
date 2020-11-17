@@ -46,47 +46,49 @@ $utilities: (
     'property': 'text-transform'
   ),
   // spacers
-  'gap-top': (
+  // margin
+  'm': (
     'items': $spacers,
     'output': 'standard',
     'property': 'margin-top'
   ),
-  'gap-right': (
+  'mr': (
     'items': $spacers,
     'output': 'standard',
     'property': 'margin-right'
   ),
-  'gap-bottom': (
+  'mb': (
     'items': $spacers,
     'output': 'standard',
     'property': 'margin-bottom'
   ),
-  'gap-left': (
+  'ml': (
     'items': $spacers,
     'output': 'standard',
     'property': 'margin-left'
   ),
-  'pad': (
+  // padding
+  'p': (
     'items': $spacers,
     'output': 'standard',
     'property': 'padding'
   ),
-  'pad-top': (
+  'pt': (
     'items': $spacers,
     'output': 'standard',
     'property': 'padding-top'
   ),
-  'pad-right': (
+  'pr': (
     'items': $spacers,
     'output': 'standard',
     'property': 'padding-right'
   ),
-  'pad-bottom': (
+  'pb': (
     'items': $spacers,
     'output': 'standard',
     'property': 'padding-bottom'
   ),
-  'pad-left': (
+  'pl': (
     'items': $spacers,
     'output': 'standard',
     'property': 'padding-left'

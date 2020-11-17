@@ -15,10 +15,46 @@ Navigation component.
 
 ## Example
 
-
+<nav class="fc-nav">
+  <ul class="fc-nav__list">
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a class="fh-is-active" href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+  </ul>
+</nav>
 
 ## Usage
 
 ```html
-
+<nav class="fc-nav">
+  <ul class="fc-nav__list">
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a class="fh-is-active" href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+  </ul>
+</nav>
 ```

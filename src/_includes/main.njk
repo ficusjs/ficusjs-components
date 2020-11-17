@@ -45,16 +45,26 @@
         <iframe src="components/html/button" frameborder="0" name="comp-frame"></iframe>
       </main>
 
-      <div class="fc-sidebar">
-        <nav class="c-side-nav" id="nav">
-          <h2 class="fu-text-sm fu-text-transform-uppercase">Custom elements</h2>
-          {%- for post in collections.customElements -%}
-            <a class="c-side-nav__sub-item" href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
-          {%- endfor -%}
-          <h2 class="fu-text-sm fu-text-transform-uppercase">HTML</h2>
-          {%- for post in collections.html -%}
-            <a class="c-side-nav__sub-item" href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
-          {%- endfor -%}
+      <div class="[ fc-sidebar ] [ fu-pt-xl fu-pb-xl ]">
+        <h2 class="fu-text-sm fu-text-transform-uppercase fu-mb-sm fu-ml-xl fu-mr-xl">Custom elements</h2>
+        <nav class="[ fc-nav ] [ fu-mb-xl fu-ml-lg fu-mr-lg ]">
+          <ul class="fc-nav__list">
+            {%- for post in collections.customElements -%}
+            <li>
+              <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+        <h2 class="fu-text-sm fu-text-transform-uppercase fu-mb-sm fu-ml-xl fu-mr-xl">HTML</h2>
+        <nav class="[ fc-nav ] [ fu-ml-lg fu-mr-lg ]">
+          <ul class="fc-nav__list">
+            {%- for post in collections.html -%}
+              <li>
+                <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
+              </li>
+            {%- endfor -%}
+          </ul>
         </nav>
       </div>
     </div>

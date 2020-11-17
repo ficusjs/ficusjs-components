@@ -22,7 +22,12 @@ body {
 
 .fc-sidebar {
   grid-area: sidebar;
-  width: 100%
+  width: 100%;
+  position: sticky;
+  top: 76px;
+  height: calc(100vh - 76px);
+  max-height: calc(100vh - 76px);
+  overflow-y: auto;
 }
 
 .fl-grid-wrapper {

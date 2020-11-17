@@ -4,6 +4,5 @@
 }
 
 .fc-sidebar {
-  padding: var(--sidebar-padding);
   border-right: 1px solid rgb(210, 210, 210)
 }

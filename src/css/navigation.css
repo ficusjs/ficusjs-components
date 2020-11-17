@@ -1,3 +1,19 @@
-.c-side-nav__sub-item {
+.fc-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.fc-nav__list a {
   display: block;
+  padding: var(--spacer-sm);
+  color: var(--gray-10-color);
+  text-decoration: none;
+}
+
+.fc-nav__list a:hover {
+  text-decoration: underline;
+}
+
+.fc-nav__list a.fh-is-active {
+  text-decoration: underline;
 }
