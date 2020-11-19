@@ -5,15 +5,20 @@
 
 .fc-nav__list a {
   display: block;
-  padding: var(--spacer-sm);
   color: var(--gray-10-color);
   text-decoration: none;
+  padding: var(--nav-padding, var(--spacer-sm));
 }
 
-.fc-nav__list a:hover {
-  text-decoration: underline;
-}
-
+.fc-nav__list a:focus,
+.fc-nav__list a:hover,
+.fc-nav__list a:active,
 .fc-nav__list a.fh-is-active {
   text-decoration: underline;
+}
+
+/* compact nav */
+
+.fc-nav.fc-nav--compact .fc-nav__list a {
+  --nav-padding: calc(var(--spacer-sm) / 2);
 }

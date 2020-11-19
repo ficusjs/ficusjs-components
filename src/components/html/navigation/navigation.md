@@ -35,10 +35,52 @@ Navigation component.
   </ul>
 </nav>
 
-## Usage
-
 ```html
 <nav class="fc-nav">
+  <ul class="fc-nav__list">
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a class="fh-is-active" href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+  </ul>
+</nav>
+```
+
+## Compact
+
+<nav class="fc-nav fc-nav--compact">
+  <ul class="fc-nav__list">
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a class="fh-is-active" href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+    <li>
+      <a href="#">Nav Item</a>
+    </li>
+  </ul>
+</nav>
+
+```html
+<nav class="fc-nav fc-nav--compact">
   <ul class="fc-nav__list">
     <li>
       <a href="#">Nav Item</a>
