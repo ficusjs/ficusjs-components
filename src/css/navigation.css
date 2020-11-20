@@ -5,9 +5,9 @@
 
 .fc-nav__list a {
   display: block;
-  color: var(--fc-nav-color-link, var(--body-color));
+  color: var(--fc-nav-anchor-color-link, var(--body-color));
   text-decoration: none;
-  padding: var(--fc-nav-sizing-padding, var(--spacer-sm));
+  padding: var(--fc-nav-anchor-sizing-padding, var(--spacer-sm));
 }
 
 .fc-nav__list a:focus,
@@ -20,5 +20,5 @@
 /* compact nav */
 
 .fc-nav.fc-nav--compact .fc-nav__list a {
-  --fc-nav-sizing-padding: calc(var(--spacer-sm) / 2);
+  --fc-nav-anchor-sizing-padding: calc(var(--spacer-sm) / 2);
 }
