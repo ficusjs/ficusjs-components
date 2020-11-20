@@ -105,5 +105,5 @@ Navigation component.
 
 | Category | Name | Value Type(s) | Fallback Value
 | --- | --- | --- | --- |
-| Color | `--fc-nav-color-link` | Color | `var(--body-color)` |
-| Sizing | `--fc-nav-sizing-padding` | Dimension | `var(--spacer-sm)` |
+| Color | `--fc-nav-anchor-color-link` | Color | `var(--body-color)` |
+| Sizing | `--fc-nav-anchor-sizing-padding` | Dimension | `var(--spacer-sm)` |
