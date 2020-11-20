@@ -118,4 +118,13 @@ $breakpoints: (
   'lg': '(min-width: 62em)'
 );
 
+// Body
+// ----
+
+$body-bg: $white !default;
+$body-color: $black !default;
+$body-styles: (
+  'body-bg': $body-bg,
+  'body-color': $body-color
+) !default;
 

@@ -19,4 +19,8 @@
   @each $line-height, $value in $line-heights {
     --#{$line-height}: #{$value};
   }
+  // body styles
+  @each $body-style, $value in $body-styles {
+    --#{$body-style}: #{$value};
+  }
 }
