@@ -67,6 +67,27 @@ $utilities: (
     'output': 'standard',
     'property': 'margin-left'
   ),
+  // negative margin
+  'n-m': (
+    'items': $negative-spacers,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'n-mr': (
+    'items': $negative-spacers,
+    'output': 'standard',
+    'property': 'margin-right'
+  ),
+  'n-mb': (
+    'items': $negative-spacers,
+    'output': 'standard',
+    'property': 'margin-bottom'
+  ),
+  'n-ml': (
+    'items': $negative-spacers,
+    'output': 'standard',
+    'property': 'margin-left'
+  ),
   // padding
   'p': (
     'items': $spacers,

@@ -107,6 +107,8 @@ $spacers: (
   xxxl: $spacer-xxl
 );
 
+$negative-spacers: negativify-map($spacers) !default;
+
 // Grid breakpoints
 // ----------------
 

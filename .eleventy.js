@@ -42,8 +42,7 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addPassthroughCopy([
-    "src/img",
-    "css"
+    "src/img"
   ])
 
   eleventyConfig.addPlugin(syntaxHighlight)
