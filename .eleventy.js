@@ -44,7 +44,7 @@ module.exports = function (eleventyConfig) {
     }
   })
 
-  eleventyConfig.addPassthroughCopy("src/docs");
+  eleventyConfig.addPassthroughCopy("src/assets/img");
 
   eleventyConfig.addPlugin(syntaxHighlight)
 

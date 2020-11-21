@@ -5,7 +5,8 @@ label: Details
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/details.css
+  - /css/ficus-docs.css
+  - /components/css/details.css
 tags:
   - html
 ---

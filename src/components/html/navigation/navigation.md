@@ -5,7 +5,8 @@ label: Navigation
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/navigation.css
+  - /css/ficus-docs.css
+  - /components/css/navigation.css
 tags:
   - html
 ---

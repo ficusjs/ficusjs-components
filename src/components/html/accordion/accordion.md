@@ -5,7 +5,8 @@ label: Accordion
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/accordion.css
+  - /css/ficus-docs.css
+  - /components/css/accordion.css
 tags:
   - html
 ---

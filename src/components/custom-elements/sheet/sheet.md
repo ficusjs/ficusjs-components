@@ -5,7 +5,8 @@ label: Sheet
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/sheet.css
+  - /css/ficus-docs.css
+  - /components/css/sheet.css
 modulePath: /components/custom-elements/sheet/index.js
 tags:
   - customElements

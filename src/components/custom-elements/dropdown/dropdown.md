@@ -5,7 +5,8 @@ label: Dropdown
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/dropdown.css
+  - /css/ficus-docs.css
+  - /components/css/dropdown.css
 modulePath: /components/custom-elements/dropdown/index.js
 tags:
   - customElements

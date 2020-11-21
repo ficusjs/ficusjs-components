@@ -11,8 +11,9 @@
     "dev": "run-p watch:*",
     "watch:components": "live-server --watch=src --port=8888 --no-browser --cors src",
     "watch:docs": "cross-env NODE_ENV=development eleventy --input=src --output=tmp --serve",
-    "watch:sass": "node-sass-chokidar ./src/sass --watch --recursive --output-style compressed --output ./src/css",
-    "lint:sass": "stylelint \"src/sass/**/*.scss\""
+    "watch:theme-sass": "node-sass-chokidar ./src/scss --watch --recursive --output-style compressed --output ./src/css",
+    "watch:docs-sass": "node-sass-chokidar ./src/assets/scss --watch --recursive --output-style compressed --output ./src/css",
+    "lint:sass": "stylelint \"src/scss/**/*.scss\""
   },
   "author": "Matt Levy",
   "license": "ISC",

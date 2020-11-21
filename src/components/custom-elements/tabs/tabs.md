@@ -5,7 +5,8 @@ label: Tabs
 cssFile:  
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/tabs.css
+  - /css/ficus-docs.css
+  - /components/css/tabs.css
 modulePath: /components/custom-elements/tabs/index.js
 tags:
   - customElements

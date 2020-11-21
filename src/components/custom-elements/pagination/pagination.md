@@ -5,7 +5,8 @@ label: Pagination
 cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/pagination.css
+  - /css/ficus-docs.css
+  - /components/css/pagination.css
 modulePath: /components/custom-elements/pagination/index.js
 tags:
   - customElements

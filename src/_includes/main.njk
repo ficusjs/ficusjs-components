@@ -6,23 +6,23 @@
     <title>FicusJS components</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/android-chrome-384x384.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#54e4e5">
     <!-- component css START -->
     {% set css %}
     {% include "../css/ficus-globals.css" %}
     {% include "../css/ficus-utilities.css" %}
-    {% include "../css/main-layout.css" %}
-    {% include "../css/header.css" %}
-    {% include "../css/sidebar.css" %}
-    {% include "../css/navigation.css" %}
-    {% include "../css/button.css" %}
-    {% include "../docs/css/toc.css" %}
+    {% include "../components/css/main-layout.css" %}
+    {% include "../components/css/header.css" %}
+    {% include "../components/css/sidebar.css" %}
+    {% include "../components/css/navigation.css" %}
+    {% include "../components/css/button.css" %}
+    {# {% include "../components/docs/css/toc.css" %} #}
     {% endset %}
     <style>
       {{css | safe}}
@@ -34,7 +34,7 @@
     <div class="fl-grid-wrapper">
       <header class="fc-header">
         <section class="fc-header__section">
-          <img src="../docs/img/logo.png" width="150" alt="FicusJS Components">
+          <img src="../assets/img/logo.png" width="150" alt="FicusJS Components">
         </section>
         <section class="fc-header__section">
           <a href="..." class="fc-button fc-button--link">Docs</a>

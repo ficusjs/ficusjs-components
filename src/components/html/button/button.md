@@ -5,7 +5,8 @@ label: Button
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/button.css
+  - /css/ficus-docs.css
+  - /components/css/button.css
 tags:
   - html
 ---

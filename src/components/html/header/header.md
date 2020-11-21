@@ -5,8 +5,9 @@ label: Header
 cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/button.css
-  - /css/site-header.css
+  - /css/ficus-docs.css
+  - /components/css/button.css
+  - /components/css/site-header.css
 tags:
   - html
 ---

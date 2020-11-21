@@ -5,7 +5,8 @@ label: Card
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/card.css
+  - /css/ficus-docs.css
+  - /components/css/card.css
 tags:
   - html
 ---

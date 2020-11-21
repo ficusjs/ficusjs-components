@@ -5,7 +5,8 @@ label: Modal
 cssFile: 
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
-  - /css/modal.css
+  - /css/ficus-docs.css
+  - /components/css/modal.css
 demoScript: /js/modal.js
 modulePath: /components/custom-elements/modal/index.js
 tags:
