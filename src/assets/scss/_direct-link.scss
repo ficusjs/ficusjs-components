@@ -1,0 +1,12 @@
+// Direct link
+
+a[href].fd-direct-link, 
+a[href].fd-direct-link:visited {
+  color: var(--gray-4-color);
+  text-decoration: none;
+  visibility: hidden;
+}
+
+:hover > a[href].fd-direct-link {
+  visibility: visible;
+}

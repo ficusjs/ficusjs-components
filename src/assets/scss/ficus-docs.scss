@@ -3,7 +3,9 @@
 // Classes prefixed with `.fd-`. Used for the design and layout of the Ficus documentation site.
 // 
 
+// Ficus globals
+@import '../../scss/functions';
+@import '../../scss/settings';
 
-body {
-  background: pink;
-}
+// Documentation components
+@import 'direct-link';
