@@ -1,0 +1,39 @@
+// Layout
+
+.fd-layout {
+
+}
+
+// Layout
+.fd-layout {
+  max-width: 1250px;
+  width: 100%;
+  padding: var(--spacer-xxl);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0px, 960px) 220px;
+  grid-template-areas: "breadcrumb sticky-aside" "article sticky-aside";
+  column-gap: var(--spacer-xl);
+  grid-auto-rows: min-content;
+
+  // content flow
+  --flow-space: var(--spacer-md);
+
+  h1:not(:first-of-type) {
+    --flow-space: var(--spacer-xxl);
+  }
+
+  h2 {
+    --flow-space: var(--spacer-xl);
+  }
+
+  h3 {
+    --flow-space: var(--spacer-lg);
+  }
+
+  h4,
+  h5,
+  h6 {
+    --flow-space: var(--spacer-md);
+  }
+}

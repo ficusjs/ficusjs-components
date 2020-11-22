@@ -62,8 +62,8 @@ $text-base-size: 1rem;
 
 // type scale
 $type-scale: (
-  'text-xs': calc(#{$text-base-size} * 0.5),
-  'text-sm': calc(#{$text-base-size} * 0.75),
+  'text-xs': calc(#{$text-base-size} * 0.75),
+  'text-sm': calc(#{$text-base-size} * 0.875),
   'text-md': $text-base-size,
   'text-lg': calc(#{$text-base-size} * 1.25),
   'text-xl': calc(#{$text-base-size} * 1.5),

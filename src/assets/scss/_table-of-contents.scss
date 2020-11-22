@@ -1,0 +1,39 @@
+// Table of contents
+
+.fd-toc {
+  font-size: var(--text-sm);
+
+  span {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.fd-toc__nav {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ol {
+    padding-left: var(--spacer-md);
+    list-style: none;
+  }
+
+  a {
+    display: block;
+    color: var(--body-color);
+    text-decoration: none;
+    padding-top: calc(var(--spacer-sm) / 2);
+    padding-bottom: calc(var(--spacer-sm) / 2);
+  }
+
+  a:focus,
+  a:hover,
+  a:active,
+  a.fh-is-active {
+    text-decoration: underline;
+  }
+}

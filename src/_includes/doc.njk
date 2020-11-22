@@ -8,6 +8,7 @@
   <!-- component css START -->
   {% set css %}
   {% include "../components/css/content.css" %}
+  {% include "../components/css/navigation.css" %}
   {% endset %}
   <style>
     {{css | safe}}
@@ -17,10 +18,26 @@
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 </head>
 <body>
-  <div class="[ fc-content ] [ fu-p-xxl fu-flow ]">
-    {{ content | safe }}
-    {% bootstrap modulePath | safe %}
-    {% scriptPath demoScript | safe %}
-  </div>
+  <main class="[ fd-layout ] [ fu-p-xxl fu-flow ]">
+    {# {% if eleventyNavigation and eleventyNavigation.key and eleventyNavigation.parent %}
+    <nav class="breadcrumb" aria-labelledby="breadcrumb">
+      <h2 class="sr-only" id="breadcrumb">Breadcrumbs: </h2>
+      {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml({ listClass: 'breadcrumb__nav', listItemClass: 'breadcrumb__item', activeListItemClass: 'breadcrumb-active' }) | safe }}
+    </nav>
+    {% endif %} #}
+    <article class="[ article ] [ flow ]">
+      {{ content | safe }}
+      {% bootstrap modulePath | safe %}
+      {% scriptPath demoScript | safe %}
+    </article>
+    {% if content | toc %}
+    <aside class="sticky-aside">
+      <div class="fd-toc">
+        <span>Table of contents</span>
+        {{ content | toc| safe }}
+      </div>
+    </aside>
+    {% endif %}
+  </main>
 </body>
 </html>

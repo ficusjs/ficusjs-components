@@ -2,6 +2,7 @@ const markdownIt = require('markdown-it')
 const slugify = require("slugify")
 const pluginTOC = require('eleventy-plugin-toc')
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation")
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("componentPath", function (path) {
@@ -43,6 +44,8 @@ module.exports = function (eleventyConfig) {
       return ''
     }
   })
+
+  eleventyConfig.addPlugin(eleventyNavigationPlugin)
 
   eleventyConfig.addPassthroughCopy("src/assets/img");
 
@@ -95,7 +98,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginTOC, {
     tags: ['h2', 'h3'],
-    wrapperClass: 'toc__nav',
+    wrapper: 'nav',
+    wrapperClass: 'fd-toc__nav',
     ul: true
   })
 }

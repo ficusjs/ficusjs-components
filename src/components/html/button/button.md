@@ -7,6 +7,9 @@ cssFile:
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
   - /components/css/button.css
+eleventyNavigation:
+  key: Button
+  parent: HTML components
 tags:
   - html
 ---
