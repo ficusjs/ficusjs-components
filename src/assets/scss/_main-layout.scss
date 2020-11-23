@@ -1,6 +1,6 @@
-body {
-  overflow: hidden;
-}
+// body {
+//   overflow: hidden;
+// }
 
 .fc-header {
   grid-area: header;
@@ -20,17 +20,9 @@ body {
   scrollbar-width: none;
 }
 
-.fc-sidebar {
-  grid-area: sidebar;
-  width: 100%;
-  position: sticky;
-  top: 76px;
-  height: calc(100vh - 76px);
-  max-height: calc(100vh - 76px);
-  overflow-y: auto;
-}
 
-.fl-grid-wrapper {
+
+.fd-main-layout {
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-areas: 
@@ -41,7 +33,7 @@ body {
 }
 
 @media (min-width: 36em) {
-  .fl-grid-wrapper {
+  .fd-main-layout {
     grid-template-columns: var(--sidebar-width) 1fr;
     grid-template-rows: var(--header-height) auto;
     grid-template-areas: 

@@ -8,6 +8,8 @@
 @import '../../scss/settings';
 
 // Documentation components
-@import 'layout';
+@import 'main-layout';
+@import 'doc-layout';
+@import 'sidebar';
 @import 'direct-link';
 @import 'table-of-contents'

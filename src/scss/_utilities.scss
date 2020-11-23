@@ -52,10 +52,10 @@ $utilities: (
     'output': 'standard',
     'property': 'margin-top'
   ),
-  'mr': (
+  'mt': (
     'items': $spacers,
     'output': 'standard',
-    'property': 'margin-right'
+    'property': 'margin-top'
   ),
   'mb': (
     'items': $spacers,
@@ -66,6 +66,11 @@ $utilities: (
     'items': $spacers,
     'output': 'standard',
     'property': 'margin-left'
+  ),
+  'mr': (
+    'items': $spacers,
+    'output': 'standard',
+    'property': 'margin-right'
   ),
   // negative margin
   'n-m': (

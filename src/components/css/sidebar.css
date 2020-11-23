@@ -1,8 +1,0 @@
-:root {
-  --sidebar-width: 300px;
-  --sidebar-padding: var(--spacer-xl)
-}
-
-.fc-sidebar {
-  border-right: 1px solid rgb(210, 210, 210)
-}

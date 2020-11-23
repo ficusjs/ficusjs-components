@@ -10,7 +10,7 @@
   justify-content: space-between;
   height: var(--header-height);
   padding: 0 var(--header-padding);
-  border-bottom: 1px solid rgb(210, 210, 210)
+  border-bottom: 1px solid var(--border-color);
 }
 
 .fc-header__section {

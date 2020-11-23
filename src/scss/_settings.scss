@@ -6,17 +6,14 @@
 // ------------
 
 $white: #fff !default;
-$gray-1: #f6f6f6 !default;
-$gray-2: #dbdbdb !default;
-$gray-3: #c1c1c1 !default;
-$gray-4: #a7a7a7 !default;
-$gray-5: #8e8e8e !default;
-$gray-6: #767676 !default;
-$gray-7: #5f5f5f !default;
-$gray-8: #484848 !default;
-$gray-9: #333333 !default;
-$gray-10: #1f1f1f !default;
-$black: #000 !default;
+$gray-1: #e6e6e6 !default;
+$gray-2: #c3c3c3 !default;
+$gray-3: #a1a1a1 !default;
+$gray-4: #808080 !default;
+$gray-5: #616161 !default;
+$gray-6: #444444 !default;
+$gray-7: #282828 !default;
+$black: #0d0d0d !default;
 $grays: (
   'white': $white,
   'gray-1': $gray-1,
@@ -26,9 +23,6 @@ $grays: (
   'gray-5': $gray-5,
   'gray-6': $gray-6,
   'gray-7': $gray-7,
-  'gray-8': $gray-8,
-  'gray-9': $gray-9,
-  'gray-10': $gray-10,
   'black': $black
 );
 
@@ -49,7 +43,6 @@ $global-colors: map-merge($colors, $grays);
 // ----------
 
 // font families
-
 $primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Ubuntu', sans-serif;
 $font-families: (
@@ -96,7 +89,7 @@ $spacer-md: $spacer-unit;
 $spacer-lg: 1.5 * $spacer-unit;
 $spacer-xl: 2 * $spacer-unit;
 $spacer-xxl: 3 * $spacer-unit;
-$spacer-xxl: 5 * $spacer-unit;
+$spacer-xxxl: 5 * $spacer-unit;
 $spacers: (
   none: $spacer-none,
   sm: $spacer-sm,
@@ -128,3 +121,11 @@ $body-styles: (
   'body-color': $body-color
 ) !default;
 
+// Components
+// ----------
+
+// define common component styles.
+$border-color: $gray-1;
+$component-styles: (
+  'border-color': $border-color
+) !default;

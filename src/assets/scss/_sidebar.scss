@@ -1,0 +1,14 @@
+:root {
+  --sidebar-width: 350px;
+}
+
+.fd-sidebar {
+  grid-area: sidebar;
+  width: 100%;
+  position: sticky;
+  top: 76px;
+  height: calc(100vh - 76px);
+  max-height: calc(100vh - 76px);
+  overflow-y: auto;
+  border-right: 1px solid var(--border-color);
+}
