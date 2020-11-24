@@ -18,14 +18,14 @@
   <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
 </head>
 <body>
-  <main class="[ fd-doc-layout ] [ fu-p-xxl fu-flow ]">
+  <main class="[ fd-doc-layout ] [ fu-pl-xxl fu-pr-xxl fu-pt-xxxl fu-pb-xxxl fu-flow ]">
     {# {% if eleventyNavigation and eleventyNavigation.key and eleventyNavigation.parent %}
     <nav class="breadcrumb" aria-labelledby="breadcrumb">
       <h2 class="sr-only" id="breadcrumb">Breadcrumbs: </h2>
       {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml({ listClass: 'breadcrumb__nav', listItemClass: 'breadcrumb__item', activeListItemClass: 'breadcrumb-active' }) | safe }}
     </nav>
     {% endif %} #}
-    <article class="[ article ] [ flow ]">
+    <article class="[ article ] [ fu-flow ]">
       {{ content | safe }}
       {% bootstrap modulePath | safe %}
       {% scriptPath demoScript | safe %}

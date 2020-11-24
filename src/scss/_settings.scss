@@ -43,8 +43,8 @@ $global-colors: map-merge($colors, $grays);
 // ----------
 
 // font families
-$primary-font: 'Roboto', sans-serif;
-$secondary-font: 'Ubuntu', sans-serif;
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
 $font-families: (
   'primary': $primary-font,
   'secondary': $secondary-font,
@@ -61,7 +61,8 @@ $type-scale: (
   'text-lg': calc(#{$text-base-size} * 1.25),
   'text-xl': calc(#{$text-base-size} * 1.5),
   'text-xxl': calc(#{$text-base-size} * 1.75),
-  'text-xxxl': calc(#{$text-base-size} * 2)
+  'text-xxxl': calc(#{$text-base-size} * 2),
+  'text-xxxxl': calc(#{$text-base-size} * 3)
 );
 
 // line heights
@@ -97,7 +98,7 @@ $spacers: (
   lg: $spacer-lg,
   xl: $spacer-xl,
   xxl: $spacer-xxl,
-  xxxl: $spacer-xxl
+  xxxl: $spacer-xxxl
 );
 
 $negative-spacers: negativify-map($spacers) !default;

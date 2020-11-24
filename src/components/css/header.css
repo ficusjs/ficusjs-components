@@ -1,5 +1,5 @@
 :root {
-  --header-height: 100px;
+  --header-height: 75px;
   --header-padding: var(--spacer-xl)
 }
 
