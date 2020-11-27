@@ -26,15 +26,22 @@ $grays: (
   'black': $black
 );
 
-$primary: #54e4e5;
-$secondary: #63e48b;
+$primary: #54e4e5 !default;
+$secondary: #63e48b !default;
+$body-bg: $white !default;
+$body-color: $black !default;
 $colors: (
   'primary': $primary,
-  'primary-light': tint($primary, 15%),
-  'primary-dark': shade($primary, 15%),
+  'primary-light': tint($primary, 20%),
+  'primary-dark': shade($primary, 20%),
   'secondary': $secondary,
-  'secondary-light': tint($secondary, 15%),
-  'secondary-dark': shade($secondary, 15%),
+  'secondary-light': tint($secondary, 20%),
+  'secondary-dark': shade($secondary, 20%),
+  'body-bg': $body-bg,
+  'body': $body-color,
+  'high-emphasis-text': rgba($body-color, .87),
+  'medium-emphasis-text': rgba($body-color, .6),
+  'low-emphasis-text': rgba($body-color, .38)
 );
 
 $global-colors: map-merge($colors, $grays);
@@ -112,21 +119,73 @@ $breakpoints: (
   'lg': '(min-width: 62em)'
 );
 
-// Body
-// ----
-
-$body-bg: $white !default;
-$body-color: $black !default;
-$body-styles: (
-  'body-bg': $body-bg,
-  'body-color': $body-color
-) !default;
-
 // Components
 // ----------
 
-// define common component styles.
 $border-color: $gray-1;
+$surface-bg: $white;
+$surface-color: $black;
 $component-styles: (
-  'border-color': $border-color
+  'border-color': $border-color,
+  'surface-bg': $surface-bg,
+  'surface-color': $surface-color
+) !default;
+
+// Dark theme
+// ----------
+
+// colours
+
+$enable-dark-theme: true !default;
+
+$dt-white: #fff !default;
+$dt-gray-1: #e6e6e6 !default;
+$dt-gray-2: #c3c3c3 !default;
+$dt-gray-3: #a1a1a1 !default;
+$dt-gray-4: #808080 !default;
+$dt-gray-5: #616161 !default;
+$dt-gray-6: #444444 !default;
+$dt-gray-7: #282828 !default;
+$dt-black: #0d0d0d !default;
+$dt-grays: (
+  'white': $dt-white,
+  'gray-1': $dt-gray-1,
+  'gray-2': $dt-gray-2,
+  'gray-3': $dt-gray-3,
+  'gray-4': $dt-gray-4,
+  'gray-5': $dt-gray-5,
+  'gray-6': $dt-gray-6,
+  'gray-7': $dt-gray-7,
+  'black': $dt-black
+) !default;
+
+$dt-primary: #54e4e5 !default;
+$dt-secondary: #63e48b !default;
+$dt-body-bg: $dt-black !default;
+$dt-body-color: $dt-white !default;
+$dt-colors: (
+  'primary': $dt-primary,
+  'primary-light': tint($dt-primary, 20%),
+  'primary-dark': shade($dt-primary, 20%),
+  'secondary': $dt-secondary,
+  'secondary-light': tint($dt-secondary, 20%),
+  'secondary-dark': shade($dt-secondary, 20%),
+  'body-bg': $dt-body-bg,
+  'body': $dt-body-color,
+  'high-emphasis-text': rgba($dt-body-color, .87),
+  'medium-emphasis-text': rgba($dt-body-color, .6),
+  'low-emphasis-text': rgba($dt-body-color, .38)
+) !default;
+
+$dt-global-colors: map-merge($dt-colors, $dt-grays) !default;
+
+// components
+
+$dt-border-color: rgba($white, 0.1);
+$dt-surface-bg: $white;
+$dt-surface-color: $black;
+$dt-component-styles: (
+  'border-color': $dt-border-color,
+  'surface-bg': $dt-surface-bg,
+  'surface-color': $dt-surface-color
 ) !default;

@@ -19,12 +19,28 @@
   @each $line-height, $value in $line-heights {
     --#{$line-height}: #{$value};
   }
-  // body
-  @each $body-style, $value in $body-styles {
-    --#{$body-style}: #{$value};
-  }
+  // // body
+  // @each $body-style, $value in $body-styles {
+  //   --#{$body-style}: #{$value};
+  // }
   // components
   @each $component-style, $value in $component-styles {
     --#{$component-style}: #{$value};
   }
 }
+
+// adds custom properties to the `data-theme` attribute 
+@if $enable-dark-theme {
+  [data-theme="dark"] {
+    // colors
+    @each $dt-color, $value in $dt-global-colors {
+      --#{$dt-color}-color: #{$value};
+    }
+    // components
+    @each $dt-component-style, $value in $dt-component-styles {
+      --#{$dt-component-style}: #{$value};
+    }
+  }
+}
+
+

@@ -11,4 +11,6 @@
   max-height: calc(100vh - 76px);
   overflow-y: auto;
   border-right: 1px solid var(--border-color);
+
+  --fc-nav-anchor-color-link: var(--high-emphasis-text-color)
 }
