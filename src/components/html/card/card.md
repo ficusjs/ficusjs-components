@@ -16,7 +16,15 @@ Card component.
 
 ## Example
 
-<div class="fc-card">Card</div>
+<div class="fc-card">
+  <div class="fc-card__header">
+    <h2 class="fu-text-md">Card title</h2>
+    <span>Subtitle</span>
+  </div>
+  <div class="fc-card__body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
 
 ## Usage
 

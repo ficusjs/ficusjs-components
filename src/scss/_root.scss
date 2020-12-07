@@ -30,15 +30,19 @@
 }
 
 // adds custom properties to the `data-theme` attribute 
-@if $enable-dark-theme {
+@if $enable-dark-mode {
   [data-theme="dark"] {
     // colors
-    @each $dt-color, $value in $dt-global-colors {
-      --#{$dt-color}-color: #{$value};
+    @each $dm-color, $value in $dm-global-colors {
+      --#{$dm-color}-color: #{$value};
     }
     // components
-    @each $dt-component-style, $value in $dt-component-styles {
-      --#{$dt-component-style}: #{$value};
+    @each $dm-component-style, $value in $dm-component-styles {
+      --#{$dm-component-style}: #{$value};
+    }
+    // elevation backgrounds
+    @each $dm-elevation-bg, $value in $dm-elevation-bgs {
+      --#{$dm-elevation-bg}: #{$value};
     }
   }
 }

@@ -30,6 +30,7 @@ $primary: #54e4e5 !default;
 $secondary: #63e48b !default;
 $body-bg: $white !default;
 $body-color: $black !default;
+$border-color: rgba($black, .2);
 $colors: (
   'primary': $primary,
   'primary-light': tint($primary, 20%),
@@ -41,7 +42,8 @@ $colors: (
   'body': $body-color,
   'high-emphasis-text': rgba($body-color, .87),
   'medium-emphasis-text': rgba($body-color, .6),
-  'low-emphasis-text': rgba($body-color, .38)
+  'low-emphasis-text': rgba($body-color, .38),
+  'border': $border-color
 );
 
 $global-colors: map-merge($colors, $grays);
@@ -110,6 +112,8 @@ $spacers: (
 
 $negative-spacers: negativify-map($spacers) !default;
 
+$border-radius: 2px;
+
 // Grid breakpoints
 // ----------------
 
@@ -122,70 +126,90 @@ $breakpoints: (
 // Components
 // ----------
 
-$border-color: $gray-1;
+
 $surface-bg: $white;
 $surface-color: $black;
+$surface-border-color: $border-color;
+$surface-border-radius: 2px;
 $component-styles: (
-  'border-color': $border-color,
+  'surface-border-color': $surface-border-color,
+  'surface-border-radius': $surface-border-radius,
   'surface-bg': $surface-bg,
   'surface-color': $surface-color
 ) !default;
+
+
+
+
 
 // Dark theme
 // ----------
 
 // colours
 
-$enable-dark-theme: true !default;
+$enable-dark-mode: true !default;
 
-$dt-white: #fff !default;
-$dt-gray-1: #e6e6e6 !default;
-$dt-gray-2: #c3c3c3 !default;
-$dt-gray-3: #a1a1a1 !default;
-$dt-gray-4: #808080 !default;
-$dt-gray-5: #616161 !default;
-$dt-gray-6: #444444 !default;
-$dt-gray-7: #282828 !default;
-$dt-black: #0d0d0d !default;
-$dt-grays: (
-  'white': $dt-white,
-  'gray-1': $dt-gray-1,
-  'gray-2': $dt-gray-2,
-  'gray-3': $dt-gray-3,
-  'gray-4': $dt-gray-4,
-  'gray-5': $dt-gray-5,
-  'gray-6': $dt-gray-6,
-  'gray-7': $dt-gray-7,
-  'black': $dt-black
+$dm-white: #fff !default;
+$dm-gray-1: #e6e6e6 !default;
+$dm-gray-2: #c3c3c3 !default;
+$dm-gray-3: #a1a1a1 !default;
+$dm-gray-4: #808080 !default;
+$dm-gray-5: #616161 !default;
+$dm-gray-6: #444444 !default;
+$dm-gray-7: #282828 !default;
+$dm-black: #121212 !default;
+$dm-grays: (
+  'white': $dm-white,
+  'gray-1': $dm-gray-1,
+  'gray-2': $dm-gray-2,
+  'gray-3': $dm-gray-3,
+  'gray-4': $dm-gray-4,
+  'gray-5': $dm-gray-5,
+  'gray-6': $dm-gray-6,
+  'gray-7': $dm-gray-7,
+  'black': $dm-black
 ) !default;
 
-$dt-primary: #54e4e5 !default;
-$dt-secondary: #63e48b !default;
-$dt-body-bg: $dt-black !default;
-$dt-body-color: $dt-white !default;
-$dt-colors: (
-  'primary': $dt-primary,
-  'primary-light': tint($dt-primary, 20%),
-  'primary-dark': shade($dt-primary, 20%),
-  'secondary': $dt-secondary,
-  'secondary-light': tint($dt-secondary, 20%),
-  'secondary-dark': shade($dt-secondary, 20%),
-  'body-bg': $dt-body-bg,
-  'body': $dt-body-color,
-  'high-emphasis-text': rgba($dt-body-color, .87),
-  'medium-emphasis-text': rgba($dt-body-color, .6),
-  'low-emphasis-text': rgba($dt-body-color, .38)
+$dm-primary: #54e4e5 !default;
+$dm-secondary: #63e48b !default;
+$dm-body-bg: $dm-black !default;
+$dm-body-color: $dm-white !default;
+$dm-border-color: rgba($white, .2);
+$dm-colors: (
+  'primary': $dm-primary,
+  'primary-light': tint($dm-primary, 20%),
+  'primary-dark': shade($dm-primary, 20%),
+  'secondary': $dm-secondary,
+  'secondary-light': tint($dm-secondary, 20%),
+  'secondary-dark': shade($dm-secondary, 20%),
+  'body-bg': $dm-body-bg,
+  'body': $dm-body-color,
+  'high-emphasis-text': rgba($dm-body-color, .87),
+  'medium-emphasis-text': rgba($dm-body-color, .6),
+  'low-emphasis-text': rgba($dm-body-color, .38),
+  'border': $dm-border-color
 ) !default;
 
-$dt-global-colors: map-merge($dt-colors, $dt-grays) !default;
+$dm-global-colors: map-merge($dm-colors, $dm-grays) !default;
+
+// elevation
+$dm-elevation-bgs: (
+  'elevation-bg-1': rgba($white, 0.5)
+);
 
 // components
-
-$dt-border-color: rgba($white, 0.1);
-$dt-surface-bg: $white;
-$dt-surface-color: $black;
-$dt-component-styles: (
-  'border-color': $dt-border-color,
-  'surface-bg': $dt-surface-bg,
-  'surface-color': $dt-surface-color
+$dm-component-styles: (
+  'surface-bg': $dm-black,
+  'surface-bg-elevation-1': #1d1d1d,
+  'surface-bg-elevation-2': #222222,
+  'surface-bg-elevation-3': #242424,
+  'surface-bg-elevation-4': #272727,
+  'surface-bg-elevation-5': #2c2c2c,
+  'surface-bg-elevation-6': #2d2d2d,
+  'surface-bg-elevation-7': #323232,
+  'surface-bg-elevation-8': #343434,
+  'surface-bg-elevation-9': #373737,
+  'surface-color': $dm-white,
+  'surface-border-color': rgba($black, .2),
+  'surface-border-radius': $border-radius,
 ) !default;
