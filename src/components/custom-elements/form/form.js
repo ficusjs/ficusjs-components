@@ -109,14 +109,14 @@ export function createForm ({ createComponent, renderer, html }) {
     },
     showError (formInput) {
       const formComponent = getFormComponent(formInput)
-      const formInputContainer = formInput.closest('.mc-reactive-form__group')
-      const formError = formInputContainer.querySelector('.mc-reactive-form__invalid-feedback')
+      const formInputContainer = formInput.closest('.fc-form__group')
+      const formError = formInputContainer.querySelector('.fc-form__invalid-feedback')
       const helpText = formInputContainer.querySelector('form-help-text')
 
       const clearInputValidation = () => {
         formInput.setCustomValidity('')
         formError.textContent = ''
-        formError.classList.remove('mc-reactive-form__invalid-feedback--show')
+        formError.classList.remove('fc-form__invalid-feedback--show')
         helpText.style.display = 'block'
       }
 
@@ -127,7 +127,7 @@ export function createForm ({ createComponent, renderer, html }) {
         if (result) {
           formInput.setCustomValidity(result)
           formError.textContent = result
-          formError.classList.add('mc-reactive-form__invalid-feedback--show')
+          formError.classList.add('fc-form__invalid-feedback--show')
           helpText.style.display = 'none'
         } else {
           clearInputValidation()
@@ -136,7 +136,7 @@ export function createForm ({ createComponent, renderer, html }) {
         clearInputValidation()
       } else {
         formError.textContent = this.getMessage(formInput, label)
-        formError.classList.add('mc-reactive-form__invalid-feedback--show')
+        formError.classList.add('fc-form__invalid-feedback--show')
         helpText.style.display = 'none'
       }
     },

@@ -1,0 +1,24 @@
+.fc-form__textarea textarea {
+  display: block;
+  width: 100%;
+  padding: var(--form-input-padding);
+  border: var(--form-input-border);
+  border-radius: var(--form-input-border-radius);
+  transition: var(--form-input-transition);
+  height: auto;
+}
+.fc-form__textarea textarea:focus {
+  border-color: var(--form-input-focus-border-color);
+  border-width: var(--form-input-focus-border-width);
+  padding: var(--form-input-focus-padding);
+  box-shadow: var(--form-input-box-shadow-offsets) var(--focus-input-box-shadow-color, var(--form-primary-shadow-color));
+}
+.fc-form__textarea textarea.ms-is-touched:invalid {
+  border-color: rgb(var(--form-invalid-color-rgb));
+  background-color: var(--form-invalid-bg-color);
+  border-width: var(--form-input-focus-border-width);
+  padding: var(--form-input-focus-padding);
+}
+.fc-form__textarea textarea.ms-is-touched:invalid:focus {
+  --focus-input-box-shadow-color: var(--form-invalid-shadow-color);
+}
