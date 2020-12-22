@@ -6,7 +6,7 @@ cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
-  - /components/css/label.css
+  - /components/css/help-text.css
 modulePath: /components/custom-elements/form/index.js
 tags:
   - customElements

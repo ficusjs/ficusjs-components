@@ -54,6 +54,9 @@ export const props = {
     type: Number,
     default: 1
   },
+  switch: {
+    type: Boolean
+  },
   type: {
     type: String,
     default: 'text'

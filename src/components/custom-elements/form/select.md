@@ -1,12 +1,14 @@
 ---
 layout: doc.njk
 title: FicusJS components - Custom elements - Select
-input: Select
+label: Select
 cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
-  - /components/css/input.css
+  - /components/css/help-text.css
+  - /components/css/label.css
+  - /components/css/select.css
 modulePath: /components/custom-elements/form/index.js
 tags:
   - customElements
@@ -17,7 +19,7 @@ Select component.
 
 ## Example
 
-<fc-select name="selectInput1" label="Text input" help-text="Text input help text">
+<fc-select name="selectInput1" label="Select input" help-text="Text input help text">
   <option value=""></option>
   <option value="option1">Option 1</option>
   <option value="option2">Option 2</option>

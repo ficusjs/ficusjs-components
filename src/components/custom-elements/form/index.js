@@ -3,6 +3,7 @@ import { createHelpText } from './help-text.js'
 import { createLabel } from './label.js'
 import { createInput } from './input.js'
 import { createSelect } from './select.js'
+import { createTextarea } from './textarea.js'
 
 export const module = {
   create (helpers) {
@@ -11,5 +12,6 @@ export const module = {
     createLabel(helpers)
     createInput(helpers)
     createSelect(helpers)
+    createTextarea(helpers)
   }
 }

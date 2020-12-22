@@ -1,19 +1,25 @@
 /* global Node */
 import { props } from './select-props.js'
 import { generateId } from './generate-id.js'
-import { inputTypes, noLabelTypes } from './input-types.js'
-import { methods } from './methods.js'
+import { noLabelTypes } from './input-types.js'
 import { Option, OptGroup } from './options.js'
+import { setAttributes } from './set-attributes.js'
 
 export function createSelect ({ createComponent, renderer, html, nothing = '' }) {
   const createOption = o => {
-    return html`
+    const opt = document.createElement('option')
+    opt.setAttribute('value', o.value)
+    opt.textContent = o.label
+    if (o.selected) opt.setAttribute('selected', '')
+    if (o.disabled) opt.setAttribute('disabled', '')
+    return opt
+    /*return html`
       <option
         value="${o.value}"
         selected="${!o.selected ? undefined : o.selected}"
         disabled="${!o.disabled ? undefined : o.disabled}"
       >${o.label}</option>
-    `
+    `*/
   }
 
   createComponent('fc-select', {
@@ -25,9 +31,9 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
         return generateId('select')
       },
       for () {
-        return (noLabelTypes.indexOf(this.props.type) > -1 || !this.props.label) ? undefined : this.id
+        return (noLabelTypes.indexOf(this.props.type) > -1 || !this.props.label) ? '' : this.internalId
       },
-      options () {
+      selectOptions () {
         if (this.props.options) {
           if (!Array.isArray(this.props.options)) {
             console.error('Options must be an array of OptGroup or Option instances')
@@ -60,26 +66,22 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
         return []
       }
     },
-    ...methods,
+    mounted () {
+      setAttributes(this.querySelector('select'), props, this.props)
+    },
+    updated () {
+      setAttributes(this.querySelector('select'), props, this.props)
+    },
     render () {
       return html`
         <div class="${this.props.inline ? 'fc-form__group fc-form__group--inline' : 'fc-form__group'}">
           <div class="${this.props.multiple ? 'fc-form__select fc-form__select--multiple' : 'fc-form__select'}">
             <fc-label for="${this.for}">${this.props.label}</fc-label>
             <select
-              autocomplete="${this.props.autocomplete}"
-              autofocus="${this.checkBooleanValue(this.props.autofocus)}"
-              disabled="${this.checkBooleanValue(this.props.disabled)}"
               id="${this.internalId}"
-              multiple="${this.checkValueType([inputTypes.EMAIL, inputTypes.FILE], this.props.multiple, props.multiple.default)}"
               name="${this.props.name}"
-              readonly="${this.checkBooleanValue(this.props.readonly)}"
-              required="${this.checkBooleanValue(this.props.required)}"
-              size="${this.checkNumericValueType([inputTypes.EMAIL, inputTypes.PASSWORD, inputTypes.TEL, inputTypes.TEXT], this.props.size, props.size.default)}"
-              tabindex="${this.checkNumericValue(this.props.tabindex, 0)}"
-              title="${this.props.title}"
             >
-              ${this.options}
+              ${this.selectOptions}
             </select>
           </div>
           <div aria-live="polite" class="fc-form__invalid-feedback">

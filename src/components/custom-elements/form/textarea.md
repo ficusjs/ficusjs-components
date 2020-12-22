@@ -1,11 +1,13 @@
 ---
 layout: doc.njk
 title: FicusJS components - Custom elements - Textarea
-textarea: Textarea
+label: Textarea
 cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
+  - /components/css/help-text.css
+  - /components/css/label.css
   - /components/css/textarea.css
 modulePath: /components/custom-elements/form/index.js
 tags:

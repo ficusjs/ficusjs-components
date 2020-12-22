@@ -1,7 +1,7 @@
 import { props } from './textarea-props.js'
 import { generateId } from './generate-id.js'
 import { noLabelTypes } from './input-types.js'
-import { methods } from './methods.js'
+import { setAttributes } from './set-attributes.js'
 
 export function createTextarea ({ createComponent, renderer, html }) {
   createComponent('fc-textarea', {
@@ -13,15 +13,14 @@ export function createTextarea ({ createComponent, renderer, html }) {
         return generateId('textarea')
       },
       for () {
-        return (noLabelTypes.indexOf(this.props.type) > -1 || !this.props.label) ? undefined : this.id
+        return (noLabelTypes.indexOf(this.props.type) > -1 || !this.props.label) ? '' : this.internalId
       }
     },
-    ...methods,
-    checkValueType (value, defaultValue) {
-      return value !== defaultValue ? value : undefined
+    mounted () {
+      setAttributes(this.querySelector('textarea'), props, this.props)
     },
-    checkNumericValueType (value, defaultValue) {
-      return (value !== 0 && value !== defaultValue) ? value : undefined
+    updated () {
+      setAttributes(this.querySelector('textarea'), props, this.props)
     },
     render () {
       return html`
@@ -29,25 +28,9 @@ export function createTextarea ({ createComponent, renderer, html }) {
           <div class="fc-form__textarea">
             <fc-label for="${this.for}">${this.props.label}</fc-label>
             <textarea
-              autocomplete="${this.props.autocomplete}"
-              autofocus="${this.checkBooleanValue(this.props.autofocus)}"
-              cols="${this.checkNumericValueType(this.props.cols, props.cols.default)}"
-              disabled="${this.checkBooleanValue(this.props.disabled)}"
               id="${this.internalId}"
-              maxlength="${this.checkNumericValueType(this.props.maxlength, props.maxlength.default)}"
-              minlength="${this.checkNumericValueType(this.props.minlength, props.minlength.default)}"
               name="${this.props.name}"
-              placeholder="${this.checkValueType(this.props.placeholder)}"
-              readonly="${this.checkBooleanValue(this.props.readonly)}"
-              required="${this.checkBooleanValue(this.props.required)}"
-              rows="${this.checkNumericValueType(this.props.rows, props.rows.default)}"
-              spellcheck="${this.checkBooleanValue(this.props.spellcheck)}"
-              tabindex="${this.checkNumericValue(this.props.tabindex, 0)}"
-              title="${this.props.title}"
-              wrap="${this.checkValueType(this.props.wrap)}"
-            >
-              ${this.slots.default}
-            </textarea>
+            >${this.slots.default}</textarea>
           </div>
           <div aria-live="polite" class="fc-form__invalid-feedback">
             <span></span>
