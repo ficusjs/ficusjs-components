@@ -34,7 +34,7 @@ import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/
 import { module as formModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/form/index.js'
 
 // use the module
-use(formModule, renderer, html)
+use(formModule, { renderer, html })
 ```
 
 ## Usage

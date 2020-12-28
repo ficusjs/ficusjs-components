@@ -45,7 +45,7 @@ import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/
 import { module as accordionModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/accordion/index.js'
 
 // use the component
-use(accordionModule, renderer, html)
+use(accordionModule, { renderer, html })
 ```
 
 ## Usage

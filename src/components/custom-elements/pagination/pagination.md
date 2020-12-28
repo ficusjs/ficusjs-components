@@ -32,7 +32,7 @@ import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/
 import { module as paginationModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/pagination/index.js'
 
 // use the module
-use(paginationModule, renderer, html)
+use(paginationModule, { renderer, html })
 ```
 
 ## Usage

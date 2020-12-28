@@ -42,7 +42,7 @@ import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/
 import { module as tabsModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/tabs/index.js'
 
 // use the module
-use(tabsModule, renderer, html)
+use(tabsModule, { renderer, html })
 ```
 
 ## Usage
