@@ -117,11 +117,17 @@ Input component.
 ## Importing
 
 ```js
+// import the required FicusJS functions
 import { use } from 'https://unpkg.com/ficusjs?module'
+
+// import the renderer and html tagged template literal from the lit-html library
+import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+
+// import the component module
 import { module as formModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/form/index.js'
 
 // use the module
-use(formModule)
+use(formModule, renderer, html)
 ```
 
 ## Usage
@@ -172,3 +178,15 @@ use(formModule)
 | --- | --- |
 | input | Fires when the value of the input changes. This is for each alteration of the input's value |
 | change | Fires when an alteration to the input's value is committed by the user |
+
+#### `Event` details
+
+When a `<fc-input>` event is emitted, it provides the following additional information about the event.
+
+| Property | Description |
+| --- | --- |
+| `event.detail.component` | The `<fc-input>` instance |
+| `event.detail.nativeFormElement` | The native `<input>` element within the component |
+| `event.detail.name` | The `name` attribute value |
+| `event.detail.value` | The `value` of the component |
+| `event.detail.originalEvent` | The original event |

@@ -2,7 +2,7 @@
 layout: doc.njk
 title: FicusJS components - Custom elements - Modal
 label: Modal
-cssFile: 
+cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
@@ -25,11 +25,17 @@ Modal component.
 ## Importing
 
 ```js
+// import the required FicusJS functions
 import { use } from 'https://unpkg.com/ficusjs?module'
+
+// import the renderer and html tagged template literal from the lit-html library
+import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+
+// import the component module
 import { module as modalModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/modal/index.js'
 
 // use the module
-use(modalModule)
+use(modalModule, renderer, html)
 ```
 
 ## Usage

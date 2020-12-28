@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FicusJS components</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/android-chrome-384x384.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <script type="module" src="../assets/js/theme.js"></script> 
+    <script type="module" src="../assets/js/theme.js"></script>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#54e4e5">
     <!-- component css START -->
@@ -45,10 +45,20 @@
       </header>
 
       <main class="fc-frame">
-        <iframe id="comp-frame" src="components/html/button" frameborder="0" name="comp-frame"></iframe>
+        <iframe id="comp-frame" src="components/" frameborder="0" name="comp-frame"></iframe>
       </main>
 
       <div class="[ fd-sidebar ] [ fu-pt-xxl fu-pb-xxl ]">
+        <h2 class="fu-text-sm fu-text-transform-uppercase fu-mb-sm fu-ml-xl fu-mr-xl">Getting started</h2>
+        <nav class="[ fc-nav ] [ fu-mb-xl fu-ml-lg fu-mr-lg ]">
+          <ul class="fc-nav__list">
+            {%- for post in collections.gettingStarted -%}
+            <li>
+              <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
         <h2 class="fu-text-sm fu-text-transform-uppercase fu-mb-sm fu-ml-xl fu-mr-xl">Custom elements</h2>
         <nav class="[ fc-nav ] [ fu-mb-xl fu-ml-lg fu-mr-lg ]">
           <ul class="fc-nav__list">
@@ -72,5 +82,5 @@
       </div>
     </div>
   </body>
-  
+
 </html>
