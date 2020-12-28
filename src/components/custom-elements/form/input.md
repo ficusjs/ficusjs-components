@@ -12,6 +12,8 @@ cssFile:
 modulePath: /components/custom-elements/form/index.js
 tags:
   - customElements
+eleventyNavigation:
+  key: Input
 ---
 # Input
 

@@ -4,8 +4,9 @@ import { createLabel } from './label.js'
 import { createInput } from './input.js'
 import { createSelect } from './select.js'
 import { createTextarea } from './textarea.js'
+import { OptGroup, Option } from './options.js'
 
-export const module = {
+const module = {
   create (helpers) {
     createForm(helpers)
     createHelpText(helpers)
@@ -15,3 +16,5 @@ export const module = {
     createTextarea(helpers)
   }
 }
+
+export { module, Option, OptGroup }

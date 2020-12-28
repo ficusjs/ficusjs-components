@@ -13,13 +13,6 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
     if (o.selected) opt.setAttribute('selected', '')
     if (o.disabled) opt.setAttribute('disabled', '')
     return opt
-    /*return html`
-      <option
-        value="${o.value}"
-        selected="${!o.selected ? undefined : o.selected}"
-        disabled="${!o.disabled ? undefined : o.disabled}"
-      >${o.label}</option>
-    `*/
   }
 
   createComponent('fc-select', {
