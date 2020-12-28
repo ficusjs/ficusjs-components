@@ -1,0 +1,11 @@
+build
+scripts
+tmp
+.editorconfig
+.eleventy.js
+TODO.md
+src/**/*.md
+src/_includes
+src/assets
+src/js
+src/scss
