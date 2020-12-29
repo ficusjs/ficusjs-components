@@ -1,37 +1,49 @@
 .fc-button {
-  appearance: none;
-  background: var(--primary-color);
-  border: 1px solid var(--primary-dark-color);
-  border-radius: 2px;
-  color: var(--white-color);
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1.2;
-  outline: none;
-  padding: var(--spacer-xs) var(--spacer-sm);
-  text-align: center;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: var(--fc-button-color-background, var(--primary-color));
+  background-clip: border-box;
+  border: var(--fc-button--sizing-border, transparent) solid var(--fc-button-color-border, transparent);
+  border-radius: var(--fc-button-radius-border, 2px);  /* CHANGE */
+  padding: var(--fc-button-spacing-padding-y, var(--spacer-sm)) var(--fc-button-spacing-padding-x, var(--spacer-md));
+  line-height: var(--fc-button-line-height, var(--heading-line-height));
   text-decoration: none;
-  transition: background .2s, border .2s, box-shadow .2s, color .2s;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+  font-family: var(--font-primary);
   font-weight: 600;
+  white-space: normal;
+  user-select: none;
+  cursor: pointer;
 }
 
 .fc-button:focus,
 .fc-button:hover {
-  background: var(--primary-dark-color);
+  background: var(--fc-button-color-background-hover, var(--primary-dark-color));
 }
 
 /* link button */
 .fc-button.fc-button--link {
   background: transparent;
   border-color: transparent;
-  color: var(--gray-10-color);
+  
 }
+
+/* .fc-button.fc-button--link:focus,
+.fc-button.fc-button--link:hover
+.fc-button.fc-button--link:active
+.fc-button.fc-button--link.active {
+  
+} */
+
+/* neutral button */
+.fc-button.fc-button--link {
+  background: transparent;
+  color: var(--surface-color);
+}
+
 .fc-button.fc-button--link:focus,
 .fc-button.fc-button--link:hover
 .fc-button.fc-button--link:active
 .fc-button.fc-button--link.active {
-  color: var(--black-color);
+  background: var(--fc-button-neutral-color-background-hover, var(--surface-bg));
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FicusJS components</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/android-chrome-384x384.png">
@@ -20,7 +20,7 @@
       {% include "../css/ficus-globals.css" %}
       {% include "../css/ficus-utilities.css" %}
       {% include "../css/ficus-docs.css" %}
-      {% include "../components/css/header.css" %}
+      {% include "../components/css/navbar.css" %}
       {% include "../components/css/navigation.css" %}
       {% include "../components/css/button.css" %}
     {% endset %}
@@ -32,11 +32,11 @@
   <body style="overflow: hidden;">
 
     <div class="fd-main-layout">
-      <header class="fc-header">
-        <section class="fc-header__section">
+      <header class="fc-navbar">
+        <section class="fc-navbar__section">
           <img src="../assets/img/logo.png" width="150" alt="FicusJS Components">
         </section>
-        <section class="fc-header__section">
+        <section class="fc-navbar__section">
           <a href="..." class="fc-button fc-button--link">Docs</a>
           <a href="..." class="fc-button fc-button--link">GitHub</a>
           <button id="dark-theme-toggle" class="fc-button fc-button--link">Dark</button>

@@ -30,7 +30,7 @@ $primary: #54e4e5 !default;
 $secondary: #63e48b !default;
 $body-bg: $white !default;
 $body-color: $black !default;
-$border-color: rgba($black, .2);
+$border-color: rgba($black, .1);
 $colors: (
   'primary': $primary,
   'primary-light': tint($primary, 20%),
@@ -53,7 +53,7 @@ $global-colors: map-merge($colors, $grays);
 
 // font families
 $primary-font: 'Raleway', sans-serif;
-$secondary-font: 'Roboto', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
 $font-families: (
   'primary': $primary-font,
   'secondary': $secondary-font,
@@ -174,7 +174,7 @@ $dm-primary: #54e4e5 !default;
 $dm-secondary: #63e48b !default;
 $dm-body-bg: $dm-black !default;
 $dm-body-color: $dm-white !default;
-$dm-border-color: rgba($white, .2);
+$dm-border-color: rgba($white, .1);
 $dm-colors: (
   'primary': $dm-primary,
   'primary-light': tint($dm-primary, 20%),

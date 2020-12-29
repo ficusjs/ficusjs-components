@@ -3,7 +3,7 @@
   --header-padding: var(--spacer-xl)
 }
 
-.fc-header {
+.fc-navbar {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
@@ -13,18 +13,22 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.fc-header__section {
+.fc-navbar__section {
   align-items: center;
   display: flex;
   flex: 1 0 0;
 }
 
-.fc-header__section:not(:first-child):last-child {
+.fc-navbar__section:not(:first-child):last-child {
   justify-content: flex-end;
 }
 
-.fc-header__center {
+.fc-navbar__center {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
+}
+
+.fc-navbar__link {
+
 }
