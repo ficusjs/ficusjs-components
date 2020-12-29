@@ -17,10 +17,12 @@ tags:
 
 Add the `fc-button` class to `<a>`, `<input>` or `<button>` elements for a default button. 
 
-<button type="button" class="fc-button">Button</button>
+<div class="fd-component-container">
+  <button type="button" class="fc-button">Button</button>
+</div>
 
 ```html
-<button type="button" class="fc-button">Button</button>
+  <button type="button" class="fc-button">Button</button>
 ```
 
 ## Variations
@@ -29,8 +31,10 @@ Add the `fc-button` class to `<a>`, `<input>` or `<button>` elements for a defau
 
 Add the `fc-button--link` modifier class for a button styled as a link. 
 
-<button type="button" class="fc-button fc-button--link">Button</button>
+<div class="fd-component-container">
+  <button type="button" class="fc-button fc-button--link">Button</button>
+</div>
 
 ```html
-<button type="button" class="fc-button fc-button--link">Button</button>
+  <button type="button" class="fc-button fc-button--link">Button</button>
 ```

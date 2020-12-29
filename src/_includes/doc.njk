@@ -20,13 +20,7 @@
 </head>
 <body>
   <main class="[ fd-doc-layout ] [ fu-pl-xxl fu-pr-xxl fu-pt-xxxl fu-pb-xxxl fu-flow ]">
-    {# {% if eleventyNavigation and eleventyNavigation.key and eleventyNavigation.parent %}
-    <nav class="breadcrumb" aria-labelledby="breadcrumb">
-      <h2 class="sr-only" id="breadcrumb">Breadcrumbs: </h2>
-      {{ collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) | eleventyNavigationToHtml({ listClass: 'breadcrumb__nav', listItemClass: 'breadcrumb__item', activeListItemClass: 'breadcrumb-active' }) | safe }}
-    </nav>
-    {% endif %} #}
-    <article class="[ article ] [ fu-flow ]">
+    <article class="[ fd-doc-article ] [ fu-flow ]">
       {{ content | safe }}
       {% bootstrap modulePath | safe %}
       {% scriptPath demoScript | safe %}

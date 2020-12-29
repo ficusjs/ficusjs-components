@@ -9,6 +9,11 @@
   column-gap: var(--spacer-xxl);
   grid-auto-rows: min-content;
 
+  
+}
+
+.fd-doc-article {
+
   // content flow
   --flow-space: var(--spacer-md);
 
@@ -33,7 +38,16 @@
     --flow-space: var(--spacer-md);
   }
 
-  & > :not(pre):not(table) {
+  & > :not(pre):not(table):not(.fd-component-container) {
     max-width: 42rem;
   }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  margin-top: -1px !important;
+  margin-left: calc(-1 * var(--spacer-md)) !important;
+  margin-right: calc(-1 * var(--spacer-md)) !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }

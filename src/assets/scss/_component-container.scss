@@ -1,0 +1,11 @@
+// Component container
+
+.fd-component-container {
+  margin-top: var(--spacer-xxl);
+  margin-left: calc(-1 * var(--spacer-md));
+  margin-right: calc(-1 * var(--spacer-md));
+  border: 1px solid var(--surface-border-color);
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  padding: var(--spacer-md);
+}
