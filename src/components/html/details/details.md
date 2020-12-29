@@ -14,18 +14,16 @@ tags:
 
 Details component.
 
-## Example
-
-<details class="fc-details">
+<div class="fd-component-container">
+  <details class="fc-details">
     <summary>Details</summary>
     Something small enough to escape casual notice.
-</details>
-
-## Usage
+  </details>
+</div>
 
 ```html
-<details class="fc-details">
+  <details class="fc-details">
     <summary>Details</summary>
     Something small enough to escape casual notice.
-</details>
+  </details>
 ```

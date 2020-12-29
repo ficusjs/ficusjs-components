@@ -14,30 +14,30 @@ tags:
 
 Navigation component.
 
-## Example
-
-<nav class="fc-nav">
-  <ul class="fc-nav__list">
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-    <li>
-      <a class="fh-is-active" href="#">Nav Item</a>
-    </li>
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-  </ul>
-</nav>
+<div class="fd-component-container">
+  <nav class="fc-nav">
+    <ul class="fc-nav__list">
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+      <li>
+        <a class="fh-is-active" href="#">Nav Item</a>
+      </li>
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
 ```html
-<nav class="fc-nav">
+  <nav class="fc-nav">
   <ul class="fc-nav__list">
     <li>
       <a href="#">Nav Item</a>
@@ -60,28 +60,30 @@ Navigation component.
 
 ## Compact
 
-<nav class="fc-nav fc-nav--compact">
-  <ul class="fc-nav__list">
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-    <li>
-      <a class="fh-is-active" href="#">Nav Item</a>
-    </li>
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-    <li>
-      <a href="#">Nav Item</a>
-    </li>
-  </ul>
-</nav>
+<div class="fd-component-container">
+  <nav class="fc-nav fc-nav--compact">
+    <ul class="fc-nav__list">
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+      <li>
+        <a class="fh-is-active" href="#">Nav Item</a>
+      </li>
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+      <li>
+        <a href="#">Nav Item</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
 ```html
-<nav class="fc-nav fc-nav--compact">
+  <nav class="fc-nav fc-nav--compact">
   <ul class="fc-nav__list">
     <li>
       <a href="#">Nav Item</a>

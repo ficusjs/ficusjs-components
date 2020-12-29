@@ -14,18 +14,16 @@ tags:
 
 Accordion component.
 
-## Example
-
-<details class="fc-accordion">
+<div class="fd-component-container">
+  <details class="fc-accordion">
     <summary>Accordion</summary>
     Something small enough to escape casual notice.
-</details>
-
-## Usage
+  </details>
+</div>
 
 ```html
-<details class="fc-accordion">
+  <details class="fc-accordion">
     <summary>Accordion</summary>
     Something small enough to escape casual notice.
-</details>
+  </details>
 ```

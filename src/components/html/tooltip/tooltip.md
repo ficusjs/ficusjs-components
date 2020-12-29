@@ -14,16 +14,14 @@ tags:
 
 Tooltip component.
 
-## Example
-
-<span
-  data-text="Thanks for hovering! I'm a tooltip"
-  class="fc-tooltip right">Hover over me!</span>
-
-## Usage
+<div class="fd-component-container">
+  <span
+    data-text="Thanks for hovering! I'm a tooltip"
+    class="fc-tooltip right">Hover over me!</span>
+</div>
 
 ```html
-<span
-  data-text="Thanks for hovering! I'm a tooltip"
-  class="fc-tooltip right">Hover over me!</span>
+  <span
+    data-text="Thanks for hovering! I'm a tooltip"
+    class="fc-tooltip right">Hover over me!</span>
 ```
