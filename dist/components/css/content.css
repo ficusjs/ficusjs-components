@@ -1,0 +1,1 @@
+.fc-content{--flow-space:var(--spacer-md)}.fc-content h1:not(:first-of-type){--flow-space:var(--spacer-xxl)}.fc-content h2{--flow-space:var(--spacer-xl)}.fc-content h3{--flow-space:var(--spacer-lg)}.fc-content h4,.fc-content h5 .fc-content h6{--flow-space:var(--spacer-md)}
