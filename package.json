@@ -17,6 +17,8 @@
     "watch:docs": "cross-env NODE_ENV=development eleventy --input=src --output=tmp --serve",
     "watch:theme-sass": "node-sass-chokidar ./src/scss --watch --recursive --output-style compressed --output ./src/css",
     "watch:docs-sass": "node-sass-chokidar ./src/assets/scss --watch --recursive --output-style compressed --output ./src/css",
+    "lint": "run-p lint:*",
+    "lint:js": "standard \"src/**/*.js\"",
     "lint:sass": "stylelint \"src/scss/**/*.scss\""
   },
   "author": "Matt Levy",
@@ -49,6 +51,7 @@
     "rollup-plugin-terser": "7.0.2",
     "slugify": "1.4.6",
     "standard": "16.0.3",
+    "stylelint": "13.8.0",
     "yargs": "16.2.0"
   }
 }
