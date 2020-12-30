@@ -81,6 +81,14 @@ img:not([alt]) {
   filter: blur(10px);
 }
 
+/* The Thematic Break (Horizontal Rule) element styles */
+hr {
+  border-color: var(--border-color);
+  margin: 0;
+  border-width: 1px 0 0;
+}
+
+
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {

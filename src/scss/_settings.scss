@@ -70,8 +70,8 @@ $type-scale: (
   'text-lg': calc(#{$text-base-size} * 1.25),
   'text-xl': calc(#{$text-base-size} * 1.5),
   'text-xxl': calc(#{$text-base-size} * 2),
-  'text-xxxl': calc(#{$text-base-size} * 2.5),
-  'text-xxxxl': calc(#{$text-base-size} * 3)
+  'text-xxxl': calc(#{$text-base-size} * 3.75),
+  'text-xxxxl': calc(#{$text-base-size} * 5)
 );
 
 // line heights

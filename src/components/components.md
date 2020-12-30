@@ -15,6 +15,8 @@ The FicusJS components is a collection of styled custom elements and HTML elemen
 
 The components are deployed to a CDN and must be consumed by URL using ES module imports.
 
+---
+
 ## Custom elements
 
 The custom elements provide specific HTML elements using Javascript.
@@ -30,6 +32,8 @@ The following template literal renderers are available:
 - htm and Preact
 
 **The `document.createElement` renderer cannot be used because of specific internal rendering within each component.**
+
+---
 
 ## HTML elements
 

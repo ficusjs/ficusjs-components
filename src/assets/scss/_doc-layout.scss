@@ -38,7 +38,11 @@
     --flow-space: var(--spacer-md);
   }
 
-  & > :not(pre):not(table):not(.fd-component-container) {
+  hr {
+    --flow-space: var(--spacer-xxl);
+  }
+
+  & > :not(pre):not(table):not(.fd-component-container):not(hr) {
     max-width: 42rem;
   }
 }
