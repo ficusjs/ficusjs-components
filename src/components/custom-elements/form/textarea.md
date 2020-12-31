@@ -6,6 +6,7 @@ cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
+  - /components/css/form.css
   - /components/css/help-text.css
   - /components/css/label.css
   - /components/css/textarea.css
@@ -19,7 +20,9 @@ Textarea component.
 
 ## Example
 
+<fc-form>
 <fc-textarea name="textareaInput1" label="Textarea input" help-text="Textarea input help text"></fc-textarea>
+</fc-form>
 
 ## Importing
 

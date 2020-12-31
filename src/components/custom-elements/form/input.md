@@ -6,6 +6,7 @@ cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
+  - /components/css/form.css
   - /components/css/help-text.css
   - /components/css/label.css
   - /components/css/input.css
@@ -23,96 +24,138 @@ Input component.
 
 ### Checkbox - single
 
+<fc-form>
 <fc-input type="checkbox" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-input>
+</fc-form>
 
 ### Checkbox - switch
 
+<fc-form>
 <fc-input type="checkbox" switch="true" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-input>
+</fc-form>
 
 ### Checkbox - multiple
 
+<fc-form>
 <fc-label>Checkboxes</fc-label>
 <fc-input type="checkbox" label="Checkbox input 1" name="checkboxInput2"></fc-input>
 <fc-input type="checkbox" label="Checkbox input 2" name="checkboxInput2"></fc-input>
 <fc-input type="checkbox" label="Checkbox input 3" name="checkboxInput2"></fc-input>
 <fc-input type="checkbox" label="Checkbox input 4" name="checkboxInput2"></fc-input>
 <fc-help-text>Checkbox input help text</fc-help-text>
+</fc-form>
 
 ### Color
 
+<fc-form>
 <fc-input type="color" name="textInput1" value="#ff0000" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Date
 
+<fc-form>
 <fc-input type="date" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Date/time
 
+<fc-form>
 <fc-input type="datetime-local" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Email
 
+<fc-form>
 <fc-input type="email" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### File
 
+<fc-form>
 <fc-input type="file" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Hidden
 
+<fc-form>
 <fc-input type="hidden" name="textInput1" value="hiddenValue"></fc-input>
+</fc-form>
 
 ### Month
 
+<fc-form>
 <fc-input type="month" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Number
 
+<fc-form>
 <fc-input type="number" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Password
 
+<fc-form>
 <fc-input type="password" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Radio
 
+<fc-form>
 <fc-label>Radios</fc-label>
 <fc-input type="radio" label="Radio input 1" name="radioInput2" value="Yes"></fc-input>
 <fc-input type="radio" label="Radio input 2" name="radioInput2" value="No"></fc-input>
 <fc-input type="radio" label="Radio input 3" name="radioInput2" value="Maybe"></fc-input>
 <fc-help-text>Radio input help text</fc-help-text>
+</fc-form>
 
 ### Range
 
+<fc-form>
 <fc-input type="range" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Search
 
+<fc-form>
 <fc-input type="search" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Submit
 
+<fc-form>
 <fc-input type="submit" name="textInput1"></fc-input>
+</fc-form>
 
 ### Tel
 
+<fc-form>
 <fc-input type="tel" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Text
 
+<fc-form>
 <fc-input type="text" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Time
 
+<fc-form>
 <fc-input type="time" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### URL
 
+<fc-form>
 <fc-input type="url" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ### Week
 
+<fc-form>
 <fc-input type="week" name="textInput1" label="Text input" help-text="Text input help text"></fc-input>
+</fc-form>
 
 ## Importing
 

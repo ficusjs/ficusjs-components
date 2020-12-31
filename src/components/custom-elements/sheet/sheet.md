@@ -7,6 +7,7 @@ cssFile:
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
   - /components/css/sheet.css
+demoScript: /js/sheet.js
 modulePath: /components/custom-elements/sheet/index.js
 tags:
   - customElements
@@ -19,15 +20,17 @@ Sheet component.
 
 ### Position right
 
-<fc-sheet position="right">
+<fc-sheet position="right" class="fu-bg-primary">
   <p>Sheet</p>
 </fc-sheet>
+<button type="button" id="show-right-sheet-btn">Toggle sheet</button>
 
 ### Position top with backdrop
 
-<fc-sheet position="top" backdrop="true">
+<fc-sheet position="top" backdrop="true" class="fu-bg-primary">
   <p>Sheet</p>
 </fc-sheet>
+<button type="button" id="show-top-sheet-btn">Toggle sheet</button>
 
 ## Importing
 

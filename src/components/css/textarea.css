@@ -14,7 +14,7 @@
   box-shadow: var(--form-input-box-shadow-offsets) var(--focus-input-box-shadow-color, var(--form-primary-shadow-color));
 }
 .fc-form__textarea textarea.ms-is-touched:invalid {
-  border-color: rgb(var(--form-invalid-color-rgb));
+  border-color: var(--form-invalid-color-rgb);
   background-color: var(--form-invalid-bg-color);
   border-width: var(--form-input-focus-border-width);
   padding: var(--form-input-focus-padding);

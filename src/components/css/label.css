@@ -16,10 +16,14 @@
 [label][required] label.fc-form__label::after,
 form-label[required] label.fc-form__label::after {
   content: "*";
-  color: var(--red);
+  color: var(--form-invalid-color-rgb);
   margin-left: 5px;
 }
 
 label[for] {
   cursor: pointer;
+}
+
+.fc-form__label:empty {
+  display: none;
 }

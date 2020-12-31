@@ -6,6 +6,7 @@ cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
+  - /components/css/form.css
   - /components/css/help-text.css
   - /components/css/label.css
   - /components/css/select.css
@@ -19,6 +20,7 @@ Select component.
 
 ## Example
 
+<fc-form>
 <fc-select name="selectInput1" label="Select input" help-text="Text input help text">
   <option value=""></option>
   <option value="option1">Option 1</option>
@@ -27,6 +29,7 @@ Select component.
   <option value="option4">Option 4</option>
   <option value="option5">Option 5</option>
 </fc-select>
+</fc-form>
 
 ## Importing
 

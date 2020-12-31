@@ -6,6 +6,11 @@ cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
+  - /components/css/form.css
+  - /components/css/help-text.css
+  - /components/css/input.css
+  - /components/css/label.css
+  - /components/css/select.css
 modulePath: /components/custom-elements/form/index.js
 tags:
   - customElements
@@ -17,9 +22,8 @@ Form component.
 ## Example
 
 <fc-form>
-  <label for="name">Name</label>
-  <input type="text" name="name" id="name">
-  <button type="submit">Submit</button>
+  <fc-input label="Name" type="text" name="name" id="name" help-text="Please enter your name" required="true"></fc-input>
+  <fc-input type="submit" name="submit" value="Submit"></fc-input>
 </fc-form>
 
 ## Importing
@@ -42,8 +46,7 @@ use(formModule, { renderer, html })
 
 ```html
 <fc-form>
-  <label for="name">Name</label>
-  <input type="text" name="name" id="name">
+  <fc-input label="Name" type="text" name="name" id="name" help-text="Please enter your name"></fc-input>
   <button type="submit">Submit</button>
 </fc-form>
 ```
