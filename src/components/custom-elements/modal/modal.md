@@ -18,7 +18,13 @@ Modal component.
 
 ## Example
 
-<fc-modal>Modal</fc-modal>
+<fc-modal>
+  <div class="fc-modal__header">Header</div>
+  <div class="fu-bg-body-bg">
+    <p>Modal content</p>
+  </div>
+  <div class="fc-modal__footer">Footer</div>
+</fc-modal>
 
 <button type="button" class="fc-button" id="show-modal-btn">Show modal</button>
 
@@ -41,7 +47,13 @@ use(modalModule, { renderer, html })
 ## Usage
 
 ```html
-<fc-modal>Modal</fc-modal>
+<fc-modal>
+  <div class="fc-modal__header">Header</div>
+  <div class="fu-bg-body-bg">
+    <p>Modal content</p>
+  </div>
+  <div class="fc-modal__footer">Footer</div>
+</fc-modal>
 ```
 
 ## API
