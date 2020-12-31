@@ -88,6 +88,14 @@ hr {
   border-width: 1px 0 0;
 }
 
+/* Code element styles */
+code {
+  word-break: break-word;
+  hyphens: manual;
+  background-color: var(--gray-1-color);
+  padding-left: calc(var(--spacer-md) / 2);
+  padding-right: calc(var(--spacer-md) / 2);
+}
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {

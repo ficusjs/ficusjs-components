@@ -18,7 +18,7 @@
   background-clip: padding-box;
   border: 1px solid var(--fc-dropdown-menu-color-border, var(--surface-border-color));
   border-radius: .25rem;
-  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+  box-shadow: var(--fc-dropdown-menu-shadow, var(--surface-shadow-elevation-3));
 }
 
 

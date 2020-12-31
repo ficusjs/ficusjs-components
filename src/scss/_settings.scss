@@ -126,6 +126,15 @@ $breakpoints: (
 // Components
 // ----------
 
+$surface-shadow-elevation-1: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+$surface-shadow-elevation-2: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+$surface-shadow-elevation-3: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+$surface-shadow-elevation-4: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+$surface-shadow-elevation-5: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+$surface-shadow-elevation-6: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+$surface-shadow-elevation-7: 0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12);
+$surface-shadow-elevation-8: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
+$surface-shadow-elevation-9: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
 
 $surface-bg: $white;
 $surface-color: $black;
@@ -135,6 +144,24 @@ $component-styles: (
   'surface-border-color': $surface-border-color,
   'surface-border-radius': $surface-border-radius,
   'surface-bg': $surface-bg,
+  'surface-bg-elevation-1': $surface-bg,
+  'surface-bg-elevation-2': $surface-bg,
+  'surface-bg-elevation-3': $surface-bg,
+  'surface-bg-elevation-4': $surface-bg,
+  'surface-bg-elevation-5': $surface-bg,
+  'surface-bg-elevation-6': $surface-bg,
+  'surface-bg-elevation-7': $surface-bg,
+  'surface-bg-elevation-8': $surface-bg,
+  'surface-bg-elevation-9': $surface-bg,
+  'surface-shadow-elevation-1': $surface-shadow-elevation-1,
+  'surface-shadow-elevation-2': $surface-shadow-elevation-2,
+  'surface-shadow-elevation-3': $surface-shadow-elevation-3,
+  'surface-shadow-elevation-4': $surface-shadow-elevation-4,
+  'surface-shadow-elevation-5': $surface-shadow-elevation-5,
+  'surface-shadow-elevation-6': $surface-shadow-elevation-6,
+  'surface-shadow-elevation-7': $surface-shadow-elevation-7,
+  'surface-shadow-elevation-8': $surface-shadow-elevation-8,
+  'surface-shadow-elevation-9': $surface-shadow-elevation-9,
   'surface-color': $surface-color
 ) !default;
 
@@ -193,9 +220,20 @@ $dm-colors: (
 $dm-global-colors: map-merge($dm-colors, $dm-grays) !default;
 
 // elevation
-$dm-elevation-bgs: (
-  'elevation-bg-1': rgba($white, 0.5)
-);
+// $dm-elevation-bgs: (
+//   'elevation-bg-1': rgba($white, 0.5)
+// );
+
+
+$dm-surface-shadow-elevation-1: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-2: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-3: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-4: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-5: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-6: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-7: 0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-8: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
+$dm-surface-shadow-elevation-9: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
 
 // components
 $dm-component-styles: (
@@ -209,7 +247,17 @@ $dm-component-styles: (
   'surface-bg-elevation-7': #323232,
   'surface-bg-elevation-8': #343434,
   'surface-bg-elevation-9': #373737,
+  'surface-shadow-elevation-1': $dm-surface-shadow-elevation-1,
+  'surface-shadow-elevation-2': $dm-surface-shadow-elevation-2,
+  'surface-shadow-elevation-3': $dm-surface-shadow-elevation-3,
+  'surface-shadow-elevation-4': $dm-surface-shadow-elevation-4,
+  'surface-shadow-elevation-5': $dm-surface-shadow-elevation-5,
+  'surface-shadow-elevation-6': $dm-surface-shadow-elevation-6,
+  'surface-shadow-elevation-7': $dm-surface-shadow-elevation-7,
+  'surface-shadow-elevation-8': $dm-surface-shadow-elevation-8,
+  'surface-shadow-elevation-9': $dm-surface-shadow-elevation-9,
   'surface-color': $dm-white,
   'surface-border-color': rgba($black, .2),
   'surface-border-radius': $border-radius,
+  
 ) !default;

@@ -41,9 +41,9 @@
       --#{$dm-component-style}: #{$value};
     }
     // elevation backgrounds
-    @each $dm-elevation-bg, $value in $dm-elevation-bgs {
-      --#{$dm-elevation-bg}: #{$value};
-    }
+    // @each $dm-elevation-bg, $value in $dm-elevation-bgs {
+    //   --#{$dm-elevation-bg}: #{$value};
+    // }
   }
 }
 
