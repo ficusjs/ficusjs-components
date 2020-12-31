@@ -13,87 +13,6 @@
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)
 }
 
-.fc-sheet--primary {
-  color: #fff;
-  background-color: #1d428a
-}
-
-.fc-sheet--primary a {
-  color: #fff
-}
-
-.fc-sheet--secondary {
-  color: #fff;
-  background-color: #414141
-}
-
-.fc-sheet--secondary a {
-  color: #fff
-}
-
-.fc-sheet--success {
-  color: #fff;
-  background-color: #00823b
-}
-
-.fc-sheet--success a {
-  color: #fff
-}
-
-.fc-sheet--info {
-  color: #fff;
-  background-color: #007377
-}
-
-.fc-sheet--info a {
-  color: #fff
-}
-
-.fc-sheet--warning {
-  color: #171717;
-  background-color: #ffc107
-}
-
-.fc-sheet--warning a {
-  color: #171717
-}
-
-.fc-sheet--danger {
-  color: #fff;
-  background-color: #dc3545
-}
-
-.fc-sheet--danger a {
-  color: #fff
-}
-
-.fc-sheet--light {
-  color: #171717;
-  background-color: #f3f3f3
-}
-
-.fc-sheet--light a {
-  color: #171717
-}
-
-.fc-sheet--dark {
-  color: #fff;
-  background-color: #242424
-}
-
-.fc-sheet--dark a {
-  color: #fff
-}
-
-.fc-sheet--muted {
-  color: #171717;
-  background-color: #e3e3e3
-}
-
-.fc-sheet--muted a {
-  color: #171717
-}
-
 .fc-sheet .fc-sheet__inner {
   height: 100%
 }
@@ -206,28 +125,6 @@
   background: #fff
 }
 
-.fc-sheet--left.bg-dark {
-  scrollbar-color: #656565 #232323;
-  scrollbar-width: thin;
-  scrollbar-face-color: #656565;
-  scrollbar-track-color: #232323;
-  scrollbar-arrow-color: #656565;
-  scrollbar-shadow-color: #232323
-}
-
-.fc-sheet--left.bg-dark::-webkit-scrollbar {
-  width: 6px
-}
-
-.fc-sheet--left.bg-dark::-webkit-scrollbar-thumb {
-  background: #656565;
-  border-radius: .125rem
-}
-
-.fc-sheet--left.bg-dark::-webkit-scrollbar-track {
-  background: #232323
-}
-
 .fc-sheet--left.fc-sheet--clipped {
   top: 60px;
   height: calc(100% - 60px)
@@ -280,28 +177,6 @@
 
 .fc-sheet--right::-webkit-scrollbar-track {
   background: #fff
-}
-
-.fc-sheet--right.bg-dark {
-  scrollbar-color: #656565 #232323;
-  scrollbar-width: thin;
-  scrollbar-face-color: #656565;
-  scrollbar-track-color: #232323;
-  scrollbar-arrow-color: #656565;
-  scrollbar-shadow-color: #232323
-}
-
-.fc-sheet--right.bg-dark::-webkit-scrollbar {
-  width: 6px
-}
-
-.fc-sheet--right.bg-dark::-webkit-scrollbar-thumb {
-  background: #656565;
-  border-radius: .125rem
-}
-
-.fc-sheet--right.bg-dark::-webkit-scrollbar-track {
-  background: #232323
 }
 
 .fc-sheet--right.fc-sheet--clipped {
