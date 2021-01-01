@@ -3,8 +3,9 @@
   display: inline-flex;
   align-items: center;
   background: var(--fc-button-color-background, var(--primary-color));
+  color: var(--fc-button-color-text, var(--black-color));
   background-clip: border-box;
-  border: var(--fc-button--sizing-border, transparent) solid var(--fc-button-color-border, transparent);
+  border: 1px solid var(--fc-button-color-border, transparent);
   border-radius: var(--fc-button-radius-border, 2px);  /* CHANGE */
   padding: var(--fc-button-spacing-padding-y, var(--spacer-sm)) var(--fc-button-spacing-padding-x, var(--spacer-md));
   line-height: var(--fc-button-line-height, var(--heading-line-height));
