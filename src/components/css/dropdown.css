@@ -14,11 +14,11 @@
   font-size: 1rem;
   text-align: left;
   list-style: none;
-  background-color: var(--fc-dropdown-menu-color-bg, var(--surface-bg-elevation-3));
+  background-color: var(--fc-dropdown-menu-color-bg, var(--component-bg-elevation-3));
   background-clip: padding-box;
-  border: 1px solid var(--fc-dropdown-menu-color-border, var(--surface-border-color));
+  border: 1px solid var(--fc-dropdown-menu-color-border, var(--component-border-color));
   border-radius: .25rem;
-  box-shadow: var(--fc-dropdown-menu-shadow, var(--surface-shadow-elevation-3));
+  box-shadow: var(--fc-dropdown-menu-shadow, var(--component-shadow-elevation-3));
 }
 
 
@@ -36,5 +36,5 @@
   white-space: nowrap;
   background-color: transparent;
   border: 0;
-  color: var(--surface-color)
+  color: var(--component-color)
 }
