@@ -1,11 +1,21 @@
 // Component container
 
 .fd-component-container {
-  margin-top: var(--spacer-xxl);
-  margin-left: calc(-1 * var(--spacer-md));
-  margin-right: calc(-1 * var(--spacer-md));
-  border: 1px solid var(--component-border-color);
+  margin-top: var(--spacer-xl);
+  border: 1px solid var(--border-color);
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
   padding: var(--spacer-md);
+}
+
+.fd-component-container + code[class*="language-"],
+.fd-component-container + pre[class*="language-"] {
+  margin-top: -1px !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  margin-top: var(--spacer-xl) !important
 }

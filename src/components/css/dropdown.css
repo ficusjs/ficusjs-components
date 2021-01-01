@@ -3,38 +3,47 @@
   display: inline-block;
 }
 
+.fc-dropdown__button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: var(--fc-dropdown-button-color-background, var(--primary-color));
+  background-clip: border-box;
+  border: var(--fc-dropdown-button-sizing-border, transparent) solid var(--fc-button-color-border, transparent);
+  border-radius: var(--fc-dropdown-button-radius-border, 2px);  /* CHANGE */
+  padding: var(--fc-dropdown-button-spacing-padding-y, var(--spacer-sm)) var(--fc-dropdown-button-spacing-padding-x, var(--spacer-md));
+  line-height: var(--fc-dropdown-button-sizing-line-height, var(--heading-line-height));
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  white-space: normal;
+  user-select: none;
+  cursor: pointer;
+}
+
+.fc-dropdown__button:focus,
+.fc-dropdown__button:hover {
+  background: var(--fc-dropdown-button-color-background-hover, var(--primary-dark-color));
+}
+
 .fc-dropdown__menu {
   display: none;
   position: absolute;
   z-index: 1000;
   float: left;
   min-width: 10rem;
-  padding: .5rem 0;
-  margin: .125rem 0 0;
-  font-size: 1rem;
+  padding: var(--fc-dropdown-menu-spacing-padding, var(--spacer-sm) 0);
+  margin: var(--fc-dropdown-menu-spacing-margin, calc(var(--spacer-sm) / 2) 0 0);
   text-align: left;
   list-style: none;
-  background-color: var(--fc-dropdown-menu-color-bg, var(--component-bg-elevation-3));
+  background-color: var(--fc-dropdown-menu-color-background, var(--component-bg-elevation-3));
   background-clip: padding-box;
   border: 1px solid var(--fc-dropdown-menu-color-border, var(--component-border-color));
-  border-radius: .25rem;
+  border-radius: .25rem; /* CHANGE */
   box-shadow: var(--fc-dropdown-menu-shadow, var(--component-shadow-elevation-3));
 }
 
 
 .fc-dropdown__menu--open {
   display: block;
-}
-
-.fc-dropdown__menu button {
-  display: block;
-  width: 100%;
-  padding: .25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-  color: var(--component-color)
 }

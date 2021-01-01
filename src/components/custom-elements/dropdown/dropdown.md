@@ -7,21 +7,32 @@ cssFile:
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
   - /components/css/dropdown.css
+  - /components/css/button.css
 modulePath: /components/custom-elements/dropdown/index.js
 tags:
   - customElements
 ---
 # Dropdown
 
-Dropdown component.
+A Dropdown displays a list of buttons on temporary surfaces.
 
 ## Example
 
+<div class="fd-component-container">
+  <fc-dropdown>
+    <button type="button" class="fc-button fc-button--link">Item 1</button>
+    <button type="button" class="fc-button fc-button--link">Item 2</button>
+    <button type="button" class="fc-button fc-button--link">Item 3</button>
+  </fc-dropdown>
+</div>
+
+```html
 <fc-dropdown>
-  <button type="button">Item 1</button>
-  <button type="button">Item 2</button>
-  <button type="button">Item 3</button>
+  <button type="button" class="fc-button fc-button--link">Item 1</button>
+  <button type="button" class="fc-button fc-button--link">Item 2</button>
+  <button type="button" class="fc-button fc-button--link">Item 3</button>
 </fc-dropdown>
+```
 
 ## Importing
 
@@ -39,16 +50,6 @@ import { module as dropdownModule } from 'https://unpkg.com/ficusjs-components@l
 use(dropdownModule, { renderer, html })
 ```
 
-## Usage
-
-```html
-<fc-dropdown>
-  <button type="button">Item 1</button>
-  <button type="button">Item 2</button>
-  <button type="button">Item 3</button>
-</fc-dropdown>
-```
-
 ## API
 
 ### Events
@@ -56,3 +57,31 @@ use(dropdownModule, { renderer, html })
 | Name | Description | Event details |
 | --- | --- | --- |
 | toggle | When the dropdown is toggled | `{ instance: Object, isOpen: Boolean }` |
+
+### Styling Hooks
+
+Use these CSS Custom Properties as hooks to customize this component with your own style.
+
+#### Button
+
+Styling hooks for the toggle button.
+
+| Category | Name | Value Type(s) | Fallback Value
+| --- | --- | --- | --- |
+| Color | `--fc-dropdown-button-color-background` | Color | `var(--primary-color)` |
+| Color | `--fc-dropdown-button-color-background-hover` | Color | `var(--primary-dark-color)` |
+| Spacing | `--fc-dropdown-button-spacing-padding-y` | Dimension | `var(--spacer-sm)` |
+| Spacing | `--fc-dropdown-button-spacing-padding-x` | Dimension | `var(--spacer-md)` |
+| Sizing | `--fc-dropdown-button-sizing-line-height` | Dimension | `var(--heading-line-height)` |
+
+#### Menu
+
+Styling hooks for the menu.
+
+| Category | Name | Value Type(s) | Fallback Value
+| --- | --- | --- | --- |
+| Box Shadow | `--fc-dropdown-menu-shadow` | Dimension | `var(--component-shadow-elevation-3)` |
+| Color | `--fc-dropdown-menu-color-background` | Color | `var(--component-bg-elevation-3)` |
+| Color | `--fc-dropdown-menu-color-border` | Color | `var(--component-border-color)` |
+| Spacing | `--fc-dropdown-menu-spacing-padding` | Dimension | `var(--spacer-sm)` |
+| Spacing | `--fc-dropdown-menu-spacing-margin` | Dimension | `calc(var(--spacer-sm) / 2) 0 0` |
