@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FicusJS components</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/android-chrome-384x384.png">
@@ -16,12 +16,12 @@
     <meta name="theme-color" content="#54e4e5">
     <!-- component css START -->
     {% set css %}
-      {% include "../css/ficus-globals.css" %}
-      {% include "../css/ficus-utilities.css" %}
-      {% include "../css/ficus-docs.css" %}
-      {% include "../components/css/navbar.css" %}
-      {% include "../components/css/navigation.css" %}
-      {% include "../components/css/button.css" %}
+    {% include "../css/ficus-globals.css" %}
+    {% include "../css/ficus-utilities.css" %}
+    {% include "../css/ficus-docs.css" %}
+    {% include "../components/css/navbar.css" %}
+    {% include "../components/css/navigation.css" %}
+    {% include "../components/css/button.css" %}
     {% endset %}
     <style>
       {{css | safe}}
@@ -37,10 +37,8 @@
           <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
         </section>
         <section class="fc-navbar__section">
-          <a href="..." class="fc-button fc-button--link">Docs</a>
           <a href="..." class="fc-button fc-button--link">GitHub</a>
-          <button id="dark-theme-toggle" class="fc-button fc-button--link">Dark</button>
-          <button id="light-theme-toggle" class="fc-button fc-button--link">Light</button>
+          {% include "theme-toggle.njk" %}    
         </section>
       </header>
 
@@ -53,9 +51,9 @@
         <nav class="[ fc-nav ] [ fu-mb-xl fu-ml-lg fu-mr-lg ]">
           <ul class="fc-nav__list">
             {%- for post in collections.gettingStarted -%}
-            <li>
-              <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
-            </li>
+              <li>
+                <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
+              </li>
             {%- endfor -%}
           </ul>
         </nav>
@@ -63,9 +61,9 @@
         <nav class="[ fc-nav ] [ fu-mb-xl fu-ml-lg fu-mr-lg ]">
           <ul class="fc-nav__list">
             {%- for post in collections.customElements -%}
-            <li>
-              <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
-            </li>
+              <li>
+                <a href=".{{post.url}}" target="comp-frame">{{post.data.label}}</a>
+              </li>
             {%- endfor -%}
           </ul>
         </nav>

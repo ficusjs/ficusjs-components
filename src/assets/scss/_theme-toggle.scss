@@ -1,0 +1,48 @@
+
+
+.fd-theme-toggle {
+  align-self:center;
+  margin: var(--fc-button-spacing-padding-y, var(--spacer-sm)) var(--fc-button-spacing-padding-x, var(--spacer-md));
+
+  input[type="checkbox"]{
+    display: none;
+  }
+}
+
+.fd-theme-toggle__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  background-color: var(--body-bg-color);
+  transition: transform 1s ease;
+  position:relative;
+  cursor:pointer;
+}
+
+.fd-theme-toggle__ball {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  transition: transform 1s ease;
+  position:absolute;
+  border-radius:50%;
+  border: 3px solid black;
+}
+.fd-theme-toggle__scenary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 1s ease;
+  
+  .svg {
+    width: 24px;
+    height: 24px;
+
+    svg{
+      width: 24px;
+    }
+  }
+}
