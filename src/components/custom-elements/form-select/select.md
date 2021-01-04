@@ -1,34 +1,34 @@
 ---
 layout: doc.njk
-title: FicusJS components - Custom elements - Select
-label: Select
+title: FicusJS components - Custom elements - Form select
+label: Form select
 cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
   - /components/css/form.css
-  - /components/css/help-text.css
-  - /components/css/label.css
-  - /components/css/select.css
-modulePath: /components/custom-elements/form/index.js
+  - /components/css/form-help-text.css
+  - /components/css/form-label.css
+  - /components/css/form-select.css
+modulePath: /components/custom-elements/form-select/index.js
 tags:
   - customElements
 ---
-# Select
+# Form select
 
-Select component.
+Form select component.
 
 ## Example
 
 <fc-form>
-<fc-select name="selectInput1" label="Select input" help-text="Text input help text">
+<fc-form-select name="selectInput1" label="Select input" help-text="Select input help text">
   <option value=""></option>
   <option value="option1">Option 1</option>
   <option value="option2">Option 2</option>
   <option value="option3">Option 3</option>
   <option value="option4">Option 4</option>
   <option value="option5">Option 5</option>
-</fc-select>
+</fc-form-select>
 </fc-form>
 
 ## Importing
@@ -41,23 +41,23 @@ import { use } from 'https://unpkg.com/ficusjs?module'
 import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
 
 // import the component module
-import { module as formModule, Option, OptGroup } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/form/index.js'
+import { module as formSelectModule, Option, OptGroup } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/form/index.js'
 
 // use the module
-use(formModule, { renderer, html })
+use(formSelectModule, { renderer, html })
 ```
 
 ## Usage
 
 ```html
-<fc-select name="selectInput1" label="Text input" help-text="Text input help text">
+<fc-form-select name="selectInput1" label="Text input" help-text="Text input help text">
   <option value=""></option>
   <option value="option1">Option 1</option>
   <option value="option2">Option 2</option>
   <option value="option3">Option 3</option>
   <option value="option4">Option 4</option>
   <option value="option5">Option 5</option>
-</fc-select>
+</fc-form-select>
 ```
 
 ## API
@@ -91,11 +91,11 @@ use(formModule, { renderer, html })
 
 #### `Event` details
 
-When a `<fc-select>` event is emitted, it provides the following additional information about the event.
+When a `<fc-form-select>` event is emitted, it provides the following additional information about the event.
 
 | Property | Description |
 | --- | --- |
-| `event.detail.component` | The `<fc-select>` instance |
+| `event.detail.component` | The `<fc-form-select>` instance |
 | `event.detail.nativeFormElement` | The native `<select>` element within the component |
 | `event.detail.name` | The `name` attribute value |
 | `event.detail.value` | The `value` of the component |

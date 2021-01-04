@@ -1,5 +1,5 @@
 export function createLabel ({ createComponent, renderer, html }) {
-  createComponent('fc-label', {
+  createComponent('fc-form-label', {
     renderer,
     props: {
       for: {

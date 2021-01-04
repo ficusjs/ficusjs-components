@@ -1,10 +1,10 @@
 import { props } from './input-props.js'
-import { generateId } from './generate-id.js'
+import { generateId } from '../form/generate-id.js'
 import { inputTypes, noLabelTypes } from './input-types.js'
-import { setAttributes } from './set-attributes.js'
+import { setAttributes } from '../form/set-attributes.js'
 
 export function createInput ({ createComponent, renderer, html, nothing }) {
-  createComponent('fc-input', {
+  createComponent('fc-form-input', {
     renderer,
     props,
     computed: {
@@ -25,6 +25,9 @@ export function createInput ({ createComponent, renderer, html, nothing }) {
       },
       inputClassName () {
         return this.props.type === inputTypes.RADIO || this.props.type === inputTypes.CHECKBOX ? 'fc-form__input fc-form__input--reverse' : 'fc-form__input'
+      },
+      labelClassName () {
+        return `fc-form__label${this.props.inline ? '' : ' fc-form__label--block'}`
       },
       isValidType () {
         return Object.values(inputTypes).indexOf(this.props.type) !== -1
@@ -47,7 +50,7 @@ export function createInput ({ createComponent, renderer, html, nothing }) {
       return html`
         <div class="${this.containerClassName}">
           <div class="${this.inputClassName}">
-            <fc-label for="${this.for}">${this.props.label}</fc-label>
+            <label class="${this.labelClassName}" for="${this.for}">${this.props.label}</label>
             <input
               name="${this.props.name}"
               id="${this.internalId}"
@@ -59,7 +62,7 @@ export function createInput ({ createComponent, renderer, html, nothing }) {
           <div aria-live="polite" class="fc-form__invalid-feedback">
             <span></span>
           </div>
-          <fc-help-text>${this.props.helpText}</fc-help-text>
+          <div class="fc-form__help-text">${this.props.helpText}</div>
         </div>
       `
     }

@@ -1,5 +1,5 @@
 export function createHelpText ({ createComponent, renderer, html }) {
-  createComponent('fc-help-text', {
+  createComponent('fc-form-help-text', {
     renderer,
     render () {
       return html`

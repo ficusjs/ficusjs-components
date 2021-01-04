@@ -1,10 +1,10 @@
 import { createForm } from './form.js'
-import { createHelpText } from './help-text.js'
-import { createLabel } from './label.js'
-import { createInput } from './input.js'
-import { createSelect } from './select.js'
-import { createTextarea } from './textarea.js'
-import { OptGroup, Option } from './options.js'
+import { createHelpText } from '../form-help-text/help-text.js'
+import { createLabel } from '../form-label/label.js'
+import { createInput } from '../form-input/input.js'
+import { createSelect } from '../form-select/select.js'
+import { createTextarea } from '../form-textarea/textarea.js'
+import { OptGroup, Option } from '../form-select/options.js'
 
 const module = {
   create (helpers) {

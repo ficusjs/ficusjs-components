@@ -1,9 +1,8 @@
 /* global Node */
 import { props } from './select-props.js'
-import { generateId } from './generate-id.js'
-import { noLabelTypes } from './input-types.js'
+import { generateId } from '../form/generate-id.js'
 import { Option, OptGroup } from './options.js'
-import { setAttributes } from './set-attributes.js'
+import { setAttributes } from '../form/set-attributes.js'
 
 export function createSelect ({ createComponent, renderer, html, nothing = '' }) {
   const createOption = o => {
@@ -15,7 +14,7 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
     return opt
   }
 
-  createComponent('fc-select', {
+  createComponent('fc-form-select', {
     renderer,
     props,
     computed: {
@@ -23,8 +22,11 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
         if (this.props.id) return this.props.id
         return generateId('select')
       },
+      labelClassName () {
+        return `fc-form__label${this.props.inline ? '' : ' fc-form__label--block'}`
+      },
       for () {
-        return (noLabelTypes.indexOf(this.props.type) > -1 || !this.props.label) ? '' : this.internalId
+        return !this.props.label ? '' : this.internalId
       },
       selectOptions () {
         if (this.props.options) {
@@ -69,7 +71,7 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
       return html`
         <div class="${this.props.inline ? 'fc-form__group fc-form__group--inline' : 'fc-form__group'}">
           <div class="${this.props.multiple ? 'fc-form__select fc-form__select--multiple' : 'fc-form__select'}">
-            <fc-label for="${this.for}">${this.props.label}</fc-label>
+            <label class="${this.labelClassName}" for="${this.for}">${this.props.label}</label>
             <select
               id="${this.internalId}"
               name="${this.props.name}"
@@ -80,7 +82,7 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
           <div aria-live="polite" class="fc-form__invalid-feedback">
             <span></span>
           </div>
-          <fc-help-text>${this.props.helpText}</fc-help-text>
+          <div class="fc-form__help-text">${this.props.helpText}</div>
         </div>
       `
     }

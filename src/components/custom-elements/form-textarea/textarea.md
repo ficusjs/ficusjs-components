@@ -1,27 +1,27 @@
 ---
 layout: doc.njk
-title: FicusJS components - Custom elements - Textarea
-label: Textarea
+title: FicusJS components - Custom elements - Form textarea
+label: Form textarea
 cssFile:
   - /css/ficus-globals.css
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
   - /components/css/form.css
-  - /components/css/help-text.css
-  - /components/css/label.css
-  - /components/css/textarea.css
-modulePath: /components/custom-elements/form/index.js
+  - /components/css/form-help-text.css
+  - /components/css/form-label.css
+  - /components/css/form-textarea.css
+modulePath: /components/custom-elements/form-textarea/index.js
 tags:
   - customElements
 ---
-# Textarea
+# Form textarea
 
-Textarea component.
+Form textarea component.
 
 ## Example
 
 <fc-form>
-<fc-textarea name="textareaInput1" label="Textarea input" help-text="Textarea input help text"></fc-textarea>
+  <fc-form-textarea name="textareaInput1" label="Form textarea" help-text="Form textarea help text"></fc-form-textarea>
 </fc-form>
 
 ## Importing
@@ -34,16 +34,16 @@ import { use } from 'https://unpkg.com/ficusjs?module'
 import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
 
 // import the component module
-import { module as formModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/form/index.js'
+import { module as formTextareaModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/form-textarea/index.js'
 
 // use the module
-use(formModule, { renderer, html })
+use(formTextareaModule, { renderer, html })
 ```
 
 ## Usage
 
 ```html
-<fc-textarea name="textareaInput1" label="Textarea input" help-text="Textarea input help text"></fc-textarea>
+<fc-form-textarea name="textareaInput1" label="Form textarea input" help-text="Form textarea input help text"></fc-form-textarea>
 ```
 
 ## API
@@ -83,11 +83,11 @@ use(formModule, { renderer, html })
 
 #### `Event` details
 
-When a `<fc-textarea>` event is emitted, it provides the following additional information about the event.
+When a `<fc-form-textarea>` event is emitted, it provides the following additional information about the event.
 
 | Property | Description |
 | --- | --- |
-| `event.detail.component` | The `<fc-textarea>` instance |
+| `event.detail.component` | The `<fc-form-textarea>` instance |
 | `event.detail.nativeFormElement` | The native `<textarea>` element within the component |
 | `event.detail.name` | The `name` attribute value |
 | `event.detail.value` | The `value` of the component |

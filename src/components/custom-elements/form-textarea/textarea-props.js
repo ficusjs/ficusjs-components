@@ -1,4 +1,4 @@
-import { baseProps } from './base-props.js'
+import { baseProps } from '../form/base-props.js'
 
 export const props = {
   ...baseProps,

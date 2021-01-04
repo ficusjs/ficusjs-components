@@ -7,10 +7,10 @@ cssFile:
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
   - /components/css/form.css
-  - /components/css/help-text.css
-  - /components/css/input.css
-  - /components/css/label.css
-  - /components/css/select.css
+  - /components/css/form-help-text.css
+  - /components/css/form-input.css
+  - /components/css/form-label.css
+  - /components/css/form-select.css
 modulePath: /components/custom-elements/form/index.js
 tags:
   - customElements
