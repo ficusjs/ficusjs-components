@@ -6,30 +6,36 @@
 // ------------
 
 $white: #fff !default;
-$gray-1: #e6e6e6 !default;
-$gray-2: #c3c3c3 !default;
-$gray-3: #a1a1a1 !default;
-$gray-4: #808080 !default;
-$gray-5: #616161 !default;
-$gray-6: #444444 !default;
-$gray-7: #282828 !default;
-$black: #0d0d0d !default;
+$gray-50: #fafafa !default;
+$gray-100: #dddddd !default;
+$gray-200: #c0c0c0 !default;
+$gray-300: #a4a4a4 !default;
+$gray-400: #898989 !default;
+$gray-500: #6f6f6f !default;
+$gray-600: #565656 !default;
+$gray-700: #3e3e3e !default;
+$gray-800: #272727 !default;
+$gray-900: #121212 !default;
+$black: #000 !default;
 $grays: (
   'white': $white,
-  'gray-1': $gray-1,
-  'gray-2': $gray-2,
-  'gray-3': $gray-3,
-  'gray-4': $gray-4,
-  'gray-5': $gray-5,
-  'gray-6': $gray-6,
-  'gray-7': $gray-7,
+  'gray-50': $gray-100,
+  'gray-100': $gray-100,
+  'gray-200': $gray-200,
+  'gray-300': $gray-300,
+  'gray-400': $gray-400,
+  'gray-500': $gray-500,
+  'gray-600': $gray-600,
+  'gray-700': $gray-700,
+  'gray-800': $gray-800,
+  'gray-900': $gray-900,
   'black': $black
 );
 
 $primary: #54e4e5 !default;
 $secondary: #63e48b !default;
 $body-bg: $white !default;
-$body-color: $black !default;
+$body-color: $gray-900 !default;
 $border-color: rgba($black, .1);
 $colors: (
   'primary': $primary,
@@ -126,15 +132,15 @@ $breakpoints: (
 // Components
 // ----------
 
-$component-shadow-elevation-1: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
-$component-shadow-elevation-2: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
-$component-shadow-elevation-3: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
-$component-shadow-elevation-4: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
-$component-shadow-elevation-5: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
-$component-shadow-elevation-6: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
-$component-shadow-elevation-7: 0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12);
-$component-shadow-elevation-8: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
-$component-shadow-elevation-9: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
+$component-shadow-elevation-1: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
+$component-shadow-elevation-2: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
+$component-shadow-elevation-3: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
+$component-shadow-elevation-4: 0 2px 4px -1px rgba($black,.2),0 4px 5px 0 rgba($black,.14),0 1px 10px 0 rgba($black,.12);
+$component-shadow-elevation-5: 0 3px 5px -1px rgba($black,.2),0 6px 10px 0 rgba($black,.14),0 1px 18px 0 rgba($black,.12);
+$component-shadow-elevation-6: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px rgba($black,.14),0 3px 14px 2px rgba($black,.12);
+$component-shadow-elevation-7: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
+$component-shadow-elevation-8: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
+$component-shadow-elevation-9: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
 
 $component-bg: $white;
 $component-color: $black;
@@ -176,31 +182,10 @@ $component-styles: (
 
 $enable-dark-mode: true !default;
 
-$dm-white: #fff !default;
-$dm-gray-1: #e6e6e6 !default;
-$dm-gray-2: #c3c3c3 !default;
-$dm-gray-3: #a1a1a1 !default;
-$dm-gray-4: #808080 !default;
-$dm-gray-5: #616161 !default;
-$dm-gray-6: #444444 !default;
-$dm-gray-7: #282828 !default;
-$dm-black: #121212 !default;
-$dm-grays: (
-  'white': $dm-white,
-  'gray-1': $dm-gray-1,
-  'gray-2': $dm-gray-2,
-  'gray-3': $dm-gray-3,
-  'gray-4': $dm-gray-4,
-  'gray-5': $dm-gray-5,
-  'gray-6': $dm-gray-6,
-  'gray-7': $dm-gray-7,
-  'black': $dm-black
-) !default;
-
 $dm-primary: #54e4e5 !default;
 $dm-secondary: #63e48b !default;
-$dm-body-bg: $dm-black !default;
-$dm-body-color: $dm-white !default;
+$dm-body-bg: $gray-900 !default;
+$dm-body-color: $white !default;
 $dm-border-color: rgba($white, .1);
 $dm-colors: (
   'primary': $dm-primary,
@@ -217,27 +202,19 @@ $dm-colors: (
   'border': $dm-border-color
 ) !default;
 
-$dm-global-colors: map-merge($dm-colors, $dm-grays) !default;
-
-// elevation
-// $dm-elevation-bgs: (
-//   'elevation-bg-1': rgba($white, 0.5)
-// );
-
-
-$dm-component-shadow-elevation-1: 0 2px 1px -1px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
-$dm-component-shadow-elevation-2: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
-$dm-component-shadow-elevation-3: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
-$dm-component-shadow-elevation-4: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
-$dm-component-shadow-elevation-5: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
-$dm-component-shadow-elevation-6: 0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
-$dm-component-shadow-elevation-7: 0 7px 8px -4px rgba(0,0,0,.2),0 12px 17px 2px rgba(0,0,0,.14),0 5px 22px 4px rgba(0,0,0,.12);
-$dm-component-shadow-elevation-8: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
-$dm-component-shadow-elevation-9: 0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12);
+$dm-component-shadow-elevation-1: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
+$dm-component-shadow-elevation-2: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
+$dm-component-shadow-elevation-3: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
+$dm-component-shadow-elevation-4: 0 2px 4px -1px rgba($black,.2),0 4px 5px 0 rgba($black,.14),0 1px 10px 0 rgba($black,.12);
+$dm-component-shadow-elevation-5: 0 3px 5px -1px rgba($black,.2),0 6px 10px 0 rgba($black,.14),0 1px 18px 0 rgba($black,.12);
+$dm-component-shadow-elevation-6: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px rgba($black,.14),0 3px 14px 2px rgba($black,.12);
+$dm-component-shadow-elevation-7: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
+$dm-component-shadow-elevation-8: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
+$dm-component-shadow-elevation-9: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
 
 // components
 $dm-component-styles: (
-  'component-bg': $dm-black,
+  'component-bg': $gray-900,
   'component-bg-elevation-1': #1d1d1d,
   'component-bg-elevation-2': #222222,
   'component-bg-elevation-3': #242424,
@@ -256,8 +233,7 @@ $dm-component-styles: (
   'component-shadow-elevation-7': $dm-component-shadow-elevation-7,
   'component-shadow-elevation-8': $dm-component-shadow-elevation-8,
   'component-shadow-elevation-9': $dm-component-shadow-elevation-9,
-  'component-color': $dm-white,
+  'component-color': $white,
   'component-border-color': rgba($black, .2),
   'component-border-radius': $border-radius,
-  
 ) !default;

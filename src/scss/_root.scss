@@ -33,7 +33,7 @@
 @if $enable-dark-mode {
   [data-theme="dark"] {
     // colors
-    @each $dm-color, $value in $dm-global-colors {
+    @each $dm-color, $value in $dm-colors {
       --#{$dm-color}-color: #{$value};
     }
     // components
