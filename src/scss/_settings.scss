@@ -132,6 +132,12 @@ $breakpoints: (
 // Components
 // ----------
 
+
+
+$component-bg: $white;
+$component-color: $black;
+$component-border-color: $border-color;
+$component-border-radius: 2px;
 $component-shadow-elevation-1: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
 $component-shadow-elevation-2: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
 $component-shadow-elevation-3: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
@@ -141,14 +147,7 @@ $component-shadow-elevation-6: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px rgb
 $component-shadow-elevation-7: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
 $component-shadow-elevation-8: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
 $component-shadow-elevation-9: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
-
-$component-bg: $white;
-$component-color: $black;
-$component-border-color: $border-color;
-$component-border-radius: 2px;
 $component-styles: (
-  'component-border-color': $component-border-color,
-  'component-border-radius': $component-border-radius,
   'component-bg': $component-bg,
   'component-bg-elevation-1': $component-bg,
   'component-bg-elevation-2': $component-bg,
@@ -159,6 +158,9 @@ $component-styles: (
   'component-bg-elevation-7': $component-bg,
   'component-bg-elevation-8': $component-bg,
   'component-bg-elevation-9': $component-bg,
+  'component-color': $component-color,
+  'component-border-color': $component-border-color,
+  'component-border-radius': $component-border-radius,
   'component-shadow-elevation-1': $component-shadow-elevation-1,
   'component-shadow-elevation-2': $component-shadow-elevation-2,
   'component-shadow-elevation-3': $component-shadow-elevation-3,
@@ -167,13 +169,8 @@ $component-styles: (
   'component-shadow-elevation-6': $component-shadow-elevation-6,
   'component-shadow-elevation-7': $component-shadow-elevation-7,
   'component-shadow-elevation-8': $component-shadow-elevation-8,
-  'component-shadow-elevation-9': $component-shadow-elevation-9,
-  'component-color': $component-color
+  'component-shadow-elevation-9': $component-shadow-elevation-9
 ) !default;
-
-
-
-
 
 // Dark theme
 // ----------
@@ -202,6 +199,13 @@ $dm-colors: (
   'border': $dm-border-color
 ) !default;
 
+
+
+// components
+$dm-component-bg: $gray-900;
+$dm-component-color: $white;
+$dm-component-border-color: $dm-border-color;
+$dm-component-border-radius: 2px;
 $dm-component-shadow-elevation-1: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
 $dm-component-shadow-elevation-2: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
 $dm-component-shadow-elevation-3: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
@@ -211,10 +215,8 @@ $dm-component-shadow-elevation-6: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px 
 $dm-component-shadow-elevation-7: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
 $dm-component-shadow-elevation-8: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
 $dm-component-shadow-elevation-9: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
-
-// components
 $dm-component-styles: (
-  'component-bg': $gray-900,
+  'component-bg': $dm-component-bg,
   'component-bg-elevation-1': #1d1d1d,
   'component-bg-elevation-2': #222222,
   'component-bg-elevation-3': #242424,
@@ -224,6 +226,9 @@ $dm-component-styles: (
   'component-bg-elevation-7': #323232,
   'component-bg-elevation-8': #343434,
   'component-bg-elevation-9': #373737,
+  'component-color': $dm-component-color,
+  'component-border-color': $dm-border-color,
+  'component-border-radius': $dm-component-border-radius,
   'component-shadow-elevation-1': $dm-component-shadow-elevation-1,
   'component-shadow-elevation-2': $dm-component-shadow-elevation-2,
   'component-shadow-elevation-3': $dm-component-shadow-elevation-3,
@@ -232,8 +237,5 @@ $dm-component-styles: (
   'component-shadow-elevation-6': $dm-component-shadow-elevation-6,
   'component-shadow-elevation-7': $dm-component-shadow-elevation-7,
   'component-shadow-elevation-8': $dm-component-shadow-elevation-8,
-  'component-shadow-elevation-9': $dm-component-shadow-elevation-9,
-  'component-color': $white,
-  'component-border-color': rgba($black, .2),
-  'component-border-radius': $border-radius,
+  'component-shadow-elevation-9': $dm-component-shadow-elevation-9
 ) !default;
