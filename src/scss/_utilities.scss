@@ -47,75 +47,149 @@ $utilities: (
   ),
   // spacings
   // margin
-  'm': (
+  'spacing-m': (
     'items': $spacings,
     'output': 'standard',
     'property': 'margin-top'
   ),
-  'mt': (
+  'spacing-mt': (
     'items': $spacings,
     'output': 'standard',
     'property': 'margin-top'
   ),
-  'mb': (
+  'spacing-mb': (
     'items': $spacings,
     'output': 'standard',
     'property': 'margin-bottom'
   ),
-  'ml': (
+  'spacing-ml': (
     'items': $spacings,
     'output': 'standard',
     'property': 'margin-left'
   ),
-  'mr': (
+  'spacing-mr': (
     'items': $spacings,
     'output': 'standard',
     'property': 'margin-right'
   ),
   // negative margin
-  'n-m': (
+  'spacing-n-m': (
     'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-top'
   ),
-  'n-mr': (
+  'spacing-n-mr': (
     'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-right'
   ),
-  'n-mb': (
+  'spacing-n-mb': (
     'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-bottom'
   ),
-  'n-ml': (
+  'spacing-n-ml': (
     'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-left'
   ),
   // padding
-  'p': (
+  'spacing-p': (
     'items': $spacings,
     'output': 'standard',
     'property': 'padding'
   ),
-  'pt': (
+  'spacing-pt': (
     'items': $spacings,
     'output': 'standard',
     'property': 'padding-top'
   ),
-  'pr': (
+  'spacing-pr': (
     'items': $spacings,
     'output': 'standard',
     'property': 'padding-right'
   ),
-  'pb': (
+  'spacing-pb': (
     'items': $spacings,
     'output': 'standard',
     'property': 'padding-bottom'
   ),
-  'pl': (
+  'spacing-pl': (
     'items': $spacings,
+    'output': 'standard',
+    'property': 'padding-left'
+  ),
+  // layout spacing
+  // margin
+  'layout-m': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'layout-mt': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'layout-mb': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'margin-bottom'
+  ),
+  'layout-ml': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'margin-left'
+  ),
+  'layout-mr': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'margin-right'
+  ),
+  // negative margin
+  'layout-n-m': (
+    'items': $negative-layouts,
+    'output': 'standard',
+    'property': 'margin-top'
+  ),
+  'layout-n-mr': (
+    'items': $negative-layouts,
+    'output': 'standard',
+    'property': 'margin-right'
+  ),
+  'layout-n-mb': (
+    'items': $negative-layouts,
+    'output': 'standard',
+    'property': 'margin-bottom'
+  ),
+  'layout-n-ml': (
+    'items': $negative-layouts,
+    'output': 'standard',
+    'property': 'margin-left'
+  ),
+  // padding
+  'layout-p': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'padding'
+  ),
+  'layout-pt': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'padding-top'
+  ),
+  'layout-pr': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'padding-right'
+  ),
+  'layout-pb': (
+    'items': $layouts,
+    'output': 'standard',
+    'property': 'padding-bottom'
+  ),
+  'layout-pl': (
+    'items': $layouts,
     'output': 'standard',
     'property': 'padding-left'
   ),
