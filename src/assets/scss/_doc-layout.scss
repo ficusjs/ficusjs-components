@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: minmax(0px, 960px) 220px;
   grid-template-areas: "breadcrumb sticky-aside" "article sticky-aside";
-  column-gap: var(--spacer-xxl);
+  column-gap: var(--spacing-xxl);
   grid-auto-rows: min-content;
 
   
@@ -15,31 +15,31 @@
 .fd-doc-article {
 
   // content flow
-  --flow-space: var(--spacer-md);
+  --flow-space: var(--spacing-md);
 
   h1:not(:first-of-type) {
-    --flow-space: var(--spacer-xxxl);
+    --flow-space: var(--spacing-xxxl);
   }
 
   h2 {
-    --flow-space: var(--spacer-xxl);
+    --flow-space: var(--spacing-xxl);
   }
 
   h3 {
-    --flow-space: var(--spacer-xl);
+    --flow-space: var(--spacing-xl);
   }
 
   h4 {
-    --flow-space: var(--spacer-lg);
+    --flow-space: var(--spacing-lg);
   }
 
   h5,
   h6 {
-    --flow-space: var(--spacer-md);
+    --flow-space: var(--spacing-md);
   }
 
   hr {
-    --flow-space: var(--spacer-xxl);
+    --flow-space: var(--spacing-xxl);
   }
 
   & > :not(pre):not(table):not(.fd-component-container):not(hr) {

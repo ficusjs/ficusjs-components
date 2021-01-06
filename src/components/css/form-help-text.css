@@ -1,5 +1,5 @@
 .fc-form__help-text {
-  margin-top: calc(var(--form-spacer) / 4);
+  margin-top: calc(var(--form-spacing) / 4);
   font-size: 80%;
   font-weight: 400;
   color: #767676

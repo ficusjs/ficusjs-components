@@ -5,11 +5,11 @@
 }
 
 .fc-card__header {
-  padding: var(--spacer-xl)
+  padding: var(--spacing-xl)
 }
 
 .fc-card__body {
-  padding: var(--spacer-xl)
+  padding: var(--spacing-xl)
 }
 
 .fc-card__header + .fc-card__body {

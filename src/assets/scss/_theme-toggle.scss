@@ -2,7 +2,7 @@
 
 .fd-theme-toggle {
   align-self:center;
-  margin: var(--fc-button-spacing-padding-y, var(--spacer-sm)) var(--fc-button-spacing-padding-x, var(--spacer-md));
+  margin: var(--fc-button-spacing-padding-y, var(--spacing-sm)) var(--fc-button-spacing-padding-x, var(--spacing-md));
 
   input[type="checkbox"]{
     display: none;

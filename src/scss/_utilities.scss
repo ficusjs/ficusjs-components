@@ -45,77 +45,77 @@ $utilities: (
     'output': 'standard',
     'property': 'text-transform'
   ),
-  // spacers
+  // spacings
   // margin
   'm': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'margin-top'
   ),
   'mt': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'margin-top'
   ),
   'mb': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'margin-bottom'
   ),
   'ml': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'margin-left'
   ),
   'mr': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'margin-right'
   ),
   // negative margin
   'n-m': (
-    'items': $negative-spacers,
+    'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-top'
   ),
   'n-mr': (
-    'items': $negative-spacers,
+    'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-right'
   ),
   'n-mb': (
-    'items': $negative-spacers,
+    'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-bottom'
   ),
   'n-ml': (
-    'items': $negative-spacers,
+    'items': $negative-spacings,
     'output': 'standard',
     'property': 'margin-left'
   ),
   // padding
   'p': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'padding'
   ),
   'pt': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'padding-top'
   ),
   'pr': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'padding-right'
   ),
   'pb': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'padding-bottom'
   ),
   'pl': (
-    'items': $spacers,
+    'items': $spacings,
     'output': 'standard',
     'property': 'padding-left'
   ),

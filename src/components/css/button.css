@@ -7,7 +7,7 @@
   background-clip: border-box;
   border: 1px solid var(--fc-button-color-border, transparent);
   border-radius: var(--fc-button-radius-border, 2px);  /* CHANGE */
-  padding: var(--fc-button-spacing-padding-y, var(--spacer-sm)) var(--fc-button-spacing-padding-x, var(--spacer-md));
+  padding: var(--fc-button-spacing-padding-y, var(--spacing-sm)) var(--fc-button-spacing-padding-x, var(--spacing-md));
   line-height: var(--fc-button-line-height, var(--heading-line-height));
   text-decoration: none;
   font-family: var(--font-primary);
