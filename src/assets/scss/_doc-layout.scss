@@ -42,6 +42,10 @@
     --flow-space: var(--spacing-09);
   }
 
+  table {
+    --flow-space: var(--spacing-07);
+  }
+
   & > :not(pre):not(table):not(.fd-component-container):not(hr) {
     max-width: 42rem;
   }
