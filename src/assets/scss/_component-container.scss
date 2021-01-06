@@ -1,11 +1,11 @@
 // Component container
 
 .fd-component-container {
-  margin-top: var(--spacing-xl);
+  margin-top: var(--spacing-07);
   border: 1px solid var(--border-color);
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
-  padding: var(--spacing-md);
+  padding: var(--spacing-05);
 }
 
 .fd-component-container + code[class*="language-"],
@@ -17,6 +17,6 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-  margin-top: var(--spacing-xl) !important;
-  margin-bottom: var(--spacing-xl) !important
+  margin-top: var(--spacing-07) !important;
+  margin-bottom: var(--spacing-07) !important
 }

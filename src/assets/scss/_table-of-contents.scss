@@ -17,7 +17,7 @@
   }
 
   ol {
-    padding-left: var(--spacing-md);
+    padding-left: var(--spacing-05);
     list-style: none;
   }
 
@@ -25,8 +25,8 @@
     display: block;
     color: var(--body-color);
     text-decoration: none;
-    padding-top: calc(var(--spacing-sm) / 2);
-    padding-bottom: calc(var(--spacing-sm) / 2);
+    padding-top: calc(var(--spacing-03) / 2);
+    padding-bottom: calc(var(--spacing-03) / 2);
   }
 
   a:focus,

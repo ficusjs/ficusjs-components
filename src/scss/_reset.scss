@@ -93,8 +93,8 @@ code:not([class]) {
   word-break: break-word;
   hyphens: manual;
   background-color: var(--gray-1-color);
-  padding-left: calc(var(--spacing-md) / 2);
-  padding-right: calc(var(--spacing-md) / 2);
+  padding-left: calc(var(--spacing-05) / 2);
+  padding-right: calc(var(--spacing-05) / 2);
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

@@ -70,8 +70,8 @@ Styling hooks for the toggle button.
 | --- | --- | --- | --- |
 | Color | `--fc-dropdown-button-color-background` | Color | `var(--primary-color)` |
 | Color | `--fc-dropdown-button-color-background-hover` | Color | `var(--primary-dark-color)` |
-| Spacing | `--fc-dropdown-button-spacing-padding-y` | Dimension | `var(--spacing-sm)` |
-| Spacing | `--fc-dropdown-button-spacing-padding-x` | Dimension | `var(--spacing-md)` |
+| Spacing | `--fc-dropdown-button-spacing-padding-y` | Dimension | `var(--spacing-03)` |
+| Spacing | `--fc-dropdown-button-spacing-padding-x` | Dimension | `var(--spacing-05)` |
 | Sizing | `--fc-dropdown-button-sizing-line-height` | Dimension | `var(--heading-line-height)` |
 
 #### Menu
@@ -83,5 +83,5 @@ Styling hooks for the menu.
 | Box Shadow | `--fc-dropdown-menu-shadow` | Dimension | `var(--component-shadow-elevation-3)` |
 | Color | `--fc-dropdown-menu-color-background` | Color | `var(--component-bg-elevation-3)` |
 | Color | `--fc-dropdown-menu-color-border` | Color | `var(--component-border-color)` |
-| Spacing | `--fc-dropdown-menu-spacing-padding` | Dimension | `var(--spacing-sm)` |
-| Spacing | `--fc-dropdown-menu-spacing-margin` | Dimension | `calc(var(--spacing-sm) / 2) 0 0` |
+| Spacing | `--fc-dropdown-menu-spacing-padding` | Dimension | `var(--spacing-03)` |
+| Spacing | `--fc-dropdown-menu-spacing-margin` | Dimension | `calc(var(--spacing-03) / 2) 0 0` |

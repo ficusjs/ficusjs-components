@@ -19,10 +19,6 @@
   @each $line-height, $value in $line-heights {
     --#{$line-height}: #{$value};
   }
-  // // body
-  // @each $body-style, $value in $body-styles {
-  //   --#{$body-style}: #{$value};
-  // }
   // components
   @each $component-style, $value in $component-styles {
     --#{$component-style}: #{$value};
@@ -40,10 +36,6 @@
     @each $dm-component-style, $value in $dm-component-styles {
       --#{$dm-component-style}: #{$value};
     }
-    // elevation backgrounds
-    // @each $dm-elevation-bg, $value in $dm-elevation-bgs {
-    //   --#{$dm-elevation-bg}: #{$value};
-    // }
   }
 }
 

@@ -109,4 +109,4 @@ Navigation component.
 | Category | Name | Value Type(s) | Fallback Value
 | --- | --- | --- | --- |
 | Color | `--fc-nav-anchor-color-link` | Color | `var(--body-color)` |
-| Sizing | `--fc-nav-anchor-sizing-padding` | Dimension | `var(--spacing-sm)` |
+| Sizing | `--fc-nav-anchor-sizing-padding` | Dimension | `var(--spacing-03)` |

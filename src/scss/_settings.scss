@@ -99,21 +99,27 @@ $font-weights: (
 // -------
 
 $spacing-unit: 1rem;
-$spacing-none: 0;
-$spacing-sm: 0.5 * $spacing-unit;
-$spacing-md: $spacing-unit;
-$spacing-lg: 1.5 * $spacing-unit;
-$spacing-xl: 2 * $spacing-unit;
-$spacing-xxl: 3 * $spacing-unit;
-$spacing-xxxl: 5 * $spacing-unit;
+$spacing-00: 0;
+$spacing-01: 0.125 * $spacing-unit;
+$spacing-02: 0.25 * $spacing-unit;
+$spacing-03: 0.5 * $spacing-unit;
+$spacing-04: 0.75 * $spacing-unit;
+$spacing-05: $spacing-unit;
+$spacing-06: 1.5 * $spacing-unit;
+$spacing-07: 2 * $spacing-unit;
+$spacing-08: 2.5 * $spacing-unit;
+$spacing-09: 3 * $spacing-unit;
 $spacings: (
-  none: $spacing-none,
-  sm: $spacing-sm,
-  md: $spacing-md,
-  lg: $spacing-lg,
-  xl: $spacing-xl,
-  xxl: $spacing-xxl,
-  xxxl: $spacing-xxxl
+  '00': $spacing-00,
+  '01': $spacing-01,
+  '02': $spacing-02,
+  '03': $spacing-03,
+  '04': $spacing-04,
+  '05': $spacing-05,
+  '06': $spacing-06,
+  '07': $spacing-07,
+  '08': $spacing-08,
+  '09': $spacing-09
 );
 
 $negative-spacings: negativify-map($spacings) !default;

@@ -1,6 +1,6 @@
 :root {
   --header-height: 75px;
-  --header-padding: var(--spacing-xl)
+  --header-padding: var(--spacing-07)
 }
 
 .fc-navbar {

@@ -11,7 +11,7 @@
   background-clip: border-box;
   border: var(--fc-dropdown-button-sizing-border, transparent) solid var(--fc-button-color-border, transparent);
   border-radius: var(--fc-dropdown-button-radius-border, 2px);  /* CHANGE */
-  padding: var(--fc-dropdown-button-spacing-padding-y, var(--spacing-sm)) var(--fc-dropdown-button-spacing-padding-x, var(--spacing-md));
+  padding: var(--fc-dropdown-button-spacing-padding-y, var(--spacing-03)) var(--fc-dropdown-button-spacing-padding-x, var(--spacing-05));
   line-height: var(--fc-dropdown-button-sizing-line-height, var(--heading-line-height));
   text-decoration: none;
   font-family: var(--font-primary);
@@ -32,8 +32,8 @@
   z-index: 1000;
   float: left;
   min-width: 10rem;
-  padding: var(--fc-dropdown-menu-spacing-padding, var(--spacing-sm) 0);
-  margin: var(--fc-dropdown-menu-spacing-margin, calc(var(--spacing-sm) / 2) 0 0);
+  padding: var(--fc-dropdown-menu-spacing-padding, var(--spacing-03) 0);
+  margin: var(--fc-dropdown-menu-spacing-margin, calc(var(--spacing-03) / 2) 0 0);
   text-align: left;
   list-style: none;
   background-color: var(--fc-dropdown-menu-color-background, var(--component-bg-elevation-3));

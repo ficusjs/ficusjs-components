@@ -62,7 +62,7 @@ At its heart, styling hooks are constructed using CSS custom properties, (also r
   color: var(--fc-button-color-text, var(--black-color));
   border: 1px solid var(--fc-button-color-border, transparent);
   border-radius: var(--fc-button-radius-border, 2px);  /* CHANGE */
-  padding: var(--fc-button-spacing-padding-y, var(--spacing-sm)) var(--fc-button-spacing-padding-x, var(--spacing-md));
+  padding: var(--fc-button-spacing-padding-y, var(--spacing-03)) var(--fc-button-spacing-padding-x, var(--spacing-05));
   line-height: var(--fc-button-line-height, var(--heading-line-height));
   font-family: var(--font-primary);
   /* styles not pertinent have been omitted */
