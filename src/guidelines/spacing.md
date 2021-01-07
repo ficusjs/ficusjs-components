@@ -40,17 +40,17 @@ padding: var(spacing-07) var(spacing-04) 0 var(spacing-04);
 
 Use the spacing scale when building individual components. It includes small increments needed to create appropriate spatial relationships for detail-level designs. This scale is applied and used within all Ficus components.
 
-| Custom property | rem | px
-| --- | --- | ---
-| var(spacing-01) | 0.125 | 2
-| var(spacing-02) | 0.25 | 4
-| var(spacing-03) | 0.5 | 8
-| var(spacing-04) | 0.75 | 12
-| var(spacing-05) | 1 | 16
-| var(spacing-06) | 1.5 | 24
-| var(spacing-07) | 2 | 32
-| var(spacing-08) | 2.5 | 40
-| var(spacing-09) | 3 | 48
+| Variables | rem | px | Example
+| --- | --- | --- | ---
+| `$spacing-01` <br> `var(spacing-01)` | 0.125 | 2 | <div style="width: 0.125rem; height: 0.125rem;" class="fu-bg-gray-900"></div>
+| `$spacing-02` <br> `var(spacing-02)` | 0.25 | 4 | <div style="width: 0.25rem; height: 0.25rem;" class="fu-bg-gray-900"></div>
+| `$spacing-03` <br> `var(spacing-03)` | 0.5 | 8 | <div style="width: 0.5rem; height: 0.5rem;" class="fu-bg-gray-900"></div>
+| `$spacing-04` <br> `var(spacing-04)` | 0.75 | 12 | <div style="width: 0.75rem; height: 0.75rem;" class="fu-bg-gray-900"></div>
+| `$spacing-05` <br> `var(spacing-05)` | 1 | 16 | <div style="width: 1rem; height: 1rem;" class="fu-bg-gray-900"></div>
+| `$spacing-06` <br> `var(spacing-06)` | 1.5 | 24 | <div style="width: 1.5rem; height: 1.5rem;" class="fu-bg-gray-900"></div>
+| `$spacing-07` <br> `var(spacing-07)` | 2 | 32 | <div style="width: 2rem; height: 2rem;" class="fu-bg-gray-900"></div>
+| `$spacing-08` <br> `var(spacing-08)` | 2.5 | 40 | <div style="width: 2.5rem; height: 2.5rem;" class="fu-bg-gray-900"></div>
+| `$spacing-09` <br> `var(spacing-09)` | 3 | 48 | <div style="width: 3rem; height: 3rem;" class="fu-bg-gray-900"></div>
 
 ---
 
@@ -58,12 +58,12 @@ Use the spacing scale when building individual components. It includes small inc
 
 The layout scale is used for arranging components and other UI parts into a full page layout. It has larger increments that are used to control the density of a design. Use the smaller layout tokens to create more dense compositions and direct relationships. Use the larger custom properties to increase the amount of white space and to disassociate sections.
 
-| Custom property | rem | px
-| --- | --- | ---
-| var(layout-01) | 1 | 16
-| var(layout-02) | 1.5 | 24
-| var(layout-03) | 2 | 32
-| var(layout-04) | 3 | 48
-| var(layout-05) | 4 | 64
-| var(layout-06) | 6 | 96
-| var(layout-07) | 10 | 160
+| Variables | rem | px | Example
+| --- | --- | --- | ---
+| `$layout-01` <br> `var(layout-01)` | 1 | 16 | <div style="width: 1rem; height: 1rem;" class="fu-bg-gray-900"></div>
+| `$layout-02` <br> `var(layout-02)` | 1.5 | 24 | <div style="width: 1.5rem; height: 1.5rem;" class="fu-bg-gray-900"></div>
+| `$layout-03` <br> `var(layout-03)` | 2 | 32 | <div style="width: 2rem; height: 2rem;" class="fu-bg-gray-900"></div>
+| `$layout-04` <br> `var(layout-04)` | 3 | 48 | <div style="width: 3rem; height: 3rem;" class="fu-bg-gray-900"></div>
+| `$layout-05` <br> `var(layout-05)` | 4 | 64 | <div style="width: 4rem; height: 4rem;" class="fu-bg-gray-900"></div>
+| `$layout-06` <br> `var(layout-06)` | 6 | 96 | <div style="width: 6rem; height: 6rem;" class="fu-bg-gray-900"></div>
+| `$layout-07` <br> `var(layout-07)` | 10 | 160 | <div style="width: 10rem; height: 10rem;" class="fu-bg-gray-900"></div>
