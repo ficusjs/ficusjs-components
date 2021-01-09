@@ -20,8 +20,8 @@
     --#{$line-height}: #{$value};
   }
   // components
-  @each $component-style, $value in $component-styles {
-    --#{$component-style}: #{$value};
+  @each $surface-style, $value in $surface-styles {
+    --#{$surface-style}: #{$value};
   }
 }
 
@@ -33,8 +33,8 @@
       --#{$dm-color}-color: #{$value};
     }
     // components
-    @each $dm-component-style, $value in $dm-component-styles {
-      --#{$dm-component-style}: #{$value};
+    @each $dm-surface-style, $value in $dm-surface-styles {
+      --#{$dm-surface-style}: #{$value};
     }
   }
 }
