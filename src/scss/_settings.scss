@@ -176,7 +176,7 @@ $layouts: (
 
 $negative-layouts: negativify-map($layouts) !default;
 
-$border-radius: 2px;
+$border-radius-01: 2px;
 
 // Grid breakpoints
 // ----------------
@@ -190,44 +190,56 @@ $breakpoints: (
 // Components
 // ----------
 
-// Surfaces
+// Elevations
+$ui-elevation-background-01: $white;
+$ui-elevation-background-02: $white;
+$ui-elevation-background-03: $white;
+$ui-elevation-background-04: $white;
+$ui-elevation-background-05: $white;
+$ui-elevation-background-06: $white;
+$ui-elevation-background-07: $white;
+$ui-elevation-background-08: $white;
+$ui-elevation-background-09: $white;
+$ui-elevation-shadow-01: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
+$ui-elevation-shadow-02: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
+$ui-elevation-shadow-03: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
+$ui-elevation-shadow-04: 0 2px 4px -1px rgba($black,.2),0 4px 5px 0 rgba($black,.14),0 1px 10px 0 rgba($black,.12);
+$ui-elevation-shadow-05: 0 3px 5px -1px rgba($black,.2),0 6px 10px 0 rgba($black,.14),0 1px 18px 0 rgba($black,.12);
+$ui-elevation-shadow-06: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px rgba($black,.14),0 3px 14px 2px rgba($black,.12);
+$ui-elevation-shadow-07: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
+$ui-elevation-shadow-08: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
+$ui-elevation-shadow-09: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
+$ui-elevations: (
+  'ui-elevation-background-01': $ui-elevation-background-01,
+  'ui-elevation-background-02': $ui-elevation-background-02,
+  'ui-elevation-background-03': $ui-elevation-background-03,
+  'ui-elevation-background-04': $ui-elevation-background-04,
+  'ui-elevation-background-05': $ui-elevation-background-05,
+  'ui-elevation-background-06': $ui-elevation-background-06,
+  'ui-elevation-background-07': $ui-elevation-background-07,
+  'ui-elevation-background-08': $ui-elevation-background-08,
+  'ui-elevation-background-09': $ui-elevation-background-09,
+  'ui-elevation-shadow-01': $ui-elevation-shadow-01,
+  'ui-elevation-shadow-02': $ui-elevation-shadow-02,
+  'ui-elevation-shadow-03': $ui-elevation-shadow-03,
+  'ui-elevation-shadow-04': $ui-elevation-shadow-04,
+  'ui-elevation-shadow-05': $ui-elevation-shadow-05,
+  'ui-elevation-shadow-06': $ui-elevation-shadow-06,
+  'ui-elevation-shadow-07': $ui-elevation-shadow-07,
+  'ui-elevation-shadow-08': $ui-elevation-shadow-08,
+  'ui-elevation-shadow-09': $ui-elevation-shadow-09
+) !default;
 
-$surface-bg: $white;
-$surface-color: $black;
-$surface-border-color: $border-color;
-$surface-border-radius: 2px;
-$surface-shadow-elevation-01: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
-$surface-shadow-elevation-02: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
-$surface-shadow-elevation-03: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
-$surface-shadow-elevation-04: 0 2px 4px -1px rgba($black,.2),0 4px 5px 0 rgba($black,.14),0 1px 10px 0 rgba($black,.12);
-$surface-shadow-elevation-05: 0 3px 5px -1px rgba($black,.2),0 6px 10px 0 rgba($black,.14),0 1px 18px 0 rgba($black,.12);
-$surface-shadow-elevation-06: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px rgba($black,.14),0 3px 14px 2px rgba($black,.12);
-$surface-shadow-elevation-07: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
-$surface-shadow-elevation-08: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
-$surface-shadow-elevation-09: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
-$surface-styles: (
-  'surface-bg': $surface-bg,
-  'surface-bg-elevation-01': $surface-bg,
-  'surface-bg-elevation-02': $surface-bg,
-  'surface-bg-elevation-03': $surface-bg,
-  'surface-bg-elevation-04': $surface-bg,
-  'surface-bg-elevation-05': $surface-bg,
-  'surface-bg-elevation-06': $surface-bg,
-  'surface-bg-elevation-07': $surface-bg,
-  'surface-bg-elevation-08': $surface-bg,
-  'surface-bg-elevation-09': $surface-bg,
-  'surface-color': $surface-color,
-  'surface-border-color': $surface-border-color,
-  'surface-border-radius': $surface-border-radius,
-  'surface-shadow-elevation-01': $surface-shadow-elevation-01,
-  'surface-shadow-elevation-02': $surface-shadow-elevation-02,
-  'surface-shadow-elevation-03': $surface-shadow-elevation-03,
-  'surface-shadow-elevation-04': $surface-shadow-elevation-04,
-  'surface-shadow-elevation-05': $surface-shadow-elevation-05,
-  'surface-shadow-elevation-06': $surface-shadow-elevation-06,
-  'surface-shadow-elevation-07': $surface-shadow-elevation-07,
-  'surface-shadow-elevation-08': $surface-shadow-elevation-08,
-  'surface-shadow-elevation-09': $surface-shadow-elevation-09
+
+$ui-background: $white;
+$ui-color: $black;
+$ui-border-color: $border-color;
+$ui-border-radius: $border-radius-01;
+$ui-styles: (
+  'ui-background': $ui-background,
+  'ui-color': $ui-color,
+  'ui-border-color': $ui-border-color,
+  'ui-border-radius': $ui-border-radius,
 ) !default;
 
 // Dark theme
@@ -257,43 +269,48 @@ $dm-colors: (
   'border': $dm-border-color
 ) !default;
 
+// Components
+
+// Elevations
+$dm-ui-elevation-background: $gray-100;
+$dm-ui-elevation-shadow-01: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
+$dm-ui-elevation-shadow-02: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
+$dm-ui-elevation-shadow-03: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
+$dm-ui-elevation-shadow-04: 0 2px 4px -1px rgba($black,.2),0 4px 5px 0 rgba($black,.14),0 1px 10px 0 rgba($black,.12);
+$dm-ui-elevation-shadow-05: 0 3px 5px -1px rgba($black,.2),0 6px 10px 0 rgba($black,.14),0 1px 18px 0 rgba($black,.12);
+$dm-ui-elevation-shadow-06: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px rgba($black,.14),0 3px 14px 2px rgba($black,.12);
+$dm-ui-elevation-shadow-07: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
+$dm-ui-elevation-shadow-08: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
+$dm-ui-elevation-shadow-09: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
+$dm-ui-elevations: (
+  'ui-elevation-background-01': #1d1d1d,
+  'ui-elevation-background-02': #222222,
+  'ui-elevation-background-03': #242424,
+  'ui-elevation-background-04': #272727,
+  'ui-elevation-background-05': #2c2c2c,
+  'ui-elevation-background-06': #2d2d2d,
+  'ui-elevation-background-07': #323232,
+  'ui-elevation-background-08': #343434,
+  'ui-elevation-background-09': #373737,
+  'ui-elevation-shadow-01': $dm-ui-elevation-shadow-01,
+  'ui-elevation-shadow-02': $dm-ui-elevation-shadow-02,
+  'ui-elevation-shadow-03': $dm-ui-elevation-shadow-03,
+  'ui-elevation-shadow-04': $dm-ui-elevation-shadow-04,
+  'ui-elevation-shadow-05': $dm-ui-elevation-shadow-05,
+  'ui-elevation-shadow-06': $dm-ui-elevation-shadow-06,
+  'ui-elevation-shadow-07': $dm-ui-elevation-shadow-07,
+  'ui-elevation-shadow-08': $dm-ui-elevation-shadow-08,
+  'ui-elevation-shadow-09': $dm-ui-elevation-shadow-09
+) !default;
 
 
-// components
-$dm-surface-bg: $gray-100;
-$dm-surface-color: $white;
-$dm-surface-border-color: $dm-border-color;
-$dm-surface-border-radius: 2px;
-$dm-surface-shadow-elevation-01: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
-$dm-surface-shadow-elevation-02: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
-$dm-surface-shadow-elevation-03: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
-$dm-surface-shadow-elevation-04: 0 2px 4px -1px rgba($black,.2),0 4px 5px 0 rgba($black,.14),0 1px 10px 0 rgba($black,.12);
-$dm-surface-shadow-elevation-05: 0 3px 5px -1px rgba($black,.2),0 6px 10px 0 rgba($black,.14),0 1px 18px 0 rgba($black,.12);
-$dm-surface-shadow-elevation-06: 0 5px 5px -3px rgba($black,.2),0 8px 10px 1px rgba($black,.14),0 3px 14px 2px rgba($black,.12);
-$dm-surface-shadow-elevation-07: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba($black,.14),0 5px 22px 4px rgba($black,.12);
-$dm-surface-shadow-elevation-08: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
-$dm-surface-shadow-elevation-09: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
-$dm-surface-styles: (
-  'surface-bg': $dm-surface-bg,
-  'surface-bg-elevation-01': #1d1d1d,
-  'surface-bg-elevation-02': #222222,
-  'surface-bg-elevation-03': #242424,
-  'surface-bg-elevation-04': #272727,
-  'surface-bg-elevation-05': #2c2c2c,
-  'surface-bg-elevation-06': #2d2d2d,
-  'surface-bg-elevation-07': #323232,
-  'surface-bg-elevation-08': #343434,
-  'surface-bg-elevation-09': #373737,
-  'surface-color': $dm-surface-color,
-  'surface-border-color': $dm-border-color,
-  'surface-border-radius': $dm-surface-border-radius,
-  'surface-shadow-elevation-01': $dm-surface-shadow-elevation-01,
-  'surface-shadow-elevation-02': $dm-surface-shadow-elevation-02,
-  'surface-shadow-elevation-03': $dm-surface-shadow-elevation-03,
-  'surface-shadow-elevation-04': $dm-surface-shadow-elevation-04,
-  'surface-shadow-elevation-05': $dm-surface-shadow-elevation-05,
-  'surface-shadow-elevation-06': $dm-surface-shadow-elevation-06,
-  'surface-shadow-elevation-07': $dm-surface-shadow-elevation-07,
-  'surface-shadow-elevation-08': $dm-surface-shadow-elevation-08,
-  'surface-shadow-elevation-09': $dm-surface-shadow-elevation-09
+$dm-ui-background: $gray-100;
+$dm-ui-color: $white;
+$dm-ui-border-color: $dm-border-color;
+$dm-ui-border-radius: $border-radius-01;
+$dm-ui-styles: (
+  'ui-background': $dm-ui-background,
+  'ui-color': $dm-ui-color,
+  'ui-border-color': $dm-border-color,
+  'ui-border-radius': $dm-ui-border-radius,
 ) !default;

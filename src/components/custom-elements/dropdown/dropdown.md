@@ -80,8 +80,8 @@ Styling hooks for the menu.
 
 | Category | Name | Value Type(s) | Fallback Value
 | --- | --- | --- | --- |
-| Box Shadow | `--fc-dropdown-menu-shadow` | Dimension | `var(--surface-shadow-elevation-03)` |
-| Color | `--fc-dropdown-menu-color-background` | Color | `var(--surface-bg-elevation-03)` |
-| Color | `--fc-dropdown-menu-color-border` | Color | `var(--surface-border-color)` |
+| Box Shadow | `--fc-dropdown-menu-shadow` | Dimension | `var(--ui-elevation-shadow-03)` |
+| Color | `--fc-dropdown-menu-color-background` | Color | `var(--ui-elevation-background-03)` |
+| Color | `--fc-dropdown-menu-color-border` | Color | `var(--ui-border-color)` |
 | Spacing | `--fc-dropdown-menu-spacing-padding` | Dimension | `var(--spacing-03)` |
 | Spacing | `--fc-dropdown-menu-spacing-margin` | Dimension | `calc(var(--spacing-03) / 2) 0 0` |

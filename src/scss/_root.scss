@@ -20,8 +20,13 @@
     --#{$line-height}: #{$value};
   }
   // components
-  @each $surface-style, $value in $surface-styles {
-    --#{$surface-style}: #{$value};
+  @each $ui-style, $value in $ui-styles {
+    --#{$ui-style}: #{$value};
+  }
+
+  // Elevations
+  @each $elevation, $value in $ui-elevations {
+    --#{$elevation}: #{$value};
   }
 }
 
@@ -33,9 +38,13 @@
       --#{$dm-color}-color: #{$value};
     }
     // components
-    @each $dm-surface-style, $value in $dm-surface-styles {
-      --#{$dm-surface-style}: #{$value};
+    @each $dm-ui-style, $value in $dm-ui-styles {
+      --#{$dm-ui-style}: #{$value};
     }
+    // Elevations
+  @each $dm-elevation, $value in $dm-ui-elevations {
+    --#{$dm-elevation}: #{$value};
+  }
   }
 }
 

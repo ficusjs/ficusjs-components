@@ -6,15 +6,15 @@ table {
 }
 
 table tr {
-    border-top: 1px solid var(--surface-border-color);
-    background-color: var(--surface-bg);
+    border-top: 1px solid var(--ui-border-color);
+    background-color: var(--ui-background);
     margin: 0;
     padding: 0;
 }
 
 table tr td,
 table tr th {
-    border: 1px solid var(--surface-border-color);
+    border: 1px solid var(--ui-border-color);
     margin: 0;
     padding: 6px 13px;
 }

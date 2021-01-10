@@ -39,12 +39,12 @@
 /* neutral button */
 .fc-button.fc-button--link {
   background: transparent;
-  color: var(--surface-color);
+  color: var(--ui-color);
 }
 
 .fc-button.fc-button--link:focus,
 .fc-button.fc-button--link:hover
 .fc-button.fc-button--link:active
 .fc-button.fc-button--link.active {
-  background: var(--fc-button-neutral-color-background-hover, var(--surface-bg));
+  background: var(--fc-button-neutral-color-background-hover, var(--ui-background));
 }
