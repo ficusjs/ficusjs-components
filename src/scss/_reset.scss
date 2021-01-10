@@ -92,7 +92,8 @@ hr {
 code:not([class]) {
   word-break: break-word;
   hyphens: manual;
-  background-color: var(--gray-1-color);
+  background-color: var(--ui-background-02);
+  border-radius: var(--ui-border-radius);
   padding-left: calc(var(--spacing-05) / 2);
   padding-right: calc(var(--spacing-05) / 2);
 }

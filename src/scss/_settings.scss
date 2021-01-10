@@ -231,12 +231,30 @@ $ui-elevations: (
 ) !default;
 
 
-$ui-background: $white;
+$ui-background-01: $white;
+$ui-background-02: rgba($black, 0.10);
+$ui-background-03: rgba($black, 0.20);
+$ui-background-04: rgba($black, 0.30);
+$ui-background-05: rgba($black, 0.40);
+$ui-background-06: rgba($black, 0.50);
+$ui-background-07: rgba($black, 0.60);
+$ui-background-08: rgba($black, 0.70);
+$ui-background-09: rgba($black, 0.80);
+$ui-background-10: rgba($black, 0.90);
 $ui-color: $black;
 $ui-border-color: $border-color;
 $ui-border-radius: $border-radius-01;
 $ui-styles: (
-  'ui-background': $ui-background,
+  'ui-background-01': $ui-background-01,
+  'ui-background-02': $ui-background-02,
+  'ui-background-03': $ui-background-03,
+  'ui-background-04': $ui-background-04,
+  'ui-background-05': $ui-background-05,
+  'ui-background-06': $ui-background-06,
+  'ui-background-07': $ui-background-07,
+  'ui-background-08': $ui-background-08,
+  'ui-background-09': $ui-background-09,
+  'ui-background-10': $ui-background-10,
   'ui-color': $ui-color,
   'ui-border-color': $ui-border-color,
   'ui-border-radius': $ui-border-radius,
@@ -304,12 +322,30 @@ $dm-ui-elevations: (
 ) !default;
 
 
-$dm-ui-background: $gray-100;
+$dm-ui-background-01: $gray-100;
+$dm-ui-background-02: rgba($white, 0.10);
+$dm-ui-background-03: rgba($white, 0.20);
+$dm-ui-background-04: rgba($white, 0.30);
+$dm-ui-background-05: rgba($white, 0.40);
+$dm-ui-background-06: rgba($white, 0.50);
+$dm-ui-background-07: rgba($white, 0.60);
+$dm-ui-background-08: rgba($white, 0.70);
+$dm-ui-background-09: rgba($white, 0.80);
+$dm-ui-background-10: rgba($white, 0.90);
 $dm-ui-color: $white;
 $dm-ui-border-color: $dm-border-color;
 $dm-ui-border-radius: $border-radius-01;
 $dm-ui-styles: (
-  'ui-background': $dm-ui-background,
+  'ui-background-01': $dm-ui-background-01,
+  'ui-background-02': $dm-ui-background-02,
+  'ui-background-03': $dm-ui-background-03,
+  'ui-background-04': $dm-ui-background-04,
+  'ui-background-05': $dm-ui-background-05,
+  'ui-background-06': $dm-ui-background-06,
+  'ui-background-07': $dm-ui-background-07,
+  'ui-background-08': $dm-ui-background-08,
+  'ui-background-09': $dm-ui-background-09,
+  'ui-background-10': $dm-ui-background-10,
   'ui-color': $dm-ui-color,
   'ui-border-color': $dm-border-color,
   'ui-border-radius': $dm-ui-border-radius,
