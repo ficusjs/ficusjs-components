@@ -94,6 +94,7 @@ code:not([class]) {
   hyphens: manual;
   background-color: var(--ui-background-02);
   border-radius: var(--ui-border-radius);
+  border: 1px solid var(--ui-background-03);
   padding-left: calc(var(--spacing-05) / 2);
   padding-right: calc(var(--spacing-05) / 2);
 }

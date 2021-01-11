@@ -15,7 +15,7 @@
   justify-content: center;
   width: 80px;
   height: 40px;
-  background-color: var(--body-bg-color);
+  background-color: var(--ui-elevation-background-02);
   transition: transform 1s ease;
   position:relative;
   cursor:pointer;
@@ -24,11 +24,11 @@
 .fd-theme-toggle__ball {
   width: 40px;
   height: 40px;
-  background-color: grey;
+  background-color: var(--primary-dark-color);
   transition: transform 1s ease;
   position:absolute;
   border-radius:50%;
-  border: 3px solid black;
+  border: 4px solid var(--primary-light-color);
 }
 .fd-theme-toggle__scenary {
   display: flex;
