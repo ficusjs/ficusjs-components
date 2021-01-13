@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
+    "prebuild": "rimraf dist build",
     "build": "run-p build:*",
     "build:components": "node scripts/build-components.js",
     "build:css": "node scripts/build-css.js",
@@ -12,6 +13,7 @@
     "build:dist:js": "node scripts/build-components.js --output-dir=dist",
     "build:dist:css": "node scripts/build-css.js --output-dir=dist",
     "build:docs": "cross-env NODE_ENV=production eleventy --input=src --output=build",
+    "predev": "rimraf tmp",
     "dev": "run-p watch:*",
     "watch:components": "live-server --watch=src --port=8888 --no-browser --cors src",
     "watch:docs": "cross-env NODE_ENV=development eleventy --input=src --output=tmp --serve",
@@ -46,6 +48,7 @@
     "node-sass": "5.0.0",
     "node-sass-chokidar": "1.5.0",
     "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
     "rollup": "2.36.1",
     "rollup-plugin-minify-html-literals": "1.2.5",
     "rollup-plugin-terser": "7.0.2",

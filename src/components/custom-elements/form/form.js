@@ -111,7 +111,7 @@ export function createForm ({ createComponent, renderer, html }) {
       const formComponent = getFormComponent(formInput)
       const formInputContainer = formInput.closest('.fc-form__group')
       const formError = formInputContainer.querySelector('.fc-form__invalid-feedback')
-      const helpText = formInputContainer.querySelector('form-help-text')
+      const helpText = formInputContainer.querySelector('.fc-form__help-text')
 
       const clearInputValidation = () => {
         formInput.setCustomValidity('')
