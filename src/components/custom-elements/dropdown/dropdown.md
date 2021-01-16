@@ -57,6 +57,7 @@ use(dropdownModule, { renderer, html })
 | Name | Type | Description |
 | --- | --- | --- |
 | dropdown-title | String | Title of the dropdown  |
+| button-class | String | Class of the dropdown toggle button. The default is `fc-button`  |
 
 ### Events
 

@@ -6,10 +6,18 @@ export function createDropdown ({ createComponent, renderer, html }) {
     props: {
       dropdownTitle: {
         type: String,
+      },
+      buttonClass: {
+        type: String,
+      }
+    },
+    computed: {
+      buttonClassName () {
+        return `${this.props.buttonClass ? `${this.props.buttonClass}` : 'fc-dropdown__button'}`
       }
     },
     mounted () {
-      const btn = this.querySelector('.fc-dropdown__button')
+      const btn = this.querySelector('.fc-dropdown > button')
       const menu = this.querySelector('.fc-dropdown__menu')
       btn.addEventListener('click', e => {
         e.preventDefault()
@@ -35,7 +43,7 @@ export function createDropdown ({ createComponent, renderer, html }) {
     },
     render () {
       return html`<div class="fc-dropdown">
-        <button type="button" class="fc-dropdown__button">${this.props.dropdownTitle}</button>
+        <button type="button" class="${this.buttonClassName}">${this.props.dropdownTitle}</button>
         <div class="fc-dropdown__menu">${this.slots.default}</div>
       </div>`
     }
