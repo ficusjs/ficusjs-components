@@ -30,6 +30,10 @@
   flex: 0 0 auto;
 }
 
-.fc-navbar__link {
-
+.fc-navbar__nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

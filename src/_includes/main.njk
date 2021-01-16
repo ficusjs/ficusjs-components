@@ -36,8 +36,12 @@
           <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
         </section>
         <section class="fc-navbar__section">
-          <a href="..." class="fc-button fc-button--link">GitHub</a>
-          {% include "theme-toggle.njk" %}
+          <nav class="fc-navbar__nav">
+            <ul>
+              <li><a href="..." class="fc-button fc-button--link">GitHub</a></li>
+              <li>{% include "theme-toggle.njk" %}</li>
+            </ul>
+          </nav>
         </section>
       </header>
 
