@@ -19,7 +19,7 @@ A Dropdown displays a list of buttons on temporary surfaces.
 ## Example
 
 <div class="fd-component-container">
-  <fc-dropdown>
+  <fc-dropdown dropdown-title="Dropdown">
     <button type="button" class="fc-button fc-button--link">Item 1</button>
     <button type="button" class="fc-button fc-button--link">Item 2</button>
     <button type="button" class="fc-button fc-button--link">Item 3</button>
@@ -27,7 +27,7 @@ A Dropdown displays a list of buttons on temporary surfaces.
 </div>
 
 ```html
-<fc-dropdown>
+<fc-dropdown dropdown-title="Dropdown">
   <button type="button" class="fc-button fc-button--link">Item 1</button>
   <button type="button" class="fc-button fc-button--link">Item 2</button>
   <button type="button" class="fc-button fc-button--link">Item 3</button>
@@ -51,6 +51,12 @@ use(dropdownModule, { renderer, html })
 ```
 
 ## API
+
+### Props
+
+| Name | Type | Description |
+| --- | --- | --- |
+| dropdown-title | String | Title of the dropdown  |
 
 ### Events
 

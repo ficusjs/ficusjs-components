@@ -3,6 +3,11 @@ export function createDropdown ({ createComponent, renderer, html }) {
 
   createComponent('fc-dropdown', {
     renderer,
+    props: {
+      dropdownTitle: {
+        type: String,
+      }
+    },
     mounted () {
       const btn = this.querySelector('.fc-dropdown__button')
       const menu = this.querySelector('.fc-dropdown__menu')
@@ -30,7 +35,7 @@ export function createDropdown ({ createComponent, renderer, html }) {
     },
     render () {
       return html`<div class="fc-dropdown">
-        <button type="button" class="fc-dropdown__button">Dropdown</button>
+        <button type="button" class="fc-dropdown__button">${this.props.dropdownTitle}</button>
         <div class="fc-dropdown__menu">${this.slots.default}</div>
       </div>`
     }
