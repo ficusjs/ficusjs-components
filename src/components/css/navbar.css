@@ -17,7 +17,7 @@
 .fc-navbar__section {
   align-items: center;
   display: flex;
-  flex: 1 0 0;
+  /* flex: 1 0 0; */
 }
 
 .fc-navbar__section:not(:first-child):last-child {

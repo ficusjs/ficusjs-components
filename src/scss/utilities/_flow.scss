@@ -2,3 +2,35 @@
   margin-top: var(--flow-space, 1rem);
 }
 
+/* TEMP */
+
+.fc-content {
+  h1:not(:first-of-type) {
+    --flow-space: var(--spacing-09);
+  }
+
+  h2 {
+    --flow-space: var(--spacing-09);
+  }
+
+  h3 {
+    --flow-space: var(--spacing-07);
+  }
+
+  h4 {
+    --flow-space: var(--spacing-06);
+  }
+
+  h5,
+  h6 {
+    --flow-space: var(--spacing-05);
+  }
+
+  hr {
+    --flow-space: var(--spacing-09);
+  }
+
+  table {
+    --flow-space: var(--spacing-07);
+  }
+}
