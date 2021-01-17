@@ -1,35 +1,40 @@
-.fc-form__input {
+.fc-form-input {
+  display: block;
+  margin-bottom: var(--spacing-05)
+}
+.fc-form-input__input {
   display: flex;
   flex-direction: column;
 }
-.fc-form__input.fc-form__input--reverse {
+.fc-form-input__input.fc-form-input__input--reverse {
   flex-direction: row-reverse;
   justify-content: start;
 }
-.fc-form__control {
+.fc-form-input__label {
+  margin-bottom: var(--spacing-02);
+  font-weight: 600;
+}
+.fc-form-input__control {
   display: block;
-  width: 100%;
-  padding: var(--form-input-padding);
-  border: var(--form-input-border);
-  border-radius: var(--form-input-border-radius);
-  transition: var(--form-input-transition)
+  appearance: none;
+  background: var(--ui-elevation-background-03);
+  background-image: none;
+  border: 1px solid var(--ui-border-color);
+  padding: var(--spacing-03);
+  outline: none;
 }
-.fc-form__control:focus {
-  border-color: var(--form-input-focus-border-color);
-  border-width: var(--form-input-focus-border-width);
-  padding: var(--form-input-focus-padding);
-  box-shadow: var(--form-input-box-shadow-offsets) var(--focus-input-box-shadow-color, var(--form-primary-shadow-color));
+.fc-form-input__control:focus {
+  border-color: var(--primary-dark-color);
+  box-shadow: 0 0 0 .1rem rgba(var(--primary-dark-color), .2);
 }
-.fc-form__control.ms-is-touched:invalid {
-  border-color: var(--form-invalid-color-rgb);
-  background-color: var(--form-invalid-bg-color);
-  border-width: var(--form-input-focus-border-width);
-  padding: var(--form-input-focus-padding);
+.fc-form-input__control::placeholder {
+  color: var(--medium-emphasis-text-color)
 }
-.fc-form__control.ms-is-touched:invalid:focus {
-  --focus-input-box-shadow-color: var(--form-invalid-shadow-color);
-}
-.fc-form__submit {
+
+
+
+
+.fc-form-input__submit {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +46,7 @@
   width: auto;
   transition: background-color .15s ease-in-out, border-color .15s ease-in-out
 }
-.fc-form__submit:hover {
+.fc-form-input__submit:hover {
   background-color: #16336a;
   border-color: #142e60;
 }
@@ -49,11 +54,11 @@ fc-input[type="submit"] fc-label,
 fc-input[type="submit"] fc-help-text {
   display: none;
 }
-fc-input[type="submit"] .fc-form__group {
+fc-input[type="submit"] .fc-form-input__group {
   margin: 0;
 }
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
-  .fc-form__check {
+  .fc-form-input__check {
     --active: #275efe;
     --active-inner: #fff;
     --focus: 2px rgba(39, 94, 254, .3);
@@ -75,7 +80,7 @@ fc-input[type="submit"] .fc-form__group {
     background: var(--b, var(--background));
     transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
   }
-  .fc-form__check:after {
+  .fc-form-input__check:after {
     content: '';
     display: block;
     left: 0;
@@ -83,41 +88,41 @@ fc-input[type="submit"] .fc-form__group {
     position: absolute;
     transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
   }
-  .fc-form__check:checked {
+  .fc-form-input__check:checked {
     --b: var(--active);
     --bc: var(--active);
     --d-o: 0.3s;
     --d-t: 0.6s;
     --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
   }
-  .fc-form__check:disabled {
+  .fc-form-input__check:disabled {
     --b: var(--disabled);
     cursor: not-allowed;
     opacity: 0.9;
   }
-  .fc-form__check:disabled:checked {
+  .fc-form-input__check:disabled:checked {
     --b: var(--disabled-inner);
     --bc: var(--border);
   }
-  .fc-form__check:disabled + label {
+  .fc-form-input__check:disabled + label {
     cursor: not-allowed;
   }
-  .fc-form__check:hover:not(:checked):not(:disabled) {
+  .fc-form-input__check:hover:not(:checked):not(:disabled) {
     --bc: var(--border-hover);
   }
-  .fc-form__check:focus {
+  .fc-form-input__check:focus {
     box-shadow: 0 0 0 var(--focus);
   }
-  .fc-form__check:not(.fc-form__switch) {
+  .fc-form-input__check:not(.fc-form-input__switch) {
     width: 21px;
   }
-  .fc-form__check:not(.fc-form__switch):after {
+  .fc-form-input__check:not(.fc-form-input__switch):after {
     opacity: var(--o, 0);
   }
-  .fc-form__check:not(.fc-form__switch):checked {
+  .fc-form-input__check:not(.fc-form-input__switch):checked {
     --o: 1;
   }
-  .fc-form__check + label {
+  .fc-form-input__check + label {
     font-size: 14px;
     line-height: 21px;
     display: inline-block;
@@ -125,10 +130,10 @@ fc-input[type="submit"] .fc-form__group {
     cursor: pointer;
     margin-left: 4px;
   }
-  input[type='checkbox'].fc-form__check:not(.fc-form__switch) {
+  input[type='checkbox'].fc-form-input__check:not(.fc-form-input__switch) {
     border-radius: 7px;
   }
-  input[type='checkbox'].fc-form__check:not(.fc-form__switch):after {
+  input[type='checkbox'].fc-form-input__check:not(.fc-form-input__switch):after {
     width: 5px;
     height: 9px;
     border: 2px solid var(--active-inner);
@@ -138,14 +143,14 @@ fc-input[type="submit"] .fc-form__group {
     top: 4px;
     transform: rotate(var(--r, 20deg));
   }
-  input[type='checkbox'].fc-form__check:not(.fc-form__switch):checked {
+  input[type='checkbox'].fc-form-input__check:not(.fc-form-input__switch):checked {
     --r: 43deg;
   }
-  input[type='checkbox'].fc-form__switch {
+  input[type='checkbox'].fc-form-input__switch {
     width: 38px;
     border-radius: 11px;
   }
-  input[type='checkbox'].fc-form__switch:after {
+  input[type='checkbox'].fc-form-input__switch:after {
     left: 2px;
     top: 2px;
     border-radius: 50%;
@@ -154,17 +159,17 @@ fc-input[type="submit"] .fc-form__group {
     background: var(--ab, var(--border));
     transform: translateX(var(--x, 0));
   }
-  input[type='checkbox'].fc-form__switch:checked {
+  input[type='checkbox'].fc-form-input__switch:checked {
     --ab: var(--active-inner);
     --x: 17px;
   }
-  input[type='checkbox'].fc-form__switch:disabled:not(:checked):after {
+  input[type='checkbox'].fc-form-input__switch:disabled:not(:checked):after {
     opacity: 0.6;
   }
-  input[type='radio'].fc-form__check {
+  input[type='radio'].fc-form-input__check {
     border-radius: 50%;
   }
-  input[type='radio'].fc-form__check:after {
+  input[type='radio'].fc-form-input__check:after {
     width: 19px;
     height: 19px;
     border-radius: 50%;
@@ -172,7 +177,7 @@ fc-input[type="submit"] .fc-form__group {
     opacity: 0;
     transform: scale(var(--s, 0.7));
   }
-  input[type='radio'].fc-form__check:checked {
+  input[type='radio'].fc-form-input__check:checked {
     --s: 0.5;
   }
 }

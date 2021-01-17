@@ -1,25 +1,9 @@
 .fc-form {
-  --form-spacing: var(--spacing-05);
-  --form-primary-color-rgb: rgb(29, 66, 138);
-  --form-primary-shadow-color: rgba(29, 66, 138, 0.25);
-  --form-invalid-color-rgb: rgb(220, 53, 69);
-  --form-invalid-bg-color: rgba(220, 53, 69, 0.15);
-  --form-invalid-shadow-color: rgba(220, 53, 69, 0.25);
-  --form-input-border-width: 1px;
-  --form-input-border-color: #e3e3e3;
-  --form-input-border: 1px solid #e3e3e3;
-  --form-input-border-radius: 0.125rem;
-  --form-input-padding: calc(var(--form-spacing) / 2) var(--form-spacing);
-  --form-input-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  --form-input-focus-border-width: calc(var(--form-input-border-width) * 2);
-  --form-input-focus-border-color: rgba(29, 66, 138, 0.75);
-  --form-input-focus-padding: calc((var(--form-spacing) / 2) - var(--form-input-border-width)) calc(var(--form-spacing) - var(--form-input-border-width));
-  --form-input-box-shadow-offsets: 0 0 0 0.2rem;
-  --form-submit-bg-color: rgb(29, 66, 138);
-  --form-submit-color: rgb(255, 255, 255);
-  --form-submit-border-color: rgb(29, 66, 138);
   display: block;
 }
+
+
+
 .fc-form__group {
   margin-bottom: var(--form-spacing);
 }

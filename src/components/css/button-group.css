@@ -1,0 +1,26 @@
+.fc-button-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.fc-button-group .fc-button {
+  flex: 1 0 auto;
+}
+.fc-button-group .fc-button:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.fc-button-group .fc-button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  margin-left: -1px;
+}
+.fc-button-group .fc-button:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -1px;
+}
+.fc-button-group--block {
+  display: flex;
+}
+.fc-button-group--block .fc-button {
+  flex: 1 0 0;
+}

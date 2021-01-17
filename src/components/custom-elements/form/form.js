@@ -165,13 +165,13 @@ export function createForm ({ createComponent, renderer, html }) {
     },
     mounted () {
       const form = this.querySelector('form')
-      form.classList.add('fc-form')
       form.addEventListener('submit', this.onSubmit)
       form.addEventListener('reset', this.onReset)
       form.addEventListener('input', this.onInput)
       form.addEventListener('change', this.onChange)
     },
     render () {
+      this.classList.add('fc-form')
       return html`
         <form novalidate>${this.slots.default}</form>
       `
