@@ -18,7 +18,9 @@ Styling hooks use CSS custom properties which make it easy to customize componen
 
 ## What are Styling Hooks
 
-Below is an example of the button and the button using Styling Hooks to change it's appearance. 
+Below is an example of a standard button plus a button changed using Styling Hooks.
+
+**Standard button**
 
 <div class="fd-component-container">
   <button type="button" class="fc-button">Button</button>
@@ -27,6 +29,8 @@ Below is an example of the button and the button using Styling Hooks to change i
 ```html
 <button type="button" class="fc-button">Button</button>
 ```
+
+**Button changed with Styling Hooks**
 
 <div class="fd-component-container">
   <button type="button" class="fc-button fc-button--my-css">Button</button>
@@ -54,7 +58,7 @@ Below is an example of the button and the button using Styling Hooks to change i
 
 ## What Does the Code Look Like?
 
-At its heart, styling hooks are constructed using CSS custom properties, (also referred to as CSS variables or cascading variables). Continuing with the button, here are the available Styling Hooks. 
+At its heart, styling hooks are constructed using CSS custom properties, (also referred to as CSS variables or cascading variables). Continuing with the button, here are the available Styling Hooks.
 
 ```css
 .fc-button {

@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{title}}</title>
+  <base href="/">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- component css START -->
   {% set css %}
     {% include "../components/css/content.css" %}
@@ -35,5 +37,6 @@
     </aside>
     {% endif %}
   </main>
+  <script type="module" src="assets/js/doc-theme.js"></script>
 </body>
 </html>

@@ -6,9 +6,10 @@ export function createDropdown ({ createComponent, renderer, html }) {
     props: {
       dropdownTitle: {
         type: String,
+        default: 'Dropdown'
       },
       buttonClass: {
-        type: String,
+        type: String
       }
     },
     computed: {
