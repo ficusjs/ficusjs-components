@@ -169,9 +169,9 @@ export function createForm ({ createComponent, renderer, html }) {
       form.addEventListener('reset', this.onReset)
       form.addEventListener('input', this.onInput)
       form.addEventListener('change', this.onChange)
+      this.classList.add('fc-form-container')
     },
     render () {
-      this.classList.add('fc-form')
       return html`
         <form novalidate>${this.slots.default}</form>
       `

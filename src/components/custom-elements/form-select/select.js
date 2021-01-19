@@ -63,6 +63,7 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
     },
     mounted () {
       setAttributes(this.querySelector('select'), props, this.props)
+      this.classList.add('fc-form')
     },
     updated () {
       setAttributes(this.querySelector('select'), props, this.props)

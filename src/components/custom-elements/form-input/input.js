@@ -14,20 +14,20 @@ export function createInput ({ createComponent, renderer, html, nothing }) {
       },
       className () {
         if (this.props.type === inputTypes.RADIO || this.props.type === inputTypes.CHECKBOX) {
-          return `fc-form-input__check${this.props.switch ? ' fc-form-input__switch' : ''}`
+          return `fc-form__check${this.props.switch ? ' fc-form__switch' : ''}`
         }
-        if (this.props.type === inputTypes.RANGE) return 'fc-form-input__range'
-        if (this.props.type === inputTypes.SUBMIT) return 'fc-form-input__submit'
-        return 'fc-form-input__control'
+        if (this.props.type === inputTypes.RANGE) return 'fc-form__range'
+        if (this.props.type === inputTypes.SUBMIT) return 'fc-form__submit'
+        return 'fc-form__control'
       },
       containerClassName () {
-        return (this.props.inline || this.props.type === inputTypes.SUBMIT) ? 'fc-form-input__group fc-form-input__group--inline' : this.props.type === inputTypes.RADIO || this.props.type === inputTypes.CHECKBOX ? 'fc-form-input__group fc-form-input__group--rc' : 'fc-form-input__group'
+        return (this.props.inline || this.props.type === inputTypes.SUBMIT) ? 'fc-form__group fc-form__group--inline' : this.props.type === inputTypes.RADIO || this.props.type === inputTypes.CHECKBOX ? 'fc-form__group fc-form__group--rc' : 'fc-form__group'
       },
       inputClassName () {
-        return this.props.type === inputTypes.RADIO || this.props.type === inputTypes.CHECKBOX ? 'fc-form-input__input fc-form-input__input--reverse' : 'fc-form-input__input'
+        return this.props.type === inputTypes.RADIO || this.props.type === inputTypes.CHECKBOX ? 'fc-form__input fc-form__input--reverse' : 'fc-form__input'
       },
       labelClassName () {
-        return `fc-form-input__label${this.props.inline ? '' : ' fc-form-input__label--block'}`
+        return `fc-form__label${this.props.inline ? '' : ' fc-form__label--block'}`
       },
       isValidType () {
         return Object.values(inputTypes).indexOf(this.props.type) !== -1
@@ -38,7 +38,7 @@ export function createInput ({ createComponent, renderer, html, nothing }) {
     },
     created () {
       if (!this.isValidType) throw new Error(`${this.props.type} is not a valid input type`)
-      this.classList.add('fc-form-input')
+      this.classList.add('fc-form')
     },
     mounted () {
       setAttributes(this.querySelector('input'), props, this.props)
@@ -60,10 +60,10 @@ export function createInput ({ createComponent, renderer, html, nothing }) {
             >
             ${this.slots.default}
           </div>
-          <div aria-live="polite" class="fc-form-input__invalid-feedback">
+          <div aria-live="polite" class="fc-form__invalid-feedback">
             <span></span>
           </div>
-          <div class="fc-form-input__help-text">${this.props.helpText}</div>
+          <div class="fc-form__help-text">${this.props.helpText}</div>
         </div>
       `
     }
