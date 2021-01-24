@@ -6,6 +6,7 @@
 // ------------
 
 $white: #fff !default;
+$black: #000 !default;
 $gray-10: #fafafa !default;
 $gray-20: #dddddd !default;
 $gray-30: #c0c0c0 !default;
@@ -16,9 +17,10 @@ $gray-70: #565656 !default;
 $gray-80: #3e3e3e !default;
 $gray-90: #272727 !default;
 $gray-100: #121212 !default;
-$black: #000 !default;
+
 $grays: (
   'white': $white,
+  'black': $black,
   'gray-10': $gray-10,
   'gray-20': $gray-20,
   'gray-30': $gray-30,
@@ -28,8 +30,7 @@ $grays: (
   'gray-70': $gray-70,
   'gray-80': $gray-80,
   'gray-90': $gray-90,
-  'gray-100': $gray-100,
-  'black': $black
+  'gray-100': $gray-100
 );
 
 $primary-10: #b6f3f4 !default;
@@ -232,35 +233,29 @@ $ui-elevations: (
 
 
 $ui-background-01: $white;
-$ui-background-02: shade($white, 5%);
-$ui-background-03: shade($white, 10%);
-$ui-background-04: shade($white, 15%);
-$ui-background-05: shade($white, 20%);
-$ui-background-06: shade($white, 25%);
-$ui-background-07: shade($white, 30%);
-$ui-background-08: shade($white, 35%);
-$ui-background-09: shade($white, 40%);
-$ui-background-10: shade($white, 45%);
-$ui-background-11: shade($white, 50%);
-$ui-background-12: shade($white, 60%);
-$ui-background-13: shade($white, 70%);
-$ui-background-14: shade($white, 80%);
-$ui-background-15: shade($white, 90%);
+$ui-background-02: $gray-10;
+$ui-background-03: $gray-20;
+$ui-background-04: $gray-30;
+$ui-background-05: $gray-40;
+$ui-background-06: $gray-50;
+$ui-background-07: $gray-60;
+$ui-background-08: $gray-70;
+$ui-background-09: $gray-80;
+$ui-background-10: $gray-90;
+$ui-background-11: $gray-100;
+$ui-background-12: $black;
 $ui-border-01: $white;
-$ui-border-02: shade($white, 5%);
-$ui-border-03: shade($white, 10%);
-$ui-border-04: shade($white, 15%);
-$ui-border-05: shade($white, 20%);
-$ui-border-06: shade($white, 25%);
-$ui-border-07: shade($white, 30%);
-$ui-border-08: shade($white, 35%);
-$ui-border-09: shade($white, 40%);
-$ui-border-10: shade($white, 50%);
-$ui-border-11: shade($white, 60%);
-$ui-border-12: shade($white, 70%);
-$ui-border-13: shade($white, 80%);
-$ui-border-14: shade($white, 90%);
-$ui-border-15: $black;
+$ui-border-02: $gray-10;
+$ui-border-03: $gray-20;
+$ui-border-04: $gray-30;
+$ui-border-05: $gray-40;
+$ui-border-06: $gray-50;
+$ui-border-07: $gray-60;
+$ui-border-08: $gray-70;
+$ui-border-09: $gray-80;
+$ui-border-10: $gray-90;
+$ui-border-11: $gray-100;
+$ui-border-12: $black;
 $ui-color: $black;
 $ui-border-color: $border-color;
 $ui-border-radius: $border-radius-01;
@@ -277,9 +272,6 @@ $ui-styles: (
   'ui-background-10': $ui-background-10,
   'ui-background-11': $ui-background-11,
   'ui-background-12': $ui-background-12,
-  'ui-background-13': $ui-background-13,
-  'ui-background-14': $ui-background-14,
-  'ui-background-15': $ui-background-15,
   'ui-border-01': $ui-border-01,
   'ui-border-02': $ui-border-02,
   'ui-border-03': $ui-border-03,
@@ -292,9 +284,6 @@ $ui-styles: (
   'ui-border-10': $ui-border-10,
   'ui-border-11': $ui-border-11,
   'ui-border-12': $ui-border-12,
-  'ui-border-13': $ui-border-13,
-  'ui-border-14': $ui-border-14,
-  'ui-border-15': $ui-border-15,
   'ui-color': $ui-color,
   'ui-border-color': $ui-border-color,
   'ui-border-radius': $ui-border-radius,
@@ -330,7 +319,15 @@ $dm-colors: (
 // Components
 
 // Elevations
-$dm-ui-elevation-background: $gray-100;
+$dm-ui-elevation-background-01: $gray-100;
+$dm-ui-elevation-background-02: $gray-90;
+$dm-ui-elevation-background-03: $gray-80;
+$dm-ui-elevation-background-04: $gray-70;
+$dm-ui-elevation-background-05: $gray-60;
+$dm-ui-elevation-background-06: $gray-50;
+$dm-ui-elevation-background-07: $gray-40;
+$dm-ui-elevation-background-08: $gray-30;
+$dm-ui-elevation-background-09: $gray-20;
 $dm-ui-elevation-shadow-01: 0 2px 1px -1px rgba($black,.2),0 1px 1px 0 rgba($black,.14),0 1px 3px 0 rgba($black,.12);
 $dm-ui-elevation-shadow-02: 0 3px 1px -2px rgba($black,.2),0 2px 2px 0 rgba($black,.14),0 1px 5px 0 rgba($black,.12);
 $dm-ui-elevation-shadow-03: 0 3px 3px -2px rgba($black,.2),0 3px 4px 0 rgba($black,.14),0 1px 8px 0 rgba($black,.12);
@@ -341,15 +338,15 @@ $dm-ui-elevation-shadow-07: 0 7px 8px -4px rgba($black,.2),0 12px 17px 2px rgba(
 $dm-ui-elevation-shadow-08: 0 8px 10px -5px rgba($black,.2),0 16px 24px 2px rgba($black,.14),0 6px 30px 5px rgba($black,.12);
 $dm-ui-elevation-shadow-09: 0 11px 15px -7px rgba($black,.2),0 24px 38px 3px rgba($black,.14),0 9px 46px 8px rgba($black,.12);
 $dm-ui-elevations: (
-  'ui-elevation-background-01': #1d1d1d,
-  'ui-elevation-background-02': #222222,
-  'ui-elevation-background-03': #242424,
-  'ui-elevation-background-04': #272727,
-  'ui-elevation-background-05': #2c2c2c,
-  'ui-elevation-background-06': #2d2d2d,
-  'ui-elevation-background-07': #323232,
-  'ui-elevation-background-08': #343434,
-  'ui-elevation-background-09': #373737,
+  'ui-elevation-background-01': $dm-ui-elevation-background-01,
+  'ui-elevation-background-02': $dm-ui-elevation-background-02,
+  'ui-elevation-background-03': $dm-ui-elevation-background-03,
+  'ui-elevation-background-04': $dm-ui-elevation-background-04,
+  'ui-elevation-background-05': $dm-ui-elevation-background-05,
+  'ui-elevation-background-06': $dm-ui-elevation-background-06,
+  'ui-elevation-background-07': $dm-ui-elevation-background-07,
+  'ui-elevation-background-08': $dm-ui-elevation-background-08,
+  'ui-elevation-background-09': $dm-ui-elevation-background-09,
   'ui-elevation-shadow-01': $dm-ui-elevation-shadow-01,
   'ui-elevation-shadow-02': $dm-ui-elevation-shadow-02,
   'ui-elevation-shadow-03': $dm-ui-elevation-shadow-03,
@@ -362,36 +359,30 @@ $dm-ui-elevations: (
 ) !default;
 
 
-$dm-ui-background-01: $gray-100;
-$dm-ui-background-02: tint($gray-100, 5%);
-$dm-ui-background-03: tint($gray-100, 10%);
-$dm-ui-background-04: tint($gray-100, 15%);
-$dm-ui-background-05: tint($gray-100, 20%);
-$dm-ui-background-06: tint($gray-100, 25%);
-$dm-ui-background-07: tint($gray-100, 30%);
-$dm-ui-background-08: tint($gray-100, 35%);
-$dm-ui-background-09: tint($gray-100, 40%);
-$dm-ui-background-10: tint($gray-100, 45%);
-$dm-ui-background-11: tint($gray-100, 50%);
-$dm-ui-background-12: tint($gray-100, 60%);
-$dm-ui-background-13: tint($gray-100, 70%);
-$dm-ui-background-14: tint($gray-100, 80%);
-$dm-ui-background-15: tint($gray-100, 90%);
-$dm-ui-border-01: $gray-100;
-$dm-ui-border-02: tint($gray-100, 5%);
-$dm-ui-border-03: tint($gray-100, 10%);
-$dm-ui-border-04: tint($gray-100, 15%);
-$dm-ui-border-05: tint($gray-100, 20%);
-$dm-ui-border-06: tint($gray-100, 25%);
-$dm-ui-border-07: tint($gray-100, 30%);
-$dm-ui-border-08: tint($gray-100, 35%);
-$dm-ui-border-09: tint($gray-100, 40%);
-$dm-ui-border-10: tint($gray-100, 45%);
-$dm-ui-border-11: tint($gray-100, 50%);
-$dm-ui-border-12: tint($gray-100, 60%);
-$dm-ui-border-13: tint($gray-100, 70%);
-$dm-ui-border-14: tint($gray-100, 80%);
-$dm-ui-border-15: tint($gray-100, 90%);
+$dm-ui-background-01: $black;
+$dm-ui-background-02: $gray-100;
+$dm-ui-background-03: $gray-90;
+$dm-ui-background-04: $gray-80;
+$dm-ui-background-05: $gray-70;
+$dm-ui-background-06: $gray-60;
+$dm-ui-background-07: $gray-50;
+$dm-ui-background-08: $gray-40;
+$dm-ui-background-09: $gray-30;
+$dm-ui-background-10: $gray-20;
+$dm-ui-background-11: $gray-10;
+$dm-ui-background-12: $white;
+$dm-ui-border-01: $black;
+$dm-ui-border-02: $gray-100;
+$dm-ui-border-03: $gray-90;
+$dm-ui-border-04: $gray-80;
+$dm-ui-border-05: $gray-70;
+$dm-ui-border-06: $gray-60;
+$dm-ui-border-07: $gray-50;
+$dm-ui-border-08: $gray-40;
+$dm-ui-border-09: $gray-30;
+$dm-ui-border-10: $gray-20;
+$dm-ui-border-11: $gray-10;
+$dm-ui-border-12: $white;
 $dm-ui-color: $white;
 $dm-ui-border-color: $dm-border-color;
 $dm-ui-border-radius: $border-radius-01;
@@ -408,9 +399,6 @@ $dm-ui-styles: (
   'ui-background-10': $dm-ui-background-10,
   'ui-background-11': $dm-ui-background-11,
   'ui-background-12': $dm-ui-background-12,
-  'ui-background-13': $dm-ui-background-13,
-  'ui-background-14': $dm-ui-background-14,
-  'ui-background-15': $dm-ui-background-15,
   'ui-border-01': $dm-ui-border-01,
   'ui-border-02': $dm-ui-border-02,
   'ui-border-03': $dm-ui-border-03,
@@ -423,9 +411,6 @@ $dm-ui-styles: (
   'ui-border-10': $dm-ui-border-10,
   'ui-border-11': $dm-ui-border-11,
   'ui-border-12': $dm-ui-border-12,
-  'ui-border-13': $dm-ui-border-13,
-  'ui-border-14': $dm-ui-border-14,
-  'ui-border-15': $dm-ui-border-15,
   'ui-color': $dm-ui-color,
   'ui-border-color': $dm-border-color,
   'ui-border-radius': $dm-ui-border-radius,

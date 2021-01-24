@@ -92,9 +92,9 @@ hr {
 code:not([class]) {
   word-break: break-word;
   hyphens: manual;
-  background-color: var(--ui-background-02);
+  background-color: var(--ui-background-03);
   border-radius: var(--ui-border-radius);
-  border: 1px solid var(--ui-background-03);
+  border: 1px solid var(--ui-background-04);
   padding-left: calc(var(--spacing-05) / 2);
   padding-right: calc(var(--spacing-05) / 2);
 }

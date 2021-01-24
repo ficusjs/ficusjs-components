@@ -47,5 +47,5 @@
 .fc-button.fc-button--link:hover
 .fc-button.fc-button--link:active
 .fc-button.fc-button--link.active {
-  background: var(--fc-button-neutral-color-background-hover, var(--ui-background-01));
+  background: var(--fc-button-neutral-color-background-hover, var(--ui-background-02));
 }
