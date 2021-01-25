@@ -1,3 +1,5 @@
+// TODO - This needs to be a component and sorting out
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -12,19 +14,20 @@ table tbody {
   background-color: var(--ui-background-01);
 }
 
-table tr {
-  border-top: 1px solid var(--ui-border-03);
+table td,
+table tbody th {
+  border-top: 1px solid var(--ui-border-02);
+  border-bottom: 1px solid var(--ui-border-02);
   margin: 0;
-  padding: 0;
-}
-
-table tr td,
-table tr th {
-  border: 1px solid var(--ui-border-03);
-  margin: 0;
-  padding: 6px 13px;
 }
 
 table code {
   word-break: normal;
+}
+
+table td,
+table th {
+  text-align: left;
+  vertical-align: middle;
+  padding: var(--spacing-04) var(--spacing-05);
 }
