@@ -83,7 +83,7 @@ img:not([alt]) {
 
 /* The Thematic Break (Horizontal Rule) element styles */
 hr {
-  border-top: 1px solid var(--ui-border-03);
+  border-top: 1px solid var(--ui-border-02);
   margin: 0;
   border-width: 1px 0 0;
 }
@@ -92,9 +92,9 @@ hr {
 code:not([class]) {
   word-break: break-word;
   hyphens: manual;
-  background-color: var(--ui-background-03);
+  background-color: var(--ui-background-02);
   border-radius: var(--ui-border-radius-01);
-  border: 1px solid var(--ui-border-04);
+  border: 1px solid var(--ui-border-03);
   padding-left: calc(var(--spacing-05) / 2);
   padding-right: calc(var(--spacing-05) / 2);
 }
