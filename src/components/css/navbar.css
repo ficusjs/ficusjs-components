@@ -11,7 +11,7 @@
   height: var(--header-height);
   padding: 0 var(--header-padding);
   background: var(--ui-elevation-background-02);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--ui-border-03);
 }
 
 .fc-navbar__section {

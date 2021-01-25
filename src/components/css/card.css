@@ -1,7 +1,7 @@
 .fc-card {
   background: var(--fc-card-color-bg, var(--ui-elevation-background-01));
-  border: 1px solid var(--fc-card-color-border, var(--ui-border-color));
-  border-radius: var(--fc-card-border-radius, var(--ui-border-radius));
+  border: 1px solid var(--fc-card-color-border, var(--ui-border-04));
+  border-radius: var(--fc-card-border-radius, var(--ui-border-radius-01));
 }
 
 .fc-card__header {

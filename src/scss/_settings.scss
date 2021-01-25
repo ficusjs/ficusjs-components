@@ -177,8 +177,6 @@ $layouts: (
 
 $negative-layouts: negativify-map($layouts) !default;
 
-$border-radius-01: 2px;
-
 // Grid breakpoints
 // ----------------
 
@@ -231,7 +229,6 @@ $ui-elevations: (
   'ui-elevation-shadow-09': $ui-elevation-shadow-09
 ) !default;
 
-
 $ui-background-01: $white;
 $ui-background-02: $gray-10;
 $ui-background-03: $gray-20;
@@ -257,8 +254,6 @@ $ui-border-10: $gray-90;
 $ui-border-11: $gray-100;
 $ui-border-12: $black;
 $ui-color: $black;
-$ui-border-color: $border-color;
-$ui-border-radius: $border-radius-01;
 $ui-styles: (
   'ui-background-01': $ui-background-01,
   'ui-background-02': $ui-background-02,
@@ -284,9 +279,18 @@ $ui-styles: (
   'ui-border-10': $ui-border-10,
   'ui-border-11': $ui-border-11,
   'ui-border-12': $ui-border-12,
-  'ui-color': $ui-color,
-  'ui-border-color': $ui-border-color,
-  'ui-border-radius': $ui-border-radius,
+  'ui-color': $ui-color
+) !default;
+
+
+// Border radius
+$ui-border-radius-01: 2px;
+$ui-border-radius-02: 4px;
+$ui-border-radius-03: 8px;
+$ui-border-radius: (
+  'ui-border-radius-01': $ui-border-radius-01,
+  'ui-border-radius-02': $ui-border-radius-02,
+  'ui-border-radius-03': $ui-border-radius-02,
 ) !default;
 
 // Dark theme
@@ -384,8 +388,6 @@ $dm-ui-border-10: $gray-20;
 $dm-ui-border-11: $gray-10;
 $dm-ui-border-12: $white;
 $dm-ui-color: $white;
-$dm-ui-border-color: $dm-border-color;
-$dm-ui-border-radius: $border-radius-01;
 $dm-ui-styles: (
   'ui-background-01': $dm-ui-background-01,
   'ui-background-02': $dm-ui-background-02,
@@ -411,7 +413,5 @@ $dm-ui-styles: (
   'ui-border-10': $dm-ui-border-10,
   'ui-border-11': $dm-ui-border-11,
   'ui-border-12': $dm-ui-border-12,
-  'ui-color': $dm-ui-color,
-  'ui-border-color': $dm-border-color,
-  'ui-border-radius': $dm-ui-border-radius,
+  'ui-color': $dm-ui-color
 ) !default;
