@@ -1,11 +1,15 @@
 // Component container
 
 .fd-component-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: var(--spacing-07);
-  border: 1px solid var(--ui-border-04);
-  border-top-left-radius: 0.3em;
-  border-top-right-radius: 0.3em;
-  padding: var(--spacing-05);
+  border: 1px solid var(--ui-border-02);
+  border-top-left-radius: var(--ui-border-radius-01);
+  border-top-right-radius: var(--ui-border-radius-01);
+  padding: var(--spacing-09) var(--spacing-07);
 }
 
 .fd-component-container + code[class*="language-"],

@@ -7,8 +7,6 @@ cssFile:
   - /css/ficus-utilities.css
   - /css/ficus-docs.css
   - /components/css/form.css
-  - /components/css/form-help-text.css
-  - /components/css/form-label.css
   - /components/css/form-textarea.css
 modulePath: /components/custom-elements/form-textarea/index.js
 tags:
@@ -16,13 +14,22 @@ tags:
 ---
 # Form textarea
 
-Form textarea component.
+Form textareas enable the user to interact with and input content and data. This component can be used when the expected user input is more than one sentence.
 
 ## Example
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-textarea name="textareaInput1" label="Form textarea" help-text="Form textarea help text"></fc-form-textarea>
+  </fc-form>
+</div>
+
+
+```html
 <fc-form>
   <fc-form-textarea name="textareaInput1" label="Form textarea" help-text="Form textarea help text"></fc-form-textarea>
 </fc-form>
+```
 
 ## Importing
 
@@ -38,12 +45,6 @@ import { module as formTextareaModule } from 'https://unpkg.com/ficusjs-componen
 
 // use the module
 use(formTextareaModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-form-textarea name="textareaInput1" label="Form textarea input" help-text="Form textarea input help text"></fc-form-textarea>
 ```
 
 ## API

@@ -1,24 +1,43 @@
+.fc-form__label {
+  /* THIS NEEDS TO BE A MIXIN */
+  margin-bottom: var(--spacing-02);
+  font-weight: 600;
+}
+
+.fc-form__label--block {
+  display: block;
+}
+
 .fc-form__textarea textarea {
   display: block;
   width: 100%;
-  padding: var(--form-input-padding);
-  border: var(--form-input-border);
-  border-radius: var(--form-input-border-radius);
-  transition: var(--form-input-transition);
   height: auto;
+  background: var(--fc-form-textarea-color-background, var(--ui-background-01));
+  border: 1px solid var(--fc-form-textarea-color-border, var(--ui-border-04));
+  border-radius: var(--fc-form-textarea-radius, var(--ui-border-radius-01));
+  padding: var(--spacing-05);
+  color: var(--body-color); /* CHANGE */
+  outline: none;
 }
-.fc-form__textarea textarea:focus {
-  border-color: var(--form-input-focus-border-color);
-  border-width: var(--form-input-focus-border-width);
-  padding: var(--form-input-focus-padding);
-  box-shadow: var(--form-input-box-shadow-offsets) var(--focus-input-box-shadow-color, var(--form-primary-shadow-color));
+.fc-form__textarea textarea:focus,
+.fc-form__textarea textarea:active {
+  border-color: var(--primary-dark-color);
+  box-shadow: 0 0 0 .1rem rgba(var(--primary-dark-color), .2);
 }
-.fc-form__textarea textarea.ms-is-touched:invalid {
-  border-color: var(--form-invalid-color-rgb);
-  background-color: var(--form-invalid-bg-color);
-  border-width: var(--form-input-focus-border-width);
-  padding: var(--form-input-focus-padding);
+
+.fc-form__textarea textarea::placeholder {
+  color: var(--medium-emphasis-text-color)
 }
-.fc-form__textarea textarea.ms-is-touched:invalid:focus {
-  --focus-input-box-shadow-color: var(--form-invalid-shadow-color);
+
+/* Disabled */
+.fc-form__textarea textarea:disabled {
+  /* ADD DISABLED STYLES */
+  cursor: not-allowed;
+}
+
+.fc-form__help-text {
+  /* THIS NEEDS TO BE A MIXIN */
+  margin-top: var(--spacing-01);
+  font-size: var(--text-xs);
+  font-weight: 400;
 }
