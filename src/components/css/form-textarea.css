@@ -17,12 +17,12 @@
   border-radius: var(--fc-form-textarea-radius, var(--ui-border-radius-01));
   padding: var(--spacing-05);
   color: var(--body-color); /* CHANGE */
-  outline: none;
+  outline: 2px solid transparent;
 }
 .fc-form__textarea textarea:focus,
 .fc-form__textarea textarea:active {
-  border-color: var(--primary-dark-color);
-  box-shadow: 0 0 0 .1rem rgba(var(--primary-dark-color), .2);
+  outline: 2px solid var(--state-focus);
+  outline-offset: -2px;
 }
 
 .fc-form__textarea textarea::placeholder {

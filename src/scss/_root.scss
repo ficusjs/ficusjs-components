@@ -3,6 +3,10 @@
   @each $color, $value in $global-colors {
     --#{$color}-color: #{$value};
   }
+  // State colors
+  @each $state, $value in $state-colors {
+    --state-#{$state}: #{$value};
+  }
   // Spacings
   @each $spacing, $value in $spacings {
     --spacing-#{$spacing}: #{$value};
