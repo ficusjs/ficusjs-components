@@ -13,7 +13,7 @@
   }
   // Typography
   @each $type, $value in $type-scale {
-    --#{$type}: #{$value};
+    --text-#{$type}: #{$value};
   }
   // Line heights
   @each $line-height, $value in $line-heights {

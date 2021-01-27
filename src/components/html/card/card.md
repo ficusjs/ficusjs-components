@@ -17,7 +17,7 @@ Card component.
 <div class="fd-component-container">
   <div class="fc-card">
     <div class="fc-card__header">
-      <h2 class="fu-text-md">Card title</h2>
+      <h2 class="fu-text-03">Card title</h2>
       <span>Subtitle</span>
     </div>
     <div class="fc-card__body">

@@ -17,10 +17,11 @@
 .fc-form__control {
   display: block;
   appearance: none;
-  background: var(--ui-elevation-background-03);
+  background: var(--fc-form-input-color-background, var(--ui-background-01));
+  border: 1px solid var(--fc-form-input-color-border, var(--ui-border-04));
+  border-radius: var(--fc-form-input-radius, var(--ui-border-radius-01));
   background-image: none;
-  border: 1px solid var(--ui-border-05);
-  padding: var(--spacing-03);
+  padding: var(--spacing-05);
   outline: none;
 }
 .fc-form__control:focus {
@@ -32,7 +33,7 @@
 }
 .fc-form__help-text {
   margin-top: var(--spacing-01);
-  font-size: var(--text-xs);
+  font-size: var(--text-01);
   font-weight: 400;
 }
 
