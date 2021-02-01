@@ -1,3 +1,5 @@
+@use 'settings' as *;
+
 :root {
   // Main colors
   @each $color, $value in $global-colors {

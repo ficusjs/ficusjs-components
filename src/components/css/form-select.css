@@ -2,22 +2,28 @@
   display: block;
   margin-bottom: var(--spacing-05)
 }
+.fc-form__select {
+  display: flex;
+  flex-direction: column;
+}
 .fc-form__select select {
   display: block;
   width: 100%;
-  border: 1px solid var(--ui-border-05);
-  padding: var(--spacing-03);
   max-width: 100%;
-  padding-right: 2.25rem;
-  background-color: var(--ui-elevation-background-03);
+  background-color: var(--fc-form-select-color-background, var(--ui-background-01));
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC");
   background-repeat: no-repeat;
   background-position-x: calc(100% - 1rem);
   background-position-y: center;
   background-size: 8px 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  border: 1px solid var(--fc-form-select-color-border, var(--ui-border-04));
+  border-radius: var(--fc-form-select-radius, var(--ui-border-radius-01));
+  padding: var(--fc-form-select-spacing-padding, var(--spacing-04) var(--spacing-05));
+  color: var(--body-color); /* CHANGE */
+  outline: 2px solid transparent;
+  padding-right: 2.25rem;
   appearance: none;
+  box-sizing: border-box;
 }
 .fc-form select::-ms-expand {
   opacity: 0;
@@ -25,32 +31,17 @@
 .fc-form select[multiple] {
   height: auto;
 }
-.fc-form select:focus {
-  border-color: var(--primary-dark-color);
-  box-shadow: 0 0 0 .1rem rgba(var(--primary-dark-color), .2);
+.fc-form select:focus,
+.fc-form select:active {
+  outline: 2px solid var(--state-focus);
+  outline-offset: -2px;
 }
-/* .fc-form select.ms-is-touched:invalid {
-  border-color: var(--form-invalid-color-rgb);
-  background-color: var(--form-invalid-bg-color);
-  border-width: var(--form-input-focus-border-width);
-  padding: var(--form-input-focus-padding);
-}
-.fc-form select.ms-is-touched:invalid:focus {
-  --focus-input-box-shadow-color: var(--form-invalid-shadow-color);
-} */
-
 .fc-form__label {
   margin-bottom: var(--spacing-02);
   font-weight: 600;
 }
-
 .fc-form__help-text {
   margin-top: var(--spacing-01);
   font-size: var(--text-01);
   font-weight: 400;
-}
-
-.fc-form__select {
-  display: flex;
-  flex-direction: column;
 }

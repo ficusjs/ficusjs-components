@@ -16,20 +16,35 @@ tags:
 ---
 # Form select
 
-Form select component.
+Select is a type of input that is used in forms, where a user is submitting data and chooses one option from a list.
 
 ## Example
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-select name="selectInput1" label="Select input" placeholder="Select an option" help-text="Select input help text">
+      <option value=""></option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      <option value="option4">Option 4</option>
+      <option value="option5">Option 5</option>
+    </fc-form-select>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-select name="selectInput1" label="Select input" help-text="Select input help text">
-  <option value=""></option>
-  <option value="option1">Option 1</option>
-  <option value="option2">Option 2</option>
-  <option value="option3">Option 3</option>
-  <option value="option4">Option 4</option>
-  <option value="option5">Option 5</option>
-</fc-form-select>
+  <fc-form-select name="selectInput1" label="Select input" help-text="Select input help text">
+    <option value=""></option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+  </fc-form-select>
 </fc-form>
+```
 
 ## Importing
 
@@ -45,19 +60,6 @@ import { module as formSelectModule, Option, OptGroup } from 'https://unpkg.com/
 
 // use the module
 use(formSelectModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-form-select name="selectInput1" label="Text input" help-text="Text input help text">
-  <option value=""></option>
-  <option value="option1">Option 1</option>
-  <option value="option2">Option 2</option>
-  <option value="option3">Option 3</option>
-  <option value="option4">Option 4</option>
-  <option value="option5">Option 5</option>
-</fc-form-select>
 ```
 
 ## API

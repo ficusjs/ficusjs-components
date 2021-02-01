@@ -24,7 +24,6 @@ Form textareas enable the user to interact with and input content and data. This
   </fc-form>
 </div>
 
-
 ```html
 <fc-form>
   <fc-form-textarea name="textareaInput1" label="Form textarea" help-text="Form textarea help text"></fc-form-textarea>

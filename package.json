@@ -22,7 +22,6 @@
     "sass:theme": "sass src/scss/ficus-globals.scss src/css/ficus-globals.css",
     "sass:utilities": "sass src/scss/ficus-utilities.scss src/css/ficus-utilities.css",
     "sass:docs": "sass src/assets/scss/ficus-docs.scss src/css/ficus-docs.css",
-    
     "watch:sass:compile": "chokidar \"src/**/*.scss\" -c \"run-p sass\"",
     "watch:sass": "run-p watch:sass:*",
     "lint": "run-p lint:*",
