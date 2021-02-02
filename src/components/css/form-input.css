@@ -11,6 +11,7 @@
   justify-content: start;
 }
 .fc-form__label {
+  /* THIS NEEDS TO BE A MIXIN */
   margin-bottom: var(--spacing-02);
   font-weight: 600;
 }
@@ -20,18 +21,19 @@
   background: var(--fc-form-input-color-background, var(--ui-background-01));
   border: 1px solid var(--fc-form-input-color-border, var(--ui-border-04));
   border-radius: var(--fc-form-input-radius, var(--ui-border-radius-01));
-  background-image: none;
-  padding: var(--spacing-05);
-  outline: none;
+  padding: var(--spacing-04) var(--spacing-05);
+  color: var(--body-color); /* CHANGE */
+  outline: 2px solid transparent;
 }
 .fc-form__control:focus {
-  border-color: var(--primary-dark-color);
-  box-shadow: 0 0 0 .1rem rgba(var(--primary-dark-color), .2);
+  outline: 2px solid var(--state-focus);
+  outline-offset: -2px;
 }
 .fc-form__control::placeholder {
   color: var(--medium-emphasis-text-color)
 }
 .fc-form__help-text {
+  /* THIS NEEDS TO BE A MIXIN */
   margin-top: var(--spacing-01);
   font-size: var(--text-01);
   font-weight: 400;

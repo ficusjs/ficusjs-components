@@ -24,138 +24,314 @@ Form input component.
 
 ### Checkbox - single
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="checkbox" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="checkbox" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
+  <fc-form-input type="checkbox" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Checkbox - switch
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="checkbox" switch="true" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="checkbox" switch="true" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
+  <fc-form-input type="checkbox" switch="true" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Checkbox - multiple
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-label>Checkboxes</fc-label>
+    <fc-form-input type="checkbox" label="Checkbox input 1" name="checkboxInput2"></fc-form-input>
+    <fc-form-input type="checkbox" label="Checkbox input 2" name="checkboxInput2"></fc-form-input>
+    <fc-form-input type="checkbox" label="Checkbox input 3" name="checkboxInput2"></fc-form-input>
+    <fc-form-input type="checkbox" label="Checkbox input 4" name="checkboxInput2"></fc-form-input>
+    <fc-help-text>Checkbox input help text</fc-help-text>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-label>Checkboxes</fc-label>
-<fc-form-input type="checkbox" label="Checkbox input 1" name="checkboxInput2"></fc-form-input>
-<fc-form-input type="checkbox" label="Checkbox input 2" name="checkboxInput2"></fc-form-input>
-<fc-form-input type="checkbox" label="Checkbox input 3" name="checkboxInput2"></fc-form-input>
-<fc-form-input type="checkbox" label="Checkbox input 4" name="checkboxInput2"></fc-form-input>
-<fc-help-text>Checkbox input help text</fc-help-text>
+  <fc-label>Checkboxes</fc-label>
+  <fc-form-input type="checkbox" label="Checkbox input 1" name="checkboxInput2"></fc-form-input>
+  <fc-form-input type="checkbox" label="Checkbox input 2" name="checkboxInput2"></fc-form-input>
+  <fc-form-input type="checkbox" label="Checkbox input 3" name="checkboxInput2"></fc-form-input>
+  <fc-form-input type="checkbox" label="Checkbox input 4" name="checkboxInput2"></fc-form-input>
+  <fc-help-text>Checkbox input help text</fc-help-text>
 </fc-form>
+```
 
 ### Color
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="color" name="colorInput1" value="#ff0000" label="Color input" help-text="Color input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="color" name="colorInput1" value="#ff0000" label="Color input" help-text="Color input help text"></fc-form-input>
+  <fc-form-input type="color" name="colorInput1" value="#ff0000" label="Color input" help-text="Color input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Date
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="date" name="dateInput1" label="Date input" help-text="Date input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="date" name="dateInput1" label="Date input" help-text="Date input help text"></fc-form-input>
+  <fc-form-input type="date" name="dateInput1" label="Date input" help-text="Date input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Datetime
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="datetime-local" name="dateTimeInput1" label="Datetime input" help-text="Datetime input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="datetime-local" name="dateTimeInput1" label="Datetime input" help-text="Datetime input help text"></fc-form-input>
+  <fc-form-input type="datetime-local" name="dateTimeInput1" label="Datetime input" help-text="Datetime input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Email
 
-<fc-form>
-<fc-form-input type="email" name="emailInput1" label="Email input" help-text="Email input help text"></fc-form-input>
-</fc-form>
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="email" name="emailInput1" label="Email input" help-text="Email input help text"></fc-form-input>
+  </fc-form>
+</div>
 
+```html
+<fc-form>
+  <fc-form-input type="email" name="emailInput1" label="Email input" help-text="Email input help text"></fc-form-input>
+</fc-form>
+```
 ### File
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="file" name="fileInput1" label="File input" help-text="File input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="file" name="fileInput1" label="File input" help-text="File input help text"></fc-form-input>
+  <fc-form-input type="file" name="fileInput1" label="File input" help-text="File input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Hidden
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="hidden" name="hiddenInput1" value="hiddenValue"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="hidden" name="hiddenInput1" value="hiddenValue"></fc-form-input>
+  <fc-form-input type="hidden" name="hiddenInput1" value="hiddenValue"></fc-form-input>
 </fc-form>
+```
 
 ### Month
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="month" name="monthInput1" label="Month input" help-text="Month input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="month" name="monthInput1" label="Month input" help-text="Month input help text"></fc-form-input>
+  <fc-form-input type="month" name="monthInput1" label="Month input" help-text="Month input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Number
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="number" name="numberInput1" label="Number input" help-text="Number input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="number" name="numberInput1" label="Number input" help-text="Number input help text"></fc-form-input>
+  <fc-form-input type="number" name="numberInput1" label="Number input" help-text="Number input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Password
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="password" name="passwordInput1" label="Password input" help-text="Password input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="password" name="passwordInput1" label="Password input" help-text="Password input help text"></fc-form-input>
+  <fc-form-input type="password" name="passwordInput1" label="Password input" help-text="Password input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Radio
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-label>Radios</fc-label>
+    <fc-form-input type="radio" label="Radio input 1" name="radioInput2" value="Yes"></fc-form-input>
+    <fc-form-input type="radio" label="Radio input 2" name="radioInput2" value="No"></fc-form-input>
+    <fc-form-input type="radio" label="Radio input 3" name="radioInput2" value="Maybe"></fc-form-input>
+    <fc-help-text>Radio input help text</fc-help-text>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-label>Radios</fc-label>
-<fc-form-input type="radio" label="Radio input 1" name="radioInput2" value="Yes"></fc-form-input>
-<fc-form-input type="radio" label="Radio input 2" name="radioInput2" value="No"></fc-form-input>
-<fc-form-input type="radio" label="Radio input 3" name="radioInput2" value="Maybe"></fc-form-input>
-<fc-help-text>Radio input help text</fc-help-text>
+  <fc-label>Radios</fc-label>
+  <fc-form-input type="radio" label="Radio input 1" name="radioInput2" value="Yes"></fc-form-input>
+  <fc-form-input type="radio" label="Radio input 2" name="radioInput2" value="No"></fc-form-input>
+  <fc-form-input type="radio" label="Radio input 3" name="radioInput2" value="Maybe"></fc-form-input>
+  <fc-help-text>Radio input help text</fc-help-text>
 </fc-form>
+```
 
 ### Range
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="range" name="rangeInput1" label="Range input" help-text="Range input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="range" name="rangeInput1" label="Range input" help-text="Range input help text"></fc-form-input>
+  <fc-form-input type="range" name="rangeInput1" label="Range input" help-text="Range input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Search
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="search" name="searchInput1" label="Search input" help-text="Search input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="search" name="searchInput1" label="Search input" help-text="Search input help text"></fc-form-input>
+  <fc-form-input type="search" name="searchInput1" label="Search input" help-text="Search input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Submit
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="submit" name="submitInput1"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="submit" name="submitInput1"></fc-form-input>
+  <fc-form-input type="submit" name="submitInput1"></fc-form-input>
 </fc-form>
+```
 
 ### Tel
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="tel" name="telInput1" label="Tel input" help-text="Tel input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="tel" name="telInput1" label="Tel input" help-text="Tel input help text"></fc-form-input>
+  <fc-form-input type="tel" name="telInput1" label="Tel input" help-text="Tel input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Text
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="text" name="textInput1" label="Text input" help-text="Text input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="text" name="textInput1" label="Text input" help-text="Text input help text"></fc-form-input>
+  <fc-form-input type="text" name="textInput1" label="Text input" help-text="Text input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Time
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="time" name="timeInput1" label="Time input" help-text="Time input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="time" name="timeInput1" label="Time input" help-text="Time input help text"></fc-form-input>
+  <fc-form-input type="time" name="timeInput1" label="Time input" help-text="Time input help text"></fc-form-input>
 </fc-form>
+```
 
 ### URL
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="url" name="urlInput1" label="URL input" help-text="URL input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="url" name="urlInput1" label="URL input" help-text="URL input help text"></fc-form-input>
+  <fc-form-input type="url" name="urlInput1" label="URL input" help-text="URL input help text"></fc-form-input>
 </fc-form>
+```
 
 ### Week
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-input type="week" name="weekInput1" label="Week input" help-text="Week input help text"></fc-form-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
-<fc-form-input type="week" name="weekInput1" label="Week input" help-text="Week input help text"></fc-form-input>
+  <fc-form-input type="week" name="weekInput1" label="Week input" help-text="Week input help text"></fc-form-input>
 </fc-form>
+```
 
 ## Importing
 
@@ -171,12 +347,6 @@ import { module as formInputModule } from 'https://unpkg.com/ficusjs-components@
 
 // use the module
 use(formInputModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-form-input type="text" name="textInput1" label="Text input" help-text="Text input help text"></fc-form-input>
 ```
 
 ## API
