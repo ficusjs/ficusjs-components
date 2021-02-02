@@ -41,6 +41,7 @@
   font-weight: 600;
 }
 .fc-form__help-text {
+  /* THIS NEEDS TO BE A MIXIN */
   margin-top: var(--spacing-01);
   font-size: var(--text-01);
   font-weight: 400;

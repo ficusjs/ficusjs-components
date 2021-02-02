@@ -17,7 +17,13 @@ Form help text component.
 
 ## Example
 
+<div class="fd-component-container">
+  <fc-form-help-text>Form help text</fc-form-help-text>
+</div>
+
+```html
 <fc-form-help-text>Form help text</fc-form-help-text>
+```
 
 ## Importing
 

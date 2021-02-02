@@ -17,7 +17,13 @@ Form label component.
 
 ## Example
 
+<div class="fd-component-container">
+  <fc-form-label>Form label</fc-form-label>
+</div>
+
+```html
 <fc-form-label>Form label</fc-form-label>
+```
 
 ## Importing
 
@@ -33,12 +39,6 @@ import { module as formLabelModule } from 'https://unpkg.com/ficusjs-components@
 
 // use the module
 use(formLabelModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-form-label>Form label</fc-form-label>
 ```
 
 ## API

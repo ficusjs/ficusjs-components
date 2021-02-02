@@ -1,6 +1,6 @@
 .fc-form__help-text {
-  margin-top: calc(var(--form-spacing) / 4);
-  font-size: 80%;
+  /* THIS NEEDS TO BE A MIXIN */
+  margin-top: var(--spacing-01);
+  font-size: var(--text-01);
   font-weight: 400;
-  color: #767676
 }

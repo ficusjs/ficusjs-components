@@ -11,7 +11,8 @@ cssFile:
   - /components/css/form-input.css
   - /components/css/form-label.css
   - /components/css/form-select.css
-modulePath: /components/custom-elements/form/index.js
+modulePath: 
+  - /components/custom-elements/form/index.js
 tags:
   - customElements
 ---
@@ -21,10 +22,19 @@ Form component.
 
 ## Example
 
+<div class="fd-component-container">
+  <fc-form>
+    <fc-input label="Name" type="text" name="name" id="name" help-text="Please enter your name" required="true"></fc-input>
+    <fc-input type="submit" name="submit" value="Submit"></fc-input>
+  </fc-form>
+</div>
+
+```html
 <fc-form>
   <fc-input label="Name" type="text" name="name" id="name" help-text="Please enter your name" required="true"></fc-input>
   <fc-input type="submit" name="submit" value="Submit"></fc-input>
 </fc-form>
+```
 
 ## Importing
 
@@ -40,15 +50,6 @@ import { module as formModule } from 'https://unpkg.com/ficusjs-components@lates
 
 // use the module
 use(formModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-form>
-  <fc-input label="Name" type="text" name="name" id="name" help-text="Please enter your name"></fc-input>
-  <button type="submit">Submit</button>
-</fc-form>
 ```
 
 ## API

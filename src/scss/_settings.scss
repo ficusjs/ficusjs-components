@@ -110,10 +110,12 @@ $type-scale: (
 );
 
 // States
+$state-required: #fa4d56; // change this!
 $state-invalid: #fa4d56; // change this!
 $state-valid: #42be65; // change this!
 $state-focus: shade($primary, 20%); // change this!
 $state-colors: (
+  'required': $state-required,
   'invalid': $state-invalid,
   'valid': $state-valid,
   'focus': $state-focus
