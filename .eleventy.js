@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("bootstrap", function (path) {
     if (path && /,/.test(path)) {
       const paths = path.split(',')
-      const importStatements = paths.map((p, i) => `import { module${i} } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}'`).join('\n')
+      const importStatements = paths.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? p : `http://localhost:8888${p}`}'`).join('\n')
       const useStatements = paths.map((p, i) => `use(module${i}, { renderer, html })`).join('\n')
       return `<script type="module">
         import { use } from 'https://unpkg.com/ficusjs?module'
@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
         ${useStatements}
       </script>`
     } else if (path && Array.isArray(path)) {
-      const importStatements = path.map((p, i) => `import { module${i} } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}'`).join('\n')
+      const importStatements = path.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${p}`}'`).join('\n')
       const useStatements = path.map((p, i) => `use(module${i}, { renderer, html })`).join('\n')
       return `<script type="module">
         import { use } from 'https://unpkg.com/ficusjs?module'
