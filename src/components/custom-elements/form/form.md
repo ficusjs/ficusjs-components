@@ -25,15 +25,13 @@ Form component.
 
 <div class="fd-component-container">
   <fc-form>
-    <fc-input label="Name" type="text" name="name" id="name" help-text="Please enter your name" required="true"></fc-input>
-    <fc-input type="submit" name="submit" value="Submit"></fc-input>
+    <fc-form-input type="text" name="textInput1" label="Text input" help-text="Text input help text"></fc-form-input>
   </fc-form>
 </div>
 
 ```html
 <fc-form>
-  <fc-input label="Name" type="text" name="name" id="name" help-text="Please enter your name" required="true"></fc-input>
-  <fc-input type="submit" name="submit" value="Submit"></fc-input>
+  <fc-form-input type="text" name="textInput1" label="Text input" help-text="Text input help text"></fc-form-input>
 </fc-form>
 ```
 

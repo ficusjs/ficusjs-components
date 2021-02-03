@@ -7,7 +7,10 @@ cssFile:
   - /components/css/form-help-text.css
   - /components/css/form-label.css
   - /components/css/form-input.css
-modulePath: /components/custom-elements/form-input/index.js
+modulePath: 
+  - /components/custom-elements/form-input/index.js
+  - /components/custom-elements/form-label/index.js
+  - /components/custom-elements/form-help-text/index.js
 tags:
   - forms
 eleventyNavigation:
@@ -52,23 +55,23 @@ Form input component.
 
 <div class="fd-component-container">
   <fc-form>
-    <fc-label>Checkboxes</fc-label>
+    <fc-form-label>Checkboxes</fc-form-label>
     <fc-form-input type="checkbox" label="Checkbox input 1" name="checkboxInput2"></fc-form-input>
     <fc-form-input type="checkbox" label="Checkbox input 2" name="checkboxInput2"></fc-form-input>
     <fc-form-input type="checkbox" label="Checkbox input 3" name="checkboxInput2"></fc-form-input>
     <fc-form-input type="checkbox" label="Checkbox input 4" name="checkboxInput2"></fc-form-input>
-    <fc-help-text>Checkbox input help text</fc-help-text>
+    <fc-form-help-text>Checkbox input help text</fc-form-help-text>
   </fc-form>
 </div>
 
 ```html
 <fc-form>
-  <fc-label>Checkboxes</fc-label>
+  <fc-form-label>Checkboxes</fc-form-label>
   <fc-form-input type="checkbox" label="Checkbox input 1" name="checkboxInput2"></fc-form-input>
   <fc-form-input type="checkbox" label="Checkbox input 2" name="checkboxInput2"></fc-form-input>
   <fc-form-input type="checkbox" label="Checkbox input 3" name="checkboxInput2"></fc-form-input>
   <fc-form-input type="checkbox" label="Checkbox input 4" name="checkboxInput2"></fc-form-input>
-  <fc-help-text>Checkbox input help text</fc-help-text>
+  <fc-form-help-text>Checkbox input help text</fc-form-help-text>
 </fc-form>
 ```
 
@@ -201,21 +204,21 @@ Form input component.
 
 <div class="fd-component-container">
   <fc-form>
-    <fc-label>Radios</fc-label>
+    <fc-form-label>Radios</fc-form-label>
     <fc-form-input type="radio" label="Radio input 1" name="radioInput2" value="Yes"></fc-form-input>
     <fc-form-input type="radio" label="Radio input 2" name="radioInput2" value="No"></fc-form-input>
     <fc-form-input type="radio" label="Radio input 3" name="radioInput2" value="Maybe"></fc-form-input>
-    <fc-help-text>Radio input help text</fc-help-text>
+    <fc-form-help-text>Radio input help text</fc-form-help-text>
   </fc-form>
 </div>
 
 ```html
 <fc-form>
-  <fc-label>Radios</fc-label>
+  <fc-form-label>Radios</fc-form-label>
   <fc-form-input type="radio" label="Radio input 1" name="radioInput2" value="Yes"></fc-form-input>
   <fc-form-input type="radio" label="Radio input 2" name="radioInput2" value="No"></fc-form-input>
   <fc-form-input type="radio" label="Radio input 3" name="radioInput2" value="Maybe"></fc-form-input>
-  <fc-help-text>Radio input help text</fc-help-text>
+  <fc-form-help-text>Radio input help text</fc-form-help-text>
 </fc-form>
 ```
 
