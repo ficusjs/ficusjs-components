@@ -10,6 +10,7 @@ cssFile:
   - /components/css/form-select.css
 modulePath: 
   - /components/custom-elements/form/index.js
+  - /components/custom-elements/form-input/index.js
 tags:
   - forms
 eleventyNavigation:
