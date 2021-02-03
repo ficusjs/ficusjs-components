@@ -7,7 +7,7 @@
 
   /// For each breakpoint, generate a prefix and run the cycle
   @each $key, $value in map-get($utilities, 'breakpoints') {
-    $prefix: #{$key + '\\:'};
+    $prefix: #{$key + '-'};
     $is-breakpoint: true;
 
     @media screen and #{$value} {

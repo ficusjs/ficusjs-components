@@ -199,9 +199,9 @@ $negative-layouts: negativify-map($layouts) !default;
 // ----------------
 
 $breakpoints: (
-  'sm': '(min-width: 36em)',
-  'md': '(min-width: 48em)',
-  'lg': '(min-width: 62em)'
+  'sm': '(min-width: 576px)',
+  'md': '(min-width: 768px)',
+  'lg': '(min-width: 992px)'
 );
 
 // Components

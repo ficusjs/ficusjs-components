@@ -2,16 +2,17 @@
   grid-area: header;
   position: sticky;
   top: 0;
+  z-index: 1030;
 }
 
 .fd-main-layout {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto minmax(0, 1fr);
   grid-template-areas: "header" "sidebar" "content";
   min-height: 100vh;
 }
 
-@media (min-width: 36em) {
+@media (min-width: 992px) {
   .fd-main-layout {
     grid-template-columns: var(--sidebar-width) 1fr;
     grid-template-rows: var(--header-height) auto;
@@ -22,11 +23,7 @@
   max-width: 1250px;
   width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0px, 960px) 220px;
-  grid-template-areas: "breadcrumb sticky-aside" "article sticky-aside";
-  column-gap: var(--spacing-09);
-  grid-auto-rows: min-content;
+  min-width: 0;
 }
 
 .fd-doc-article {
@@ -65,16 +62,37 @@
 .fd-sidebar {
   grid-area: sidebar;
   width: 100%;
-  position: sticky;
-  top: 76px;
-  height: calc(100vh - 76px);
-  max-height: calc(100vh - 76px);
-  overflow-y: auto;
   background: var(--body-bg-color);
-  border-right: 1px solid var(--ui-border-02);
   --fc-nav-anchor-color-link: var(--high-emphasis-text-color) ;
 }
 
+@media (min-width: 992px) {
+  .fd-sidebar {
+    position: sticky;
+    top: 76px;
+    height: calc(100vh - 76px);
+    max-height: calc(100vh - 76px);
+    border-right: 1px solid var(--ui-border-02);
+    overflow-y: auto;
+  }
+}
+.fd-sidebar-details > summary {
+  width: 100%;
+  list-style: none;
+}
+.fd-sidebar-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+:root {
+  --details-force-closed: (max-width: 992px);
+}
+
+@media (min-width: 992px) {
+  .fd-sidebar-details > summary {
+    display: none;
+  }
+}
 a[href].fd-direct-link,
 a[href].fd-direct-link:visited {
   color: var(--gray-4-color);

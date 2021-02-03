@@ -3,11 +3,12 @@
   max-width: 1250px;
   width: 100%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0px, 960px) 220px;
-  grid-template-areas: "breadcrumb sticky-aside" "article sticky-aside";
-  column-gap: var(--spacing-09);
-  grid-auto-rows: min-content;
+  // display: grid;
+  // grid-template-columns: minmax(0px, 960px) 220px;
+  // grid-template-areas: "breadcrumb sticky-aside" "article sticky-aside";
+  // column-gap: var(--spacing-09);
+  // grid-auto-rows: min-content;
+  min-width: 0;
 }
 
 .fd-doc-article {

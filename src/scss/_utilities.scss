@@ -50,148 +50,148 @@ $utilities: (
   // margin
   'spacing-m': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-top'
   ),
   'spacing-mt': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-top'
   ),
   'spacing-mb': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-bottom'
   ),
   'spacing-ml': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-left'
   ),
   'spacing-mr': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-right'
   ),
   // negative margin
   'spacing-n-m': (
     'items': $negative-spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-top'
   ),
   'spacing-n-mr': (
     'items': $negative-spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-right'
   ),
   'spacing-n-mb': (
     'items': $negative-spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-bottom'
   ),
   'spacing-n-ml': (
     'items': $negative-spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-left'
   ),
   // padding
   'spacing-p': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding'
   ),
   'spacing-pt': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-top'
   ),
   'spacing-pr': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-right'
   ),
   'spacing-pb': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-bottom'
   ),
   'spacing-pl': (
     'items': $spacings,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-left'
   ),
   // layout spacing
   // margin
   'layout-m': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-top'
   ),
   'layout-mt': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-top'
   ),
   'layout-mb': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-bottom'
   ),
   'layout-ml': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-left'
   ),
   'layout-mr': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-right'
   ),
   // negative margin
   'layout-n-m': (
     'items': $negative-layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-top'
   ),
   'layout-n-mr': (
     'items': $negative-layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-right'
   ),
   'layout-n-mb': (
     'items': $negative-layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-bottom'
   ),
   'layout-n-ml': (
     'items': $negative-layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'margin-left'
   ),
   // padding
   'layout-p': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding'
   ),
   'layout-pt': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-top'
   ),
   'layout-pr': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-right'
   ),
   'layout-pb': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-bottom'
   ),
   'layout-pl': (
     'items': $layouts,
-    'output': 'standard',
+    'output': 'responsive',
     'property': 'padding-left'
   ),
   'stack': (

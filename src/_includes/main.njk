@@ -47,31 +47,35 @@
         </section>
       </header>
 
-      <div class="[ fd-sidebar ] [ fu-spacing-pt-09 fu-spacing-pb-09 ]">
-        {% include "navs/getting-started.njk" %}
-        {% include "navs/guidelines.njk" %}
-        {% include "navs/forms.njk" %}
-        {% include "navs/custom-elements.njk" %}
-        {% include "navs/html.njk" %}
+      <div class="[ fd-sidebar ] [ fu-spacing-pt-05 fu-spacing-pb-05 fu-spacing-pl-05 fu-spacing-pr-05 fu-lg-spacing-pt-09 fu-lg-spacing-pb-09 fu-lg-spacing-pl-00 fu-lg-spacing-pr-00 ]">
+        <details id="sidebar-nav" class="fd-sidebar-details" open>
+          <summary class="fc-button">Menu</summary>
+          {% include "navs/getting-started.njk" %}
+          {% include "navs/guidelines.njk" %}
+          {% include "navs/forms.njk" %}
+          {% include "navs/custom-elements.njk" %}
+          {% include "navs/html.njk" %}
+        </details>
       </div>
 
-      <main class="[ fd-doc-layout ] [ fu-layout-pl-04 fu-layout-pr-04 fu-layout-pt-06 fu-layout-pb-06 fu-flow ]">
+      <main class="[ fd-doc-layout ] [ fu-spacing-pl-05 fu-spacing-pr-05 fu-spacing-pt-05 fu-spacing-pb-05 fu-lg-layout-pl-06 fu-lg-layout-pr-06 fu-lg-layout-pt-06 fu-lg-layout-pb-06 fu-flow ]">
         <article class="[ fd-doc-article ] [ fu-flow ]">
           {{ content | safe }}
           {% bootstrap modulePath | safe %}
           {% scriptPath demoScript | safe %}
         </article>
-        {% if content | toc %}
+        {# {% if content | toc %}
         <aside class="sticky-aside">
           <div class="fd-toc">
             <span>Table of contents</span>
             {{ content | toc| safe }}
           </div>
         </aside>
-        {% endif %}
+        {% endif %} #}
       </main>
 
     </div>
+    <script type="module" src="assets/js/sidebar-details.js"></script>
     <script type="module" src="assets/js/theme.js"></script>
   </body>
 </html>

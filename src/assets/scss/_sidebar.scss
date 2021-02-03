@@ -5,13 +5,38 @@
 .fd-sidebar {
   grid-area: sidebar;
   width: 100%;
-  position: sticky;
-  top: 76px;
-  height: calc(100vh - 76px);
-  max-height: calc(100vh - 76px);
-  overflow-y: auto;
   background: var(--body-bg-color);
-  border-right: 1px solid var(--ui-border-02);
-
   --fc-nav-anchor-color-link: var(--high-emphasis-text-color)
+}
+
+@media (min-width: 992px) {
+  .fd-sidebar {
+    position: sticky;
+    top: 76px;
+    height: calc(100vh - 76px);
+    max-height: calc(100vh - 76px);
+    border-right: 1px solid var(--ui-border-02);
+    overflow-y: auto;
+  }
+}
+
+.fd-sidebar-details {
+  > summary {
+    width: 100%;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}
+
+:root {
+  --details-force-closed: (max-width: 992px);
+}
+
+@media (min-width: 992px) {
+  .fd-sidebar-details > summary {
+    display: none;
+  }
 }
