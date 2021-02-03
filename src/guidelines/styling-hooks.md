@@ -1,14 +1,14 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Styling Hooks
 label: Styling Hooks
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/button.css
 tags:
-  - gettingStarted
+  - guidelines
+eleventyNavigation:
+  key: Styling Hooks
+  order: 4
 ---
 # Styling Hooks
 

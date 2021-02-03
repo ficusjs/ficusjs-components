@@ -1,14 +1,14 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - HTML - Details
 label: Details
 cssFile: 
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/details.css
 tags:
   - html
+eleventyNavigation:
+  key: Details
+  order: 4
 ---
 # Details
 

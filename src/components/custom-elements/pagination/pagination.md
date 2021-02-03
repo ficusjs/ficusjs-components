@@ -1,15 +1,15 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Pagination
 label: Pagination
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/pagination.css
 modulePath: /components/custom-elements/pagination/index.js
 tags:
   - customElements
+eleventyNavigation:
+  key: Pagination
+  order: 4
 ---
 # Pagination
 

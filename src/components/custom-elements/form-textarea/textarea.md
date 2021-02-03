@@ -1,16 +1,16 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Form textarea
 label: Form textarea
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/form.css
   - /components/css/form-textarea.css
 modulePath: /components/custom-elements/form-textarea/index.js
 tags:
-  - customElements
+  - forms
+eleventyNavigation:
+  key: Textarea
+  order: 4
 ---
 # Form textarea
 

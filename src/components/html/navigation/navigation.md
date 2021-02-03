@@ -1,14 +1,14 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - HTML - Navigation
 label: Navigation
 cssFile: 
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/navigation.css
 tags:
   - html
+eleventyNavigation:
+  key: Navigation
+  order: 6
 ---
 # Navigation
 

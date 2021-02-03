@@ -1,13 +1,12 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Components
 label: Components
-cssFile:
-- /css/ficus-globals.css
-- /css/ficus-utilities.css
-- /css/ficus-docs.css
 tags:
 - gettingStarted
+eleventyNavigation:
+  key: Components
+  order: 1
 ---
 # Components
 

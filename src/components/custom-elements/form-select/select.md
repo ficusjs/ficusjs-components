@@ -1,18 +1,18 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Form select
 label: Form select
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/form.css
   - /components/css/form-help-text.css
   - /components/css/form-label.css
   - /components/css/form-select.css
 modulePath: /components/custom-elements/form-select/index.js
 tags:
-  - customElements
+  - forms
+eleventyNavigation:
+  key: Select
+  order: 3
 ---
 # Form select
 

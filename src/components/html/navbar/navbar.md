@@ -1,15 +1,15 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - HTML - Navbar
 label: Navbar
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/button.css
   - /components/css/navbar.css
 tags:
   - html
+eleventyNavigation:
+  key: Navbar
+  order: 5
 ---
 # Navbar
 

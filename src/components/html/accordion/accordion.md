@@ -1,14 +1,14 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - HTML - Accordion
 label: Accordion
 cssFile: 
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/accordion.css
 tags:
   - html
+eleventyNavigation:
+  key: Accordion
+  order: 1
 ---
 # Accordion
 

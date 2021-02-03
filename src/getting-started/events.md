@@ -1,13 +1,12 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Events
 label: Events
-cssFile:
-- /css/ficus-globals.css
-- /css/ficus-utilities.css
-- /css/ficus-docs.css
 tags:
 - customElements
+eleventyNavigation:
+  key: Events
+  order: 2
 ---
 # Events
 

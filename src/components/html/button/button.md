@@ -1,17 +1,14 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - HTML - Button
 label: Button
 cssFile: 
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/button.css
-eleventyNavigation:
-  key: Button
-  parent: HTML components
 tags:
   - html
+eleventyNavigation:
+  key: Button
+  order: 2
 ---
 # Button
 

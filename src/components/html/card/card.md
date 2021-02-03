@@ -1,14 +1,14 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - HTML - Card
 label: Card
 cssFile: 
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/card.css
 tags:
   - html
+eleventyNavigation:
+  key: Card
+  order: 3
 ---
 # Card
 

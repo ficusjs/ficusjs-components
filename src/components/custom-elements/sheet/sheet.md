@@ -1,16 +1,16 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Sheet
 label: Sheet
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/sheet.css
 demoScript: /js/sheet.js
 modulePath: /components/custom-elements/sheet/index.js
 tags:
   - customElements
+eleventyNavigation:
+  key: Sheet
+  order: 5
 ---
 # Sheet
 

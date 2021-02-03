@@ -1,15 +1,15 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Tabs
 label: Tabs
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/tabs.css
 modulePath: /components/custom-elements/tabs/index.js
 tags:
   - customElements
+eleventyNavigation:
+  key: Tabs
+  order: 6
 ---
 # Tabs
 

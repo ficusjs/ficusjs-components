@@ -1,13 +1,12 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Loader
 label: Loader
-cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
 tags:
   - gettingStarted
+eleventyNavigation:
+  key: Loader
+  order: 3
 ---
 # Loader
 

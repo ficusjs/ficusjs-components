@@ -1,14 +1,14 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - HTML - Tooltip
 label: Tooltip
 cssFile: 
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/tooltip.css
 tags:
   - html
+eleventyNavigation:
+  key: Tooltip
+  order: 7
 ---
 # Tooltip
 

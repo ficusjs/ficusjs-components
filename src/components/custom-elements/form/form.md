@@ -1,11 +1,8 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Form
 label: Form
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/form.css
   - /components/css/form-help-text.css
   - /components/css/form-input.css
@@ -14,7 +11,10 @@ cssFile:
 modulePath: 
   - /components/custom-elements/form/index.js
 tags:
-  - customElements
+  - forms
+eleventyNavigation:
+  key: Form
+  order: 1
 ---
 # Form
 

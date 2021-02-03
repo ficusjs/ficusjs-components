@@ -1,16 +1,16 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Dropdown
 label: Dropdown
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/dropdown.css
   - /components/css/button.css
 modulePath: /components/custom-elements/dropdown/index.js
 tags:
   - customElements
+eleventyNavigation:
+  key: Dropdown
+  order: 2
 ---
 # Dropdown
 

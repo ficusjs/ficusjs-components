@@ -1,13 +1,12 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Elevation
 label: Elevation
-cssFile:
-- /css/ficus-globals.css
-- /css/ficus-utilities.css
-- /css/ficus-docs.css
 tags:
-- gettingStarted
+- guidelines
+eleventyNavigation:
+  key: Elevation
+  order: 2
 ---
 # Elevation
 

@@ -1,15 +1,15 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Form help text
 label: Form help text
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/form-help-text.css
 modulePath: /components/custom-elements/form-help-text/index.js
 tags:
-  - customElements
+  - forms
+eleventyNavigation:
+  key: Help text
+  order: 6
 ---
 # Form help text
 

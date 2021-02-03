@@ -1,15 +1,15 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Form label
 label: Form label
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/form-label.css
 modulePath: /components/custom-elements/form-label/index.js
 tags:
-  - customElements
+  - forms
+eleventyNavigation:
+  key: Label
+  order: 5
 ---
 # Form label
 

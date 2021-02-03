@@ -1,19 +1,7 @@
 .fc-navbar {
   grid-area: header;
-}
-
-.fc-frame {
-  position: relative;
-}
-
-.fc-frame iframe {
-  border: 0;
-  height: calc(100vh - var(--header-height));
-  left: 0;
-  position: absolute;
+  position: sticky;
   top: 0;
-  width: 100%;
-  scrollbar-width: none;
 }
 
 .fd-main-layout {

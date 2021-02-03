@@ -1,15 +1,15 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Custom elements - Accordion
 label: Accordion
 cssFile:
-  - /css/ficus-globals.css
-  - /css/ficus-utilities.css
-  - /css/ficus-docs.css
   - /components/css/accordion.css
 modulePath: /components/custom-elements/accordion/index.js
 tags:
   - customElements
+eleventyNavigation:
+  key: Accordion
+  order: 1
 ---
 # Accordion
 

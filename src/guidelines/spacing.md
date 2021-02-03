@@ -1,13 +1,12 @@
 ---
-layout: doc.njk
+layout: main.njk
 title: FicusJS components - Spacing
 label: Spacing
-cssFile:
-- /css/ficus-globals.css
-- /css/ficus-utilities.css
-- /css/ficus-docs.css
 tags:
-- gettingStarted
+- guidelines
+eleventyNavigation:
+  key: Spacing
+  order: 3
 ---
 # Spacing
 
