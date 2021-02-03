@@ -1,24 +1,11 @@
-.fc-form {
+.fc-form-container {
   display: block;
 }
-
-
-
-.fc-form__group {
-  margin-bottom: var(--form-spacing);
-}
-.fc-form__group.fc-form__group--rc {
-  margin-bottom: calc(var(--form-spacing) / 2);
-}
-.fc-form__group.fc-form__group--inline {
-  display: inline-block;
-  margin-right: calc(var(--form-spacing) / 2);
-  margin-bottom: calc(var(--form-spacing) / 2);
-}
 .fc-form__invalid-feedback {
-  margin-top: calc(var(--form-spacing) / 4);
-  color: var(--form-invalid-color-rgb);
-  font-size: 80%;
+  margin-top: var(--spacing-01);
+  color: var(--state-invalid);
+  font-size: var(--text-01);
+  font-weight: 400;
 }
 .fc-form__invalid-feedback--show + fc-help-text {
   display: none;
