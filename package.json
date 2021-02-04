@@ -1,6 +1,6 @@
 {
   "name": "ficusjs-components",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "A library of UI components built for FicusJS ",
   "main": "dist/index.js",
   "module": "dist/index.js",

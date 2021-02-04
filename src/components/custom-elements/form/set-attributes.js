@@ -65,11 +65,11 @@ function setBooleanAttribute (formInput, key, prop, propValue) {
 
 function setNumericAttribute (formInput, key, prop, propValue, instanceProps) {
   let value = propValue
-  if (propInputTypes[key]) {
-    // maxlength="${this.checkNumericValueType(textTypes, this.props.maxlength, props.maxlength.default)}"
+  if (formInput.tagName.toLowerCase() === 'select' || formInput.tagName.toLowerCase() === 'textarea') {
+    value = checkNumericValue(propValue, propDefaultValues[key])
+  } else if (formInput.tagName.toLowerCase() === 'input' && propInputTypes[key]) {
     value = checkNumericValueType(instanceProps, propInputTypes[key], propValue, propDefaultValues[key])
   }
-
   const attrName = toKebabCase(key)
   if (formInput.hasAttribute(attrName) && value == null) {
     formInput.removeAttribute(attrName)
@@ -82,13 +82,10 @@ function setAttribute (formInput, key, propValue, instanceProps, propsDef) {
   if (ignoreProp(key)) {
     return
   }
-
   let value = propValue
   if (propInputTypes[key]) {
-    // accept="${this.checkValueType([inputTypes.FILE], this.props.accept)}"
     value = checkValueType(instanceProps, propInputTypes[key], propValue)
   }
-
   const attrName = toKebabCase(key)
   if (formInput.hasAttribute(attrName) && value == null) {
     formInput.removeAttribute(attrName)
@@ -102,7 +99,7 @@ function checkBooleanValue (value) {
 }
 
 function checkNumericValue (value, defaultValue) {
-  return value !== defaultValue ? value : undefined
+  return (value !== 0 && value !== defaultValue) ? value : undefined
 }
 
 function checkValueType (instanceProps, types, value, defaultValue) {

@@ -28,8 +28,11 @@
 .fc-form select::-ms-expand {
   opacity: 0;
 }
-.fc-form select[multiple] {
+.fc-form select[multiple],
+.fc-form select[size]:not([size="1"]) {
   height: auto;
+  background: none;
+  padding-right: var(--spacing-04);
 }
 .fc-form select:focus,
 .fc-form select:active {

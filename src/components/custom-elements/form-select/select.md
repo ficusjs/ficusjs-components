@@ -18,7 +18,9 @@ eleventyNavigation:
 
 Select is a type of input that is used in forms, where a user is submitting data and chooses one option from a list.
 
-## Example
+## Examples
+
+### Single select
 
 <div class="fd-component-container">
   <fc-form>
@@ -36,6 +38,60 @@ Select is a type of input that is used in forms, where a user is submitting data
 ```html
 <fc-form>
   <fc-form-select name="selectInput1" label="Select input" help-text="Select input help text">
+    <option value=""></option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+  </fc-form-select>
+</fc-form>
+```
+
+### Multiple select
+
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-select name="selectInput1" label="Select input" multiple="true" help-text="Select input help text">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      <option value="option4">Option 4</option>
+      <option value="option5">Option 5</option>
+    </fc-form-select>
+  </fc-form>
+</div>
+
+```html
+<fc-form>
+  <fc-form-select name="selectInput1" label="Select input" multiple="true" help-text="Select input help text">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+    <option value="option5">Option 5</option>
+  </fc-form-select>
+</fc-form>
+```
+
+### With size
+
+<div class="fd-component-container">
+  <fc-form>
+    <fc-form-select name="selectInput1" label="Select input" size="3" help-text="Select input help text">
+      <option value=""></option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+      <option value="option4">Option 4</option>
+      <option value="option5">Option 5</option>
+    </fc-form-select>
+  </fc-form>
+</div>
+
+```html
+<fc-form>
+  <fc-form-select name="selectInput1" label="Select input" size="3" help-text="Select input help text">
     <option value=""></option>
     <option value="option1">Option 1</option>
     <option value="option2">Option 2</option>
