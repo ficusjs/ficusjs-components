@@ -8,6 +8,10 @@
   max-width: 80rem;
 }
 
+.fu-hidden {
+  display: none;
+}
+
 .fu-bg-primary {
   background: #54e4e5;
 }
