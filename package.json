@@ -10,6 +10,7 @@
     "build:components": "node scripts/build-components.js",
     "build:css": "node scripts/build-css.js",
     "build:sass": "node scripts/build-sass.js",
+    "build:sass-dist": "node scripts/build-sass.js --output-dir=dist",
     "build:dist": "run-p build:dist:*",
     "build:dist:js": "node scripts/build-components.js --output-dir=dist",
     "build:dist:css": "node scripts/build-css.js --output-dir=dist",
