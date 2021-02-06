@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - Custom elements - Form help text
 label: Form help text
 cssFile:
-  - /components/css/form-help-text.css
+  - /components/custom-elements/form-help-text/form-help-text.css
 modulePath: /components/custom-elements/form-help-text/index.js
 tags:
   - forms

@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - Custom elements - Form label
 label: Form label
 cssFile:
-  - /components/css/form-label.css
+  - /components/custom-elements/form-label/form-label.css
 modulePath: /components/custom-elements/form-label/index.js
 tags:
   - forms

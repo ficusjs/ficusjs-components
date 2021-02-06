@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - Custom elements - Modal
 label: Modal
 cssFile:
-  - /components/css/modal.css
+  - /components/custom-elements/modal/modal.css
 demoScript: /js/modal.js
 modulePath: /components/custom-elements/modal/index.js
 tags:

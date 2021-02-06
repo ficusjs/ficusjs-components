@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - HTML - Accordion
 label: Accordion
 cssFile: 
-  - /components/css/accordion.css
+  - /components/html/accordion/accordion.css
 tags:
   - html
 eleventyNavigation:

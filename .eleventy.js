@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
   })
 
   function getStylesheetTag (path) {
-    return `<link rel="stylesheet" href="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}">`
+    return `<link rel="stylesheet" href="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8889${path}`}">`
   }
 
   eleventyConfig.addShortcode("cssPath", function (path) {

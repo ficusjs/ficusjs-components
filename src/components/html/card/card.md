@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - HTML - Card
 label: Card
 cssFile: 
-  - /components/css/card.css
+  - /components/html/card/card.css
 tags:
   - html
 eleventyNavigation:

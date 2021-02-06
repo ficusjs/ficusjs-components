@@ -3,8 +3,8 @@ layout: main.njk
 title: FicusJS components - HTML - Navbar
 label: Navbar
 cssFile:
-  - /components/css/button.css
-  - /components/css/navbar.css
+  - /components/html/button/button.css
+  - /components/custom-elements/navbar/navbar.css
 tags:
   - html
 eleventyNavigation:

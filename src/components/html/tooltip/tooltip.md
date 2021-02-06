@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - HTML - Tooltip
 label: Tooltip
 cssFile: 
-  - /components/css/tooltip.css
+  - /components/html/tooltip/tooltip.css
 tags:
   - html
 eleventyNavigation:

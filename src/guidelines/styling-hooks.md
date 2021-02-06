@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - Styling Hooks
 label: Styling Hooks
 cssFile:
-  - /components/css/button.css
+  - /components/html/button/button.css
 tags:
   - guidelines
 eleventyNavigation:

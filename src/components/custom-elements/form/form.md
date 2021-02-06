@@ -3,11 +3,11 @@ layout: main.njk
 title: FicusJS components - Custom elements - Form
 label: Form
 cssFile:
-  - /components/css/form.css
-  - /components/css/form-help-text.css
-  - /components/css/form-input.css
-  - /components/css/form-label.css
-  - /components/css/form-select.css
+  - /components/custom-elements/form/form.css
+  - /components/custom-elements/form/form-help-text.css
+  - /components/custom-elements/form/form-input.css
+  - /components/custom-elements/form/form-label.css
+  - /components/custom-elements/form/form-select.css
 modulePath: 
   - /components/custom-elements/form/index.js
   - /components/custom-elements/form-input/index.js

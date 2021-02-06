@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - Custom elements - Accordion
 label: Accordion
 cssFile:
-  - /components/css/accordion.css
+  - /components/custom-elements/accordion/accordion.css
 modulePath: /components/custom-elements/accordion/index.js
 tags:
   - customElements

@@ -3,8 +3,8 @@ layout: main.njk
 title: FicusJS components - Custom elements - Form textarea
 label: Form textarea
 cssFile:
-  - /components/css/form.css
-  - /components/css/form-textarea.css
+  - /components/custom-elements/form/form.css
+  - /components/custom-elements/form-textarea/form-textarea.css
 modulePath: /components/custom-elements/form-textarea/index.js
 tags:
   - forms

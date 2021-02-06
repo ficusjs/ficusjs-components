@@ -3,7 +3,8 @@ layout: main.njk
 title: FicusJS components - HTML - Button
 label: Button
 cssFile: 
-  - /components/css/button.css
+  - /components/html/button/button.css
+  - /components/html/button/button-group.css
 tags:
   - html
 eleventyNavigation:

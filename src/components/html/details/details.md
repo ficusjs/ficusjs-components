@@ -3,7 +3,7 @@ layout: main.njk
 title: FicusJS components - HTML - Details
 label: Details
 cssFile: 
-  - /components/css/details.css
+  - /components/html/details/details.css
 tags:
   - html
 eleventyNavigation:
