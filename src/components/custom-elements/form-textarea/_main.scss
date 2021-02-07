@@ -1,0 +1,35 @@
+@use '../form-label' as form-label;
+@use '../form-help-text' as form-help-text;
+@include form-label.form-label;
+@include form-help-text.form-help-text;
+
+//
+// Form Textarea
+//
+
+.fc-form__textarea textarea {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--fc-form-textarea-color-background, var(--ui-background-01));
+  border: 1px solid var(--fc-form-textarea-color-border, var(--ui-border-04));
+  border-radius: var(--fc-form-textarea-radius, var(--ui-border-radius-01));
+  padding: var(--spacing-04) var(--spacing-05);
+  color: var(--body-color); /* CHANGE */
+  outline: 2px solid transparent;
+
+  &:focus,
+  &:active {
+    outline: 2px solid var(--state-focus);
+    outline-offset: -2px;
+  }
+
+  &::placeholder {
+    color: var(--medium-emphasis-text-color)
+  }
+
+  &:disabled {
+    /* ADD DISABLED STYLES */
+    cursor: not-allowed;
+  }
+}

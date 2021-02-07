@@ -4,8 +4,6 @@ title: FicusJS components - Custom elements - Form select
 label: Form select
 cssFile:
   - /components/custom-elements/form/form.css
-  - /components/custom-elements/form-help-text/form-help-text.css
-  - /components/custom-elements/form-label/form-label.css
   - /components/custom-elements/form-select/form-select.css
 modulePath: /components/custom-elements/form-select/index.js
 tags:

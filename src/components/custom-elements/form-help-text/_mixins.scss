@@ -1,0 +1,7 @@
+@mixin form-help-text {
+  .fc-form__help-text {
+    margin-top: var(--spacing-01);
+    font-size: var(--text-01);
+    font-weight: 400;
+  }
+}
