@@ -17,20 +17,51 @@ All collapsible `<details>` elements under the accordion component will be close
 
 ## Example
 
+<div class="fd-component-container">
+  <fc-accordion>
+    <details class="fc-accordion">
+      <summary class="fc-accordion__header">Accordion item 1</summary>
+      <div class="fc-accordion__body">
+        Something small enough to escape casual notice.
+      </div>
+    </details>
+    <details class="fc-accordion">
+      <summary class="fc-accordion__header">Accordion item 2</summary>
+      <div class="fc-accordion__body">
+        Something small enough to escape casual notice.
+      </div>
+    </details>
+    <details class="fc-accordion">
+      <summary class="fc-accordion__header">Accordion item 3</summary>
+      <div class="fc-accordion__body">
+        Something small enough to escape casual notice.
+      </div>
+    </details>
+  </fc-accordion>
+</div>
+
+```html
 <fc-accordion>
   <details class="fc-accordion">
-    <summary>Accordion item 1</summary>
-    Something small enough to escape casual notice.
+    <summary class="fc-accordion__header">Accordion item 1</summary>
+    <div class="fc-accordion__body">
+      Something small enough to escape casual notice.
+    </div>
   </details>
   <details class="fc-accordion">
-    <summary>Accordion item 2</summary>
-    Something small enough to escape casual notice.
+    <summary class="fc-accordion__header">Accordion item 2</summary>
+    <div class="fc-accordion__body">
+      Something small enough to escape casual notice.
+    </div>
   </details>
   <details class="fc-accordion">
-    <summary>Accordion item 3</summary>
-    Something small enough to escape casual notice.
+    <summary class="fc-accordion__header">Accordion item 3</summary>
+    <div class="fc-accordion__body">
+      Something small enough to escape casual notice.
+    </div>
   </details>
 </fc-accordion>
+```
 
 ## Importing
 
@@ -46,25 +77,6 @@ import { module as accordionModule } from 'https://unpkg.com/ficusjs-components@
 
 // use the component
 use(accordionModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-accordion>
-  <details class="fc-accordion">
-    <summary>Accordion item 1</summary>
-    Something small enough to escape casual notice.
-  </details>
-  <details class="fc-accordion">
-    <summary>Accordion item 2</summary>
-    Something small enough to escape casual notice.
-  </details>
-  <details class="fc-accordion">
-    <summary>Accordion item 3</summary>
-    Something small enough to escape casual notice.
-  </details>
-</fc-accordion>
 ```
 
 ## API

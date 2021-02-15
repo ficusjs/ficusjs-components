@@ -1,0 +1,27 @@
+.fc-accordion {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-05);
+
+  .fc-accordion__header {
+    display: block;
+    margin: calc(var(--spacing-05) * -1);
+    padding: var(--spacing-05);
+    cursor: pointer;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &[open] {
+    .fc-accordion__header {
+      margin-bottom: 0;
+    }
+  }
+
+  .fc-accordion__body {
+    display: block;
+    width: 100%;
+  }
+}

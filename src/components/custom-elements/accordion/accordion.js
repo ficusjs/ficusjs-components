@@ -22,7 +22,7 @@ export function createAccordion ({ createComponent, renderer, html }) {
       })
     },
     render () {
-      return html`<div class="fc__accordion">${this.slots.default}</div>`
+      return html`${this.slots.default}`
     }
   })
 }

@@ -16,14 +16,18 @@ Accordion component.
 
 <div class="fd-component-container">
   <details class="fc-accordion">
-    <summary>Accordion</summary>
-    Something small enough to escape casual notice.
+    <summary class="fc-accordion__header">Accordion item</summary>
+    <div class="fc-accordion__body">
+      Something small enough to escape casual notice.
+    </div>
   </details>
 </div>
 
 ```html
-  <details class="fc-accordion">
-    <summary>Accordion</summary>
+<details class="fc-accordion">
+  <summary class="fc-accordion__header">Accordion item</summary>
+  <div class="fc-accordion__body">
     Something small enough to escape casual notice.
-  </details>
+  </div>
+</details>
 ```
