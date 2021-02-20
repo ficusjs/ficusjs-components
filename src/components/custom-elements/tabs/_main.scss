@@ -1,0 +1,28 @@
+.fc-tabs {
+  display: block;
+  width: 100%;
+}
+.fc-tabs input[type=radio],
+.fc-tabs__pane {
+  display: none;
+}
+.fc-tabs__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-top-left-radius: var(--ui-border-radius-01);
+  border-top-right-radius: var(--ui-border-radius-01);
+  background: var(--ui-background-02);
+  list-style: none;
+  overflow: hidden;
+}
+.fc-tabs__tabs li label {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-05);
+  cursor: pointer;
+}
+.fc-tabs__pane {
+  padding: var(--spacing-05);
+}

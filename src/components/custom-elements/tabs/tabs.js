@@ -19,6 +19,7 @@ export function createTabs ({ createComponent, renderer, html }) {
     },
     mounted () {
       this._setupEvents()
+      this.classList.add('fc-tabs')
     },
     updated () {
       this._setupEvents()
@@ -42,25 +43,24 @@ export function createTabs ({ createComponent, renderer, html }) {
           ${`
             ${this.tabs.map((t, i) => `
               .fc-tabs input[type=radio]:nth-of-type(${i + 1}):checked ~ fc-tab-pane:nth-of-type(${i + 1}) .fc-tabs__pane { display: block; }
-              .fc-tabs input[type=radio]:nth-of-type(${i + 1}):checked ~ .fc-tabs__tabs li:nth-of-type(${i + 1}) label { color: #495057; background-color: #fff; border-color: #dee2e6 #dee2e6 #fff; }
+              .fc-tabs input[type=radio]:nth-of-type(${i + 1}):checked ~ .fc-tabs__tabs li:nth-of-type(${i + 1}) label { background-color: var(--ui-background-01); box-shadow: inset 0 2px 0 0 var(--state-focus) }
             `).join('')}
           `}
         </style>
-        <div class="fc-tabs">
-          ${this.tabs.map((t, i) => html`
-            <input type="radio" id="${t.id}" value="${t.label}" name="tab-control" .checked="${i === 0}" .disabled="${t.disabled}">
+        ${this.tabs.map((t, i) => html`
+          <input type="radio" id="${t.id}" value="${t.label}" name="tab-control" .checked="${i === 0}" .disabled="${t.disabled}">
+        `)}
+        <ul class="fc-tabs__tabs" role="tablist">
+          ${this.tabs.map(t => html`
+            <li role="tab">
+              <label for="${t.id}">
+                <span>${t.label}</span>
+              </label>
+            </li>
           `)}
-          <ul class="fc-tabs__tabs">
-            ${this.tabs.map(t => html`
-              <li>
-                <label for="${t.id}">
-                  <span>${t.label}</span>
-                </label>
-              </li>
-            `)}
-          </ul>
-          ${this.tabs.map(t => t.node)}
-        </div>
+        </ul>
+        ${this.tabs.map(t => t.node)}
+        
       `
     }
   })
@@ -76,7 +76,7 @@ export function createTabs ({ createComponent, renderer, html }) {
       }
     },
     render () {
-      return html`<div class="fc-tabs__pane">${this.slots.default}</div>`
+      return html`<div class="fc-tabs__pane" role="tabpanel">${this.slots.default}</div>`
     }
   })
 }

@@ -15,8 +15,21 @@ eleventyNavigation:
 
 Tabs component.
 
-## Example
+<div class="fd-component-container">
+  <fc-tabs>
+    <fc-tab-pane label="Tab 1">
+      <p>Tab pane 1</p>
+    </fc-tab-pane>
+    <fc-tab-pane label="Tab 2" disabled="true">
+      <p>Tab pane 2</p>
+    </fc-tab-pane>
+    <fc-tab-pane label="Tab 3">
+      <p>Tab pane 3</p>
+    </fc-tab-pane>
+  </fc-tabs>
+</div>
 
+```html
 <fc-tabs>
   <fc-tab-pane label="Tab 1">
     <p>Tab pane 1</p>
@@ -28,6 +41,7 @@ Tabs component.
     <p>Tab pane 3</p>
   </fc-tab-pane>
 </fc-tabs>
+```
 
 ## Importing
 
@@ -43,22 +57,6 @@ import { module as tabsModule } from 'https://unpkg.com/ficusjs-components@lates
 
 // use the module
 use(tabsModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-tabs>
-  <fc-tab-pane label="Tab 1">
-    <p>Tab pane 1</p>
-  </fc-tab-pane>
-  <fc-tab-pane label="Tab 2" disabled="true">
-    <p>Tab pane 2</p>
-  </fc-tab-pane>
-  <fc-tab-pane label="Tab 3">
-    <p>Tab pane 3</p>
-  </fc-tab-pane>
-</fc-tabs>
 ```
 
 ## API
