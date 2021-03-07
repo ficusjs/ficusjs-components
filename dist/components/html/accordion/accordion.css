@@ -1,0 +1,1 @@
+.fc-accordion{display:block;width:100%;padding:var(--spacing-05)}.fc-accordion .fc-accordion__header{display:block;margin:calc(var(--spacing-05) * -1);padding:var(--spacing-05);cursor:pointer}.fc-accordion .fc-accordion__header:focus{outline:0}.fc-accordion[open] .fc-accordion__header{margin-bottom:0}.fc-accordion .fc-accordion__body{display:block;width:100%}

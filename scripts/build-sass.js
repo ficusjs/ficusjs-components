@@ -16,6 +16,7 @@ const options = {}
 const cssFiles = glob.sync(['src/components/**/*.scss'])
 const buildPromises = cssFiles.map(c => {
   return new Promise((resolve, reject) => {
+    if (path.basename(c).startsWith('_')) return resolve()
     let outputPath = c.replace('src', outputDir)
     outputPath = outputPath.replace('.scss', '.css')
     try {

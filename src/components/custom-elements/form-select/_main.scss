@@ -1,11 +1,11 @@
-@use '../form-label' as form-label;
-@use '../form-help-text' as form-help-text;
+@use '../../html/form-label' as form-label;
+@use '../../html/form-help-text' as form-help-text;
 @include form-label.form-label;
 @include form-help-text.form-help-text;
 
 //
 // Form Select
-// 
+//
 
 .fc-form__select {
   display: flex;

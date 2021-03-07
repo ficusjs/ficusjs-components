@@ -15,6 +15,7 @@ module.exports = async function (entry, outputDir) {
       resolve(),
       minifyHTML(),
       replace({
+        preventAssignment: true,
         'process.env.NODE_ENV': JSON.stringify('production')
       }),
       terser({ mangle: { keep_fnames: true, toplevel: true, module: true } })
