@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/components",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "description": "A library of UI components built for FicusJS ",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -23,7 +23,6 @@
     "watch:sass": "chokidar \"src/**/*.scss\" -c \"run-p sass\"",
     "sass": "run-p sass:tmp:*",
     "sass:tmp:components": "node scripts/build-sass.js --output-dir=tmp",
-    "sass:tmp:docs": "sass src/scss/ficus-docs.scss tmp/css/ficus-docs.css",
     "lint": "run-p lint:*",
     "lint:js": "standard \"src/**/*.js\"",
     "lint:sass": "stylelint \"src/scss/**/*.scss\""
@@ -45,6 +44,7 @@
     "@11ty/eleventy": "0.11.1",
     "@11ty/eleventy-navigation": "0.1.6",
     "@11ty/eleventy-plugin-syntaxhighlight": "3.1.0",
+    "@ficusjs/styles": "1.0.0-alpha.3",
     "@rollup/plugin-commonjs": "17.1.0",
     "@rollup/plugin-node-resolve": "11.2.0",
     "@rollup/plugin-replace": "2.4.1",
@@ -53,6 +53,7 @@
     "chokidar-cli": "2.1.0",
     "eleventy-plugin-toc": "1.1.0",
     "glob-all": "3.2.1",
+    "html-minifier": "4.0.0",
     "live-server": "1.2.1",
     "log-symbols": "4.0.0",
     "markdown-it": "12.0.4",

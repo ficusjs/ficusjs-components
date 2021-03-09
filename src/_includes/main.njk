@@ -18,14 +18,16 @@
     {% set css %}
     {% include "../../node_modules/@ficusjs/styles/dist/css/ficus-globals.css" %}
     {% include "../../node_modules/@ficusjs/styles/dist/css/ficus-utilities.css" %}
-    {% include "../../tmp/css/ficus-docs.css" %}
+    {% include "../../node_modules/@ficusjs/styles/dist/css/ficus-docs.css" %}
     {% include "../../tmp/components/html/navbar/navbar.css" %}
     {% include "../../tmp/components/html/navigation/navigation.css" %}
     {% include "../../tmp/components/html/button/button.css" %}
     {% endset %}
-    <style>
-      {{css | safe}}
-    </style>
+    {% if project.environment == "production" %}
+      <style>{{ css | cssmin | safe }}</style>
+    {% else %}
+      <style>{{ css | safe }}</style>
+    {% endif %}
     <!-- component css END -->
     {% cssPath cssFile | safe %}
   </head>
