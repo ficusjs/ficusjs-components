@@ -1,6 +1,6 @@
 ---
 layout: main.njk
-title: FicusJS components - Components
+title: Ficus components - Components
 label: Components
 tags:
 - gettingStarted
@@ -10,27 +10,27 @@ eleventyNavigation:
 ---
 # Components
 
-The FicusJS components is a collection of styled custom elements and HTML elements.
-
-The components are deployed to a CDN and must be consumed by URL using ES module imports.
+Ficus components is a library of styled custom elements and HTML elements.
 
 ---
 
 ## Custom elements
 
-The custom elements provide specific HTML elements using Javascript.
+The custom elements provide specific HTML elements and are written using [FicusJS](https://github.com/ficusjs/ficusjs).
+
+The custom elements are deployed to a [CDN](https://www.skypack.dev/view/@ficusjs/components) and should be consumed using ES module imports.
 
 ### Renderers
 
-A template literal renderer **must** be passed to the FicusJS components in order to use them.
+Each custom element requires a template literal renderer to work.
 
-The following template literal renderers are available:
+The following template literal renderers are available with the [FicusJS renderers library](https://github.com/ficusjs/ficusjs-renderers):
 
 - lit-html
 - uhtml
 - htm and Preact
 
-**The `document.createElement` renderer cannot be used because of specific internal rendering within each component.**
+**The `document.createElement` renderer cannot be used because of specific internal rendering requirements within each component.**
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/components",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "description": "A library of UI components built for FicusJS ",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -80,6 +80,42 @@
   "exports": {
     ".": {
       "import": "./dist/components/loader/index.js"
+    },
+    "./loader": {
+      "import": "./dist/components/loader/index.js"
+    },
+    "./custom-elements/accordion": {
+      "import": "./dist/components/custom-elements/accordion/index.js"
+    },
+    "./custom-elements/dropdown": {
+      "import": "./dist/components/custom-elements/dropdown/index.js"
+    },
+    "./custom-elements/form": {
+      "import": "./dist/components/custom-elements/form/index.js"
+    },
+    "./custom-elements/form-input": {
+      "import": "./dist/components/custom-elements/form-input/index.js"
+    },
+    "./custom-elements/form-select": {
+      "import": "./dist/components/custom-elements/form-select/index.js"
+    },
+    "./custom-elements/form-textarea": {
+      "import": "./dist/components/custom-elements/form-textarea/index.js"
+    },
+    "./custom-elements/modal": {
+      "import": "./dist/components/custom-elements/modal/index.js"
+    },
+    "./custom-elements/navbar": {
+      "import": "./dist/components/custom-elements/navbar/index.js"
+    },
+    "./custom-elements/pagination": {
+      "import": "./dist/components/custom-elements/pagination/index.js"
+    },
+    "./custom-elements/sheet": {
+      "import": "./dist/components/custom-elements/sheet/index.js"
+    },
+    "./custom-elements/tabs": {
+      "import": "./dist/components/custom-elements/tabs/index.js"
     }
   }
 }

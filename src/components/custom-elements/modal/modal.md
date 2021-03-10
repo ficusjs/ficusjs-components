@@ -32,13 +32,13 @@ Modal component.
 
 ```js
 // import the required FicusJS functions
-import { use } from 'https://unpkg.com/ficusjs?module'
+import { use } from 'https://cdn.skypack.dev/ficusjs'
 
 // import the renderer and html tagged template literal from the lit-html library
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
 
 // import the component module
-import { module as modalModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/modal/index.js'
+import { module as modalModule } from 'https://cdn.skypack.dev/@ficusjs/components/custom-elements/modal'
 
 // use the module
 use(modalModule, { renderer, html })

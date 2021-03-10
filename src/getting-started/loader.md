@@ -15,13 +15,13 @@ The `loadComponents` function is promised-based and can import multiple componen
 
 ```js
 // import the required FicusJS functions
-import { use } from 'https://unpkg.com/ficusjs?module'
+import { use } from 'https://cdn.skypack.dev/ficusjs'
 
 // import the renderer and html tagged template literal from the lit-html library
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
 
 // import the loadComponents function
-import { loadComponents } from 'https://unpkg.com/ficusjs-components@latest/components/loader/index.js'
+import { loadComponents } from 'https://cdn.skypack.dev/@ficusjs/components/dist/components/loader/index.js'
 
 // load the accordion and form components
 loadComponents(use, ['accordion', 'form'], { renderer, html })

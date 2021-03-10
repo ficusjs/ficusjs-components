@@ -7,7 +7,7 @@ cssFile:
   - /components/html/form-help-text/form-help-text.css
   - /components/html/form-label/form-label.css
   - /components/custom-elements/form-input/form-input.css
-modulePath: 
+modulePath:
   - /components/custom-elements/form/index.js
   - /components/custom-elements/form-input/index.js
 tags:
@@ -337,13 +337,13 @@ Form input component.
 
 ```js
 // import the required FicusJS functions
-import { use } from 'https://unpkg.com/ficusjs?module'
+import { use } from 'https://cdn.skypack.dev/ficusjs'
 
 // import the renderer and html tagged template literal from the lit-html library
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
 
 // import the component module
-import { module as formInputModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/form-input/index.js'
+import { module as formInputModule } from 'https://cdn.skypack.dev/@ficusjs/components/custom-elements/form-input'
 
 // use the module
 use(formInputModule, { renderer, html })

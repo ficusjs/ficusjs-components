@@ -67,13 +67,13 @@ All collapsible `<details>` elements under the accordion component will be close
 
 ```js
 // import the required FicusJS functions
-import { use } from 'https://unpkg.com/ficusjs?module'
+import { use } from 'https://cdn.skypack.dev/ficusjs'
 
 // import the renderer and html tagged template literal from the lit-html library
-import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
 
 // import the component module
-import { module as accordionModule } from 'https://unpkg.com/ficusjs-components@latest/components/custom-elements/accordion/index.js'
+import { module as accordionModule } from 'https://cdn.skypack.dev/@ficusjs/components/custom-elements/accordion'
 
 // use the component
 use(accordionModule, { renderer, html })
