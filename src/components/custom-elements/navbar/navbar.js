@@ -4,6 +4,7 @@ export function createNavbar ({ createComponent, renderer, html }) {
   createComponent('fc-navbar', {
     renderer,
     mounted () {
+      this.classList.add('fc-navbar')
       const btn = this.querySelector('.fc-navbar__toggler')
       const collapse = this.querySelector('section[slot="collapseSection"]')
       btn.addEventListener('click', e => {
@@ -35,16 +36,15 @@ export function createNavbar ({ createComponent, renderer, html }) {
           <path d="M 5.5 9 A 1.50015 1.50015 0 1 0 5.5 12 L 42.5 12 A 1.50015 1.50015 0 1 0 42.5 9 L 5.5 9 z M 5.5 22.5 A 1.50015 1.50015 0 1 0 5.5 25.5 L 42.5 25.5 A 1.50015 1.50015 0 1 0 42.5 22.5 L 5.5 22.5 z M 5.5 36 A 1.50015 1.50015 0 1 0 5.5 39 L 42.5 39 A 1.50015 1.50015 0 1 0 42.5 36 L 5.5 36 z"/>
         </symbol>
       </svg>
-      <nav class="fc-navbar">
-        ${this.slots.leftSection}
-        <div class="fc-navbar__toggler-wrapper">
-          ${this.slots.rightSection}
-          <button type="button" class="fc-navbar__toggler">
-            <svg><use xlink:href="#menu" href="#menu"></use></svg>
-          </button>
-        </div>
-        ${this.slots.collapseSection}
-      </nav>`
+      ${this.slots.toggleIcon}
+      ${this.slots.leftSection}
+      <div class="fc-navbar__toggler-wrapper">
+        ${this.slots.rightSection}
+        <button type="button" class="fc-navbar__toggler">
+          <svg><use xlink:href="#menu" href="#menu"></use></svg>
+        </button>
+      </div>
+      ${this.slots.collapseSection}`
     }
   })
 }

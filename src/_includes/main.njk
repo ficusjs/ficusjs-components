@@ -34,7 +34,7 @@
   <body>
     <div class="fd-main-layout">
 
-      <header class="fc-navbar">
+      {# <header class="fc-navbar">
         <section class="fc-navbar__section">
           <a href="/"><img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components"></a>
           <a href="/"><img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;"></a>
@@ -47,7 +47,28 @@
             </ul>
           </nav>
         </section>
-      </header>
+      </header> #}
+
+      <fc-navbar style="width: 100%;">
+        <section class="fc-navbar__section" slot="leftSection">
+          <a href="/"><img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components"></a>
+          <a href="/"><img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;"></a>
+        </section>
+        <section class="fc-navbar__section" slot="collapseSection">
+          <nav class="fc-navbar__nav">
+            <ul>
+              <li>
+                <fc-dropdown dropdown-title="Example dropdown">
+                  <button type="button" class="fc-button fc-button--link">Item 1</button>
+                  <button type="button" class="fc-button fc-button--link">Item 2</button>
+                  <button type="button" class="fc-button fc-button--link">Item 3</button>
+                </fc-dropdown>
+              </li>
+              <li>{% include "theme-toggle.njk" %}</li>
+            </ul>
+          </nav>
+        </section>
+      </fc-navbar>
 
       <div class="[ fd-sidebar ] [ fu-spacing-pt-05 fu-spacing-pb-05 fu-spacing-pl-05 fu-spacing-pr-05 fu-lg-spacing-pt-09 fu-lg-spacing-pb-09 fu-lg-spacing-pl-00 fu-lg-spacing-pr-00 ]">
         <details id="sidebar-nav" class="fd-sidebar-details" open>
@@ -78,5 +99,6 @@
     </div>
     <script type="module" src="assets/js/sidebar-details.js"></script>
     <script type="module" src="assets/js/theme.js"></script>
+    <script type="module" src="assets/js/main.js"></script> 
   </body>
 </html>
