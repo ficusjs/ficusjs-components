@@ -56,8 +56,8 @@ module.exports = function (eleventyConfig) {
       const importStatements = paths.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? p : `http://localhost:8888${p}`}'`).join('\n')
       const useStatements = paths.map((p, i) => `use(module${i}, { renderer, html })`).join('\n')
       return `<script type="module">
-        import { use } from 'https://unpkg.com/ficusjs?module'
-        import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+        import { use } from 'https://cdn.skypack.dev/ficusjs'
+        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
         ${importStatements}
         ${useStatements}
       </script>`
@@ -65,15 +65,15 @@ module.exports = function (eleventyConfig) {
       const importStatements = path.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${p}`}'`).join('\n')
       const useStatements = path.map((p, i) => `use(module${i}, { renderer, html })`).join('\n')
       return `<script type="module">
-        import { use } from 'https://unpkg.com/ficusjs?module'
-        import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+        import { use } from 'https://cdn.skypack.dev/ficusjs'
+        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
         ${importStatements}
         ${useStatements}
       </script>`
     } else if (path) {
       return `<script type="module">
-        import { use } from 'https://unpkg.com/ficusjs?module'
-        import { html, renderer } from 'https://unpkg.com/ficusjs-renderers@latest/dist/lit-html.js'
+        import { use } from 'https://cdn.skypack.dev/ficusjs'
+        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
         import { module } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}'
         use(module, { renderer, html })
       </script>`
