@@ -1,0 +1,40 @@
+//
+// Navbar (Custom Element)
+//
+
+@use '../../html/navbar';
+
+.fc-navbar__collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+
+  &:not(.fc-navbar__collapse--open) {
+    display: none;
+  }
+}
+
+.fc-navbar__toggler {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  border: none;
+  padding: var(--spacing-03);
+  background: none;
+}
+
+.fc-navbar__toggler svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--high-emphasis-text-color);
+}
+
+@media (min-width: 992px) {
+  .fc-navbar__collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .fc-navbar__toggler {
+    display: none;
+  }
+}

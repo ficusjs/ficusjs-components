@@ -1,0 +1,40 @@
+//
+// Navbar (HTML)
+//
+
+:root {
+  --navbar-height: 80px;
+}
+
+.fc-navbar {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 var(--spacing-07);
+  background: var(--ui-elevation-background-01);
+  border-bottom: 1px solid var(--ui-border-02);
+
+  section {
+    align-items: center;
+    display: flex;
+    min-height: var(--navbar-height);
+    height: 100%;
+
+    &:not(:first-child):last-child {
+      justify-content: flex-end;
+    }
+
+    &.fc-navbar__center {
+      align-items: center;
+      display: flex;
+      flex: 0 0 auto;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+}

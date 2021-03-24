@@ -34,38 +34,26 @@
   <body>
     <div class="fd-main-layout">
 
-      {# <header class="fc-navbar">
-        <section class="fc-navbar__section">
-          <a href="/"><img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components"></a>
-          <a href="/"><img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;"></a>
-        </section>
-        <section class="fc-navbar__section">
-          <nav class="fc-navbar__nav">
-            <ul>
-              <li><a href="https://github.com/ficusjs/ficusjs-components" class="fc-button fc-button--link" target="_blank" rel="noreferrer noopener">GitHub</a></li>
-              <li>{% include "theme-toggle.njk" %}</li>
-            </ul>
+      <fc-navbar style="width: 100%;">
+        <svg class="fu-hidden" xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+          <symbol id="menu" viewBox="0 0 48 48">
+            <path d="M 5.5 9 A 1.50015 1.50015 0 1 0 5.5 12 L 42.5 12 A 1.50015 1.50015 0 1 0 42.5 9 L 5.5 9 z M 5.5 22.5 A 1.50015 1.50015 0 1 0 5.5 25.5 L 42.5 25.5 A 1.50015 1.50015 0 1 0 42.5 22.5 L 5.5 22.5 z M 5.5 36 A 1.50015 1.50015 0 1 0 5.5 39 L 42.5 39 A 1.50015 1.50015 0 1 0 42.5 36 L 5.5 36 z"/>
+          </symbol>
+        </svg>
+        <section>
+          <nav>
+            <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
+            <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
           </nav>
         </section>
-      </header> #}
-
-      <fc-navbar style="width: 100%;">
-        <section class="fc-navbar__section" slot="leftSection">
-          <a href="/"><img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components"></a>
-          <a href="/"><img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;"></a>
-        </section>
-        <section class="fc-navbar__section" slot="collapseSection">
-          <nav class="fc-navbar__nav">
-            <ul>
-              <li>
-                <fc-dropdown dropdown-title="Example dropdown">
-                  <button type="button" class="fc-button fc-button--link">Item 1</button>
-                  <button type="button" class="fc-button fc-button--link">Item 2</button>
-                  <button type="button" class="fc-button fc-button--link">Item 3</button>
-                </fc-dropdown>
-              </li>
-              <li>{% include "theme-toggle.njk" %}</li>
-            </ul>
+        <button type="button" class="fc-navbar__toggler">
+          <svg><use xlink:href="#menu" href="#menu"></use></svg>
+        </button>
+        <section class="fc-navbar__collapse">
+          <nav>
+            <a href="..." class="fc-button fc-button--link">Docs</a>
+            <a href="..." class="fc-button fc-button--link">GitHub</a>
+            {% include "theme-toggle.njk" %}
           </nav>
         </section>
       </fc-navbar>

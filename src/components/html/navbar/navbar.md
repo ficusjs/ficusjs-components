@@ -19,25 +19,34 @@ Navbar component.
 
 <div class="fd-component-container">
   <nav class="fc-navbar" style="width: 100%">
-    <section class="fc-navbar__section">
-      <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
-      <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
+    <section>
+      <nav>
+        <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
+        <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
+      </nav>
     </section>
-    <section class="fc-navbar__section">
-      <a href="..." class="fc-button fc-button--link">Docs</a>
-      <a href="..." class="fc-button fc-button--link">GitHub</a>
+    <section>
+      <nav>
+        <a href="..." class="fc-button fc-button--link">Docs</a>
+        <a href="..." class="fc-button fc-button--link">GitHub</a>
+      </nav>
     </section>
   </nav>
 </div>
 
 ```html
   <nav class="fc-navbar">
-    <section class="fc-navbar__section">
-      <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
+    <section>
+      <nav>
+        <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
+        <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
+      </nav>
     </section>
-    <section class="fc-navbar__section">
-      <a href="..." class="fc-button fc-button--link">Docs</a>
-      <a href="..." class="fc-button fc-button--link">GitHub</a>
+    <section>
+      <nav>
+        <a href="..." class="fc-button fc-button--link">Docs</a>
+        <a href="..." class="fc-button fc-button--link">GitHub</a>
+      </nav>
     </section>
   </nav>
 ```
