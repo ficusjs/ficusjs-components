@@ -45,6 +45,7 @@ Accordion component.
 | Name | Description |
 | --- | --- |
 | `fc-accordion` | Mandatory. Required on the root element. |
+| `fc-accordion_toggle-icon` | Optional. Sizes the accordion toggle icon and also provides animation on toggle. |
 | `fc-accordion__body` | Mandatory. Required on the body element. |
 
 ## Styling Hooks
