@@ -6,7 +6,7 @@ export function createNavbar ({ createComponent, renderer, html }) {
     mounted () {
       this.classList.add('fc-navbar')
       const btn = this.querySelector('.fc-navbar__toggler')
-      const collapse = this.querySelector('section.fc-navbar__collapse')
+      const collapse = this.querySelector('nav.fc-navbar__collapse')
       btn.addEventListener('click', e => {
         e.preventDefault()
         e.stopPropagation()
@@ -25,7 +25,7 @@ export function createNavbar ({ createComponent, renderer, html }) {
     hideNavbarCollapse (e) {
       const dd = e.target.closest('fc-navbar')
       if (!dd || dd !== this) {
-        const collapse = this.querySelector('section.fc-navbar__collapse')
+        const collapse = this.querySelector('nav.fc-navbar__collapse')
         collapse.classList.remove(OPEN_CLASSNAME)
       }
     },

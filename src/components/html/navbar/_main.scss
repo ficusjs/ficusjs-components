@@ -3,7 +3,7 @@
 //
 
 :root {
-  --navbar-height: 80px;
+  --navbar-height: 72px;
 }
 
 .fc-navbar {
@@ -11,16 +11,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 100%;
-  padding: 0 var(--spacing-07);
+  padding: var(--spacing-05);
   background: var(--ui-elevation-background-01);
   border-bottom: 1px solid var(--ui-border-02);
 
-  section {
-    align-items: center;
+  @media (min-width: 992px) {
+    padding: var(--spacing-05) var(--spacing-07);
+  }
+
+  nav {
     display: flex;
-    min-height: var(--navbar-height);
-    height: 100%;
+    align-items: center;
 
     &:not(:first-child):last-child {
       justify-content: flex-end;
@@ -32,9 +33,23 @@
       flex: 0 0 auto;
     }
   }
+}
 
-  nav {
-    display: flex;
-    align-items: center;
+// Link
+.fc-navbar__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;
+  padding: var(--fc-navbar-link-spacing-padding-y, var(--spacing-03)) var(--fc-navbar-link-spacing-padding-x, 0);
+  background-color: transparent;
+  color: var(--ui-color);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (min-width: 992px) {
+    width: auto;
+    padding: var(--fc-navbar-link-spacing-padding-y, var(--spacing-03)) var(--fc-navbar-link-spacing-padding-x, var(--spacing-05));
   }
 }

@@ -20,17 +20,17 @@ A Dropdown displays a list of buttons on temporary surfaces.
 
 <div class="fd-component-container">
   <fc-dropdown dropdown-title="Example dropdown">
-    <button type="button" class="fc-button fc-button--link">Item 1</button>
-    <button type="button" class="fc-button fc-button--link">Item 2</button>
-    <button type="button" class="fc-button fc-button--link">Item 3</button>
+    <button type="button">Item 1</button>
+    <button type="button">Item 2</button>
+    <button type="button">Item 3</button>
   </fc-dropdown>
 </div>
 
 ```html
 <fc-dropdown dropdown-title="Example dropdown">
-  <button type="button" class="fc-button fc-button--link">Item 1</button>
-  <button type="button" class="fc-button fc-button--link">Item 2</button>
-  <button type="button" class="fc-button fc-button--link">Item 3</button>
+  <button type="button">Item 1</button>
+  <button type="button">Item 2</button>
+  <button type="button">Item 3</button>
 </fc-dropdown>
 ```
 

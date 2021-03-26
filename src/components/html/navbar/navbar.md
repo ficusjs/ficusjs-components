@@ -18,36 +18,28 @@ Navbar component.
 ## Example
 
 <div class="fd-component-container">
-  <nav class="fc-navbar" style="width: 100%">
-    <section>
-      <nav>
-        <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
-        <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
-      </nav>
-    </section>
-    <section>
-      <nav>
-        <a href="..." class="fc-button fc-button--link">Docs</a>
-        <a href="..." class="fc-button fc-button--link">GitHub</a>
-      </nav>
-    </section>
-  </nav>
+  <header class="fc-navbar" style="width: 100%">
+    <nav>
+      <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
+      <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
+    </nav>
+    <nav>
+      <a href="..." class="fc-button fc-button--link">Docs</a>
+      <a href="..." class="fc-button fc-button--link">GitHub</a>
+    </nav>
+  </header>
 </div>
 
 ```html
-  <nav class="fc-navbar">
-    <section>
-      <nav>
-        <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
-        <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
-      </nav>
-    </section>
-    <section>
-      <nav>
-        <a href="..." class="fc-button fc-button--link">Docs</a>
-        <a href="..." class="fc-button fc-button--link">GitHub</a>
-      </nav>
-    </section>
+<header class="fc-navbar" style="width: 100%">
+  <nav>
+    <img id="ficus-logo" src="../assets/img/ficus-logo.svg" width="150" alt="FicusJS Components">
+    <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" width="150" alt="FicusJS Components" style="display: none;">
   </nav>
+  <nav>
+    <a href="..." class="fc-button fc-button--link">Docs</a>
+    <a href="..." class="fc-button fc-button--link">GitHub</a>
+  </nav>
+</header>
 ```
 

@@ -4,10 +4,23 @@
 
 @use '../../html/navbar';
 
+.fc-navbar {
+  // nav:not(.fc-navbar__collapse) {
+  //   height: var(--navbar-height);
+  // }
+}
+
 .fc-navbar__collapse {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  flex-direction: column;
+  margin-top: var(--spacing-05);
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    margin-top: 0;
+  }
 
   &:not(.fc-navbar__collapse--open) {
     display: none;
@@ -36,5 +49,33 @@
   }
   .fc-navbar__toggler {
     display: none;
+  }
+}
+
+// Dropdown
+.fc-navbar {
+  fc-dropdown {
+    display: block;
+    width: 100%;
+
+    .fc-dropdown {
+      width: 100%;
+    }
+
+    .fc-dropdown__menu {
+      position: static;
+      float: none;
+      margin-bottom: calc(var(--spacing-03));
+    }
+
+    @media (min-width: 992px) {
+      width: auto;
+
+      .fc-dropdown__menu {
+        width: auto;
+        position: absolute;
+        margin-bottom: 0;
+      }
+    }
   }
 }
