@@ -1,0 +1,18 @@
+//
+// Accordion (Custom element)
+//
+
+@use '../../html/accordion';
+
+fc-accordion {
+  display: block;
+  width: 100%;
+
+  .fc-accordion {
+    border-top: var(--fc-accordion-sizing-border, 1px) solid var(--fc-accordion-color-border, var(--ui-border-02));
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}

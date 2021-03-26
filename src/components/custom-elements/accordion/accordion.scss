@@ -1,14 +1,1 @@
-@use '../../html/accordion' as accordion;
-
-fc-accordion {
-  display: block;
-  width: 100%;
-
-  .fc-accordion {
-    border-top: 1px solid var(--ui-border-04);
-
-    &:first-child {
-      border-top: none;
-    }
-  }
-}
+@use 'main';
