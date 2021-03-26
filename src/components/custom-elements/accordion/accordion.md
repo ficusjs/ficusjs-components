@@ -125,6 +125,6 @@ Use these CSS Custom Properties as hooks to customize this component with your o
 | Spacing | `--fc-accordion-summary-spacing` | Dimension | `--spacing-05` |
 | Spacing | `--fc-accordion-summary-spacing` | Dimension | `--spacing-05` |
 | Spacing | `--fc-accordion-svg-spacing` | Dimension | `--spacing-03` |
-| Text | `--fc-accordion-summary-text-decoration-color-focus` | Dimension | `--secondary-color` |
+| Text | `--fc-accordion-summary-text-decoration-color-focus` | Color | `--secondary-color` |
 | Text | `--fc-accordion-summary-text-decoration-thickness-focus` | Dimension | `--spacing-01` |
 | Text | `--fc-accordion-summary-text-underline-offset-focus` | Dimension | `--spacing-02` |
