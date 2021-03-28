@@ -11,7 +11,7 @@ if (currentTheme) {
   if (currentTheme === 'dark') {
     toggleSwitch.checked = true
 
-    ball.setAttribute('style', 'transform:translatex(100%);')
+    ball.setAttribute('style', 'transform:translatex(calc(100% + 4px));')
     logo.style.display = 'none'
     darkThemeLogo.style.display = 'block'
   }
@@ -21,7 +21,7 @@ toggleSwitch.addEventListener('change', e => {
   if (e.target.checked) {
     document.documentElement.setAttribute('data-theme', 'dark')
     window.localStorage.setItem('theme', 'dark')
-    ball.setAttribute('style', 'transform:translatex(100%);')
+    ball.setAttribute('style', 'transform:translatex(calc(100% + 4px));')
     logo.style.display = 'none'
     darkThemeLogo.style.display = 'block'
   } else {
