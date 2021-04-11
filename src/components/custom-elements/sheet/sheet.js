@@ -86,7 +86,7 @@ export function createSheet ({ createComponent, renderer, html }) {
     },
     render () {
       const inner = html`<div class="fc-sheet__inner">${this.slots.default}</div>`
-      return this.props.backdrop ? html`<div class="fc-sheet__wrapper">${inner}</div>` : inner
+      return this.props.backdrop ? html`<div class="fc-sheet__scrim"></div>${inner}` : inner
     }
   })
 }

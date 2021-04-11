@@ -1,0 +1,125 @@
+//
+// Sheet
+//
+
+.fc-sheet {
+  display: block;
+
+  .fc-sheet__inner {
+    background-color: var(--ui-elevation-background-01);
+    z-index: 6;
+  }
+}
+
+// Top
+.fc-sheet--top {
+  .fc-sheet__inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    transform: translateY(-100%);
+  }
+
+  @media (min-width: 720px) {
+    .fc-sheet__inner {
+      height: 70px;
+    }
+  }
+}
+
+// Bottom
+.fc-sheet--bottom {
+  .fc-sheet__inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    transform: translateY(100%);
+  }
+}
+
+// Left
+.fc-sheet--left {
+  .fc-sheet__inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    overflow-y: auto;
+    transform: translateX(-100%);
+  }
+
+  @media (min-width: 960px) {
+    .fc-sheet__inner {
+      width: 250px;
+    }
+  }
+}
+
+// Right
+.fc-sheet.fc-sheet--right {
+  .fc-sheet__inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    border-left: 1px solid var(--ui-border-02);
+    transform: translateX(100%);
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  @media (min-width: 960px) {
+    .fc-sheet__inner {
+      width: 250px;
+    }
+  }
+}
+
+// Top active
+.fc-sheet--top.fc-sheet--in-view {
+  .fc-sheet__inner {
+    transform: translateY(0);
+    box-shadow: var(--ui-elevation-shadow-08);
+  }
+}
+
+// Bottom active
+.fc-sheet--bottom.fc-sheet--in-view {
+  .fc-sheet__inner {
+    transform: translateY(0);
+    box-shadow: var(--ui-elevation-shadow-08);
+  }
+}
+
+// Left active
+.fc-sheet--left.fc-sheet--in-view .fc-sheet__inner {
+  transform: translate(0);
+  box-shadow: var(--ui-elevation-shadow-08);
+}
+
+// Right active
+.fc-sheet--right.fc-sheet--in-view {
+  .fc-sheet__inner {
+    transform: translate(0);
+    box-shadow: var(--ui-elevation-shadow-08);
+  }
+}
+
+// Scrim
+.fc-sheet.fc-sheet--in-view {
+  .fc-sheet__scrim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}

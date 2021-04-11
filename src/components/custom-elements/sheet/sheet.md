@@ -20,17 +20,29 @@ Sheet component.
 
 ### Position right
 
-<fc-sheet position="right" class="fu-bg-primary">
-  <p>Sheet</p>
-</fc-sheet>
-<button type="button" id="show-right-sheet-btn">Toggle sheet</button>
+<div class="fd-component-container">
+  <fc-sheet position="right" class="fu-bg-primary"></fc-sheet>
+  <button type="button" class="fc-button" id="show-right-sheet-btn">Toggle sheet</button>
+</div>
+
+```html
+<fc-sheet position="right" class="fu-bg-primary"></fc-sheet>
+<button type="button" class="fc-button" id="show-right-sheet-btn">Toggle sheet</button>
+```
 
 ### Position top with backdrop
 
-<fc-sheet position="top" backdrop="true" class="fu-bg-primary">
-  <p>Sheet</p>
-</fc-sheet>
-<button type="button" id="show-top-sheet-btn">Toggle sheet</button>
+<div class="fd-component-container">
+  <fc-sheet position="top" backdrop="true" class="fu-bg-primary">
+    <button type="button" class="fc-button" id="show-top-sheet-close-btn">Toggle sheet</button>
+  </fc-sheet>
+  <button type="button" class="fc-button" id="show-top-sheet-btn">Toggle sheet</button>
+</div>
+
+```html
+<fc-sheet position="top" backdrop="true" class="fu-bg-primary"></fc-sheet>
+<button type="button" class="fc-button" id="show-top-sheet-btn">Toggle sheet</button>
+```
 
 ## Importing
 
@@ -46,12 +58,6 @@ import { module as sheetModule } from 'https://cdn.skypack.dev/@ficusjs/componen
 
 // use the module
 use(sheetModule, { renderer, html })
-```
-
-## Usage
-
-```html
-<fc-sheet>Sheet</fc-sheet>
 ```
 
 ## API
