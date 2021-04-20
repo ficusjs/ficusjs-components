@@ -1,5 +1,4 @@
 const glob = require('glob-all')
-const logSymbols = require('log-symbols')
 const { writeFileSync } = require('fs')
 const path = require('path')
 const yargs = require('yargs/yargs')
@@ -7,6 +6,7 @@ const { hideBin } = require('yargs/helpers')
 const sass = require('sass')
 const CleanCSS = require('clean-css')
 const mkdirp = require('mkdirp')
+const logSymbols = require('log-symbols')
 
 const argv = yargs(hideBin(process.argv)).argv
 
