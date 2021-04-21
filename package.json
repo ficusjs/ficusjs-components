@@ -44,7 +44,7 @@
     "@11ty/eleventy": "0.12.1",
     "@11ty/eleventy-navigation": "0.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "3.1.0",
-    "@ficusjs/styles": "1.0.0-alpha.22",
+    "@ficusjs/styles": "1.0.0-alpha.23",
     "@rollup/plugin-commonjs": "18.0.0",
     "@rollup/plugin-node-resolve": "11.2.1",
     "@rollup/plugin-replace": "2.4.2",
