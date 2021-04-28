@@ -40,15 +40,19 @@
   align-items: center;
   width: 100%;
   border: none;
-  padding: var(--fc-navbar-link-spacing-padding-y, var(--spacing-03)) var(--fc-navbar-link-spacing-padding-x, 0);
-  background-color: transparent;
-  color: var(--ui-color);
+  padding: navbar.$link-padding;
+  background-color: navbar.$bg-color;
+  color: navbar.$link-color;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
 
+  &:hover {
+    color: navbar.$link-color-hover;
+  }
+
   @media (min-width: 992px) {
     width: auto;
-    padding: var(--fc-navbar-link-spacing-padding-y, var(--spacing-03)) var(--fc-navbar-link-spacing-padding-x, var(--spacing-05));
+    padding: navbar.$link-padding-lg;
   }
 }
