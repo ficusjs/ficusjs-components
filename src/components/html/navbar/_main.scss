@@ -1,24 +1,21 @@
-//
 // Navbar (HTML)
-//
+// -------------
 
-:root {
-  --navbar-height: 72px;
-}
+@use 'variables' as navbar;
 
 .fc-navbar {
   align-items: stretch;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: var(--navbar-height);
-  padding: var(--spacing-05);
-  background: var(--ui-elevation-background-01);
-  border-bottom: 1px solid var(--ui-border-02);
+  min-height: navbar.$height;
+  padding: navbar.$padding;
+  background: navbar.$bg-color;
+  border-bottom: navbar.$border-bottom;
   z-index: 4;
 
   @media (min-width: 992px) {
-    padding: var(--spacing-05) var(--spacing-07);
+    padding: navbar.$padding-lg;
   }
 
   nav {
