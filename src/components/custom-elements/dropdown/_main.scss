@@ -1,0 +1,49 @@
+// Dropdown
+// --------
+
+@use 'variables' as dropdown;
+
+.fc-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.fc-dropdown__menu {
+  // TODO: update z-index when rules are set
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  min-width: dropdown.$menu-min-width;
+  margin: dropdown.$menu-margin;
+  border: dropdown.$menu-border;
+  border-radius: dropdown.$menu-border-radius;
+  box-shadow: dropdown.$menu-box-shadow;
+  padding: dropdown.$menu-padding;
+  background-color: dropdown.$menu-bg-color;
+  text-align: left;
+  list-style: none;
+  background-clip: padding-box;
+
+  button:not([class]),
+  a:not([class]) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    padding: dropdown.$menu-link-padding;
+    background-color: dropdown.$menu-link-bg-color;
+    color: dropdown.$menu-link-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: dropdown.$menu-link-bg-color-hover;
+    }
+  }
+}
+
+.fc-dropdown__menu--open {
+  display: flex;
+}

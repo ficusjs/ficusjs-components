@@ -14,7 +14,7 @@ export function createDropdown ({ createComponent, renderer, html }) {
     },
     computed: {
       buttonClassName () {
-        return `${this.props.buttonClass ? `${this.props.buttonClass}` : 'fc-dropdown__button'}`
+        return `${this.props.buttonClass ? `${this.props.buttonClass}` : 'fc-button'}`
       }
     },
     mounted () {
