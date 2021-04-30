@@ -2,15 +2,15 @@
 // -------------------
 
 // Details
-$details-padding:                  var(--fc-accordion-details-spacing, var(--spacing-05));
+$details-padding:                  var(--fc-accordion-details-spacing, var(--spacing-05)) !default;
 
 // Summary
-$summary-margin:                   calc(var(--fc-accordion-summary-spacing, var(--spacing-05)) * -1);
-$summary-padding:                  var(--fc-accordion-summary-spacing, var(--spacing-05));
-$summary-focus-td-color:           var(--fc-accordion-summary-text-decoration-color-focus, var(--secondary-color));
-$summary-focus-td-thickness:       var(--fc-accordion-summary-text-decoration-thickness-focus, var(--spacing-01));
-$summary-focus-td-offset:          var(--fc-accordion-summary-text-underline-offset-focus, var(--spacing-02));
+$summary-margin:                   calc(var(--fc-accordion-summary-spacing, var(--spacing-05)) * -1) !default;
+$summary-padding:                  var(--fc-accordion-summary-spacing, var(--spacing-05)) !default;
+$summary-focus-td-color:           var(--fc-accordion-summary-text-decoration-color-focus, var(--secondary-color)) !default;
+$summary-focus-td-thickness:       var(--fc-accordion-summary-text-decoration-thickness-focus, var(--spacing-01)) !default;
+$summary-focus-td-offset:          var(--fc-accordion-summary-text-underline-offset-focus, var(--spacing-02)) !default;
 
 // Toggle icon
-$toggle-icon-size:                 var(--fc-accordion-svg-sizing, var(--icon-02));
-$toggle-icon-margin:               var(--fc-accordion-svg-spacing, var(--spacing-03));
+$toggle-icon-size:                 var(--fc-accordion-svg-sizing, var(--icon-02)) !default;
+$toggle-icon-margin:               var(--fc-accordion-svg-spacing, var(--spacing-03)) !default;
