@@ -6,7 +6,7 @@ tags:
   - gettingStarted
 eleventyNavigation:
   key: Loader
-  order: 3
+  order: 2
 ---
 # Loader
 

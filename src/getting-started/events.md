@@ -3,10 +3,10 @@ layout: main.njk
 title: FicusJS components - Custom elements - Events
 label: Events
 tags:
-- customElements
+- gettingStarted
 eleventyNavigation:
   key: Events
-  order: 2
+  order: 3
 ---
 # Events
 
