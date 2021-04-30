@@ -17,7 +17,7 @@ Accordion component.
 <div class="fd-component-container">
   <details class="fc-accordion">
     <summary>
-      <svg class="fc-accordion_toggle-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+      <svg class="fc-accordion__toggle-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
       <span>Accordion item</span>
     </summary>
     <div class="fc-accordion__body">
@@ -29,7 +29,7 @@ Accordion component.
 ```html
 <details class="fc-accordion">
   <summary>
-    <svg class="fc-accordion_toggle-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
+    <svg class="fc-accordion__toggle-icon" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>
     <span>Accordion item</span>
   </summary>
   <div class="fc-accordion__body">
@@ -45,7 +45,7 @@ Accordion component.
 | Name | Description |
 | --- | --- |
 | `fc-accordion` | Mandatory. Required on the root element. |
-| `fc-accordion_toggle-icon` | Optional. Sizes the accordion toggle icon and also provides animation on toggle. |
+| `fc-accordion__toggle-icon` | Optional. Sizes the accordion toggle icon and also provides animation on toggle. |
 | `fc-accordion__body` | Mandatory. Required on the body element. |
 
 ### Styling Hooks

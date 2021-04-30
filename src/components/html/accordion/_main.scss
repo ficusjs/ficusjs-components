@@ -15,7 +15,7 @@
     padding: accordion.$summary-padding;
     cursor: pointer;
 
-    .fc-accordion_toggle-icon {
+    .fc-accordion__toggle-icon {
       width: accordion.$toggle-icon-size;
       height: accordion.$toggle-icon-size;
       margin-right: accordion.$toggle-icon-margin;
@@ -34,7 +34,7 @@
     summary {
       margin-bottom: 0;
 
-      .fc-accordion_toggle-icon {
+      .fc-accordion__toggle-icon {
         transform: rotate(90deg);
       }
     }
