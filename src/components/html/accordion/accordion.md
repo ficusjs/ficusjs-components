@@ -48,7 +48,7 @@ Accordion component.
 | `fc-accordion_toggle-icon` | Optional. Sizes the accordion toggle icon and also provides animation on toggle. |
 | `fc-accordion__body` | Mandatory. Required on the body element. |
 
-## Styling Hooks
+### Styling Hooks
 
 Use these CSS Custom Properties as hooks to customize this component with your own style.
 
@@ -65,3 +65,23 @@ Use these CSS Custom Properties as hooks to customize this component with your o
 | Text | `--fc-accordion-summary-text-decoration-color-focus` | Color | `--secondary-color` |
 | Text | `--fc-accordion-summary-text-decoration-thickness-focus` | Dimension | `--spacing-01` |
 | Text | `--fc-accordion-summary-text-underline-offset-focus` | Dimension | `--spacing-02` |
+
+### SASS
+
+It’s also possible to theme an accordion using SASS. As we use CSS Custom properties to style our components we set two arguments, the first is the styling hook, the second is the fallback value.
+
+```scss
+// Details
+$details-padding:                  var(--fc-accordion-details-spacing, var(--spacing-05));
+
+// Summary
+$summary-margin:                   calc(var(--fc-accordion-summary-spacing, var(--spacing-05)) * -1);
+$summary-padding:                  var(--fc-accordion-summary-spacing, var(--spacing-05));
+$summary-focus-td-color:           var(--fc-accordion-summary-text-decoration-color-focus, var(--secondary-color));
+$summary-focus-td-thickness:       var(--fc-accordion-summary-text-decoration-thickness-focus, var(--spacing-01));
+$summary-focus-td-offset:          var(--fc-accordion-summary-text-underline-offset-focus, var(--spacing-02));
+
+// Toggle icon
+$toggle-icon-size:                 var(--fc-accordion-svg-sizing, var(--icon-02));
+$toggle-icon-margin:               var(--fc-accordion-svg-spacing, var(--spacing-03));
+```

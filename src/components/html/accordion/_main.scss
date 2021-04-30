@@ -1,31 +1,32 @@
-//
 // Accordion (HTML)
-//
+// ----------------
+
+@use 'variables' as accordion;
 
 .fc-accordion {
   display: block;
   width: 100%;
-  padding: var(--fc-accordion-details-spacing, var(--spacing-05));
+  padding: accordion.$details-padding;
 
   summary {
     display: flex;
     align-items: center;
-    margin: calc(var(--fc-accordion-summary-spacing, var(--spacing-05)) * -1);
-    padding: var(--fc-accordion-summary-spacing, var(--spacing-05));
+    margin: accordion.$summary-margin;
+    padding: accordion.$summary-padding;
     cursor: pointer;
 
     .fc-accordion_toggle-icon {
-      width: var(--fc-accordion-svg-sizing, var(--icon-02));
-      height: var(--fc-accordion-svg-sizing, var(--icon-02));
-      margin-right: var(--fc-accordion-svg-spacing, var(--spacing-03));
+      width: accordion.$toggle-icon-size;
+      height: accordion.$toggle-icon-size;
+      margin-right: accordion.$toggle-icon-margin;
     }
 
     &:focus {
       outline: none;
       text-decoration: underline;
-      text-decoration-color: var(--fc-accordion-summary-text-decoration-color-focus, var(--secondary-color));
-      text-decoration-thickness: var(--fc-accordion-summary-text-decoration-thickness-focus, var(--spacing-01));
-      text-underline-offset: var(--fc-accordion-summary-text-underline-offset-focus, var(--spacing-02));
+      text-decoration-color: accordion.$summary-focus-td-color;
+      text-decoration-thickness: accordion.$summary-focus-td-thickness;
+      text-underline-offset: accordion.$summary-focus-td-offset;
     }
   }
 
