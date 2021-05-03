@@ -12,7 +12,7 @@ modulePath:
   - /components/custom-elements/form-input/index.js
 tags:
   - forms
-eleventyNavigation:
+eleventyNavigation: 
   key: Input
   order: 2
 ---
@@ -31,9 +31,17 @@ Form input component.
 </div>
 
 ```html
-<fc-form>
-  <fc-form-input type="checkbox" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
-</fc-form>
+<!-- Custom element -->
+<fc-form-input type="checkbox" name="checkboxInput1" label="Checkbox input" help-text="Checkbox input help text"></fc-form-input>
+
+<!-- HTML -->
+<div class="[ fc-form-group ] [ fu-spacing-mt-05 ]">
+  <div class="fc-input-inline-wrapper">
+    <label class="fc-form-label">Checkbox input</label>
+    <input class="fc-form-check" type="checkbox"/>
+  </div>
+  <div class="fc-form-help-text">Checkbox input help text</div>
+</div>
 ```
 
 ### Checkbox - switch

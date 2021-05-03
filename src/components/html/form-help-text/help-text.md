@@ -13,9 +13,9 @@ eleventyNavigation:
 # Form help text
 
 <div class="fd-component-container">
-  <div class="fc-form__help-text">Form help text</div>
+  <div class="fc-form-help-text">Form help text</div>
 </div>
 
 ```html
-<div class="fc-form__help-text">Form help text</div>
+<div class="fc-form-help-text">Form help text</div>
 ```

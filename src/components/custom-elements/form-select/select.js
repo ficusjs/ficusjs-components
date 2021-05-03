@@ -23,7 +23,7 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
         return generateId('select')
       },
       labelClassName () {
-        return `fc-form__label${this.props.inline ? '' : ' fc-form__label--block'}`
+        return `fc-form-label${this.props.inline ? '' : ' fc-form-label--block'}`
       },
       for () {
         return !this.props.label ? '' : this.internalId
@@ -70,8 +70,8 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
     },
     render () {
       return html`
-        <div class="${this.props.inline ? 'fc-form__group fc-form__group--inline' : 'fc-form__group'}">
-          <div class="${this.props.multiple ? 'fc-form__select fc-form__select--multiple' : 'fc-form__select'}">
+        <div class="${this.props.inline ? 'fc-form-group fc-form-group--inline' : 'fc-form-group'}">
+          <div class="${this.props.multiple ? 'fc-form-select fc-form-select--multiple' : 'fc-form-select'}">
             <label class="${this.labelClassName}" for="${this.for}">${this.props.label}</label>
             <select
               id="${this.internalId}"
@@ -80,10 +80,10 @@ export function createSelect ({ createComponent, renderer, html, nothing = '' })
               ${this.selectOptions}
             </select>
           </div>
-          <div aria-live="polite" class="fc-form__invalid-feedback">
+          <div aria-live="polite" class="fc-form-invalid-feedback">
             <span></span>
           </div>
-          <div class="fc-form__help-text">${this.props.helpText}</div>
+          <div class="fc-form-help-text">${this.props.helpText}</div>
         </div>
       `
     }

@@ -1,0 +1,13 @@
+// Form input variables
+// --------------------
+
+// Input
+$border:                1px solid var(--ui-border-04) !default;
+$border-radius:         var(--ui-border-radius-01) !default;
+$padding:               var(--spacing-04) var(--spacing-05) !default;
+$bg-color:              var(--ui-background-01) !default;
+$color:                 var(--body-color) !default;
+$outine-width:          2px !default;
+$outline:               $outine-width solid transparent !default;
+$outline-color-focus:   var(--state-focus) !default;
+$placeholder-color:     var(--medium-emphasis-text-color) !default;

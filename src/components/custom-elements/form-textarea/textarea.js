@@ -12,7 +12,7 @@ export function createTextarea ({ createComponent, renderer, html }) {
         return generateId('textarea')
       },
       labelClassName () {
-        return `fc-form__label${this.props.inline ? '' : ' fc-form__label--block'}`
+        return `fc-form-label${this.props.inline ? '' : ' fc-form-label--block'}`
       },
       for () {
         return !this.props.label ? '' : this.internalId
@@ -26,18 +26,18 @@ export function createTextarea ({ createComponent, renderer, html }) {
     },
     render () {
       return html`
-        <div class="fc-form__group">
-          <div class="fc-form__textarea">
+        <div class="fc-form-group">
+          <div class="fc-form-textarea">
             <label class="${this.labelClassName}" for="${this.for}">${this.props.label}</label>
             <textarea
               id="${this.internalId}"
               name="${this.props.name}"
             >${this.slots.default}</textarea>
           </div>
-          <div aria-live="polite" class="fc-form__invalid-feedback">
+          <div aria-live="polite" class="fc-form-invalid-feedback">
             <span></span>
           </div>
-          <div class="fc-form__help-text">${this.props.helpText}</div>
+          <div class="fc-form-help-text">${this.props.helpText}</div>
         </div>
       `
     }

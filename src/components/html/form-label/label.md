@@ -13,35 +13,35 @@ eleventyNavigation:
 # Form label
 
 <div class="fd-component-container">
-  <label class="fc-form__label">Form label</label>
+  <label class="fc-form-label">Form label</label>
 </div>
 
 ```html
-<label class="fc-form__label">Form label</label>
+<label class="fc-form-label">Form label</label>
 ```
 
 ## Variations
 
 ### Block
 
-Add the `fc-form__label--block` modifier class for a block-level label.
+Add the `fc-form-label--block` modifier class for a block-level label.
 
 <div class="fd-component-container">
-  <label class="fc-form__label fc-form__label--block">Block form label</label>
+  <label class="fc-form-label fc-form-label--block">Block form label</label>
 </div>
 
 ```html
-  <label class="fc-form__label fc-form__label--block">Block form label</label>
+  <label class="fc-form-label fc-form-label--block">Block form label</label>
 ```
 
 ### Required
 
-Add the `fc-form__label--required` modifier class to indicate the form element is required.
+Add the `fc-form-label--required` modifier class to indicate the form element is required.
 
 <div class="fd-component-container">
-  <label class="fc-form__label fc-form__label--required">Required form label</label>
+  <label class="fc-form-label fc-form-label--required">Required form label</label>
 </div>
 
 ```html
-  <label class="fc-form__label fc-form__label--required">Required form label</label>
+  <label class="fc-form-label fc-form-label--required">Required form label</label>
 ```

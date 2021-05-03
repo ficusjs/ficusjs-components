@@ -1,12 +1,12 @@
 .fc-form-container {
   display: block;
 }
-.fc-form__invalid-feedback {
+.fc-form-invalid-feedback {
   margin-top: var(--spacing-01);
   color: var(--state-invalid);
   font-size: var(--text-01);
   font-weight: 400;
 }
-.fc-form__invalid-feedback--show + fc-help-text {
+.fc-form-invalid-feedback--show + fc-help-text {
   display: none;
 }

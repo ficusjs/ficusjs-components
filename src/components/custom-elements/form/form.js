@@ -109,14 +109,14 @@ export function createForm ({ createComponent, renderer, html }) {
     },
     showError (formInput) {
       const formComponent = getFormComponent(formInput)
-      const formInputContainer = formInput.closest('.fc-form__group')
-      const formError = formInputContainer.querySelector('.fc-form__invalid-feedback')
-      const helpText = formInputContainer.querySelector('.fc-form__help-text')
+      const formInputContainer = formInput.closest('.fc-form-group')
+      const formError = formInputContainer.querySelector('.fc-form-invalid-feedback')
+      const helpText = formInputContainer.querySelector('.fc-form-help-text')
 
       const clearInputValidation = () => {
         formInput.setCustomValidity('')
         formError.textContent = ''
-        formError.classList.remove('fc-form__invalid-feedback--show')
+        formError.classList.remove('fc-form-invalid-feedback--show')
         helpText.style.display = 'block'
       }
 
@@ -127,7 +127,7 @@ export function createForm ({ createComponent, renderer, html }) {
         if (result) {
           formInput.setCustomValidity(result)
           formError.textContent = result
-          formError.classList.add('fc-form__invalid-feedback--show')
+          formError.classList.add('fc-form-invalid-feedback--show')
           helpText.style.display = 'none'
         } else {
           clearInputValidation()
@@ -136,7 +136,7 @@ export function createForm ({ createComponent, renderer, html }) {
         clearInputValidation()
       } else {
         formError.textContent = this.getMessage(formInput, label)
-        formError.classList.add('fc-form__invalid-feedback--show')
+        formError.classList.add('fc-form-invalid-feedback--show')
         helpText.style.display = 'none'
       }
     },
