@@ -4,6 +4,7 @@
 @use 'variables' as fieldset;
 
 .fc-fieldset {
+  margin: fieldset.$margin;
   border: fieldset.$border;
   padding: fieldset.$padding;
 
