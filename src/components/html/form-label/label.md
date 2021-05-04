@@ -8,7 +8,7 @@ tags:
   - forms
 eleventyNavigation:
   key: Label
-  order: 5
+  order: 6
 ---
 # Form label
 

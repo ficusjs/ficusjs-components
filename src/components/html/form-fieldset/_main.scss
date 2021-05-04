@@ -1,0 +1,13 @@
+// Fieldset
+// --------
+
+@use 'variables' as fieldset;
+
+.fc-fieldset {
+  border: fieldset.$border;
+  padding: fieldset.$padding;
+
+  legend {
+    padding: fieldset.$padding;
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/components",
-  "version": "1.0.0-alpha.18",
+  "version": "1.0.0-alpha.19",
   "description": "A library of UI components built for FicusJS ",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -44,7 +44,7 @@
     "@11ty/eleventy": "0.12.1",
     "@11ty/eleventy-navigation": "0.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "3.1.0",
-    "@ficusjs/styles": "1.0.0-alpha.26",
+    "@ficusjs/styles": "1.0.0-alpha.27",
     "@rollup/plugin-commonjs": "18.0.0",
     "@rollup/plugin-node-resolve": "11.2.1",
     "@rollup/plugin-replace": "2.4.2",

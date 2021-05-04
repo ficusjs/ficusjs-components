@@ -8,7 +8,7 @@ tags:
   - forms
 eleventyNavigation:
   key: Help text
-  order: 6
+  order: 7
 ---
 # Form help text
 

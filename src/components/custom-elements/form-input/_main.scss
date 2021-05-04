@@ -8,7 +8,12 @@
 @include form-label.form-label;
 @include form-help-text.form-help-text;
 
-// Input
+// Custom element
+.fc-form-input {
+  display: block;
+}
+
+// Input wrapper
 .fc-input-wrapper {
   display: flex;
   flex-direction: column;
@@ -34,7 +39,7 @@
   }
 }
 
-// Inline wrapper
+// Inline input wrapper
 .fc-input-inline-wrapper {
   display: flex;
   flex-direction: row-reverse;
