@@ -1,0 +1,22 @@
+// Accordion (HTML)
+// ----------------
+
+@use 'variables' as card;
+
+.fc-card {
+  background: card.$bg-color;
+  border: card.$border-width solid card.$border-color;
+  border-radius: card.$border-radius;
+}
+
+.fc-card__header {
+  padding: card.$padding-y card.$padding-x;
+}
+
+.fc-card__body {
+  padding: card.$padding-y card.$padding-x;
+}
+
+.fc-card__header + .fc-card__body {
+  padding-top: 0;
+}
