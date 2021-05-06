@@ -48,40 +48,26 @@ Accordion component.
 | `fc-accordion__toggle-icon` | Optional. Sizes the accordion toggle icon and also provides animation on toggle. |
 | `fc-accordion__body` | Mandatory. Required on the body element. |
 
-### Styling Hooks
-
-Use these CSS Custom Properties as hooks to customize this component with your own style.
-
-| Category | Styling Hook Name | Value Type(s) | Fallback Value |
-| --- | --- | --- | --- |
-| Color | `--fc-accordion-color-border` | Color | `--ui-border-02` |
-| Color | `--fc-accordion-color-border` | Color | `--ui-border-02` |
-| Sizing | `--fc-accordion-sizing-border` | Dimension | `1px` |
-| Sizing | `--fc-accordion-svg-sizing` | Dimension | `--icon-02` |
-| Spacing | `--fc-accordion-details-spacing` | Dimension | `--spacing-05` |
-| Spacing | `--fc-accordion-summary-spacing` | Dimension | `--spacing-05` |
-| Spacing | `--fc-accordion-summary-spacing` | Dimension | `--spacing-05` |
-| Spacing | `--fc-accordion-svg-spacing` | Dimension | `--spacing-03` |
-| Text | `--fc-accordion-summary-text-decoration-color-focus` | Color | `--secondary-color` |
-| Text | `--fc-accordion-summary-text-decoration-thickness-focus` | Dimension | `--spacing-01` |
-| Text | `--fc-accordion-summary-text-underline-offset-focus` | Dimension | `--spacing-02` |
-
 ### SASS
 
-It’s also possible to theme an accordion using SASS. As we use CSS Custom properties to style our components we set two arguments, the first is the styling hook, the second is the fallback value.
+It’s possible to theme an accordion using SASS. As we use CSS Custom properties to style our components we set two arguments, the first is custom property, the second is the SASS fallback variable.
 
 ```scss
+@use '../../../../node_modules/@ficusjs/styles/src/scss/spacing';
+@use '../../../../node_modules/@ficusjs/styles/src/scss/colors';
+@use '../../../../node_modules/@ficusjs/styles/src/scss/ui-elements';
+
 // Details
-$details-padding:                  var(--fc-accordion-details-spacing, var(--spacing-05));
+$details-padding:                  var(--spacing-05, spacing.$spacing-05) !default;
 
 // Summary
-$summary-margin:                   calc(var(--fc-accordion-summary-spacing, var(--spacing-05)) * -1);
-$summary-padding:                  var(--fc-accordion-summary-spacing, var(--spacing-05));
-$summary-focus-td-color:           var(--fc-accordion-summary-text-decoration-color-focus, var(--secondary-color));
-$summary-focus-td-thickness:       var(--fc-accordion-summary-text-decoration-thickness-focus, var(--spacing-01));
-$summary-focus-td-offset:          var(--fc-accordion-summary-text-underline-offset-focus, var(--spacing-02));
+$summary-margin:                   calc(var(--spacing-05, #{spacing.$spacing-05}) * -1) !default;
+$summary-padding:                  var(--spacing-05, spacing.$spacing-05) !default;
+$summary-focus-td-color:           var(--secondary-color, colors.$secondary) !default;
+$summary-focus-td-thickness:       var(--spacing-01, spacing.$spacing-01) !default;
+$summary-focus-td-offset:          var(--spacing-02, spacing.$spacing-02) !default;
 
 // Toggle icon
-$toggle-icon-size:                 var(--fc-accordion-svg-sizing, var(--icon-02));
-$toggle-icon-margin:               var(--fc-accordion-svg-spacing, var(--spacing-03));
+$toggle-icon-size:                 var(--icon-02, ui-elements.$icon-size-02) !default;
+$toggle-icon-margin:               var(--spacing-03, spacing.$spacing-03) !default;
 ```
