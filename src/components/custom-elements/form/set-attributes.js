@@ -107,7 +107,7 @@ function checkValueType (instanceProps, types, value, defaultValue) {
 }
 
 function checkNumericValueType (instanceProps, types, value, defaultValue) {
-  return (types.indexOf(instanceProps.type) !== -1 && value !== 0 && value !== defaultValue) ? value : undefined
+  return (types.indexOf(instanceProps.type) !== -1 && value !== defaultValue) ? value : undefined
 }
 
 function ignoreProp (key) {
