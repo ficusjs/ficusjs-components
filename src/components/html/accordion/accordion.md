@@ -2,7 +2,7 @@
 layout: main.njk
 title: FicusJS components - HTML - Accordion
 label: Accordion
-cssFile: 
+cssFile:
   - /components/html/accordion/accordion.css
 tags:
   - html
@@ -55,7 +55,7 @@ It’s possible to theme an accordion using SASS. As we use CSS Custom propertie
 ```scss
 @use '../../../../node_modules/@ficusjs/styles/src/scss/spacing';
 @use '../../../../node_modules/@ficusjs/styles/src/scss/colors';
-@use '../../../../node_modules/@ficusjs/styles/src/scss/ui-elements';
+@use '../../../../node_modules/@ficusjs/styles/src/scss/ui';
 
 // Details
 $details-padding:                  var(--spacing-05, spacing.$spacing-05) !default;
@@ -68,6 +68,6 @@ $summary-focus-td-thickness:       var(--spacing-01, spacing.$spacing-01) !defau
 $summary-focus-td-offset:          var(--spacing-02, spacing.$spacing-02) !default;
 
 // Toggle icon
-$toggle-icon-size:                 var(--icon-02, ui-elements.$icon-size-02) !default;
+$toggle-icon-size:                 var(--icon-02, ui.$icon-size-02) !default;
 $toggle-icon-margin:               var(--spacing-03, spacing.$spacing-03) !default;
 ```

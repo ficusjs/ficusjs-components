@@ -2,7 +2,7 @@ const glob = require('glob-all')
 const logSymbols = require('log-symbols')
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
-const build = require('./lib/build')
+const build = require('./lib/build.cjs')
 
 const argv = yargs(hideBin(process.argv)).argv
 
