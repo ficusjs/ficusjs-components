@@ -1,6 +1,6 @@
 # Ficus components
 
-A library of UI components built for [FicusJS](https://github.com/ficusjs/ficusjs).
+A library of UI components built using [FicusJS](https://github.com/ficusjs/ficusjs).
 
 ## Docs
 

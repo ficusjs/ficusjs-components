@@ -1,5 +1,5 @@
-import { createSelect } from './select.js'
-import { OptGroup, Option } from './options.js'
+import { createSelect } from './select.mjs'
+import { OptGroup, Option } from './options.mjs'
 
 const module = {
   create (helpers) {

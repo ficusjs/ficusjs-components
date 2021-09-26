@@ -1,4 +1,4 @@
-import { generateId } from './generate-id.js'
+import { generateId } from './generate-id.mjs'
 
 export function created () {
   let id = this.props.id

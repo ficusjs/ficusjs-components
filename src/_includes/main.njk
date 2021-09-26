@@ -2,11 +2,11 @@
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A library of UI components built using FicusJS">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FicusJS components</title>
     <base href="/">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/android-chrome-384x384.png">
@@ -61,23 +61,14 @@
         </button>
 
         <nav class="fc-navbar__collapse">
-          <fc-dropdown button-class="fc-navbar__link" dropdown-title="Docs">
-            <a href="...">Docs 1</a>
-            <a href="...">Docs 2</a>
-            <a href="...">Docs 3</a>
-            <a href="...">Docs 4</a>
-          </fc-dropdown>
-          <a href="..." class="fc-navbar__link">GitHub</a>
+          <a href="https://github.com/ficusjs" class="fc-navbar__link">GitHub</a>
         </nav>
       </fc-navbar>
 
       <div class="[ fd-sidebar ] [ fu-spacing-pt-05 fu-spacing-pb-05 fu-spacing-pl-05 fu-spacing-pr-05 fu-lg-spacing-pt-09 fu-lg-spacing-pb-09 fu-lg-spacing-pl-00 fu-lg-spacing-pr-00 ]">
         <details id="sidebar-nav" class="fd-sidebar-details" open>
           <summary class="fc-button">Menu</summary>
-          {% include "navs/getting-started.njk" %}
-          {% include "navs/forms.njk" %}
-          {% include "navs/custom-elements.njk" %}
-          {% include "navs/html.njk" %}
+          {% include "nav.njk" %}
         </details>
       </div>
 
@@ -102,8 +93,6 @@
       </footer>
 
     </div>
-    <script type="module" src="assets/js/sidebar-details.js"></script>
-    <script type="module" src="assets/js/theme.js"></script>
-    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="/assets/js/main.mjs"></script>
   </body>
 </html>

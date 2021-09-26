@@ -1,4 +1,4 @@
-import { createDropdown } from './dropdown.js'
+import { createDropdown } from './dropdown.mjs'
 
 export const module = {
   create (helpers) {

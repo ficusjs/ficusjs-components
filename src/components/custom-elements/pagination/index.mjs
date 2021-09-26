@@ -1,4 +1,4 @@
-import { createPagination } from './pagination.js'
+import { createPagination } from './pagination.mjs'
 
 export const module = {
   create (helpers) {

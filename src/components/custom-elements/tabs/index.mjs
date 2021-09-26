@@ -1,4 +1,4 @@
-import { createTabs } from './tabs.js'
+import { createTabs } from './tabs.mjs'
 
 export const module = {
   create (helpers) {

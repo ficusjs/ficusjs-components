@@ -1,4 +1,4 @@
-import { createNavbar } from './navbar.js'
+import { createNavbar } from './navbar.mjs'
 
 export const module = {
   create (helpers) {

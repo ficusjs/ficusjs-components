@@ -26,11 +26,12 @@ Each custom element requires a template literal renderer to work.
 
 The following template literal renderers are available with the [FicusJS renderers library](https://github.com/ficusjs/ficusjs-renderers):
 
+- htm
+- htm and Preact
 - lit-html
 - uhtml
-- htm and Preact
 
-**The `document.createElement` renderer cannot be used because of specific internal rendering requirements within each component.**
+**The built-in renderer cannot be used because of specific internal rendering requirements within each component.**
 
 ---
 

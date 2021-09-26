@@ -3,7 +3,7 @@
 <nav class="[ fc-nav ] [ fu-spacing-mb-07 fu-lg-spacing-ml-06 fu-lg-spacing-mr-06 ]">
   {% macro renderNavListItem(entry) -%}
   <li>
-    <a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="active"{% endif %}>{{ entry.title | safe }}</a>
+    <a href="{{ entry.url | url }}" class="doc__nav-item{% if entry.url == page.url %} active{% endif %}">{{ entry.title | safe }}</a>
     {%- if entry.children.length -%}
       <ul class="fc-nav__list">
         {%- for child in entry.children %}{{ renderNavListItem(child) }}

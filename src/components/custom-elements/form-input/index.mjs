@@ -1,4 +1,4 @@
-import { createInput } from './input.js'
+import { createInput } from './input.mjs'
 
 export const module = {
   create (helpers) {

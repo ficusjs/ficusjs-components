@@ -8,7 +8,7 @@ const argv = yargs(hideBin(process.argv)).argv
 
 const outputDir = argv.outputDir || 'build'
 
-const components = glob.sync(['src/components/custom-elements/*/index.js', 'src/components/loader'])
+const components = glob.sync(['src/components/custom-elements/*/index.mjs', 'src/components/loader'])
 const buildPromises = components.map(c => {
   return build(c, c.replace('src', outputDir))
 })

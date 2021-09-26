@@ -10,4 +10,3 @@ document.getElementById('show-top-sheet-close-btn').addEventListener('click', e 
   const sheet = document.querySelector('fc-sheet[position="top"]')
   sheet.toggleSheet()
 })
-

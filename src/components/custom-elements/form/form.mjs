@@ -1,6 +1,6 @@
 /* global FormData */
-import { messages } from './messages.js'
-import { getFormComponent } from './get-form-component.js'
+import { messages } from './messages.mjs'
+import { getFormComponent } from './get-form-component.mjs'
 
 export function createForm ({ createComponent, renderer, html }) {
   createComponent('fc-form', {

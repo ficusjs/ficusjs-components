@@ -1,9 +1,9 @@
 {
   "name": "@ficusjs/components",
-  "version": "1.0.0-alpha.23",
+  "version": "1.0.0-alpha.24",
   "description": "A library of UI components built for FicusJS ",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
   "scripts": {
     "prebuild": "rimraf dist build",
     "build": "run-p build:*",
@@ -42,80 +42,80 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "0.12.1",
-    "@11ty/eleventy-navigation": "0.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "3.1.1",
+    "@11ty/eleventy-navigation": "0.3.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "3.1.2",
     "@ficusjs/styles": "1.0.0-alpha.31",
-    "@rollup/plugin-commonjs": "19.0.0",
-    "@rollup/plugin-node-resolve": "13.0.0",
-    "@rollup/plugin-replace": "2.4.2",
-    "chokidar-cli": "2.1.0",
-    "clean-css": "5.1.2",
+    "@rollup/plugin-commonjs": "20.0.0",
+    "@rollup/plugin-node-resolve": "13.0.5",
+    "@rollup/plugin-replace": "3.0.0",
+    "chokidar-cli": "3.0.0",
+    "clean-css": "5.2.0",
     "cross-env": "7.0.3",
-    "eleventy-plugin-toc": "1.1.0",
+    "eleventy-plugin-toc": "1.1.3",
     "glob-all": "3.2.1",
     "html-minifier": "4.0.0",
     "live-server": "1.2.1",
-    "log-symbols": "4.1.0",
-    "markdown-it": "12.0.6",
-    "markdown-it-anchor": "7.1.0",
+    "log-symbols": "^4.0.0",
+    "markdown-it": "12.2.0",
+    "markdown-it-anchor": "8.3.1",
     "markdown-it-emoji": "2.0.0",
     "markdown-it-table-of-contents": "0.5.2",
     "markdown-to-txt": "1.0.1",
     "minify-html-literals": "1.3.5",
     "mkdirp": "1.0.4",
     "npm-run-all": "4.1.5",
-    "postcss-cli": "8.3.1",
+    "postcss-cli": "9.0.0",
     "rimraf": "3.0.2",
-    "rollup": "2.50.6",
+    "rollup": "2.57.0",
     "rollup-plugin-minify-html-literals": "1.2.6",
     "rollup-plugin-terser": "7.0.2",
-    "sass": "1.34.1",
-    "slugify": "1.5.3",
+    "sass": "1.42.1",
+    "slugify": "1.6.0",
     "standard": "16.0.3",
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
-    "stylelint-scss": "3.19.0",
-    "yargs": "17.0.1"
+    "stylelint-scss": "3.21.0",
+    "yargs": "17.2.1"
   },
   "exports": {
     ".": {
-      "import": "./dist/components/loader/index.js"
+      "import": "./dist/components/loader/index.mjs"
     },
     "./loader": {
-      "import": "./dist/components/loader/index.js"
+      "import": "./dist/components/loader/index.mjs"
     },
     "./custom-elements/accordion": {
-      "import": "./dist/components/custom-elements/accordion/index.js"
+      "import": "./dist/components/custom-elements/accordion/index.mjs"
     },
     "./custom-elements/dropdown": {
-      "import": "./dist/components/custom-elements/dropdown/index.js"
+      "import": "./dist/components/custom-elements/dropdown/index.mjs"
     },
     "./custom-elements/form": {
-      "import": "./dist/components/custom-elements/form/index.js"
+      "import": "./dist/components/custom-elements/form/index.mjs"
     },
     "./custom-elements/form-input": {
-      "import": "./dist/components/custom-elements/form-input/index.js"
+      "import": "./dist/components/custom-elements/form-input/index.mjs"
     },
     "./custom-elements/form-select": {
-      "import": "./dist/components/custom-elements/form-select/index.js"
+      "import": "./dist/components/custom-elements/form-select/index.mjs"
     },
     "./custom-elements/form-textarea": {
-      "import": "./dist/components/custom-elements/form-textarea/index.js"
+      "import": "./dist/components/custom-elements/form-textarea/index.mjs"
     },
     "./custom-elements/modal": {
-      "import": "./dist/components/custom-elements/modal/index.js"
+      "import": "./dist/components/custom-elements/modal/index.mjs"
     },
     "./custom-elements/navbar": {
-      "import": "./dist/components/custom-elements/navbar/index.js"
+      "import": "./dist/components/custom-elements/navbar/index.mjs"
     },
     "./custom-elements/pagination": {
-      "import": "./dist/components/custom-elements/pagination/index.js"
+      "import": "./dist/components/custom-elements/pagination/index.mjs"
     },
     "./custom-elements/sheet": {
-      "import": "./dist/components/custom-elements/sheet/index.js"
+      "import": "./dist/components/custom-elements/sheet/index.mjs"
     },
     "./custom-elements/tabs": {
-      "import": "./dist/components/custom-elements/tabs/index.js"
+      "import": "./dist/components/custom-elements/tabs/index.mjs"
     }
   },
   "dependencies": {}

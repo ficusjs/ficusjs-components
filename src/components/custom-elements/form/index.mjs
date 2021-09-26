@@ -1,4 +1,4 @@
-import { createForm } from './form.js'
+import { createForm } from './form.mjs'
 
 export const module = {
   create (helpers) {

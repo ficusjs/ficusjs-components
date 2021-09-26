@@ -1,4 +1,4 @@
-import { createTextarea } from './textarea.js'
+import { createTextarea } from './textarea.mjs'
 
 export const module = {
   create (helpers) {

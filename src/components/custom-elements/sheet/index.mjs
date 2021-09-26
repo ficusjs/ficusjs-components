@@ -1,4 +1,4 @@
-import { createSheet } from './sheet.js'
+import { createSheet } from './sheet.mjs'
 
 export const module = {
   create (helpers) {

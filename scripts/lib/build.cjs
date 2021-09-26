@@ -28,7 +28,7 @@ module.exports = async function (entry, outputDir) {
     format: 'es'
   }
 
-  if (outputPath.endsWith('.js')) {
+  if (outputPath.endsWith('.mjs')) {
     outputOptions.file = outputPath
   } else {
     outputOptions.dir = outputPath

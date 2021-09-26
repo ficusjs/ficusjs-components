@@ -1,4 +1,4 @@
-import { createAccordion } from './accordion.js'
+import { createAccordion } from './accordion.mjs'
 
 export const module = {
   create (helpers) {

@@ -1,4 +1,4 @@
-import { paginate } from './paginate.js'
+import { paginate } from './paginate.mjs'
 
 export function createPagination ({ createComponent, renderer, html }) {
   createComponent('fc-pagination', {

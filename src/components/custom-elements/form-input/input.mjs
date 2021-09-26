@@ -1,7 +1,7 @@
-import { props } from './input-props.js'
-import { generateId } from '../form/generate-id.js'
-import { inputTypes, noLabelTypes } from './input-types.js'
-import { setAttributes } from '../form/set-attributes.js'
+import { props } from './input-props.mjs'
+import { generateId } from '../form/generate-id.mjs'
+import { inputTypes, noLabelTypes } from './input-types.mjs'
+import { setAttributes } from '../form/set-attributes.mjs'
 
 export function createInput ({ createComponent, renderer, html, nothing }) {
   createComponent('fc-form-input', {

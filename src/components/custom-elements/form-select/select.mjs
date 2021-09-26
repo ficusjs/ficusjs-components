@@ -1,8 +1,8 @@
 /* global Node */
-import { props } from './select-props.js'
-import { generateId } from '../form/generate-id.js'
-import { Option, OptGroup } from './options.js'
-import { setAttributes } from '../form/set-attributes.js'
+import { props } from './select-props.mjs'
+import { generateId } from '../form/generate-id.mjs'
+import { Option, OptGroup } from './options.mjs'
+import { setAttributes } from '../form/set-attributes.mjs'
 
 export function createSelect ({ createComponent, renderer, html, nothing = '' }) {
   const createOption = o => {

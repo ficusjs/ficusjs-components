@@ -1,5 +1,5 @@
-import { inputTypes, numericTypes, textTypes } from '../form-input/input-types.js'
-import { props } from '../form-input/input-props.js'
+import { inputTypes, numericTypes, textTypes } from '../form-input/input-types.mjs'
+import { props } from '../form-input/input-props.mjs'
 
 const propInputTypes = {
   accept: [inputTypes.FILE],

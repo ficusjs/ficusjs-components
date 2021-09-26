@@ -1,6 +1,6 @@
-import { props } from './textarea-props.js'
-import { generateId } from '../form/generate-id.js'
-import { setAttributes } from '../form/set-attributes.js'
+import { props } from './textarea-props.mjs'
+import { generateId } from '../form/generate-id.mjs'
+import { setAttributes } from '../form/set-attributes.mjs'
 
 export function createTextarea ({ createComponent, renderer, html }) {
   createComponent('fc-form-textarea', {
