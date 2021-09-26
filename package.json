@@ -1,6 +1,6 @@
 {
   "name": "@ficusjs/components",
-  "version": "1.0.0-alpha.24",
+  "version": "1.0.0-alpha.25",
   "description": "A library of UI components built for FicusJS ",
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
@@ -79,10 +79,10 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/components/loader/index.mjs"
+      "import": "./dist/components/loader/index.js"
     },
     "./loader": {
-      "import": "./dist/components/loader/index.mjs"
+      "import": "./dist/components/loader/index.js"
     },
     "./custom-elements/accordion": {
       "import": "./dist/components/custom-elements/accordion/index.mjs"
