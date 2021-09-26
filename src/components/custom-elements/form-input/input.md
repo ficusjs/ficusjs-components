@@ -11,8 +11,8 @@ modulePath:
   - /components/custom-elements/form/index.js
   - /components/custom-elements/form-input/index.js
 tags:
-  - forms
-eleventyNavigation: 
+  - customElements
+eleventyNavigation:
   key: Input
   order: 3
 ---

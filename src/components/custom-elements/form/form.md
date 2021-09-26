@@ -9,7 +9,7 @@ modulePath:
   - /components/custom-elements/form/index.js
   - /components/custom-elements/form-input/index.js
 tags:
-  - forms
+  - customElements
 eleventyNavigation:
   key: Form
   order: 1

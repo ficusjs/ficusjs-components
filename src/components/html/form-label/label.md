@@ -5,7 +5,7 @@ label: Form label
 cssFile:
   - /components/html/form-label/form-label.css
 tags:
-  - forms
+  - html
 eleventyNavigation:
   key: Label
   order: 6

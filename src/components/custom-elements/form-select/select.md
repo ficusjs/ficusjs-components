@@ -7,7 +7,7 @@ cssFile:
   - /components/custom-elements/form-select/form-select.css
 modulePath: /components/custom-elements/form-select/index.js
 tags:
-  - forms
+  - customElements
 eleventyNavigation:
   key: Select
   order: 4

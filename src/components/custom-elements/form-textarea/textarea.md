@@ -7,7 +7,7 @@ cssFile:
   - /components/custom-elements/form-textarea/form-textarea.css
 modulePath: /components/custom-elements/form-textarea/index.js
 tags:
-  - forms
+  - customElements
 eleventyNavigation:
   key: Textarea
   order: 5

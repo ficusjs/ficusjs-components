@@ -5,7 +5,7 @@ label: Form help text
 cssFile:
   - /components/html/form-help-text/form-help-text.css
 tags:
-  - forms
+  - html
 eleventyNavigation:
   key: Help text
   order: 7

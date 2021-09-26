@@ -8,7 +8,7 @@ cssFile:
 modulePath:
   - /components/custom-elements/form-input/index.js
 tags:
-  - forms
+  - html
 eleventyNavigation:
   key: Fieldset
   order: 2
