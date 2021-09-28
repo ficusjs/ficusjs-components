@@ -5,7 +5,7 @@ label: Sheet
 cssFile:
   - /components/custom-elements/sheet/sheet.css
 demoScript: /js/sheet.js
-modulePath: /components/custom-elements/sheet/index.js
+modulePath: /components/custom-elements/sheet/index.mjs
 tags:
   - customElements
 eleventyNavigation:

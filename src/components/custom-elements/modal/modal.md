@@ -5,7 +5,7 @@ label: Modal
 cssFile:
   - /components/custom-elements/modal/modal.css
 demoScript: /js/modal.js
-modulePath: /components/custom-elements/modal/index.js
+modulePath: /components/custom-elements/modal/index.mjs
 tags:
   - customElements
 eleventyNavigation:

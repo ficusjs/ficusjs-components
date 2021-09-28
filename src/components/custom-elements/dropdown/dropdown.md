@@ -5,7 +5,7 @@ label: Dropdown
 cssFile:
   - /components/custom-elements/dropdown/dropdown.css
   - /components/html/button/button.css
-modulePath: /components/custom-elements/dropdown/index.js
+modulePath: /components/custom-elements/dropdown/index.mjs
 tags:
   - customElements
 eleventyNavigation:

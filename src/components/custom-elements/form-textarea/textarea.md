@@ -5,7 +5,7 @@ label: Form textarea
 cssFile:
   - /components/custom-elements/form/form.css
   - /components/custom-elements/form-textarea/form-textarea.css
-modulePath: /components/custom-elements/form-textarea/index.js
+modulePath: /components/custom-elements/form-textarea/index.mjs
 tags:
   - customElements
 eleventyNavigation:

@@ -4,7 +4,7 @@ title: FicusJS components - Custom elements - Accordion
 label: Accordion
 cssFile:
   - /components/custom-elements/accordion/accordion.css
-modulePath: /components/custom-elements/accordion/index.js
+modulePath: /components/custom-elements/accordion/index.mjs
 tags:
   - customElements
 eleventyNavigation:

@@ -4,7 +4,7 @@ title: FicusJS components - Custom elements - Tabs
 label: Tabs
 cssFile:
   - /components/custom-elements/tabs/tabs.css
-modulePath: /components/custom-elements/tabs/index.js
+modulePath: /components/custom-elements/tabs/index.mjs
 tags:
   - customElements
 eleventyNavigation:

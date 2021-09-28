@@ -7,29 +7,33 @@ const CleanCSS = require("clean-css")
 const { minify } = require("html-minifier")
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-    if (outputPath.endsWith(".html")) {
-      let minified = minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      })
-      return minified
-    }
-    return content
-  })
+  if (process.env.NODE_ENV === 'production') {
+    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+      // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+      if (outputPath.endsWith(".html")) {
+        let minified = minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true
+        })
+        return minified
+      }
+      return content
+    })
+  }
 
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles
   })
 
   eleventyConfig.addShortcode("componentPath", function (path) {
-    return process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`
+    return path
+    // return process.env.NODE_ENV === 'production' ? path : `http://localhost:8080${path}`
   })
 
   function getStylesheetTag (path) {
-    return `<link rel="stylesheet" href="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8889${path}`}">`
+    return `<link rel="stylesheet" href="${path}">`
+    return `<!--<link rel="stylesheet" href="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8889${path}`}">-->`
   }
 
   eleventyConfig.addShortcode("cssPath", function (path) {
@@ -44,37 +48,45 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("scriptPath", function (path) {
     if (path && path != '') {
-      return `<script type="module" src="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}"></script>`
+      return `<script type="module" src="${process.env.NODE_ENV === 'production' ? path : `http://localhost:8080${path}`}"></script>`
     } else {
       return ''
     }
   })
 
+  eleventyConfig.addShortcode("serviceWorker", function () {
+    if (process.env.NODE_ENV === 'production') {
+      return `<script>window.onload=function(){"serviceWorker"in navigator&&navigator.serviceWorker.register('/sw.js')};</script>`
+    }
+    return ''
+  })
+
   eleventyConfig.addShortcode("bootstrap", function (path) {
+    if (!path || path.trim() === '') return ''
     if (path && /,/.test(path)) {
       const paths = path.split(',')
-      const importStatements = paths.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? p : `http://localhost:8888${p}`}'`).join('\n')
+      const importStatements = paths.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? p : `http://localhost:8080${p}`}'`).join('\n')
       const useStatements = paths.map((p, i) => `use(module${i}, { renderer, html })`).join('\n')
       return `<script type="module">
-        import { use } from 'https://cdn.skypack.dev/ficusjs'
-        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
+        import { use } from 'https://cdn.skypack.dev/ficusjs@3'
+        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/uhtml'
         ${importStatements}
         ${useStatements}
       </script>`
     } else if (path && Array.isArray(path)) {
-      const importStatements = path.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${p}`}'`).join('\n')
+      const importStatements = path.map((p, i) => `import { module as module${i} } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8080${p}`}'`).join('\n')
       const useStatements = path.map((p, i) => `use(module${i}, { renderer, html })`).join('\n')
       return `<script type="module">
-        import { use } from 'https://cdn.skypack.dev/ficusjs'
-        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
+        import { use } from 'https://cdn.skypack.dev/ficusjs@3'
+        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/uhtml'
         ${importStatements}
         ${useStatements}
       </script>`
     } else if (path) {
       return `<script type="module">
-        import { use } from 'https://cdn.skypack.dev/ficusjs'
-        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/lit-html'
-        import { module } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8888${path}`}'
+        import { use } from 'https://cdn.skypack.dev/ficusjs@3'
+        import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers@4/uhtml'
+        import { module } from '${process.env.NODE_ENV === 'production' ? path : `http://localhost:8080${path}`}'
         use(module, { renderer, html })
       </script>`
     } else {
@@ -84,9 +96,16 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin)
 
-  eleventyConfig.addPassthroughCopy("src/assets/img");
+  eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy("./src/ficus-components.webmanifest");
 
-  eleventyConfig.addPassthroughCopy("src/assets/js");
+  if (process.env.NODE_ENV !== 'production') {
+    eleventyConfig.addPassthroughCopy("./src/components");
+    eleventyConfig.addPassthroughCopy("./src/js");
+    eleventyConfig.addWatchTarget("./src/js/")
+    eleventyConfig.addWatchTarget("./src/components/")
+    eleventyConfig.addWatchTarget("./src/assets/")
+  }
 
   eleventyConfig.addPlugin(syntaxHighlight)
 

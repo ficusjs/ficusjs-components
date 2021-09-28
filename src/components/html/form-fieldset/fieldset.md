@@ -6,7 +6,7 @@ cssFile:
   - /components/html/form-fieldset/form-fieldset.css
   - /components/custom-elements/form-input/form-input.css
 modulePath:
-  - /components/custom-elements/form-input/index.js
+  - /components/custom-elements/form-input/index.mjs
 tags:
   - html
 eleventyNavigation:

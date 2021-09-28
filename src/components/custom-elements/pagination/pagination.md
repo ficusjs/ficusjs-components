@@ -4,7 +4,7 @@ title: FicusJS components - Custom elements - Pagination
 label: Pagination
 cssFile:
   - /components/custom-elements/pagination/pagination.css
-modulePath: /components/custom-elements/pagination/index.js
+modulePath: /components/custom-elements/pagination/index.mjs
 tags:
   - customElements
 eleventyNavigation:

@@ -5,7 +5,7 @@ label: Form select
 cssFile:
   - /components/custom-elements/form/form.css
   - /components/custom-elements/form-select/form-select.css
-modulePath: /components/custom-elements/form-select/index.js
+modulePath: /components/custom-elements/form-select/index.mjs
 tags:
   - customElements
 eleventyNavigation:

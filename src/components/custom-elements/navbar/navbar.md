@@ -5,7 +5,7 @@ label: Navbar
 cssFile:
   - /components/html/button/button.css
   - /components/custom-elements/navbar/navbar.css
-modulePath: /components/custom-elements/navbar/index.js
+modulePath: /components/custom-elements/navbar/index.mjs
 tags:
   - customElements
 eleventyNavigation:

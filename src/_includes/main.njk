@@ -7,12 +7,14 @@
     <title>FicusJS components</title>
     <base href="/">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link rel="icon" href="assets/img/ficus-logo.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/android-chrome-384x384.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="manifest" href="/ficus-components.webmanifest">
     <meta name="theme-color" content="#54e4e5">
     <!-- component css START -->
     {% set css %}
@@ -24,6 +26,8 @@
     {% include "../../node_modules/@ficusjs/styles/tmp/css/ficus-docs.css" %} #}
     {% include "../../tmp/components/custom-elements/dropdown/dropdown.css" %}
     {% include "../../tmp/components/custom-elements/navbar/navbar.css" %}
+    {% include "../../tmp/components/custom-elements/form/form.css" %}
+    {% include "../../tmp/components/custom-elements/form-input/form-input.css" %}
     {% include "../../tmp/components/html/navigation/navigation.css" %}
     {% include "../../tmp/components/html/button/button.css" %}
     {% endset %}
@@ -49,8 +53,7 @@
           </symbol>
         </svg>
         <nav class="fd-logo">
-          <img id="ficus-logo" src="../assets/img/ficus-logo.svg" height="32" alt="FicusJS Components">
-          <img id="ficus-logo-white" src="../assets/img/ficus-logo-white.svg" height="32" alt="FicusJS Components" style="display: none;">
+          <img id="ficus-logo" src="/assets/img/ficus-logo.svg" height="32" alt="FicusJS Components">
           <span>Components</span>
         </nav>
 
@@ -94,5 +97,6 @@
 
     </div>
     <script type="module" src="/assets/js/main.mjs"></script>
+    {% serviceWorker %}
   </body>
 </html>
