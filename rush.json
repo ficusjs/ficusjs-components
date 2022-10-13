@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.81.0",
+  "pnpmVersion": "6.7.1",
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.13.0 <17.0.0",
+  "suppressNodeLtsWarning": false,
+  "ensureConsistentVersions": true,
+  "projectFolderMinDepth": 1,
+  "projectFolderMaxDepth": 3,
+  "approvedPackagesPolicy": {
+    "reviewCategories": [
+      "production",
+      "tools",
+      "prototypes"
+    ],
+    "ignoredNpmScopes": [
+      "@types"
+    ]
+  },
+  "gitPolicy": {
+    "versionBumpCommitMessage": "Applying package updates. [skip ci]",
+    "changeLogUpdateCommitMessage": "Deleting change files and updating change logs for package updates. [skip ci]"
+  },
+  "repository": {
+    "url": "https://github.com/ficusjs/ficusjs-components.git",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "variants": [],
+  "telemetryEnabled": false,
+  "hotfixChangeEnabled": false,
+  "projects": [
+    {
+      "packageName": "@ficusjs/components-storybook",
+      "projectFolder": "storybook",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@ficusjs/components-button",
+      "projectFolder": "components/button",
+      "reviewCategory": "production",
+      "shouldPublish": true
+    }
+  ]
+}
