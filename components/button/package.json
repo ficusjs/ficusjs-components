@@ -1,0 +1,18 @@
+{
+  "name": "@ficusjs/components-button",
+  "version": "0.1.0",
+  "description": "FicusJS Button Component",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ficusjs",
+    "components",
+    "button"
+  ],
+  "author": "Matt Levy <matt@ficusjs.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^16.0.4"
+  }
+}
